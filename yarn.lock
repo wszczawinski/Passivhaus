@@ -52,8 +52,8 @@
 
 "@babel/core@^7.1.0", "@babel/core@^7.12.3", "@babel/core@^7.7.5", "@babel/core@^7.8.4":
   version "7.15.8"
-  resolved "https://artifactory.acoustic.co/artifactory/api/npm/ca-npm-virtual/@babel/core/-/core-7.15.8.tgz#195b9f2bffe995d2c6c159e72fe525b4114e8c10"
-  integrity sha1-GVufK//pldLGwVnnL+UltBFOjBA=
+  resolved "/@babel/core/-/core-7.15.8.tgz#195b9f2bffe995d2c6c159e72fe525b4114e8c10"
+  integrity sha1-GVufK//pldLGwVnnL+UltBFOjBA=https://artifactory.acoustic.co/artifactory/api/npm/ca-npm-virtual
   dependencies:
     "@babel/code-frame" "^7.15.8"
     "@babel/generator" "^7.15.8"
