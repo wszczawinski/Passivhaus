@@ -1,4 +1,4 @@
-import './App.css';
+import './App.scss';
 import ErrorBoundary from './ErrorBoundary';
 
 function App() {
