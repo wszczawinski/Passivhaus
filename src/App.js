@@ -1,5 +1,5 @@
-import './App.css'
-import ErrorBoundary from './ErrorBoundary'
+import './App.css';
+import ErrorBoundary from './ErrorBoundary';
 
 function App() {
     return (
@@ -8,7 +8,7 @@ function App() {
                 <header className="App-header"></header>
             </div>
         </ErrorBoundary>
-    )
+    );
 }
 
-export default App
+export default App;
