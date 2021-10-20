@@ -1,5 +1,6 @@
 import React from 'react';
+import './Ambassador.scss';
 
 export function Ambassador() {
-	return <div>Ambasador</div>;
+	return <div className="amb">Ambasador</div>;
 }

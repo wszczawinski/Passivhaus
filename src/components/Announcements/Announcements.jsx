@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function Footer() {
+export function Announcements() {
     return (
         <div>
-            <h2>Footer</h2>
+            <h2>Wydarzenia</h2>
         </div>
     );
 }
