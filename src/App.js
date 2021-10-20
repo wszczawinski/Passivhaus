@@ -1,38 +1,20 @@
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
 import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
+import { Navbar, Anouncments, Footer } from './components';
 import './App.scss';
 
 function App() {
     return (
         <ErrorBoundary>
             <Router>
-                <div>
-                    <nav>
-                        <ul>
-                            <li>
-                                <Link to="/">Firma</Link>
-                            </li>
-                            <li>
-                                <Link to="/budynek-pasywny">Budynek pasywny</Link>
-                            </li>
-                            <li>
-                                <Link to="/certyfikacja">Certyfikacja</Link>
-                            </li>
-                            <li>
-                                <Link to="/szkolenia">Szkolenia</Link>
-                            </li>
-                            <li>
-                                <Link to="/literatura+narzedzia">Literatura i narzędzia</Link>
-                            </li>
-                            <li>
-                                <Link to="/ambasador">Ambasador Budownictwa Pasywnego</Link>
-                            </li>
-                        </ul>
-                    </nav>
+                <header>
+                    <Navbar />
+                </header>
 
-                    {/* A <Switch> looks through its children <Route>s and
-              renders the first one that matches the current URL. */}
+                <main>
+                    <Anouncments />
+
                     <Switch>
                         <Route exact path="/">
                             <Firm />
@@ -53,7 +35,11 @@ function App() {
                             <Ambassador />
                         </Route>
                     </Switch>
-                </div>
+                </main>
+
+                <footer>
+                    <Footer />
+                </footer>
             </Router>
         </ErrorBoundary>
     );

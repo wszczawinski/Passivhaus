@@ -1,7 +1,9 @@
-import React from 'react';
+import React from 'react'
 
-function Button() {
-	return <div />;
+export  function Button() {
+	return (
+		<button>
+			Button
+		</button>
+	)
 }
-
-export default Button;
