@@ -1,9 +1,5 @@
-import React from 'react'
+import React from 'react';
 
-export  function Button() {
-	return (
-		<button>
-			Button
-		</button>
-	)
+export function Button() {
+    return <button>Button</button>;
 }

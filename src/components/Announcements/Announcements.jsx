@@ -1,9 +1,9 @@
 import React from 'react';
 
-export function Anouncments() {
+export function Announcements() {
     return (
-        <section>
+        <div>
             <h2>Wydarzenia</h2>
-        </section>
+        </div>
     );
 }

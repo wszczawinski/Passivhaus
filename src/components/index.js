@@ -1,4 +1,4 @@
-export * from './Anouncments/Anouncments';
+export * from './Announcements/Announcements';
 export * from './Button/Button';
 export * from './Footer/Footer';
 export * from './ImageComponent/Image';
