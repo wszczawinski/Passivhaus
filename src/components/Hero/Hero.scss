@@ -1,0 +1,36 @@
+@import '../../App.scss';
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    position: relative;
+    min-height: 80vh;
+
+    &__background-image {
+        background-image: url('../../images/hero_firma.png');
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+
+    &__content-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+        p {
+            color: $color-cream;
+            width: 80%;
+        }
+    }
+}
