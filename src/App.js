@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
 import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
-import { Navbar, Announcements, Footer, Hero } from './components';
+import { Navbar, Footer, Hero } from './components';
 import './App.scss';
 
 function App() {
@@ -14,8 +14,6 @@ function App() {
                 </header>
 
                 <main>
-                    <Announcements />
-
                     <Switch>
                         <Route exact path="/">
                             <Firm />

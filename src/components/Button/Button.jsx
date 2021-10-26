@@ -1,5 +1,10 @@
 import React from 'react';
+import './Button.scss';
 
-export function Button() {
-    return <button>Button</button>;
+export function Button({ className = 'default_btn', text, ...rest }) {
+    return (
+        <button className={className} {...rest} type="button">
+            {text}
+        </button>
+    );
 }
