@@ -2,22 +2,59 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
 import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
 import { Navbar, Footer, Hero } from './components';
-import heroImage from './images/hero_firma.png';
+import { importImages } from './scripts';
+import * as heroContent from './heroContent.json';
+
 import './App.scss';
 
 function App() {
+    const images = importImages(
+        require.context('./images/heroImages/', false, /\.(png|jpe?g|svg)$/),
+    );
+
     return (
         <ErrorBoundary>
             <Router>
                 <header>
                     <Route exact path="/">
-                        <Hero text={'lorem lorem'} backgroundImage={heroImage} />
+                        <Hero
+                            text={heroContent.firmHeroText}
+                            backgroundImage={images[`hero_firma.png`].default}
+                        />
                     </Route>
                     <Route path="/budynek-pasywny">
                         <Hero
-                            text={'ipsum ipsum'}
-                            backgroundImage={heroImage}
-                            heroClass={'subpage'}
+                            text={heroContent.passivhausHeroText}
+                            backgroundImage={images[`hero_passivhaus.png`].default}
+                            heroClass={'hero__subpage'}
+                        />
+                    </Route>
+                    <Route path="/certyfikacja">
+                        <Hero
+                            text={heroContent.certificationHeroText}
+                            backgroundImage={images[`hero_certification.png`].default}
+                            heroClass={'hero__subpage'}
+                        />
+                    </Route>
+                    <Route path="/szkolenia">
+                        <Hero
+                            text={heroContent.workshopsHeroText}
+                            backgroundImage={images[`hero_workshops.png`].default}
+                            heroClass={'hero__subpage'}
+                        />
+                    </Route>
+                    <Route path="/literatura+narzedzia">
+                        <Hero
+                            text={heroContent.literatureHeroText}
+                            backgroundImage={images[`hero_firma.png`].default}
+                            heroClass={'hero__subpage'}
+                        />
+                    </Route>
+                    <Route path="/ambasador">
+                        <Hero
+                            text={heroContent.ambassadorHeroText}
+                            backgroundImage={images[`hero_firma.png`].default}
+                            heroClass={'hero__subpage'}
                         />
                     </Route>
 
