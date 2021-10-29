@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import './Navbar.scss';
 
 export function Navbar() {
     return (
-        <nav>
+        <nav className="navbar">
             <h1>LOGO</h1>
             <ul>
                 <li>

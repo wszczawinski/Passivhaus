@@ -6,7 +6,13 @@
     align-content: center;
     justify-content: center;
     position: relative;
-    min-height: 80vh;
+    height: 80vh;
+    order: 1;
+
+    &__subpage {
+        height: 70vh;
+        order: 3;
+    }
 
     &__background-image {
         position: absolute;

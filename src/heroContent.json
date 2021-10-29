@@ -1,8 +1,8 @@
 {
-    "firmHeroText": "Maxime suscipit aliquam vel vero temporibus odio pariatur, quos explicabo!",
-    "passivhausHeroText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
-    "certificationHeroText": "Tempore, nam asperiores repudiandae animi eos molestias est aliquid nihil rerum voluptas?",
-    "workshopsHeroText": "Incidunt perspiciatis quisquam culpa ea non.",
-    "literatureHeroText": "Maxime suscipit aliquam vel vero temporibus odio pariatur, quos explicabo!",
-    "ambassadorHeroText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
+    "firmText": "Maxime suscipit aliquam vel vero temporibus odio pariatur, quos explicabo!",
+    "passivhausText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit.",
+    "certificationText": "Tempore, nam asperiores repudiandae animi eos molestias est aliquid nihil rerum voluptas?",
+    "workshopsText": "Incidunt perspiciatis quisquam culpa ea non.",
+    "literatureText": "Maxime suscipit aliquam vel vero temporibus odio pariatur, quos explicabo!",
+    "ambassadorText": "Lorem ipsum dolor sit amet consectetur, adipisicing elit."
 }
