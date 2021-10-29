@@ -2,58 +2,57 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
 import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
 import { Navbar, Footer, Hero } from './components';
-import { importImages } from './scripts';
+import heroFirmImage from './images/heroImages/hero_firma.png';
+import heroPassivhausImage from './images/heroImages/hero_passivhaus.png';
+import heroCertificationImage from './images/heroImages/hero_certification.png';
+import heroWorkshopsImage from './images/heroImages/hero_workshops.png';
+import heroLiteratureImage from './images/heroImages/hero_literature.png';
+import heroAmbassadorImage from './images/heroImages/hero_ambassador.png';
+
 import * as heroContent from './heroContent.json';
 
 import './App.scss';
 
 function App() {
-    const images = importImages(
-        require.context('./images/heroImages/', false, /\.(png|jpe?g|svg)$/),
-    );
-
     return (
         <ErrorBoundary>
             <Router>
                 <header>
                     <Route exact path="/">
-                        <Hero
-                            text={heroContent.firmHeroText}
-                            backgroundImage={images[`hero_firma.png`].default}
-                        />
+                        <Hero text={heroContent.firmHeroText} backgroundImage={heroFirmImage} />
                     </Route>
                     <Route path="/budynek-pasywny">
                         <Hero
                             text={heroContent.passivhausHeroText}
-                            backgroundImage={images[`hero_passivhaus.png`].default}
+                            backgroundImage={heroPassivhausImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/certyfikacja">
                         <Hero
                             text={heroContent.certificationHeroText}
-                            backgroundImage={images[`hero_certification.png`].default}
+                            backgroundImage={heroCertificationImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/szkolenia">
                         <Hero
                             text={heroContent.workshopsHeroText}
-                            backgroundImage={images[`hero_workshops.png`].default}
+                            backgroundImage={heroWorkshopsImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/literatura+narzedzia">
                         <Hero
                             text={heroContent.literatureHeroText}
-                            backgroundImage={images[`hero_firma.png`].default}
+                            backgroundImage={heroLiteratureImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/ambasador">
                         <Hero
                             text={heroContent.ambassadorHeroText}
-                            backgroundImage={images[`hero_firma.png`].default}
+                            backgroundImage={heroAmbassadorImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
