@@ -1,17 +1,17 @@
 import React from 'react';
 import './Hero.scss';
 
-export function Hero() {
+export function Hero({ heroClass = '', text, backgroundImage }) {
     return (
-        <section className="hero">
-            <div class="hero__background-image"></div>
+        <section className={`hero ${heroClass}`}>
+            <article
+                style={{ backgroundImage: `url('${backgroundImage}')` }}
+                className="hero__background-image"
+            />
 
-            <div class="hero__content-area">
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi pariatur
-                    blanditiis minima provident quo incidunt optio eaque corrupti est laboriosam.
-                </p>
-            </div>
+            <article className="hero__content-area">
+                <p>{text}</p>
+            </article>
         </section>
     );
 }

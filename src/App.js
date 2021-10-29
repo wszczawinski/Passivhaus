@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
 import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
 import { Navbar, Footer, Hero } from './components';
+import heroImage from './images/hero_firma.png';
 import './App.scss';
 
 function App() {
@@ -9,7 +10,17 @@ function App() {
         <ErrorBoundary>
             <Router>
                 <header>
-                    <Hero />
+                    <Route exact path="/">
+                        <Hero text={'lorem lorem'} backgroundImage={heroImage} />
+                    </Route>
+                    <Route path="/budynek-pasywny">
+                        <Hero
+                            text={'ipsum ipsum'}
+                            backgroundImage={heroImage}
+                            heroClass={'subpage'}
+                        />
+                    </Route>
+
                     <Navbar />
                 </header>
 
