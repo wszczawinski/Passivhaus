@@ -1,3 +1,50 @@
+@import '../../App.scss';
+
 .navbar {
     order: 2;
+    height: 20vh;
+    background-color: $color-cream;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo {
+        height: 80%;
+        width: auto;
+        padding: 0 30px;
+    }
+
+    &__list {
+        visibility: hidden;
+    }
+
+    &__visible {
+        position: fixed;
+        top: 0;
+        overflow-y: hidden;
+        margin: 0;
+        padding: 0;
+        visibility: visible;
+        background-color: #000000;
+        opacity: 0.9;
+        width: 80vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        li {
+            padding: 20px 0;
+
+            a {
+                color: #ffffff;
+            }
+        }
+    }
+
+    &__toggle {
+        padding: 30px;
+    }
 }
