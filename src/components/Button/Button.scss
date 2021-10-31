@@ -1,6 +1,26 @@
 @import '../../App.scss';
 
-.default_btn {
+button {
+    cursor: pointer;
+    border: none;
+    background-color: transparent;
+    outline: none;
+}
+
+.btn__mini {
+    padding: 30px;
+    font-size: 1.4rem;
+}
+
+.btn_white {
+    color: white;
+}
+
+.btn_black {
+    color: black;
+}
+
+.btn__default {
     border: 1px solid $color-orange;
     background-color: $color-orange;
     border-radius: 10px;

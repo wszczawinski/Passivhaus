@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Button } from '../';
 import './Navbar.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -7,41 +8,62 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
 
 export function Navbar() {
-    const [navToggle, setNavToggle] = useState('tak');
+    const [navVisibility, setNavVisibility] = useState('');
+
+    let changeNavVisibility = () => {
+        let visibility = navVisibility === '' ? 'navbar__visible' : '';
+        setNavVisibility(visibility);
+    };
 
     return (
         <nav className="navbar">
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
 
-            <ul className="navbar__list navbar__visible">
+            <ul className={`navbar__list ${navVisibility}`}>
                 <li>
-                    <Link to="/">Firma</Link>
+                    <Link to="/" onClick={changeNavVisibility}>
+                        Firma
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/budynek-pasywny">Budynek pasywny</Link>
+                    <Link to="/budynek-pasywny" onClick={changeNavVisibility}>
+                        Budynek pasywny
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/certyfikacja">Certyfikacja</Link>
+                    <Link to="/certyfikacja" onClick={changeNavVisibility}>
+                        Certyfikacja
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/szkolenia">Szkolenia</Link>
+                    <Link to="/szkolenia" onClick={changeNavVisibility}>
+                        Szkolenia
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/literatura+narzedzia">Literatura i narzędzia</Link>
+                    <Link to="/literatura+narzedzia" onClick={changeNavVisibility}>
+                        Literatura i narzędzia
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/ambasador">Ambasador Budownictwa Pasywnego</Link>
+                    <Link to="/ambasador" onClick={changeNavVisibility}>
+                        Ambasador Budownictwa Pasywnego
+                    </Link>
                 </li>
                 <li>
-                    <button>
-                        <FontAwesomeIcon icon={faTimes} />
-                    </button>
+                    <Button
+                        className={'btn__mini btn_white'}
+                        textContent={<FontAwesomeIcon icon={faTimes} />}
+                        onClick={changeNavVisibility}
+                    />
                 </li>
             </ul>
 
-            <span class="navbar__toggle">
-                <FontAwesomeIcon icon={faBars} />
-            </span>
+            <Button
+                className={'btn__mini btn_black'}
+                textContent={<FontAwesomeIcon icon={faBars} />}
+                onClick={changeNavVisibility}
+            />
         </nav>
     );
 }

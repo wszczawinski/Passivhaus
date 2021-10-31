@@ -16,7 +16,7 @@
     }
 
     &__list {
-        visibility: hidden;
+        display: none;
     }
 
     &__visible {
@@ -28,7 +28,7 @@
         visibility: visible;
         background-color: #000000;
         opacity: 0.9;
-        width: 80vw;
+        width: 100vw;
         height: 100vh;
         display: flex;
         flex-direction: column;
@@ -37,14 +37,16 @@
 
         li {
             padding: 20px 0;
+            width: 80%;
 
             a {
                 color: #ffffff;
             }
         }
-    }
 
-    &__toggle {
-        padding: 30px;
+        li:last-child {
+            width: 100%;
+            text-align: center;
+        }
     }
 }
