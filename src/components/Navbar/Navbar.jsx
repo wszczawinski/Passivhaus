@@ -8,18 +8,17 @@ import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
 
 export function Navbar() {
-    const [navVisibility, setNavVisibility] = useState('');
+    const [navVisibility, setNavVisibility] = useState(false);
 
     let changeNavVisibility = () => {
-        let visibility = navVisibility === '' ? 'navbar__visible' : '';
-        setNavVisibility(visibility);
+        setNavVisibility(!navVisibility);
     };
 
     return (
         <nav className="navbar">
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
 
-            <ul className={`navbar__list ${navVisibility}`}>
+            <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
                 <li>
                     <Link to="/" onClick={changeNavVisibility}>
                         Firma
