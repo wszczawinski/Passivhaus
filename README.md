@@ -1,6 +1,15 @@
-# Getting Started with Create React App
+# Passivhaus
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+React based web app for Polish Passivhaus Institute which allows them to show up-to-date information and sell products.
+
+## Install and Launch Project 🚀
+
+```bash
+git clone https://github.com/wszczawinski/Passivhaus.git
+cd pibp-web-app
+yarn install
+yarn start
+```
 
 ## Available Scripts
 
