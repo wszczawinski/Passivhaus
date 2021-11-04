@@ -1,13 +1,14 @@
 import React from 'react';
 import './Firm.scss';
-import { Announcements, Button } from '../../components';
+import { Announcements, Button, SubpageNavbar } from '../../components';
 
 export function Firm() {
     return (
-        <div>
+        <div className="layout-content">
             <Announcements />
-            <Button className={'default_btn'} text={'text'} />
-            Firm
+            <SubpageNavbar />
+
+            <Button textContent={'Text'} />
         </div>
     );
 }

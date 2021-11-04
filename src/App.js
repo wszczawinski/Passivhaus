@@ -60,7 +60,7 @@ function App() {
                     <Navbar />
                 </header>
 
-                <main>
+                <main >
                     <Switch>
                         <Route exact path="/">
                             <Firm />

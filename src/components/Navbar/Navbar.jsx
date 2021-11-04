@@ -51,7 +51,7 @@ export function Navbar() {
                 </li>
                 <li>
                     <Button
-                        className={'btn__mini btn_white'}
+                        className={'btn__mini btn__white'}
                         textContent={<FontAwesomeIcon icon={faTimes} />}
                         onClick={changeNavVisibility}
                     />
@@ -59,7 +59,7 @@ export function Navbar() {
             </ul>
 
             <Button
-                className={'btn__mini btn_black'}
+                className={'btn__mini btn__black'}
                 textContent={<FontAwesomeIcon icon={faBars} />}
                 onClick={changeNavVisibility}
             />

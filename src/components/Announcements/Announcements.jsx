@@ -2,8 +2,8 @@ import React from 'react';
 
 export function Announcements() {
     return (
-        <div>
+        <section>
             <h2>Wydarzenia</h2>
-        </div>
+        </section>
     );
 }
