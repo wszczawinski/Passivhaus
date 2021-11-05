@@ -25,6 +25,12 @@ main {
     display: flex;
     flex-direction: column;
     width: 100vw;
+
+    .layout-content {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+    }
 }
 
 code {
