@@ -6,9 +6,10 @@ export function SubpageNavbar({ navElements }) {
     return (
         <ul>
             {navElements.map(element => {
+                console.log(element);
                 return (
-                    <Link key={element[0]} to={element[1]}>
-                        {element[0]}
+                    <Link key={element.name} to={element.path}>
+                        {element.name}
                     </Link>
                 );
             })}

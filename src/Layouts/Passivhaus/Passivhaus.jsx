@@ -5,9 +5,9 @@ import { Switch, Route } from 'react-router-dom';
 
 export function Passivhaus() {
     const navElements = [
-        ['Charakterystyka', '/budynek-pasywny/charakterystyka'],
-        ['Wymagania', '/budynek-pasywny/wymagania'],
-        ['Instrukcja', '/budynek-pasywny/instrukcja'],
+        { name: 'Charakterystyka', path: '/budynek-pasywny/charakterystyka' },
+        { name: 'Wymagania', path: '/budynek-pasywny/wymagania' },
+        { name: 'Instrukcja', path: '/budynek-pasywny/instrukcja' },
     ];
 
     return (

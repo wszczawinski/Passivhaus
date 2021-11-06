@@ -5,9 +5,9 @@ import { Switch, Route } from 'react-router-dom';
 
 export function Firm() {
     const navElements = [
-        ['Aktualności', '/firma/aktualnosci'],
-        ['O nas', '/firma/onas'],
-        ['Partnerzy', '/firma/partnerzy'],
+        { name: 'Aktualności', path: '/firma/aktualnosci' },
+        { name: 'O nas', path: '/firma/onas' },
+        { name: 'Partnerzy', path: '/firma/partnerzy' },
     ];
 
     return (
