@@ -1,11 +1,10 @@
 import React from 'react';
 import './Literature.scss';
-import { Button, SubpageNavbar } from '../../components';
+import { Button } from '../../components';
 
 export function Literature() {
     return (
         <div className="layout-content">
-            <SubpageNavbar />
             <h2>Literatura</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus nulla

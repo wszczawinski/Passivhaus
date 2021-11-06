@@ -1,10 +1,17 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './SubpageNavbar.scss';
 
-export function SubpageNavbar() {
+export function SubpageNavbar({ navElements }) {
     return (
-        <div>
-            <h2> Subpage Navbar</h2>
-        </div>
+        <ul>
+            {navElements.map(element => {
+                return (
+                    <Link key={element[0]} to={element[1]}>
+                        {element[0]}
+                    </Link>
+                );
+            })}
+        </ul>
     );
 }

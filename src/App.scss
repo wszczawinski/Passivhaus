@@ -24,7 +24,8 @@ header {
 main {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    align-items: center;
+    align-content: center;
 
     .layout-content {
         display: flex;
