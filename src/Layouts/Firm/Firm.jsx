@@ -1,18 +1,15 @@
 import React from 'react';
-import './Firm.scss';
-import { Announcements, Button, SubpageNavbar } from '../../components';
 import { Switch, Route } from 'react-router-dom';
+import { Announcements, Button, SubpageNavbar } from '../../components';
+import { firmNavItems } from '../../constants/subNavItems';
+
+import './Firm.scss';
 
 export function Firm() {
-    const navElements = [
-        { name: 'Aktualności', path: '/firma/aktualnosci' },
-        { name: 'O nas', path: '/firma/onas' },
-        { name: 'Partnerzy', path: '/firma/partnerzy' },
-    ];
 
     return (
         <div className="layout-content">
-            <SubpageNavbar navElements={navElements} />
+            <SubpageNavbar navElements={firmNavItems} />
             <Announcements />
 
             <Switch>

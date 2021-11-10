@@ -1,18 +1,15 @@
 import React from 'react';
-import './Passivhaus.scss';
-import { Button, SubpageNavbar } from '../../components';
 import { Switch, Route } from 'react-router-dom';
+import { Button, SubpageNavbar } from '../../components';
+import { passivhausNavItems } from '../../constants/subNavItems';
+
+import './Passivhaus.scss';
 
 export function Passivhaus() {
-    const navElements = [
-        { name: 'Charakterystyka', path: '/budynek-pasywny/charakterystyka' },
-        { name: 'Wymagania', path: '/budynek-pasywny/wymagania' },
-        { name: 'Instrukcja', path: '/budynek-pasywny/instrukcja' },
-    ];
 
     return (
         <div className="layout-content">
-            <SubpageNavbar navElements={navElements} />
+            <SubpageNavbar navElements={passivhausNavItems} />
 
             <Switch>
                 <Route exact path="/budynek-pasywny/charakterystyka">

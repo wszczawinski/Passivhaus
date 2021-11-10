@@ -1,11 +1,13 @@
 import React from 'react';
-import './Workshops.scss';
 import { Button, SubpageNavbar } from '../../components';
+import { workshopsNavItems } from '../../constants/subNavItems';
+
+import './Workshops.scss';
 
 export function Workshops() {
     return (
         <div className="layout-content">
-            <SubpageNavbar />
+            <SubpageNavbar navElements={workshopsNavItems} />
             <h2>Workshops</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus nulla

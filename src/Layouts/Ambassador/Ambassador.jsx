@@ -1,11 +1,13 @@
 import React from 'react';
-import './Ambassador.scss';
 import { Button, SubpageNavbar } from '../../components';
+import { ambassadorNavItems } from '../../constants/subNavItems'
+
+import './Ambassador.scss';
 
 export function Ambassador() {
     return (
         <div className="layout-content">
-            <SubpageNavbar />
+            <SubpageNavbar navElements={ambassadorNavItems} />
             <h2>Ambasador</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus nulla

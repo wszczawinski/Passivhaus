@@ -1,11 +1,13 @@
 import React from 'react';
-import './Certification.scss';
 import { Button, SubpageNavbar } from '../../components';
+import { certificationNavItems } from '../../constants/subNavItems'
+
+import './Certification.scss';
 
 export function Certification() {
     return (
         <div className="layout-content">
-            <SubpageNavbar />
+            <SubpageNavbar navElements={certificationNavItems} />
             <h2>Certyfikacja</h2>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus nulla
