@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
 import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
 import { Navbar, Footer, Hero } from './components';
@@ -19,6 +19,9 @@ function App() {
             <Router>
                 <header>
                     <Route exact path="/">
+                        <Redirect to="/firma" />
+                    </Route>
+                    <Route path="/firma">
                         <Hero text={heroContent.firmText} backgroundImage={heroFirmImage} />
                     </Route>
                     <Route path="/budynek-pasywny">
@@ -61,26 +64,24 @@ function App() {
                 </header>
 
                 <main>
-                    <Switch>
-                        <Route exact path="/">
-                            <Firm />
-                        </Route>
-                        <Route path="/budynek-pasywny">
-                            <Passivhaus />
-                        </Route>
-                        <Route path="/certyfikacja">
-                            <Certification />
-                        </Route>
-                        <Route path="/szkolenia">
-                            <Workshops />
-                        </Route>
-                        <Route path="/literatura+narzedzia">
-                            <Literature />
-                        </Route>
-                        <Route path="/ambasador">
-                            <Ambassador />
-                        </Route>
-                    </Switch>
+                    <Route path="/firma">
+                        <Firm />
+                    </Route>
+                    <Route path="/budynek-pasywny">
+                        <Passivhaus />
+                    </Route>
+                    <Route path="/certyfikacja">
+                        <Certification />
+                    </Route>
+                    <Route path="/szkolenia">
+                        <Workshops />
+                    </Route>
+                    <Route path="/literatura+narzedzia">
+                        <Literature />
+                    </Route>
+                    <Route path="/ambasador">
+                        <Ambassador />
+                    </Route>
                 </main>
 
                 <footer>

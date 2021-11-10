@@ -1,13 +1,39 @@
 import React from 'react';
 import './Firm.scss';
-import { Announcements, Button } from '../../components';
+import { Announcements, Button, SubpageNavbar } from '../../components';
+import { Switch, Route } from 'react-router-dom';
 
 export function Firm() {
+    const navElements = [
+        { name: 'Aktualności', path: '/firma/aktualnosci' },
+        { name: 'O nas', path: '/firma/onas' },
+        { name: 'Partnerzy', path: '/firma/partnerzy' },
+    ];
+
     return (
-        <div>
+        <div className="layout-content">
+            <SubpageNavbar navElements={navElements} />
             <Announcements />
-            <Button className={'default_btn'} text={'text'} />
-            Firm
+
+            <Switch>
+                <Route exact path="/firma/aktualnosci">
+                    <p>aktualnosci</p>
+                </Route>
+                <Route exact path="/firma/onas">
+                    <p>onas</p>
+                </Route>
+                <Route exact path="/firma/partnerzy">
+                    <p>Partnerzy</p>
+                </Route>
+            </Switch>
+
+            <h2>Firma</h2>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nihil est
+                repellat consequatur quam enim! Error asperiores doloribus voluptatum eos
+                consequuntur id animi nostrum. Vel consectetur explicabo officia atque natus!
+            </p>
+            <Button textContent={'Text'} />
         </div>
     );
 }
