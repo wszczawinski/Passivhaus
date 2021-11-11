@@ -5,6 +5,8 @@ $color-rust: #b95731;
 $color-cream: #faf2e8;
 $color-cookie: #fcdcb4;
 
+$break-point-desktop: 1000px;
+
 //Common styles
 body {
     margin: 0;
@@ -14,11 +16,13 @@ body {
         'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-color: $color-cream;
 }
 
 header {
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 main {
@@ -44,4 +48,7 @@ ul {
 
 a {
     text-decoration: none;
+    color: black;
+    cursor: pointer;
+
 }

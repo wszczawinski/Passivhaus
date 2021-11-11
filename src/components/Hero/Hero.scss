@@ -8,9 +8,13 @@
     position: relative;
     height: 80vh;
     order: 1;
+    width: 100%;
+
+    @media (min-width: $break-point-desktop) {
+        height: 100vh;
+    }
 
     &__subpage {
-        height: 70vh;
         order: 3;
     }
 

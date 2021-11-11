@@ -2,12 +2,30 @@
 
 .navbar {
     order: 2;
-    height: 20vh;
+    height: 12vh;
     background-color: $color-cream;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: absolute;
+    top: 5%;
+    width: 90%;
+
+    @media (min-width: $break-point-desktop) {
+        display: flex;
+        justify-content: space-around;
+        background-color: white;
+        width: 80%;
+        position: absolute;
+        top: 70%;
+        font-size: 15px;
+        height: 20vh;
+
+        &__hamburger {
+            display: none;
+        }
+    }
 
     &__logo {
         height: 80%;
@@ -17,6 +35,23 @@
 
     &__list {
         display: none;
+
+        @media (min-width: $break-point-desktop) {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            flex-grow: 2;
+            flex-wrap: wrap;
+
+            li {
+                display: flex;
+                align-items: center;
+                padding: 2%;
+                font-weight: bold;
+
+
+            }
+        }
     }
 
     &__visible {
