@@ -9,10 +9,11 @@ import pibpLogo from '../../images/pibpLogo.png';
 
 export function Navbar() {
 	const [ navVisibility, setNavVisibility ] = useState(false);
-	const mobileView = !window.matchMedia('(min-width: 1000px)');
+	const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 
 	let changeNavVisibility = () => {
-		if (mobileView) {
+        console.log(desktopView)
+		if (!desktopView) {
 			setNavVisibility(!navVisibility);
 		}
 	};

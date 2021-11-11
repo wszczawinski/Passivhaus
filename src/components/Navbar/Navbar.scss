@@ -2,7 +2,7 @@
 
 .navbar {
     order: 2;
-    height: 20vh;
+    height: 12vh;
     background-color: $color-cream;
     display: flex;
     flex-direction: row;
@@ -20,6 +20,7 @@
         position: absolute;
         top: 70%;
         font-size: 15px;
+        height: 20vh;
 
         &__hamburger {
             display: none;

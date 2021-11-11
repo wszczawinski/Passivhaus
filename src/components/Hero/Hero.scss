@@ -6,9 +6,13 @@
     align-content: center;
     justify-content: center;
     position: relative;
-    height: 100vh;
+    height: 80vh;
     order: 1;
     width: 100%;
+
+    @media (min-width: $break-point-desktop) {
+        height: 100vh;
+    }
 
     &__subpage {
         order: 3;
