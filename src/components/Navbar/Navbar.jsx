@@ -22,7 +22,6 @@ export function Navbar() {
 			<img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
 
 			<ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
-				<div className="navbar__list--upper-items">
 					<li>
 						<Link to="/" onClick={changeNavVisibility}>
 							Firma
@@ -48,9 +47,8 @@ export function Navbar() {
 							Literatura i narzędzia
 						</Link>
 					</li>
-				</div>
 
-				<li className="navbar__list--lower-item">
+				<li>
 					<Link to="/ambasador" onClick={changeNavVisibility}>
 						Ambasador Budownictwa Pasywnego
 					</Link>

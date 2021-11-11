@@ -19,7 +19,7 @@
         width: 80%;
         position: absolute;
         top: 70%;
-        font-size: 13px;
+        font-size: 15px;
 
         &__hamburger {
             display: none;
@@ -37,29 +37,17 @@
 
         @media (min-width: $break-point-desktop) {
             display: flex;
-            flex-direction: column;
-            justify-content: space-around;
-            padding-right: 10%;
+            justify-content: center;
             text-align: center;
-            flex-grow: 3;
-
-            &--upper-items {
-                display: flex;
-                justify-content: space-around;
-                margin-bottom: 2%;
-            }
-
-            &--lower-item {
-                display: flex;
-                justify-content: center;
-                margin-top: 2%;
-            }
+            flex-grow: 2;
+            flex-wrap: wrap;
 
             li {
                 display: flex;
                 align-items: center;
-                padding: 0 1.5%;
+                padding: 2%;
                 font-weight: bold;
+
 
             }
         }
