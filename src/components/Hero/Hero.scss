@@ -6,11 +6,12 @@
     align-content: center;
     justify-content: center;
     position: relative;
-    height: 80vh;
+    height: 100vh;
     order: 1;
+    width: 100%;
+    background-color: $color-cream;
 
     &__subpage {
-        height: 70vh;
         order: 3;
     }
 
