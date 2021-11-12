@@ -48,7 +48,10 @@ ul {
 
 a {
     text-decoration: none;
-    color: black;
+    color: $color-navy;
     cursor: pointer;
 
+    :visited {
+        color: $color-navy;
+    }
 }
