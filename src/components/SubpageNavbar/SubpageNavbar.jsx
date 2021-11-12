@@ -11,7 +11,7 @@ export function SubpageNavbar({ navElements }) {
 	const navItemsToDisplay = navElements.slice(0, -1);
 
 	return (
-		<ul>
+		<ul className="subpage-navbar">
 			{pathname !== undoIcon.path && (
 				<Link key={undoIcon.name} to={undoIcon.path}>
 					<FontAwesomeIcon icon={faAngleDoubleLeft} />
