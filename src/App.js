@@ -9,7 +9,7 @@ import heroCertificationImage from './images/heroImages/hero_certification.png';
 import heroWorkshopsImage from './images/heroImages/hero_workshops.png';
 import heroLiteratureImage from './images/heroImages/hero_literature.png';
 import heroAmbassadorImage from './images/heroImages/hero_ambassador.png';
-import * as heroContent from './heroContent.json';
+import { heroText } from './heroContent';
 
 import './App.scss';
 
@@ -22,39 +22,39 @@ function App() {
                         <Redirect to="/firma" />
                     </Route>
                     <Route path="/firma">
-                        <Hero text={heroContent.firmText} backgroundImage={heroFirmImage} />
+                        <Hero text={heroText.firmText} backgroundImage={heroFirmImage} />
                     </Route>
                     <Route path="/budynek-pasywny">
                         <Hero
-                            text={heroContent.passivhausText}
+                            text={heroText.passivhausText}
                             backgroundImage={heroPassivhausImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/certyfikacja">
                         <Hero
-                            text={heroContent.certificationText}
+                            text={heroText.certificationText}
                             backgroundImage={heroCertificationImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/szkolenia">
                         <Hero
-                            text={heroContent.workshopsText}
+                            text={heroText.workshopsText}
                             backgroundImage={heroWorkshopsImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/literatura+narzedzia">
                         <Hero
-                            text={heroContent.literatureText}
+                            text={heroText.literatureText}
                             backgroundImage={heroLiteratureImage}
                             heroClass={'hero__subpage'}
                         />
                     </Route>
                     <Route path="/ambasador">
                         <Hero
-                            text={heroContent.ambassadorText}
+                            text={heroText.ambassadorText}
                             backgroundImage={heroAmbassadorImage}
                             heroClass={'hero__subpage'}
                         />

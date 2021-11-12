@@ -12,7 +12,6 @@ export function Navbar() {
 	const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 
 	let changeNavVisibility = () => {
-        console.log(desktopView)
 		if (!desktopView) {
 			setNavVisibility(!navVisibility);
 		}
@@ -21,33 +20,33 @@ export function Navbar() {
 	return (
 		<nav className="navbar">
 			<img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
-
+			{!desktopView && <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>}
 			<ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
-					<li>
-						<Link to="/" onClick={changeNavVisibility}>
-							Firma
-						</Link>
-					</li>
-					<li>
-						<Link to="/budynek-pasywny" onClick={changeNavVisibility}>
-							Budynek pasywny
-						</Link>
-					</li>
-					<li>
-						<Link to="/certyfikacja" onClick={changeNavVisibility}>
-							Certyfikacja
-						</Link>
-					</li>
-					<li>
-						<Link to="/szkolenia" onClick={changeNavVisibility}>
-							Szkolenia
-						</Link>
-					</li>
-					<li>
-						<Link to="/literatura+narzedzia" onClick={changeNavVisibility}>
-							Literatura i narzędzia
-						</Link>
-					</li>
+				<li>
+					<Link to="/" onClick={changeNavVisibility}>
+						Firma
+					</Link>
+				</li>
+				<li>
+					<Link to="/budynek-pasywny" onClick={changeNavVisibility}>
+						Budynek pasywny
+					</Link>
+				</li>
+				<li>
+					<Link to="/certyfikacja" onClick={changeNavVisibility}>
+						Certyfikacja
+					</Link>
+				</li>
+				<li>
+					<Link to="/szkolenia" onClick={changeNavVisibility}>
+						Szkolenia
+					</Link>
+				</li>
+				<li>
+					<Link to="/literatura+narzedzia" onClick={changeNavVisibility}>
+						Literatura i narzędzia
+					</Link>
+				</li>
 
 				<li>
 					<Link to="/ambasador" onClick={changeNavVisibility}>

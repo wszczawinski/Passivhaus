@@ -14,13 +14,13 @@
 
     @media (min-width: $break-point-desktop) {
         display: flex;
-        justify-content: space-around;
+        justify-content: space-evenly;
         background-color: white;
         width: 80%;
         position: absolute;
-        top: 70%;
+        top: 75%;
         font-size: 15px;
-        height: 20vh;
+        height: 16vh;
 
         &__hamburger {
             display: none;
@@ -30,8 +30,16 @@
     &__logo {
         height: 80%;
         width: auto;
-        padding: 0 5%;
+        padding: 0 0 0 5%  ;
     }
+
+    &__logo-title {
+        font-size: 12px;
+        padding-left: 2%;
+        font-weight: bold;
+        color: $color-navy;
+    }
+
 
     &__list {
         display: none;
@@ -48,7 +56,7 @@
                 align-items: center;
                 padding: 2%;
                 font-weight: bold;
-
+                color: $color-navy;
 
             }
         }
