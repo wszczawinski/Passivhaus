@@ -1,5 +1,6 @@
 export const heroText = {
-    firmText: <p>ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br/> <u>AKTYWNIE</u></p>,
+    homeText: <p>ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br/> <u>AKTYWNIE</u></p>,
+    firmText: <p>FIRMA <br /> FIRMA <br/> <u>FIRMA</u></p>,
     passivhausText: <p>BUDYNEK PASYWNY</p>,
     certificationText: <p>CERTYFIKACJA</p>,
     workshopsText: <p>SZKOLENIA</p>,

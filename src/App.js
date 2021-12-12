@@ -1,8 +1,17 @@
-import { BrowserRouter as Router, Route, Redirect } from 'react-router-dom';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import ErrorBoundary from './ErrorBoundary';
-import { Ambassador, Firm, Passivhaus, Certification, Literature, Workshops } from './Layouts';
+import {
+    Ambassador,
+    Home,
+    Firm,
+    Passivhaus,
+    Certification,
+    Literature,
+    Workshops,
+} from './Layouts';
 import { Navbar, Footer, Hero } from './components';
 // Hero images and texts
+import heroHomeImage from './images/heroImages/hero_home.png';
 import heroFirmImage from './images/heroImages/hero_firma.png';
 import heroPassivhausImage from './images/heroImages/hero_passivhaus.png';
 import heroCertificationImage from './images/heroImages/hero_certification.png';
@@ -19,10 +28,14 @@ function App() {
             <Router>
                 <header>
                     <Route exact path="/">
-                        <Redirect to="/firma" />
+                        <Hero text={heroText.homeText} backgroundImage={heroHomeImage} />
                     </Route>
                     <Route path="/firma">
-                        <Hero text={heroText.firmText} backgroundImage={heroFirmImage} />
+                        <Hero
+                            text={heroText.firmText}
+                            backgroundImage={heroFirmImage}
+                            heroClass={'hero__subpage'}
+                        />
                     </Route>
                     <Route path="/budynek-pasywny">
                         <Hero
@@ -64,6 +77,9 @@ function App() {
                 </header>
 
                 <main>
+                    <Route exact path="/">
+                        <Home />
+                    </Route>
                     <Route path="/firma">
                         <Firm />
                     </Route>
