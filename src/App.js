@@ -18,7 +18,7 @@ import heroCertificationImage from './images/heroImages/hero_certification.png';
 import heroWorkshopsImage from './images/heroImages/hero_workshops.png';
 import heroLiteratureImage from './images/heroImages/hero_literature.png';
 import heroAmbassadorImage from './images/heroImages/hero_ambassador.png';
-import { heroText } from './heroContent';
+import { heroText } from './constants/heroContent';
 
 import './App.scss';
 

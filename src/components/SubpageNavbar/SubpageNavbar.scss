@@ -1,4 +1,13 @@
+@import '../../App.scss';
+
 .subpage-navbar {
+    margin: 0;
+    padding: 10px;
+    background-color: $color-navy;
     display: flex;
     flex-wrap: wrap;
+
+    &__element {
+        color: white;
+    }
 }
