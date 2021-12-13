@@ -2,6 +2,7 @@ export const firmNavItems = [
     { name: 'Aktualności', path: '/firma/aktualnosci' },
     { name: 'O nas', path: '/firma/onas' },
     { name: 'Partnerzy', path: '/firma/partnerzy' },
+    { name: 'Kontakt', path: '/firma/kontakt' },
     { name: 'Firma', path: '/firma' },
 ];
 
