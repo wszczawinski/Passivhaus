@@ -1,14 +1,15 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
-import { Announcements, Button, SubpageNavbar } from '../../components';
-import { firmNavItems } from '../../constants/subNavItems';
+// import { Switch, Route } from 'react-router-dom';
+// import { Announcements, Button, SubpageNavbar } from '../../components';
+// import { firmNavItems } from '../../constants/subNavItems';
 
 import './Firm.scss';
 
-export function Firm() {
+export default function Firm() {
     return (
         <>
-            <SubpageNavbar navElements={firmNavItems} />
+        <h1>firm</h1>
+            {/* <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
                 <Announcements />
 
@@ -222,7 +223,7 @@ export function Firm() {
                     </Route>
                 </Switch>
                 <Button textContent={'Text'} />
-            </section>
+            </section> */}
         </>
     );
 }

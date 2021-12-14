@@ -1,6 +1,7 @@
 @import '../../App.scss';
 
 .navbar {
+    z-index: 100;
     order: 2;
     height: 12vh;
     background-color: $color-cream;

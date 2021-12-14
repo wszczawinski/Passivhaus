@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link } from 'gatsby';
 import { Button } from '../';
 import './Navbar.scss';
 
@@ -18,7 +18,7 @@ export function Navbar() {
     };
 
     return (
-        <nav className="navbar">
+        <div className="navbar">
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
             {!desktopView && (
                 <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
@@ -73,6 +73,6 @@ export function Navbar() {
                 textContent={<FontAwesomeIcon icon={faBars} />}
                 onClick={changeNavVisibility}
             />
-        </nav>
+        </div>
     );
 }
