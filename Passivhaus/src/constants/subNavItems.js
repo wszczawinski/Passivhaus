@@ -1,5 +1,5 @@
 export const firmNavItems = [
-    { name: 'Aktualności', path: '/firma/aktualnosci' },
+    { name: 'Aktualności', path: '/firma' },
     { name: 'O nas', path: '/firma/onas' },
     { name: 'Partnerzy', path: '/firma/partnerzy' },
     { name: 'Kontakt', path: '/firma/kontakt' },

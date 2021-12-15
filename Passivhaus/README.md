@@ -1,18 +1,18 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's hello-world starter
-</h1>
+# Passivhaus
 
-Kick off your project with this hello-world boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+Gatsby based web app for Polish Passivhaus Institute which allows them to show up-to-date information and sell products.
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.com/docs/gatsby-starters/)._
+## Install and Launch Project 🚀
 
-## 🚀 Quick start
+```bash
+git clone https://github.com/wszczawinski/Passivhaus.git
+cd Passivhaus
+yarn install
+gatsby develop
+```
+
+
+## 🚀 Gatsby quick start
 
 1.  **Create a Gatsby site.**
 
