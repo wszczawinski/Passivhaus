@@ -1,19 +1,49 @@
+import { graphql, Link } from 'gatsby';
 import React from 'react';
-// import { Switch, Route } from 'react-router-dom';
-// import { Announcements, Button, SubpageNavbar } from '../../components';
-// import { firmNavItems } from '../../constants/subNavItems';
+//import { Routes, Route } from 'react-router-dom';
+import { Announcements, Button, SubpageNavbar, Layout } from '../../components';
+import { firmNavItems } from '../../constants/subNavItems';
 
 import './Firm.scss';
 
-export default function Firm() {
+export const query = graphql`
+    query NewsPage {
+        allMarkdownRemark {
+            nodes {
+                frontmatter {
+                    title
+                    slug
+                    date
+                }
+                id
+            }
+        }
+    }
+`;
+
+export default function Firm({ data }) {
+    const news = data.allMarkdownRemark.nodes;
     return (
-        <>
-        <h1>firm</h1>
-            {/* <SubpageNavbar navElements={firmNavItems} />
+        <Layout>
+            <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
+                <h2>Firma</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci, nihil est
+                    repellat consequatur quam enim! Error asperiores doloribus voluptatum eos
+                    consequuntur id animi nostrum. Vel consectetur explicabo officia atque natus!
+                </p>
+                <section>
+                    {news.map(element => (
+                        <Link to={'/firm/' + element.frontmatter.slug} key={element.id}>
+                            <h3>{element.frontmatter.title}</h3>
+                            <p>{element.frontmatter.date}</p>
+                        </Link>
+                    ))}
+                </section>
                 <Announcements />
 
-                <Switch>
+                {/* <Routes>
                     <Route exact path="/firma">
                         <h2>Firma</h2>
                         <p>
@@ -221,9 +251,9 @@ export default function Firm() {
                             Konto EU: Nr konta: 05 1140 1065 0000 3335 8600 1002
                         </p>
                     </Route>
-                </Switch>
+                </Routes> */}
                 <Button textContent={'Text'} />
-            </section> */}
-        </>
+            </section>
+        </Layout>
     );
 }

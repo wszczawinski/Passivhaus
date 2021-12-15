@@ -5,6 +5,27 @@
  */
 
 module.exports = {
-  /* Your site config here */
-  plugins:  [`gatsby-plugin-sass`],
-}
+    plugins: [
+        `gatsby-plugin-sass`,
+        `gatsby-transformer-remark`,
+        {
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `news`,
+                path: `${__dirname}/src/news/`,
+            },
+        },
+        {
+          resolve: `gatsby-source-filesystem`,
+          options: {
+              name: `events`,
+              path: `${__dirname}/src/events/`,
+          },
+      },
+    ],
+
+    siteMetadata: {
+        title: 'Passivhaus',
+        description: 'Portfolio website',
+    },
+};
