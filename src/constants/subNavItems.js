@@ -13,7 +13,7 @@ export const ambassadorNavItems = [
 
 export const certificationNavItems = [
     { name: 'Certyfikacja budynkow', path: '/certyfikacja/budynkow' },
-    { name: 'Certyfikacja komponentów', path: '/certyfikacja/komponentów' },
+    { name: 'Certyfikacja komponentów', path: '/certyfikacja/komponentow' },
     { name: 'Lista certyfikowanych budynkow', path: '/certyfikacja/lista-budynkow' },
     { name: 'Lista certyfikowanych projektantow', path: '/certyfikacja/projektanci' },
     { name: 'Lista certyfikowanych wykonawców', path: '/certyfikacja/wykonawcy' },
@@ -24,9 +24,9 @@ export const certificationNavItems = [
 export const literatureNavItems = [
     {
         name: 'Wyszukiwarka budynków pasywnych',
-        path: '/literatura+narzedzia/wyszukiwarka-budynkow-pasywnych',
+        path: '/literatura/wyszukiwarka',
     },
-    { name: 'Literatura', path: '/literatura+narzedzia' },
+    { name: 'Literatura', path: '/literatura' },
 ];
 
 export const passivhausNavItems = [

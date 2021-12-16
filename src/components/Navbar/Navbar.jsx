@@ -50,7 +50,7 @@ export function Navbar() {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/literatura+narzedzia" onClick={changeNavVisibility}>
+                    <Link to="/literatura" onClick={changeNavVisibility}>
                         Literatura i narzędzia
                     </Link>
                 </li>

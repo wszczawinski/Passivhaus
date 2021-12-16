@@ -6,7 +6,7 @@ import { heroText } from '../../constants/heroContent';
 
 import './Certification.scss';
 
-export function Certification() {
+export default function Certification() {
     return (
         <Layout
             heroTextContent={heroText.certificationText}
