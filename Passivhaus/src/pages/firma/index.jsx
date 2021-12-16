@@ -2,6 +2,8 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { Announcements, Button, SubpageNavbar, Layout } from '../../components';
 import { firmNavItems } from '../../constants/subNavItems';
+import heroFirmImage from '../../images/heroImages/hero_firma.png';
+import { heroText } from '../../constants/heroContent';
 
 import './Firm.scss';
 
@@ -23,7 +25,11 @@ export const query = graphql`
 export default function Firm({ data }) {
     const news = data.allMarkdownRemark.nodes;
     return (
-        <Layout>
+        <Layout
+            heroTextContent={heroText.firmText}
+            heroBackgroundImage={heroFirmImage}
+            heroClass={'hero__subpage'}
+        >
             <Announcements />
             <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
