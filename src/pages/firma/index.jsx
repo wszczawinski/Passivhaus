@@ -9,12 +9,12 @@ import './Firm.scss';
 
 export const query = graphql`
     query NewsPage {
-        allMarkdownRemark {
+        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
             nodes {
                 frontmatter {
-                    title
-                    slug
                     date
+                    slug
+                    title
                 }
                 id
             }
