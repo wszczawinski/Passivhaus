@@ -6,7 +6,7 @@ import { heroText } from '../../constants/heroContent';
 
 import './Passivhaus.scss';
 
-export default function Passivhaus() {
+export default function Wymagania() {
     return (
         <Layout
             heroTextContent={heroText.passivhausText}
@@ -15,7 +15,9 @@ export default function Passivhaus() {
         >
             <SubpageNavbar navElements={passivhausNavItems} />
             <section className="layout-content">
-                <h2>Passivhaus</h2>
+                <h2>Wymagania
+                    
+                </h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
                     nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias

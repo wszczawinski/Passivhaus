@@ -7,6 +7,9 @@
 module.exports = {
     plugins: [
         `gatsby-plugin-sass`,
+        `gatsby-plugin-image`,
+        `gatsby-plugin-sharp`,
+        `gatsby-transformer-sharp`,
         `gatsby-transformer-remark`,
         {
             resolve: `gatsby-source-filesystem`,
@@ -16,12 +19,12 @@ module.exports = {
             },
         },
         {
-          resolve: `gatsby-source-filesystem`,
-          options: {
-              name: `events`,
-              path: `${__dirname}/src/events/`,
-          },
-      },
+            resolve: `gatsby-source-filesystem`,
+            options: {
+                name: `events`,
+                path: `${__dirname}/src/events/`,
+            },
+        },
     ],
 
     siteMetadata: {
