@@ -7,7 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
 
-export function Navbar() {
+export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
     const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 

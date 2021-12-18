@@ -4,7 +4,7 @@ import { GatsbyImage } from 'gatsby-plugin-image';
 
 import './Hero.scss';
 
-export function Hero({ heroClass = '', text, backgroundImage }) {
+export default function Hero({ heroClass = '', text, backgroundImage }) {
     return (
         <section className={`hero ${heroClass}`}>
             <GatsbyImage

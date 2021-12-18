@@ -6,8 +6,7 @@ import { heroText } from '../../constants/heroContent';
 
 import './Firm.scss';
 
-export default function Firm({ data }) {
-    const news = data.allMarkdownRemark.nodes;
+export default function Firm() {
     return (
         <Layout
             heroTextContent={heroText.firmText}

@@ -1,9 +1,13 @@
 import React from 'react';
-import { Hero, Navbar, Footer } from '..';
+import Head from './Head';
+import Footer from './Footer';
+import Hero from './Hero';
+import Navbar from './Navbar';
 
 export function Layout({ children, heroTextContent, heroBackgroundImage, heroClass }) {
     return (
         <>
+            <Head />
             <header>
                 <Navbar />
                 <Hero
