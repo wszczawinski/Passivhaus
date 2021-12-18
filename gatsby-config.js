@@ -21,8 +21,8 @@ module.exports = {
         {
             resolve: `gatsby-source-filesystem`,
             options: {
-                name: `events`,
-                path: `${__dirname}/src/events/`,
+                name: `images`,
+                path: `${__dirname}/src/images/`,
             },
         },
     ],

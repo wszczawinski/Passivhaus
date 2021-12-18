@@ -1,26 +1,10 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import { Announcements, Button, SubpageNavbar, Layout } from '../../components';
+import { Button, SubpageNavbar, Layout } from '../../components';
 import { firmNavItems } from '../../constants/subNavItems';
 import heroFirmImage from '../../images/heroImages/hero_firma.png';
 import { heroText } from '../../constants/heroContent';
 
 import './Firm.scss';
-
-export const query = graphql`
-    query NewsPage {
-        allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }) {
-            nodes {
-                frontmatter {
-                    date
-                    slug
-                    title
-                }
-                id
-            }
-        }
-    }
-`;
 
 export default function Firm({ data }) {
     const news = data.allMarkdownRemark.nodes;
@@ -30,7 +14,6 @@ export default function Firm({ data }) {
             heroBackgroundImage={heroFirmImage}
             heroClass={'hero__subpage'}
         >
-            <Announcements />
             <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
                 <h2>Firma</h2>
@@ -39,14 +22,6 @@ export default function Firm({ data }) {
                     repellat consequatur quam enim! Error asperiores doloribus voluptatum eos
                     consequuntur id animi nostrum. Vel consectetur explicabo officia atque natus!
                 </p>
-                <section>
-                    {news.map(element => (
-                        <Link to={'/firm/' + element.frontmatter.slug} key={element.id}>
-                            <h3>{element.frontmatter.title}</h3>
-                            <p>{element.frontmatter.date}</p>
-                        </Link>
-                    ))}
-                </section>
 
                 <Button textContent={'Text'} />
             </section>
