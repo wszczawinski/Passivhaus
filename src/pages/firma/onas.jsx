@@ -1,6 +1,10 @@
 import React from 'react';
+import { GatsbyImage, StaticImage } from 'gatsby-plugin-image';
 import { Announcements, SubpageNavbar, Layout } from '../../components';
 import { firmNavItems } from '../../constants/subNavItems';
+import budynekBiurowyBok from '../../images/firm/budynek-biurowy-bok.png';
+
+import './Firm.scss';
 
 export default function About() {
     return (
@@ -8,26 +12,39 @@ export default function About() {
             <Announcements />
             <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
-                <h3>onas</h3>
-                <p>
-                    Od 2004 roku jesteśmy niezależną polską instytucją, aktualnie działającą na
-                    zasadach non-profit. Naszym celem jest upowszechnianie wiedzy o budownictwie
-                    pasywnym, zero energetycznym, plus energetycznym oraz o kompleksowej
-                    termomodernizacji z wykorzystaniem technologii i komponentów pasywnych. Ponadto
-                    transferujemy wiedzę na temat energii odnawialnej, która z powodzeniem pokrywa
-                    potrzeby budynków energetycznie pasywnych.
-                </p>
-                <br />
-                <p>
-                    Jesteśmy jedyną partnerską instytucją Instytutu Budownictwa Pasywnego z
-                    Darmstadt (PHI) i jako jedyni w Polsce podsiadamy akredytację PHI do
-                    przeprowadzania certyfikacji budynków pasywnych na terenie Europy.
-                </p>
-                <p>
-                    Na zdjęciach: Budynek biurowy Polskiego Instytutu Budownictwa Pasywnego i
-                    Energii Odnawialnej w Gdańsku oraz kompleks 3 domów (energooszczędny 5l,
-                    niskoenergetyczny 3l, pasywny 1,5l).
-                </p>
+                <div className="about-paragraph">
+                    <p>
+                        Od 2004 roku jesteśmy niezależną polską instytucją, aktualnie działającą na
+                        zasadach non-profit. Naszym celem jest upowszechnianie wiedzy o budownictwie
+                        pasywnym, zero energetycznym, plus energetycznym oraz o kompleksowej
+                        termomodernizacji z wykorzystaniem technologii i komponentów pasywnych.
+                        Ponadto transferujemy wiedzę na temat energii odnawialnej, która z
+                        powodzeniem pokrywa potrzeby budynków energetycznie pasywnych.
+                    </p>
+                    <span>
+                        <StaticImage src="../../images/firm/budynek-biurowy-bok.png" />
+                    </span>
+                </div>
+
+                <div className="about-paragraph__orange">
+                    <span className="about-paragraph__text">
+                        <p>
+                            Jesteśmy jedyną partnerską instytucją Instytutu Budownictwa Pasywnego z
+                            Darmstadt (PHI) i jako jedyni w Polsce podsiadamy akredytację PHI do
+                            przeprowadzania certyfikacji budynków pasywnych na terenie Europy.
+                        </p>
+                        <p>
+                            Na zdjęciach: Budynek biurowy Polskiego Instytutu Budownictwa Pasywnego
+                            i Energii Odnawialnej w Gdańsku oraz kompleks 3 domów (energooszczędny
+                            5l, niskoenergetyczny 3l, pasywny 1,5l).
+                        </p>
+                    </span>
+
+                    <span className="about-paragraph__image">
+                        <p className="about-paragraph__background"></p>
+                        <StaticImage src="../../images/firm/budynek-biurowy-bok.png" className="about-paragraph__img-src" />
+                    </span>
+                </div>
                 <p>
                     Naszym celem jest możliwie szeroka popularyzacja wiedzy na temat budownictwa
                     pasywnego. Pragniemy stale poszerzać krąg sympatyków idei budownictwa pasywnego.
