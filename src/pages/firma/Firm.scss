@@ -1,48 +1,116 @@
 @import '../../App.scss';
 
+.layout-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .about-paragraph {
     display: flex;
-    padding: 5% 15%;
+    padding: 5%;
     align-items: center;
+    justify-content: center;
 
     & p {
-        width: 70%;
-        padding: 10px 40px 20px;
+        width: 40%;
         letter-spacing: 2px;
         text-indent: 20px;
-        text-align: justify;
-        line-height: 20px;
-        font-weight: 450
-    };
+        line-height: 26px;
+        font-weight: 450;
+        font-size: 18px;
+    }
 
     &__orange {
         display: flex;
-        padding: 5%;
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 2%;
         background-color: $color-orange;
+        border-radius: 60px;
+        margin-bottom: 5%;
+        width: 90%;
     }
 
-    &__image {
-        height: 300px;
-        background-color: $color-navy;
+    &__blue {
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
-        position: relative;
+        width: 80%;
+        padding: 5%;
+        background-color: $color-navy;
+        border-radius: 60px;
+        margin: 5%;
 
-        & img {
-            width: 420px;
-            height: 400px;
-            position: absolute;
-            top: 50px;
-            left: 30px;
+        & p {
+            letter-spacing: 2px;
+            line-height: 26px;
+            font-weight: 450;
+            font-size: 18px;
+            padding: 0 5%;
+            color: $color-cream;
+            text-align: center;
         }
     }
 
     &__text {
-        width: 30%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
 
         & p {
-            margin: 15%;
+            letter-spacing: 2px;
+            line-height: 26px;
+            font-weight: 450;
+            font-size: 18px;
+            padding: 0 10%;
+        }
+    }
+
+    &__icons {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &--row {
+            display: flex;
+            justify-content: center;
+
+            @media (max-width: 768px) {
+                flex-direction: column;
+            }
+        }
+
+        &--single-icon {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            flex: 0.25;
+
+            & p {
+                margin: 10%;
+                text-align: center;
+                font-size: 16px;
+                font-weight: 450;
+            }
+        }
+    }
+
+    &__border {
+        border-top: white 3px solid;
+        box-shadow: 0 0 20px white;
+        width: 80%;
+        margin-bottom: 5%;
+
+        &--short {
+            width: 30%;
+            border-top: white 3px solid;
+            box-shadow: 0 0 20px white;
+            margin-bottom: 5%;
         }
     }
 }
