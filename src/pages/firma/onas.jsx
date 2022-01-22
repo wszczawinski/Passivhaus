@@ -40,8 +40,7 @@ export default function About() {
                             i Energii Odnawialnej w Gdańsku oraz kompleks 3 domów (energooszczędny
                             5l, niskoenergetyczny 3l, pasywny 1,5l).
                         </p>
-
-                        <StaticImage src="../../images/firm/o-nas.svg" />
+                        <StaticImage src="../../images/firm/o-nas-2.svg" />
                         <span className="about-paragraph__border--short"></span>
                         <p>
                             Naszym celem jest możliwie szeroka popularyzacja wiedzy na temat
