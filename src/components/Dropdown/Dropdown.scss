@@ -1,0 +1,17 @@
+@import '../../App.scss';
+
+.dropdown {
+    position: absolute;
+    top: 45px;
+    background: $color-cookie;
+    padding: 25%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    transform: translateX(-15%);
+
+    & a {
+        margin: 10% 0;
+    }
+}

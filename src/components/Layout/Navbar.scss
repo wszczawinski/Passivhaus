@@ -21,8 +21,7 @@
         position: absolute;
         top: 75%;
         font-size: 15px;
-        height: 16vh;
-
+        
         &__hamburger {
             display: none;
         }
@@ -48,6 +47,7 @@
         @media (min-width: $break-point-desktop) {
             display: flex;
             justify-content: center;
+            align-items: center;
             text-align: center;
             flex-grow: 2;
             flex-wrap: wrap;

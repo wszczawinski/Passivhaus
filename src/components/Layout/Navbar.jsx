@@ -6,6 +6,8 @@ import './Navbar.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
+import Dropdown from '../Dropdown/Dropdown';
+import NavbarItem from './NavbarItem';
 
 export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
@@ -25,20 +27,19 @@ export default function Navbar() {
             )}
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
                 <li>
-                    <Link to="/" onClick={changeNavVisibility}>
-                        Home
-                    </Link>
+                <Link to='/' onClick={changeNavVisibility}>Home</Link>
                 </li>
-                <li>
-                    <Link to="/firma" onClick={changeNavVisibility}>
-                        Firma
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/budynek-pasywny" onClick={changeNavVisibility}>
-                        Budynek pasywny
-                    </Link>
-                </li>
+                
+                <NavbarItem item='Firma'>
+                    <Dropdown
+                        subNavItems={[
+                            { linkTo: '/firma/onas', name: 'O nas' },
+                            { linkTo: '/firma/partnerzy', name: 'Partnerzy' },
+                            { linkTo: '/firma/kontakt', name: 'Kontakt' },
+                        ]}
+                        changeVisibility={changeNavVisibility}
+                    />
+                </NavbarItem>
                 <li>
                     <Link to="/certyfikacja" onClick={changeNavVisibility}>
                         Certyfikacja
