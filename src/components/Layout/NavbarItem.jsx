@@ -6,17 +6,25 @@ import { Button } from '../';
 
 import './NavbarItem.scss';
 
-const NavbarItem = ({ item, subNavItems, changeVisibility }) => {
-    const [open, setOpen] = useState(false);
+const NavbarItem = ({ item, subNavItems, changeVisibility, showItem, setShowItem }) => {
+    const [open, setOpen] = useState(showItem === item)
 
-    const handleClick = () => setOpen(!open);
+    const handleClick = (e) => {
+        console.log(e)
+        setOpen(!open)
+        if (showItem === item) {
+            setShowItem(null);
+          } else {
+            setShowItem(item);
+          }
+    }
     const handleClose = () => setOpen(false);
 
     return (
         <li className="navbar-item">
             <div onClick={handleClick}>{item}</div>
 
-            {open && (
+            {showItem === item && (
                 <div className="dropdown">
                     <Button
                         className={'btn__white dropdown__back-button'}

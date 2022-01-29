@@ -18,6 +18,8 @@ import {
 
 export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
+    const [showItem, setShowItem] = useState(null);
+
     const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 
     let changeNavVisibility = () => {
@@ -43,26 +45,43 @@ export default function Navbar() {
                     item="Instytut"
                     subNavItems={firmDropdownItems}
                     changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
+                <NavbarItem
+                    item="Budynek pasywny"
+                    subNavItems={passivhausDropdownItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Certyfikacja"
                     subNavItems={certificationDropdownItems}
                     changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Szkolenia"
                     subNavItems={workshopsDropdownItems}
                     changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Literatura i narzedzia"
                     subNavItems={literatureDropdownItems}
                     changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Ambasador Budownictwa Pasywnego"
                     subNavItems={ambassadorDropdownItems}
                     changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
                 />
                 <li>
                     <Button
