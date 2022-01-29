@@ -4,10 +4,17 @@ import { Button } from '../';
 import './Navbar.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
-import Dropdown from '../Dropdown/Dropdown';
 import NavbarItem from './NavbarItem';
+import {
+    certificationDropdownItems,
+    firmDropdownItems,
+    ambassadorDropdownItems,
+    workshopsDropdownItems,
+    passivhausDropdownItems,
+    literatureDropdownItems,
+} from '../../constants/subNavItems';
 
 export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
@@ -26,41 +33,37 @@ export default function Navbar() {
                 <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
             )}
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
-                <li>
-                <Link to='/' onClick={changeNavVisibility}>Home</Link>
-                </li>
-                
-                <NavbarItem item='Firma'>
-                    <Dropdown
-                        subNavItems={[
-                            { linkTo: '/firma/onas', name: 'O nas' },
-                            { linkTo: '/firma/partnerzy', name: 'Partnerzy' },
-                            { linkTo: '/firma/kontakt', name: 'Kontakt' },
-                        ]}
-                        changeVisibility={changeNavVisibility}
-                    />
-                </NavbarItem>
-                <li>
-                    <Link to="/certyfikacja" onClick={changeNavVisibility}>
-                        Certyfikacja
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/szkolenia" onClick={changeNavVisibility}>
-                        Szkolenia
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/literatura" onClick={changeNavVisibility}>
-                        Literatura i narzędzia
+                <li className="navbar__home">
+                    <Link to="/" onClick={changeNavVisibility}>
+                        <FontAwesomeIcon icon={faHome} />
                     </Link>
                 </li>
 
-                <li>
-                    <Link to="/ambasador" onClick={changeNavVisibility}>
-                        Ambasador Budownictwa Pasywnego
-                    </Link>
-                </li>
+                <NavbarItem
+                    item="Instytut"
+                    subNavItems={firmDropdownItems}
+                    changeVisibility={changeNavVisibility}
+                />
+                <NavbarItem
+                    item="Certyfikacja"
+                    subNavItems={certificationDropdownItems}
+                    changeVisibility={changeNavVisibility}
+                />
+                <NavbarItem
+                    item="Szkolenia"
+                    subNavItems={workshopsDropdownItems}
+                    changeVisibility={changeNavVisibility}
+                />
+                <NavbarItem
+                    item="Literatura i narzedzia"
+                    subNavItems={literatureDropdownItems}
+                    changeVisibility={changeNavVisibility}
+                />
+                <NavbarItem
+                    item="Ambasador Budownictwa Pasywnego"
+                    subNavItems={ambassadorDropdownItems}
+                    changeVisibility={changeNavVisibility}
+                />
                 <li>
                     <Button
                         className={'btn__mini btn__white navbar__hamburger'}
