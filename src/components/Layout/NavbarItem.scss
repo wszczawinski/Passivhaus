@@ -1,16 +1,19 @@
 @import '../../App.scss';
 
 .dropdown {
-    width: 100%;
+    width: 100vw;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    justify-content: center;
     background: black;
-    position: absolute;
+    position: fixed;
     top: 0;
+    left: 0;
     color: white;
     z-index: 1;
+    padding: 10%;
 
     & a {
         margin: 5% 0;
@@ -23,21 +26,20 @@
         padding: 0;
 
         & span {
-           display: flex;
-           align-items: center;
-           flex-wrap: nowrap;
-           width: 100vw;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100vw;
 
             & p {
                 margin-left: 3%;
             }
         }
     }
-        
 
     @media (min-width: $break-point-desktop) {
         position: absolute;
-        top: 50px;
+        top: 95%;
         transform: translateX(-10%);
         background: $color-cookie;
         padding: 20px;
@@ -59,8 +61,7 @@
     }
 }
 
-
 .navbar-item {
     position: relative;
-    color: white
+    color: white;
 }

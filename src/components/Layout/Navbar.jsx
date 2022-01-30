@@ -35,10 +35,15 @@ export default function Navbar() {
                 <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
             )}
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
-                <li className="navbar__home">
+                <li className="navbar__header">
                     <Link to="/" onClick={changeNavVisibility}>
                         <FontAwesomeIcon icon={faHome} />
                     </Link>
+                    <Button
+                        className={'btn__mini btn__white navbar__hamburger'}
+                        textContent={<FontAwesomeIcon icon={faTimes} />}
+                        onClick={changeNavVisibility}
+                    />
                 </li>
 
                 <NavbarItem
@@ -83,13 +88,6 @@ export default function Navbar() {
                     showItem={showItem}
                     setShowItem={setShowItem}
                 />
-                <li>
-                    <Button
-                        className={'btn__mini btn__white navbar__hamburger'}
-                        textContent={<FontAwesomeIcon icon={faTimes} />}
-                        onClick={changeNavVisibility}
-                    />
-                </li>
             </ul>
             <Button
                 className={'btn__mini btn__black navbar__hamburger'}
