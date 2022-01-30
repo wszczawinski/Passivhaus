@@ -1,6 +1,5 @@
 import React from 'react';
-import { SubpageNavbar, Layout } from '../../components';
-import { certificationNavItems } from '../../constants/subNavItems';
+import { Layout } from '../../components';
 import heroCertification from '../../images/heroImages/hero_certification.png';
 import { heroText } from '../../constants/heroContent';
 
@@ -11,7 +10,6 @@ export default function Komponentow() {
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={certificationNavItems} />
             <section className="layout-content">
                 <h2>Korzyści Certyfikacji Komponentów do Budownictwa Pasywnego</h2>
                 <p>

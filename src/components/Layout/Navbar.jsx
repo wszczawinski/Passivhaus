@@ -8,12 +8,12 @@ import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
 import NavbarItem from './NavbarItem';
 import {
-    certificationDropdownItems,
-    firmDropdownItems,
-    ambassadorDropdownItems,
-    workshopsDropdownItems,
-    passivhausDropdownItems,
-    literatureDropdownItems,
+    certificationNavItems,
+    firmNavItems,
+    ambassadorNavItems,
+    workshopsNavItems,
+    passivhausNavItems,
+    literatureNavItems,
 } from '../../constants/subNavItems';
 
 export default function Navbar() {
@@ -48,42 +48,42 @@ export default function Navbar() {
 
                 <NavbarItem
                     item="Instytut"
-                    subNavItems={firmDropdownItems}
+                    subNavItems={firmNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                     setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Budynek pasywny"
-                    subNavItems={passivhausDropdownItems}
+                    subNavItems={passivhausNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                     setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Certyfikacja"
-                    subNavItems={certificationDropdownItems}
+                    subNavItems={certificationNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                     setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Szkolenia"
-                    subNavItems={workshopsDropdownItems}
+                    subNavItems={workshopsNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                     setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Literatura i narzedzia"
-                    subNavItems={literatureDropdownItems}
+                    subNavItems={literatureNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                     setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Ambasador Budownictwa Pasywnego"
-                    subNavItems={ambassadorDropdownItems}
+                    subNavItems={ambassadorNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                     setShowItem={setShowItem}

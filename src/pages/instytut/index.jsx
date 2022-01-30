@@ -1,19 +1,17 @@
 import React from 'react';
-import { Button, SubpageNavbar, Layout } from '../../components';
-import { firmNavItems } from '../../constants/subNavItems';
+import { Button, Layout } from '../../components';
 import heroFirmImage from '../../images/heroImages/hero_firma.png';
 import { heroText } from '../../constants/heroContent';
 
 import './Firm.scss';
 
-export default function Firm() {
+export default function Instytut() {
     return (
         <Layout
             heroTextContent={heroText.firmText}
             heroBackgroundImage={heroFirmImage}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
                 <h2>Firma</h2>
                 <p>

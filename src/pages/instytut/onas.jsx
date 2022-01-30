@@ -1,7 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Announcements, SubpageNavbar, Layout } from '../../components';
-import { firmNavItems } from '../../constants/subNavItems';
+import { Announcements, Layout } from '../../components';
 
 import './Firm.scss';
 
@@ -9,7 +8,6 @@ export default function About() {
     return (
         <Layout>
             <Announcements />
-            <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
                 <div className="about-paragraph">
                     <p>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { SubpageNavbar, Layout } from '../../components';
-import { certificationNavItems } from '../../constants/subNavItems';
+import { Layout } from '../../components';
 import heroCertification from '../../images/heroImages/hero_certification.png';
 import { heroText } from '../../constants/heroContent';
 
@@ -11,7 +10,6 @@ export default function Wykonawcy() {
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={certificationNavItems} />
             <section className="layout-content">
                 <h2>Lista certyfikowanych wykonawców - CEPHT</h2>
                 <strong>Certyfikowany Mistrz Wykonawca Budownictwa Pasywnego</strong>
