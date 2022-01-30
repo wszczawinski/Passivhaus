@@ -43,7 +43,7 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem, setShowItem
                         onClick={handleClose}
                     />
                     {subNavItems.map(item => (
-                        <Link to={item.linkTo} onClick={changeVisibility}>
+                        <Link key={item.name} to={item.linkTo} onClick={changeVisibility}>
                             {item.name}
                         </Link>
                     ))}
