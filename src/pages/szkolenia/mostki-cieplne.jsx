@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, SubpageNavbar, Layout } from '../../components';
-import { workshopsNavItems } from '../../constants/subNavItems';
+import { Button, Layout } from '../../components';
 import heroWorkshops from '../../images/heroImages/hero_workshops.png';
 import { heroText } from '../../constants/heroContent';
 
@@ -13,7 +12,6 @@ export default function MostkiCieplne() {
             heroBackgroundImage={heroWorkshops}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={workshopsNavItems} />
             <section className="layout-content">
                 <h2>Mostki</h2>
                 <p>

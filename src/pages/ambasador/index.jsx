@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, SubpageNavbar, Layout } from '../../components';
-import { ambassadorNavItems } from '../../constants/subNavItems';
+import { Button, Layout } from '../../components';
 import heroAmbassador from '../../images/heroImages/hero_ambassador.png';
 import { heroText } from '../../constants/heroContent';
 
@@ -13,7 +12,6 @@ export default function Ambassador() {
             heroBackgroundImage={heroAmbassador}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={ambassadorNavItems} />
             <section className="layout-content">
                 <h2>Ambasador</h2>
                 <p>

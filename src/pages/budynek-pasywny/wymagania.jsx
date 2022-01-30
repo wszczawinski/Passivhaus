@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, SubpageNavbar, Layout } from '../../components';
-import { passivhausNavItems } from '../../constants/subNavItems';
+import { Button, Layout } from '../../components';
 import heroPassivhaus from '../../images/heroImages/hero_passivhaus.png';
 import { heroText } from '../../constants/heroContent';
 
@@ -13,11 +12,8 @@ export default function Wymagania() {
             heroBackgroundImage={heroPassivhaus}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={passivhausNavItems} />
             <section className="layout-content">
-                <h2>Wymagania
-                    
-                </h2>
+                <h2>Wymagania</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
                     nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias

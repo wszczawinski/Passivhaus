@@ -1,5 +1,4 @@
 export const firmNavItems = [
-    { name: 'Aktualności', path: '/firma' },
     { name: 'O nas', path: '/firma/onas' },
     { name: 'Partnerzy', path: '/firma/partnerzy' },
     { name: 'Kontakt', path: '/firma/kontakt' },
@@ -12,13 +11,13 @@ export const ambassadorNavItems = [
 ];
 
 export const certificationNavItems = [
-    { name: 'Certyfikacja budynkow', path: '/certyfikacja/budynkow' },
+    { name: 'Certyfikacja budynków', path: '/certyfikacja/budynkow' },
     { name: 'Certyfikacja komponentów', path: '/certyfikacja/komponentow' },
-    { name: 'Lista certyfikowanych budynkow', path: '/certyfikacja/lista-budynkow' },
+    { name: 'Lista certyfikowanych budynków', path: '/certyfikacja/lista-budynkow' },
     { name: 'Lista certyfikowanych projektantow', path: '/certyfikacja/projektanci' },
     { name: 'Lista certyfikowanych wykonawców', path: '/certyfikacja/wykonawcy' },
     { name: 'Lista akredytowanych weryfikatorów', path: '/certyfikacja/weryfikatorzy' },
-    { name: 'Certfikacja - galeria', path: '/certyfikacja' },
+    { name: 'Galeria', path: '/certyfikacja' },
 ];
 
 export const literatureNavItems = [

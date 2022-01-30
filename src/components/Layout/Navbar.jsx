@@ -4,11 +4,22 @@ import { Button } from '../';
 import './Navbar.scss';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons';
 import pibpLogo from '../../images/pibpLogo.png';
+import NavbarItem from './NavbarItem';
+import {
+    certificationNavItems,
+    firmNavItems,
+    ambassadorNavItems,
+    workshopsNavItems,
+    passivhausNavItems,
+    literatureNavItems,
+} from '../../constants/subNavItems';
 
 export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
+    const [showItem, setShowItem] = useState(null);
+
     const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 
     let changeNavVisibility = () => {
@@ -24,49 +35,59 @@ export default function Navbar() {
                 <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
             )}
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
-                <li>
+                <li className="navbar__header">
                     <Link to="/" onClick={changeNavVisibility}>
-                        Home
+                        <FontAwesomeIcon icon={faHome} />
                     </Link>
-                </li>
-                <li>
-                    <Link to="/firma" onClick={changeNavVisibility}>
-                        Firma
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/budynek-pasywny" onClick={changeNavVisibility}>
-                        Budynek pasywny
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/certyfikacja" onClick={changeNavVisibility}>
-                        Certyfikacja
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/szkolenia" onClick={changeNavVisibility}>
-                        Szkolenia
-                    </Link>
-                </li>
-                <li>
-                    <Link to="/literatura" onClick={changeNavVisibility}>
-                        Literatura i narzędzia
-                    </Link>
-                </li>
-
-                <li>
-                    <Link to="/ambasador" onClick={changeNavVisibility}>
-                        Ambasador Budownictwa Pasywnego
-                    </Link>
-                </li>
-                <li>
                     <Button
                         className={'btn__mini btn__white navbar__hamburger'}
                         textContent={<FontAwesomeIcon icon={faTimes} />}
                         onClick={changeNavVisibility}
                     />
                 </li>
+
+                <NavbarItem
+                    item="Instytut"
+                    subNavItems={firmNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
+                <NavbarItem
+                    item="Budynek pasywny"
+                    subNavItems={passivhausNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
+                <NavbarItem
+                    item="Certyfikacja"
+                    subNavItems={certificationNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
+                <NavbarItem
+                    item="Szkolenia"
+                    subNavItems={workshopsNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
+                <NavbarItem
+                    item="Literatura i narzedzia"
+                    subNavItems={literatureNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
+                <NavbarItem
+                    item="Ambasador Budownictwa Pasywnego"
+                    subNavItems={ambassadorNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                    setShowItem={setShowItem}
+                />
             </ul>
             <Button
                 className={'btn__mini btn__black navbar__hamburger'}

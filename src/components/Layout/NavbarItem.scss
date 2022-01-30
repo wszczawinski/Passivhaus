@@ -1,0 +1,67 @@
+@import '../../App.scss';
+
+.dropdown {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    color: white;
+    z-index: 1;
+    padding: 10%;
+
+    & a {
+        margin: 5% 0;
+        font-size: 20px;
+        text-align: start;
+    }
+
+    &__back-button {
+        font-size: 20px;
+        padding: 0;
+
+        & span {
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            width: 100vw;
+
+            & p {
+                margin-left: 3%;
+            }
+        }
+    }
+
+    @media (min-width: $break-point-desktop) {
+        position: absolute;
+        top: 95%;
+        transform: translateX(-10%);
+        background: $color-cookie;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: auto;
+
+        & a {
+            margin: 10px 0;
+            font-size: 18px;
+        }
+
+        &__back-button {
+            display: none;
+        }
+    }
+}
+
+.navbar-item {
+    position: relative;
+    color: white;
+}

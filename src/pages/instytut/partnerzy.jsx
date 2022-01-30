@@ -1,12 +1,10 @@
 import React from 'react';
-import { Announcements, SubpageNavbar, Layout } from '../../components';
-import { firmNavItems } from '../../constants/subNavItems';
+import { Announcements, Layout } from '../../components';
 
 export default function About() {
     return (
         <Layout>
             <Announcements />
-            <SubpageNavbar navElements={firmNavItems} />
             <section className="layout-content">
                 <h3>Partnerzy</h3>
                 <p>

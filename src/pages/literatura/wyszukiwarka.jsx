@@ -1,6 +1,5 @@
 import React from 'react';
-import { Button, SubpageNavbar, Layout } from '../../components';
-import { literatureNavItems } from '../../constants/subNavItems';
+import { Button, Layout } from '../../components';
 import heroLiterature from '../../images/heroImages/hero_literature.png';
 import { heroText } from '../../constants/heroContent';
 
@@ -13,7 +12,6 @@ export default function Wyszukiwarka() {
             heroBackgroundImage={heroLiterature}
             heroClass={'hero__subpage'}
         >
-            <SubpageNavbar navElements={literatureNavItems} />
             <section className="layout-content">
                 <h2>Wyszukiwarka literatury</h2>
                 <p>
