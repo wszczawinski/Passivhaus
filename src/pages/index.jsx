@@ -10,11 +10,10 @@ export default function Home({ data }) {
     const heroHomeImage = getImage(data.heroImage);
     const news = data.news.nodes;
     const events = data.events.nodes;
-    console.log(events);
-    console.log(news);
+
     return (
         <Layout heroTextContent={heroText.homeText} heroBackgroundImage={heroHomeImage}>
-            <Announcements />
+            <Announcements events={events} />
             <h1>Home Page!</h1>
             <section>
                 {news.map(element => (
