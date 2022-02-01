@@ -9,27 +9,6 @@
     margin-bottom: 5%;
     color: white;  
 
-    &__blue {
-        background-color: $color-navy;
-        width: 80%;
-        border-radius: 40px;
-
-        & p {
-            letter-spacing: 2px;
-            line-height: 26px;
-            font-weight: 450;
-            font-size: 18px;
-            color: white;
-            padding: 0 10%;
-    
-           
-    
-            & strong {
-                font-weight: 900;
-            }
-        }
-    }
-
     &__border {
         border-top: white 3px solid;
         box-shadow: 0 0 20px white;
