@@ -1,7 +1,6 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import pibpLogo from '../../images/pibpLogo.png';
 
 import './Footer.scss';
 
@@ -9,7 +8,6 @@ export default function Footer() {
     return (
         <div className="footer">
             <p className="footer__name">
-                <img src={pibpLogo} alt="logo" />
                 <span>
                     Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej Imienia Güntera
                     Schlagowskiego Sp. z o.o.
