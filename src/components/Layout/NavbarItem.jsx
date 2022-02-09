@@ -1,13 +1,23 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
 import { Button } from '../';
+import { checkActiveNavigation } from '../../helpers/checkActiveNavigation';
 
 import './NavbarItem.scss';
 
-const NavbarItem = ({ item, subNavItems, changeVisibility, showItem, setShowItem }) => {
+const NavbarItem = ({ item, subNavItems, changeVisibility, showItem }) => {
     const [open, setOpen] = useState(showItem === item);
+    const [activeItem, setActiveItem] = useState(false);
+
+    useEffect(() => {
+        checkActiveNavigation(item, setActiveItem);
+
+        return () => {
+            setActiveItem(false);
+        };
+    }, [item]);
 
     document.addEventListener('mouseup', e => {
         const container = document.getElementById(item);
@@ -18,17 +28,12 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem, setShowItem
 
     const handleClick = () => {
         setOpen(!open);
-        if (showItem === item) {
-            setShowItem(null);
-        } else {
-            setShowItem(item);
-        }
     };
     const handleClose = () => setOpen(false);
 
     return (
         <li className="navbar-item" id={item} onClick={handleClick} onKeyDown={handleClick}>
-            <div>{item}</div>
+            <div className={activeItem ? 'navbar-item__active' : ''}>{item}</div>
 
             {open && (
                 <div className="dropdown">
@@ -43,7 +48,12 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem, setShowItem
                         onClick={handleClose}
                     />
                     {subNavItems.map(item => (
-                        <Link key={item.name} to={item.path} onClick={changeVisibility}>
+                        <Link
+                            key={item.name}
+                            to={item.path}
+                            onClick={changeVisibility}
+                            activeClassName="dropdown__active-item"
+                        >
                             {item.name}
                         </Link>
                     ))}

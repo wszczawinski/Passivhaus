@@ -24,6 +24,10 @@
         }
     }
 
+    &__active-item {
+        color: $color-orange;
+    }
+
     @media (min-width: $break-point-desktop) {
         display: flex;
         justify-content: space-evenly;

@@ -37,6 +37,10 @@
         }
     }
 
+    &__active-item {
+        color: $color-rust;
+    }
+
     @media (min-width: $break-point-desktop) {
         position: absolute;
         top: 95%;
@@ -64,4 +68,8 @@
 .navbar-item {
     position: relative;
     color: white;
+
+    &__active {
+        color: $color-orange;
+    }
 }
