@@ -2,7 +2,7 @@ import React from 'react';
 import { graphql, Link } from 'gatsby';
 import { Announcements, Layout } from '../components';
 import { heroText } from '../constants/heroContent';
-import { getImage } from 'gatsby-plugin-image';
+import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 import '../App.scss';
 
@@ -10,16 +10,20 @@ export default function Home({ data }) {
     const heroHomeImage = getImage(data.heroImage);
     const news = data.news.nodes;
     const events = data.events.nodes;
-    console.log(events)
+
     return (
         <Layout heroTextContent={heroText.homeText} heroBackgroundImage={heroHomeImage}>
-            <Announcements />
+            <Announcements events={events} />
             <h1>Home Page!</h1>
             <section>
                 {news.map(element => (
-                    <Link to={'/firm/' + element.frontmatter.slug} key={element.id}>
+                    <Link to={'/blog/' + element.frontmatter.slug} key={element.id}>
                         <h3>{element.frontmatter.title}</h3>
                         <p>{element.frontmatter.date}</p>
+                        <GatsbyImage
+                            image={getImage(element.frontmatter.thumb)}
+                            alt={element.frontmatter.slug}
+                        />
                     </Link>
                 ))}
             </section>
@@ -43,6 +47,11 @@ export const pageQuery = graphql`
                     date
                     slug
                     title
+                    thumb {
+                        childImageSharp {
+                            gatsbyImageData(placeholder: BLURRED, width: 300)
+                        }
+                    }
                 }
                 id
             }

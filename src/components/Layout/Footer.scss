@@ -1,0 +1,55 @@
+@import '../../App.scss';
+
+.footer {
+    font-size: 12px;
+    background-color: $color-navy;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+
+    &__name {
+        display: flex;
+        flex-direction: column;
+        span {
+            max-width: 420px;
+        }
+    }
+
+    &__contact {
+        display: flex;
+        flex-direction: column;
+        span {
+            line-height: 1.2rem;
+        }
+        a {
+            color: white;
+        }
+    }
+
+    &__adress {
+        line-height: 1.2rem;
+    }
+
+    @media (min-width: $break-point-desktop) {
+        font-size: 14px;
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 2% 10%;
+        gap: 2%;
+
+        &__name {
+            flex-grow: 1;
+        }
+        &__contact {
+            flex-grow: 1;
+            min-width: 190px;
+        }
+
+        &__adress {
+            min-width: 280px;
+            line-height: 1.6rem;
+            flex-grow: 1;
+        }
+    }
+}
