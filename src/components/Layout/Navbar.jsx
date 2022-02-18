@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import { Button } from '../';
 import './Navbar.scss';
@@ -28,6 +28,12 @@ export default function Navbar() {
         }
     };
 
+    useEffect(() => {
+      setShowItem(null)
+    }, []);
+
+
+
     return (
         <div className="navbar">
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
@@ -36,7 +42,11 @@ export default function Navbar() {
             )}
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
                 <li className="navbar__header">
-                    <Link to="/" onClick={changeNavVisibility}>
+                    <Link
+                        to="/"
+                        onClick={changeNavVisibility}
+                        activeClassName="navbar__active-item"
+                    >
                         <FontAwesomeIcon icon={faHome} />
                     </Link>
                     <Button
@@ -51,42 +61,36 @@ export default function Navbar() {
                     subNavItems={firmNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
-                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Budynek pasywny"
                     subNavItems={passivhausNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
-                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Certyfikacja"
                     subNavItems={certificationNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
-                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Szkolenia"
                     subNavItems={workshopsNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
-                    setShowItem={setShowItem}
                 />
                 <NavbarItem
-                    item="Literatura i narzedzia"
+                    item="Literatura i narzędzia"
                     subNavItems={literatureNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
-                    setShowItem={setShowItem}
                 />
                 <NavbarItem
                     item="Ambasador Budownictwa Pasywnego"
                     subNavItems={ambassadorNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
-                    setShowItem={setShowItem}
                 />
             </ul>
             <Button

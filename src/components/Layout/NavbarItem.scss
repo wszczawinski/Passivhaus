@@ -37,10 +37,14 @@
         }
     }
 
+    &__active-item {
+        color: $color-rust;
+    }
+
     @media (min-width: $break-point-desktop) {
         position: absolute;
         top: 95%;
-        transform: translateX(-10%);
+        transform: translateX(10%);
         background: $color-cookie;
         padding: 20px;
         border-radius: 10px;
@@ -64,4 +68,8 @@
 .navbar-item {
     position: relative;
     color: white;
+
+    &__active {
+        color: $color-orange;
+    }
 }

@@ -1,0 +1,40 @@
+@import '../../App.scss';
+
+.container-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5% 2%;
+    background-color: $color-orange;
+    margin-bottom: 5%;
+    color: white;  
+
+    &__border {
+        border-top: white 3px solid;
+        box-shadow: 0 0 20px white;
+        width: 80%;
+        margin-bottom: 5%;
+
+        &--short {
+            width: 30%;
+            border-top: white 3px solid;
+            box-shadow: 0 0 20px white;
+            margin: 5%;
+        }
+    }
+
+    & p {
+        letter-spacing: 2px;
+        line-height: 26px;
+        font-weight: 450;
+        font-size: 18px;
+        color: white;
+        padding: 1% 10%;
+
+       
+
+        & strong {
+            font-weight: 900;
+        }
+    }
+}
