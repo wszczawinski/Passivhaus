@@ -1,10 +1,9 @@
 import React from 'react';
-import { Announcements, Layout } from '../../components';
+import { Layout } from '../../components';
 
 export default function About() {
     return (
         <Layout>
-            <Announcements />
             <section className="layout-content">
                 <h3>Kontact</h3>
                 <p>

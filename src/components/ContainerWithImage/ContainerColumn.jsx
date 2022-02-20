@@ -1,8 +1,7 @@
 import React from 'react';
-import './ContainerColumn.scss'
+import './ContainerColumn.scss';
 
-const ContainerColumn= ({ textStart, textEnd, imgSrc, alt, shortBorder}) => {
-
+export function ContainerColumn({ textStart, textEnd, imgSrc, alt, shortBorder }) {
     return (
         <div className="container-column">
             {textStart}
@@ -11,7 +10,4 @@ const ContainerColumn= ({ textStart, textEnd, imgSrc, alt, shortBorder}) => {
             {textEnd}
         </div>
     );
-};
-
-
-export default ContainerColumn;
+}
