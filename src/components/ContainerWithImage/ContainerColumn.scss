@@ -4,10 +4,14 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 5% 2%;
+    width: 100%;
+    padding: 5% 15%;
     background-color: $color-orange;
-    margin-bottom: 5%;
-    color: white;  
+    color: white;
+
+    @media (max-width: $break-point-desktop) {
+        padding: 5% 10%;
+    }
 
     &__border {
         border-top: white 3px solid;
@@ -23,18 +27,22 @@
         }
     }
 
-    & p {
-        letter-spacing: 2px;
+    p {
+        letter-spacing: 1px;
         line-height: 26px;
         font-weight: 450;
-        font-size: 18px;
+        font-size: $font-size-desktop;
         color: white;
-        padding: 1% 10%;
-
-       
 
         & strong {
-            font-weight: 900;
+            font-weight: 700;
         }
+
+        @media (max-width: $break-point-desktop) {
+            font-size: $font-size-mobile;
+        }
+    }
+    img {
+        width: 80%;
     }
 }

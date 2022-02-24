@@ -9,25 +9,48 @@ export default function Zespol() {
     return (
         <Layout heroTextContent={heroText.firmText} heroClass={'hero__subpage'}>
             <section className="layout-content">
-                <p>Maciej Kuzawiński - prezes PiBP </p>
-                <p>
-                    Kamil Wiśniewski - dyrektor instytutu, trener,certyfikator PIBP ::
-                    kamil.wisniewski@pibp.pl
-                </p>
-                <p>Łukasz Krzysztoń - dyrektor ds. szkoleń i rozwoju :: l.krzyszton@pibp.pl </p>
-                <p>
-                    Cezary Sankowski - kierownik akademii, certyfikator PIBP ::
-                    cezary.sankowski@pibp.pl
-                </p>
-                <p>Andrzej Górka - trener, certyfikator PIBP :: andrzej.gorka@pibp.pl </p>
-                <p>Łukasz Smól - trener, certyfikator PIBP :: lukasz.smol@pibp.pl </p>
-                <p>Tomasz Pyszczek - trener, certyfikator PIBP :: tomasz.pyszczek@pibp.pl </p>
-                <p> Marcin Stelmach - trener, certyfikator PIBP :: marcin.stelmach@pibp.pl </p>
-                <p>
-                    Sławomir Tomasz Kwiatkowski - ekspert ds. certyfikacji komponentów;
-                    s.kwiatkowski@pibp.pl
-                </p>
-                <p>Księgowość - tel. +48 (58) 524 12 00 :: h.fiuczek@pibp.pl</p>
+                <div className="team">
+                    <h3>Nasz zespół:</h3>
+                    <ul>
+                        <li>Maciej Kuzawiński - prezes PiBP </li>
+                        <li>
+                            Kamil Wiśniewski - dyrektor instytutu, trener,certyfikator PIBP ::
+                            <a href="mailto:kamil.wisniewski@pibp.pl"> kamil.wisniewski@pibp.pl</a>
+                        </li>
+                        <li>
+                            Łukasz Krzysztoń - dyrektor ds. szkoleń i rozwoju ::
+                            <a href="mailto:l.krzyszton@pibp.pl"> l.krzyszton@pibp.pl</a>
+                        </li>
+                        <li>
+                            Cezary Sankowski - kierownik akademii, certyfikator PIBP ::
+                            <a href="mailto:cezary.sankowski@pibp.pl"> cezary.sankowski@pibp.pl</a>
+                        </li>
+                        <li>
+                            Andrzej Górka - trener, certyfikator PIBP ::
+                            <a href="mailto:andrzej.gorka@pibp.pl"> andrzej.gorka@pibp.pl</a>
+                        </li>
+                        <li>
+                            Łukasz Smól - trener, certyfikator PIBP ::
+                            <a href="mailto:lukasz.smol@pibp.pl "> lukasz.smol@pibp.pl </a>
+                        </li>
+                        <li>
+                            Tomasz Pyszczek - trener, certyfikator PIBP ::
+                            <a href="mailto:tomasz.pyszczek@pibp.pl">tomasz.pyszczek@pibp.pl</a>
+                        </li>
+                        <li>
+                            Marcin Stelmach - trener, certyfikator PIBP ::
+                            <a href="mailto:marcin.stelmach@pibp.pl"> marcin.stelmach@pibp.pl</a>
+                        </li>
+                        <li>
+                            Sławomir Tomasz Kwiatkowski - ekspert ds. certyfikacji komponentów ::
+                            <a href="mailto: s.kwiatkowski@pibp.pl"> s.kwiatkowski@pibp.pl</a>
+                        </li>
+                        <li>
+                            Księgowość - tel. +48 (58) 524 12 00 ::
+                            <a href="mailto:h.fiuczek@pibp.pl"> h.fiuczek@pibp.pl</a>
+                        </li>
+                    </ul>
+                </div>
             </section>
         </Layout>
     );

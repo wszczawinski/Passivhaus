@@ -5,21 +5,30 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
-    padding: 5% 2%;
+    margin: 5% 10%;
+    padding: 5% 10%;
     background-color: $color-navy;
-    margin: 5%;
+
     color: white;
     border-radius: 40px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     line-height: 26px;
     font-weight: 450;
-    font-size: 18px;
-    padding: 5% 10%;
+    font-size: $font-size-desktop;
 
     &__border {
         border-top: white 3px solid;
         box-shadow: 0 0 20px white;
         width: 80%;
         margin-bottom: 5%;
+    }
+
+    @media (max-width: $break-point-desktop) {
+        font-size: $font-size-mobile;
+        padding: 25px;
+        border-radius: 30px;
+        width: 90%;
+        margin: 10% 5%;
+        padding: 5% 5%;
     }
 }
