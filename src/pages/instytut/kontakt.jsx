@@ -6,7 +6,7 @@ export default function About() {
         <Layout>
             <section className="layout-content">
                 <div className="team">
-                    <h3>Kontact</h3>
+                    <h3>Kontakt</h3>
                     <p>
                         Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej imienia Güntera
                         Schlagowskiego NON-PROFIT Sp. z o.o.

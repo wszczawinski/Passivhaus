@@ -1,7 +1,9 @@
 import React from 'react';
 import { Layout, ContainerColumn, ContainerBlue } from '../../components';
+import FullImageContainer from '../../components/ContainerWithImage/FullImageContainer';
 
-import oNas2 from '../../images/firm/o-nas-2.svg';
+import Partnerstwo from '../../images/firm/partnership.svg';
+import Konferencja from '../../images/firm/conference.svg';
 
 export default function About() {
     return (
@@ -77,10 +79,12 @@ export default function About() {
                             </p>
                         </>
                     }
-                    imgSrc={oNas2}
+                    imgSrc={Partnerstwo}
                     alt="Kompleks trzech domów energooszczędnych obok Instytutu"
                     shortBorder
                 />
+
+                <FullImageContainer image={Konferencja} />
 
                 <ContainerBlue
                     text={
