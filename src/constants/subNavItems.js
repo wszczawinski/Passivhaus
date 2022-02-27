@@ -2,6 +2,7 @@ export const firmNavItems = [
     { name: 'O nas', path: '/instytut' },
     { name: 'Partnerzy', path: '/instytut/partnerzy' },
     { name: 'Kontakt', path: '/instytut/kontakt' },
+    { name: 'Zespół', path: '/instytut/zespol' },
 ];
 
 export const ambassadorNavItems = [
@@ -17,7 +18,6 @@ export const certificationNavItems = [
     { name: 'Lista certyfikowanych projektantow', path: '/certyfikacja/projektanci' },
     { name: 'Lista certyfikowanych wykonawców', path: '/certyfikacja/wykonawcy' },
     { name: 'Lista akredytowanych weryfikatorów', path: '/certyfikacja/weryfikatorzy' },
-    
 ];
 
 export const literatureNavItems = [

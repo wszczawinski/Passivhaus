@@ -1,9 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-import { Layout } from '../../components';
-import ContainerRow from '../../components/ContainerWithImage/ContainerRow';
-import ContainerColumn from '../../components/ContainerWithImage/ContainerColumn';
-import ContainerBlue from '../../components/ContainerWithImage/ContainerBlue';
+import { Layout, ContainerRow, ContainerColumn, ContainerBlue } from '../../components';
 import oNas1 from '../../images/firm/o-nas-1.svg';
 import oNas2 from '../../images/firm/o-nas-2.svg';
 import leaf from '../../images/firm/icons/leaf.svg';
@@ -13,8 +10,7 @@ import './Firm.scss';
 
 export default function About() {
     return (
-        <Layout heroTextContent={heroText.firmText}
-        heroClass={'hero__subpage'}>
+        <Layout heroTextContent={heroText.firmText} heroClass={'hero__subpage'}>
             <section className="layout-content">
                 <ContainerRow
                     text={
@@ -148,22 +144,21 @@ export default function About() {
                 <ContainerBlue
                     text={
                         <>
-                        <p>
-                            Naszym głównym celem jest popularyzacja i transfer wiedzy z zakresu
-                            budownictwa pasywnego oraz szerokie promowanie tego standardu.
-                            Organizujemy konferencje, fora i spotkania dające możliwość wymiany
-                            doświadczeń, pogłębienia wiedzy oraz nawiązania nowych kontaktów.
-                            Przygotowujemy i opracowujemy materiały szkoleniowo - dydaktyczne (dla
-                            doskonalenia zawodowego) i informacyjne dla projektantów budynków
-                            pasywnych oraz wykonawców takich budynków. Chętnie wspieramy ambitne
-                            wydarzenia, takie jak międzynarodowe i lokalne targi budowlane, ponieważ
-                            poprawa efektywności energetycznej naszego kraju jest w największej
-                            mierze uzależniona od poziomu świadomości społeczeństwa polskiego.
-                            
-                        </p>
-                        <img src={leaf} alt="Liść" />
+                            <p>
+                                Naszym głównym celem jest popularyzacja i transfer wiedzy z zakresu
+                                budownictwa pasywnego oraz szerokie promowanie tego standardu.
+                                Organizujemy konferencje, fora i spotkania dające możliwość wymiany
+                                doświadczeń, pogłębienia wiedzy oraz nawiązania nowych kontaktów.
+                                Przygotowujemy i opracowujemy materiały szkoleniowo - dydaktyczne
+                                (dla doskonalenia zawodowego) i informacyjne dla projektantów
+                                budynków pasywnych oraz wykonawców takich budynków. Chętnie
+                                wspieramy ambitne wydarzenia, takie jak międzynarodowe i lokalne
+                                targi budowlane, ponieważ poprawa efektywności energetycznej naszego
+                                kraju jest w największej mierze uzależniona od poziomu świadomości
+                                społeczeństwa polskiego.
+                            </p>
+                            <img src={leaf} alt="Liść" />
                         </>
-                        
                     }
                     border
                 />

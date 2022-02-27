@@ -1,7 +1,7 @@
 import React from 'react';
-import './ContainerBlue.scss'
+import './ContainerBlue.scss';
 
-function ContainerBlue({ text, border }) {
+export function ContainerBlue({ text, border }) {
     return (
         <div className="container-blue">
             {border && <span className="container-blue__border"></span>}
@@ -9,5 +9,3 @@ function ContainerBlue({ text, border }) {
         </div>
     );
 }
-
-export default ContainerBlue;
