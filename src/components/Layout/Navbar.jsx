@@ -19,6 +19,7 @@ import {
 export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
     const [showItem, setShowItem] = useState(null);
+    const [stickyClass, setStickyClass] = useState('');
 
     const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 
@@ -29,13 +30,21 @@ export default function Navbar() {
     };
 
     useEffect(() => {
-      setShowItem(null)
+        setShowItem(null);
+        window.addEventListener('scroll', stickNavbar);
     }, []);
 
+    const stickNavbar = () => {
+        if (window !== undefined) {
+            let navbar = document.getElementsByClassName('navbar')[0];
+            let sticky = navbar.offsetTop;
 
+            window.pageYOffset > sticky ? setStickyClass('sticky') : setStickyClass('');
+        }
+    };
 
     return (
-        <div className="navbar">
+        <div className={`navbar ${stickyClass}`}>
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
             {!desktopView && (
                 <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>

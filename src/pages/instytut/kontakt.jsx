@@ -1,9 +1,15 @@
 import React from 'react';
 import { Layout } from '../../components';
+import { heroText } from '../../constants/heroContent';
+import heroImage from '../../images/heroImages/hero_firma.svg';
 
 export default function About() {
     return (
-        <Layout>
+        <Layout
+            heroTextContent={heroText.firmText}
+            heroClass={'hero__subpage'}
+            heroBackgroundImage={heroImage}
+        >
             <section className="layout-content">
                 <div className="team">
                     <h3>Kontakt</h3>

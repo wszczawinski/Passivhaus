@@ -1,15 +1,14 @@
 import React from 'react';
 import heroFigure from '../../images/heroFigure.svg';
-import { GatsbyImage } from 'gatsby-plugin-image';
 
 import './Hero.scss';
 
 export default function Hero({ heroClass = '', text, backgroundImage }) {
     return (
         <section className={`hero ${heroClass}`}>
-            <GatsbyImage
-                image={backgroundImage}
+            <div
                 className="hero__background-image"
+                style={{ backgroundImage: `url(${backgroundImage})` }}
                 alt="hero-background-image"
             />
             <img src={heroFigure} className="hero__figure" alt="hero-figure" />
