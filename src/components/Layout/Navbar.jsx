@@ -32,6 +32,7 @@ export default function Navbar() {
     useEffect(() => {
         setShowItem(null);
         window.addEventListener('scroll', stickNavbar);
+        stickNavbar()
     }, []);
 
     const stickNavbar = () => {
