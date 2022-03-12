@@ -3,8 +3,7 @@ import { Link } from 'gatsby';
 import { Button } from '../';
 import './Navbar.scss';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars, faHome, faTimes } from '@fortawesome/free-solid-svg-icons';
+import { FaBars, FaHome, FaTimes } from 'react-icons/fa';
 import pibpLogo from '../../images/pibpLogo.png';
 import NavbarItem from './NavbarItem';
 import {
@@ -53,11 +52,11 @@ export default function Navbar() {
                         onClick={changeNavVisibility}
                         activeClassName="navbar__active-item"
                     >
-                        <FontAwesomeIcon icon={faHome} />
+                        <FaHome />
                     </Link>
                     <Button
                         className={'btn__mini btn__white navbar__hamburger'}
-                        textContent={<FontAwesomeIcon icon={faTimes} />}
+                        textContent={<FaTimes />}
                         onClick={changeNavVisibility}
                     />
                 </li>
@@ -101,7 +100,7 @@ export default function Navbar() {
             </ul>
             <Button
                 className={'btn__mini btn__black navbar__hamburger'}
-                textContent={<FontAwesomeIcon icon={faBars} />}
+                textContent={<FaBars />}
                 onClick={changeNavVisibility}
             />
         </div>

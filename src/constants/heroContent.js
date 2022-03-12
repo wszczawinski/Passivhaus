@@ -1,13 +1,34 @@
 import React from 'react';
+import { BsArrowReturnRight } from 'react-icons/bs';
+
 export const heroText = {
-    homeText: (
+    home: (
         <p>
             ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br /> <u>AKTYWNIE</u>
         </p>
     ),
-    firmText: (
+    instytutOnas: (
         <p>
-           INSTYTUT
+            Instytut <br />
+            <BsArrowReturnRight /> O nas
+        </p>
+    ),
+    instytutKontakt: (
+        <p>
+            Instytut <br />
+            <BsArrowReturnRight /> Kontakt
+        </p>
+    ),
+    instytutPartnerzy: (
+        <p>
+            Instytut <br />
+            <BsArrowReturnRight /> Partnerzy
+        </p>
+    ),
+    instytutZespół: (
+        <p>
+            Instytut <br />
+            <BsArrowReturnRight /> Zespół
         </p>
     ),
     passivhausText: <p>BUDYNEK PASYWNY</p>,

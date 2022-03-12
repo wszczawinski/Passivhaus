@@ -82,7 +82,7 @@
             }
         }
     }
-    @media (min-width: $break-point-desktop) {
+    @media (max-width: $break-point-desktop) {
         &__visible {
             position: fixed;
             top: 0;

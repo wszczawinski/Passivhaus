@@ -12,7 +12,7 @@ export default function Home({ data }) {
     const events = data.events.nodes;
 
     return (
-        <Layout heroTextContent={heroText.homeText} heroBackgroundImage={heroImage}>
+        <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <Announcements events={events} />
             <h1>Home Page!</h1>
             <section>

@@ -1,6 +1,5 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPhone, faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { FaPhone, FaEnvelope } from 'react-icons/fa';
 
 import './Footer.scss';
 
@@ -15,11 +14,11 @@ export default function Footer() {
             </p>
             <p className="footer__contact">
                 <span>
-                    <FontAwesomeIcon icon={faEnvelope} />
+                    <FaEnvelope />
                     <a href="mailto:pibp@pibp.pl"> pibp@pibp.pl</a>
                 </span>
                 <span>
-                    <FontAwesomeIcon icon={faPhone} />
+                    <FaPhone />
                     <a href="tel:+48585241200"> (0048) 58 524 12 00</a>
                 </span>
 

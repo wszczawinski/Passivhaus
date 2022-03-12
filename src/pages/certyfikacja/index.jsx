@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Layout, ContainerColumn } from '../../components';
+import { Layout, ContainerColumn } from '../../components';
 import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 import Standard from '../../images/certyfikacja/standard.svg';
@@ -16,7 +16,7 @@ export default function Certification() {
             <section className="layout-content">
                 <ContainerColumn
                     textStart={
-                        <p className='certificate__main'>
+                        <p className="certificate__main">
                             Certyfikacja budynków pasywnych zapewnia, że wysokie wymagania
                             jakościowe standardów budownictwa pasywnego są spełnione. Ale nie tylko
                             budynki mogą otrzymać certyfikat od Instytutu Budownictwa Pasywnego, ale

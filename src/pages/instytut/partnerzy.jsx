@@ -10,12 +10,11 @@ import Konferencja from '../../images/firm/conference.svg';
 export default function About() {
     return (
         <Layout
-            heroTextContent={heroText.firmText}
+            heroTextContent={heroText.instytutPartnerzy}
             heroClass={'hero__subpage'}
             heroBackgroundImage={heroImage}
         >
             <section className="layout-content">
-                <h3>Partnerzy</h3>
                 <ContainerBlue
                     text={
                         <>

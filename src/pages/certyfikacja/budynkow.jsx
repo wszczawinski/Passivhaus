@@ -66,7 +66,7 @@ export default function Budynkow() {
                                 tutaj jest planowanie, ponieważ tylko praktycznie zorientowane
                                 planowanie może być przekształcone w dobrze funkcjonujący budynek.
                                 Szczelność, brak mostków termicznych, wysokiej jakości okna i ich
-                                instalacja, system wentylacyjny oraz inne usługi budowlane –
+                                instalacja, system wentylacyjny oraz inne usługi budowlane -
                                 wszystko to musi być planowane i koordynowane ze sobą w
                                 ukierunkowanym podejścia (wśród ekspertów jest to znane jako
                                 integralne planowanie).
@@ -114,25 +114,25 @@ export default function Budynkow() {
                             </strong>
                             <ul>
                                 <li>
-                                    <img src={ksiazki} />
+                                    <img src={ksiazki} alt="ksiazki" />
                                     Projektant może polegać na wiedzy zebranej wraz z wieloletnim
                                     doświadczeniem wykwalifikowanej osoby certyfikującej, ułatwiając
                                     tym samym proces planowania.
                                 </li>
                                 <li>
-                                    <img src={idea} />W procesie certyfikacji, projektant otrzymuje
-                                    cenne wskazówki, w jaki sposób można poprawić jakość i jak można
-                                    uprościć rozwiązania i realizować je w lepszy i bardziej
-                                    opłacalny sposób.
+                                    <img src={idea} alt="idea" />W procesie certyfikacji, projektant
+                                    otrzymuje cenne wskazówki, w jaki sposób można poprawić jakość i
+                                    jak można uprościć rozwiązania i realizować je w lepszy i
+                                    bardziej opłacalny sposób.
                                 </li>
                                 <li>
-                                    <img src={check} />Z certyfikatem wydanym przez Instytut
-                                    Budownictwa pasywnego właściciel budynku może być pewien, że
-                                    jego / jej budynek w końcu stał się budynkiem pasywnym, a
-                                    inwestycja w wyższą jakość komponentów zwraca się.
+                                    <img src={check} alt="check" />Z certyfikatem wydanym przez
+                                    Instytut Budownictwa pasywnego właściciel budynku może być
+                                    pewien, że jego / jej budynek w końcu stał się budynkiem
+                                    pasywnym, a inwestycja w wyższą jakość komponentów zwraca się.
                                 </li>
                                 <li>
-                                    <img src={dolar} />
+                                    <img src={dolar} alt="dolar" />
                                     Często zdarza się, że wsparcie udzielane przez doświadczone
                                     jednostki certyfikujące, sprawiają, że budynek pasywny jest
                                     bardziej ekonomiczny.
