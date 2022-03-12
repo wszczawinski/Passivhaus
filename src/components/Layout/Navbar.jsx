@@ -21,20 +21,14 @@ export default function Navbar() {
     const [showItem, setShowItem] = useState(null);
     const [stickyClass, setStickyClass] = useState('');
 
-    const desktopView = window.matchMedia('(min-width: 1000px)').matches;
-
     let changeNavVisibility = () => {
-        if (!desktopView) {
-            setNavVisibility(!navVisibility);
-        }
+        setNavVisibility(!navVisibility);
     };
 
     useEffect(() => {
         setShowItem(null);
         window.addEventListener('scroll', stickNavbar);
-        stickNavbar()
-
-        return () => window.removeEventListener('scroll', stickNavbar);
+        stickNavbar();
     }, []);
 
     const stickNavbar = () => {
@@ -49,9 +43,9 @@ export default function Navbar() {
     return (
         <div className={`navbar ${stickyClass}`}>
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
-            {!desktopView && (
-                <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
-            )}
+
+            <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
+
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
                 <li className="navbar__header">
                     <Link
