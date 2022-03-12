@@ -1,5 +1,4 @@
 import React from 'react';
-import heroFigure from '../../images/heroFigure.svg';
 
 import './Hero.scss';
 
@@ -11,7 +10,6 @@ export default function Hero({ heroClass = '', text, backgroundImage }) {
                 style={{ backgroundImage: `url(${backgroundImage})` }}
                 alt="hero-background-image"
             />
-            <img src={heroFigure} className="hero__figure" alt="hero-figure" />
             <article className="hero__content-area">
                 <h1 className="hero__content-area--title">
                     POLSKI INSTYTUT <br />

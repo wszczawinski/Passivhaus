@@ -33,6 +33,8 @@ export default function Navbar() {
         setShowItem(null);
         window.addEventListener('scroll', stickNavbar);
         stickNavbar()
+
+        return () => window.removeEventListener('scroll', stickNavbar);
     }, []);
 
     const stickNavbar = () => {

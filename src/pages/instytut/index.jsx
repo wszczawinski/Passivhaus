@@ -5,7 +5,7 @@ import oNas1 from '../../images/firm/o-nas-1.svg';
 import oNas2 from '../../images/firm/o-nas-2.svg';
 import leaf from '../../images/firm/icons/leaf.svg';
 import { heroText } from '../../constants/heroContent';
-import heroImage from '../../images/heroImages/hero_firma.svg';
+import heroImage from '../../images/heroImages/hero_institute.svg';
 
 import './Firm.scss';
 

@@ -7,7 +7,7 @@ export const heroText = {
     ),
     firmText: (
         <p>
-            FIRMA <br /> FIRMA <br /> <u>FIRMA</u>
+           INSTYTUT
         </p>
     ),
     passivhausText: <p>BUDYNEK PASYWNY</p>,

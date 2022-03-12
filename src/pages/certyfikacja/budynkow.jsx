@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout, ContainerRow, ContainerColumn, ContainerBlue } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.png';
+import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 import budynek from '../../images/certyfikacja/budynek.svg';
 import benefity from '../../images/certyfikacja/benefits.svg';

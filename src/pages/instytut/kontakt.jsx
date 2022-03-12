@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import heroImage from '../../images/heroImages/hero_firma.svg';
+import heroImage from '../../images/heroImages/hero_institute.svg';
 
 export default function About() {
     return (
