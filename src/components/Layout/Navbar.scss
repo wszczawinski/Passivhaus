@@ -55,6 +55,12 @@
         color: $color-navy;
     }
 
+    @media (min-width: $break-point-desktop) {
+        &__logo-title {
+            display: none;
+        }
+    }
+
     &__list {
         display: none;
 
@@ -76,29 +82,30 @@
             }
         }
     }
+    @media (min-width: $break-point-desktop) {
+        &__visible {
+            position: fixed;
+            top: 0;
+            overflow-y: hidden;
+            margin: 0;
+            padding: 0;
+            visibility: visible;
+            background-color: #000000;
+            opacity: 0.9;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
 
-    &__visible {
-        position: fixed;
-        top: 0;
-        overflow-y: hidden;
-        margin: 0;
-        padding: 0;
-        visibility: visible;
-        background-color: #000000;
-        opacity: 0.9;
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+            li {
+                padding: 20px 0;
+                width: 80%;
 
-        li {
-            padding: 20px 0;
-            width: 80%;
-
-            a {
-                color: #ffffff;
+                a {
+                    color: #ffffff;
+                }
             }
         }
     }

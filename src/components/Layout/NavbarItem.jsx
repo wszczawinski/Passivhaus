@@ -14,17 +14,17 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem }) => {
     useEffect(() => {
         checkActiveNavigation(item, setActiveItem);
 
+        window.addEventListener('mouseup', e => {
+            const container = document.getElementById(item);
+            if (!container.contains(e.target)) {
+                setOpen(false);
+            }
+        });
+
         return () => {
             setActiveItem(false);
         };
     }, [item]);
-
-    // document.addEventListener('mouseup', e => {
-    //     const container = document.getElementById(item);
-    //     if (!container.contains(e.target)) {
-    //         setOpen(false);
-    //     }
-    // });
 
     const handleClick = () => {
         setOpen(!open);
