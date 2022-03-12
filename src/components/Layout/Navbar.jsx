@@ -21,7 +21,7 @@ export default function Navbar() {
     const [showItem, setShowItem] = useState(null);
     const [stickyClass, setStickyClass] = useState('');
 
-    const desktopView = window.matchMedia('(min-width: 1000px)').matches;
+    //const desktopView = window.matchMedia('(min-width: 1000px)').matches;
 
     let changeNavVisibility = () => {
         if (!desktopView) {
@@ -31,25 +31,25 @@ export default function Navbar() {
 
     useEffect(() => {
         setShowItem(null);
-        window.addEventListener('scroll', stickNavbar);
-        stickNavbar()
+        //window.addEventListener('scroll', stickNavbar);
+        // stickNavbar()
     }, []);
 
-    const stickNavbar = () => {
-        if (window !== undefined) {
-            let navbar = document.getElementsByClassName('navbar')[0];
-            let sticky = navbar.offsetTop;
+    // const stickNavbar = () => {
+    //     if (window !== undefined) {
+    //         let navbar = document.getElementsByClassName('navbar')[0];
+    //         let sticky = navbar.offsetTop;
 
-            window.pageYOffset > sticky ? setStickyClass('sticky') : setStickyClass('');
-        }
-    };
+    //         window.pageYOffset > sticky ? setStickyClass('sticky') : setStickyClass('');
+    //     }
+    // };
 
     return (
         <div className={`navbar ${stickyClass}`}>
             <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
-            {!desktopView && (
+            {/* {!desktopView && (
                 <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
-            )}
+            )} */}
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
                 <li className="navbar__header">
                     <Link
