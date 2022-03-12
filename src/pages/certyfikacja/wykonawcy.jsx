@@ -1,6 +1,6 @@
 import React from 'react';
 import { Layout } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.png';
+import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 
 export default function Wykonawcy() {

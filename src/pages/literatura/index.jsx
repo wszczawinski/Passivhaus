@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Layout } from '../../components';
-import heroLiterature from '../../images/heroImages/hero_literature.png';
+import heroLiterature from '../../images/heroImages/hero_literature.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Literature.scss';

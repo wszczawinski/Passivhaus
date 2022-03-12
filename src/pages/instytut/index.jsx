@@ -5,22 +5,27 @@ import oNas1 from '../../images/firm/o-nas-1.svg';
 import oNas2 from '../../images/firm/o-nas-2.svg';
 import leaf from '../../images/firm/icons/leaf.svg';
 import { heroText } from '../../constants/heroContent';
+import heroImage from '../../images/heroImages/hero_institute.svg';
 
 import './Firm.scss';
 
 export default function About() {
     return (
-        <Layout heroTextContent={heroText.firmText} heroClass={'hero__subpage'}>
+        <Layout
+            heroTextContent={heroText.firmText}
+            heroClass={'hero__subpage'}
+            heroBackgroundImage={heroImage}
+        >
             <section className="layout-content">
                 <ContainerRow
                     text={
                         <p>
                             Od 2004 roku jesteśmy niezależną polską instytucją, aktualnie działającą
-                            na zasadach non-profit. Naszym celem jest upowszechnianie wiedzy o{' '}
+                            na zasadach non-profit. Naszym celem jest upowszechnianie wiedzy o
                             <strong>
                                 budownictwie pasywnym, zero energetycznym, plus energetycznym oraz o
-                                kompleksowej termomodernizacji{' '}
-                            </strong>{' '}
+                                kompleksowej termomodernizacji
+                            </strong>
                             z wykorzystaniem technologii i komponentów pasywnych. Ponadto
                             transferujemy wiedzę na temat energii odnawialnej, która z powodzeniem
                             pokrywa potrzeby budynków energetycznie pasywnych.

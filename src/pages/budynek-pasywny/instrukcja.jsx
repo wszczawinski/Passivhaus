@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Layout } from '../../components';
-import heroPassivhaus from '../../images/heroImages/hero_passivhaus.png';
+import heroPassivhaus from '../../images/heroImages/hero_passivehouse.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Passivhaus.scss';

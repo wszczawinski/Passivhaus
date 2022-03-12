@@ -1,6 +1,6 @@
 import React from 'react';
 import { Button, Layout } from '../../components';
-import heroWorkshops from '../../images/heroImages/hero_workshops.png';
+import heroWorkshops from '../../images/heroImages/hero_workshops.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Workshops.scss';
