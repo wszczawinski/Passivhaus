@@ -31,8 +31,8 @@ export const literatureNavItems = [
 export const passivhausNavItems = [
     { name: 'Charakterystyka', path: '/budynek-pasywny' },
     { name: 'Wymagania', path: '/budynek-pasywny/wymagania' },
-    { name: 'Instrukcja', path: '/budynek-pasywny/instrukcja' },
-    { name: 'Passipedia', path: '/budynek-pasywny/passipedia' },
+    // { name: 'Instrukcja', path: '/budynek-pasywny/instrukcja' },
+    // { name: 'Passipedia', path: '/budynek-pasywny/passipedia' },
     { name: 'Historia', path: '/budynek-pasywny/historia' },
 ];
 

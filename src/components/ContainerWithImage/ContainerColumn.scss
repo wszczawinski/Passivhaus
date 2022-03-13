@@ -62,6 +62,9 @@
         }
         @media (max-width: $break-point-desktop) {
             flex-direction: column;
+            p {
+                text-align: left;
+            }
         }
     }
 }
@@ -78,6 +81,7 @@
 .colorCream {
     background-color: $color-cream;
     padding-bottom: 3%;
+    padding-top: 3%;
 
     p {
         color: black;
