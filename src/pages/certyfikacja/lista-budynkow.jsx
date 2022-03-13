@@ -6,12 +6,11 @@ import { heroText } from '../../constants/heroContent';
 export default function ListaBudynkow() {
     return (
         <Layout
-            heroTextContent={heroText.certificationText}
+            heroTextContent={heroText.certyfikacjaListaBudynkow}
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Lista budynkow</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, ratione
                     sint! Praesentium cum eveniet consequatur recusandae? Quas iure perspiciatis

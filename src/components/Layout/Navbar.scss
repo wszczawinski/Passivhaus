@@ -82,7 +82,7 @@
             }
         }
     }
-    @media (min-width: $break-point-desktop) {
+    @media (max-width: $break-point-desktop) {
         &__visible {
             position: fixed;
             top: 0;
@@ -114,4 +114,11 @@
 .sticky {
     position: fixed;
     top: 0;
+    box-shadow: 2px 5px 10px black;
+
+    @media (min-width: $break-point-desktop) {
+        width: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
 }

@@ -1,0 +1,28 @@
+@import '../../App.scss';
+
+.schedule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    &__title {
+        font-size: 36px;
+        margin: 10% 2%;
+        color: $color-navy;
+    }
+
+    &__training-title {
+        margin-bottom: 2%;
+    }
+
+    &__date {
+        display: flex;
+        align-items: center;
+        margin: 5%;
+
+        & img {
+            width: 120px;
+            height: auto;
+        }
+    }
+}

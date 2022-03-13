@@ -6,3 +6,7 @@ export * from './TextArea/TextArea';
 export * from './ContainerWithImage/ContainerBlue';
 export * from './ContainerWithImage/ContainerColumn';
 export * from './ContainerWithImage/ContainerRow';
+export * from './ContainerWithImage/TransparentContainer';
+export * from './ContainerWithImage/FullImageContainer';
+export * from './News/News';
+export * from './Schedule/Schedule';

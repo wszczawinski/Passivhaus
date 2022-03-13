@@ -6,13 +6,12 @@ import heroImage from '../../images/heroImages/hero_institute.svg';
 export default function About() {
     return (
         <Layout
-            heroTextContent={heroText.firmText}
+            heroTextContent={heroText.instytutKontakt}
             heroClass={'hero__subpage'}
             heroBackgroundImage={heroImage}
         >
             <section className="layout-content">
                 <div className="team">
-                    <h3>Kontakt</h3>
                     <p>
                         Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej imienia Güntera
                         Schlagowskiego NON-PROFIT Sp. z o.o.

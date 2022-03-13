@@ -1,31 +1,31 @@
 import React from 'react';
-import { graphql, Link } from 'gatsby';
-import { Announcements, Layout } from '../components';
+import { graphql } from 'gatsby';
+import { Layout, News, Schedule } from '../components';
 import { heroText } from '../constants/heroContent';
-import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 import heroImage from '../images/heroImages/hero_home.svg';
-
-import '../App.scss';
+import './News.scss';
+import { trainingSchedule } from '../constants/trainingSchedule';
 
 export default function Home({ data }) {
     const news = data.news.nodes;
-    const events = data.events.nodes;
+    const sortByDateNews = news.sort(function (a, b) {
+        return new Date(b.date) - new Date(a.date);
+    });
 
     return (
-        <Layout heroTextContent={heroText.homeText} heroBackgroundImage={heroImage}>
-            <Announcements events={events} />
-            <h1>Home Page!</h1>
-            <section>
-                {news.map(element => (
-                    <Link to={'/blog/' + element.frontmatter.slug} key={element.id}>
-                        <h3>{element.frontmatter.title}</h3>
-                        <p>{element.frontmatter.date}</p>
-                        <GatsbyImage
-                            image={getImage(element.frontmatter.thumb)}
-                            alt={element.frontmatter.slug}
-                        />
-                    </Link>
-                ))}
+        <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
+            <section className="home-container">
+                <aside className="aside-container">
+                    <Schedule dates={trainingSchedule} title="Projektant budownictwa pasywnego" />
+                    </aside>
+                <div className="news-container">
+                    <h1 className="news-container__title">Aktualności</h1>
+                    <div className="news-container__content">
+                        {sortByDateNews.map(element => (
+                            <News singleNews={element} key={element.id} />
+                        ))}
+                    </div>
+                </div>
             </section>
         </Layout>
     );
@@ -44,7 +44,7 @@ export const pageQuery = graphql`
                     title
                     thumb {
                         childImageSharp {
-                            gatsbyImageData(placeholder: BLURRED, width: 300)
+                            gatsbyImageData(placeholder: BLURRED, width: 700)
                         }
                     }
                 }

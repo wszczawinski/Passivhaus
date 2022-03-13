@@ -6,12 +6,11 @@ import { heroText } from '../../constants/heroContent';
 export default function Weryfikatorzy() {
     return (
         <Layout
-            heroTextContent={heroText.certificationText}
+            heroTextContent={heroText.certyfikacjaWeryfikatorzy}
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Weryfikatorzy</h2>
                 <p>
                     Następujący eksperci zostali międzynarodowo akredytowani przez Instytut
                     Budownictwa Pasywnego (PHI) do certyfikowania w imieniu PHI budynków na całym

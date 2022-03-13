@@ -12,7 +12,7 @@ import './Firm.scss';
 export default function About() {
     return (
         <Layout
-            heroTextContent={heroText.firmText}
+            heroTextContent={heroText.instytutOnas}
             heroClass={'hero__subpage'}
             heroBackgroundImage={heroImage}
         >

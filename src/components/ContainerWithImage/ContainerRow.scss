@@ -41,4 +41,13 @@
             width: 100%;
         }
     }
+    .imgSmall {
+        border-radius: 10px;
+        width: auto;
+        padding: 50px;
+        @media (max-width: $break-point-desktop) {
+            max-width: 90%;
+            padding: 0;
+        }
+    }
 }

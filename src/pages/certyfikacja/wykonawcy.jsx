@@ -6,12 +6,11 @@ import { heroText } from '../../constants/heroContent';
 export default function Wykonawcy() {
     return (
         <Layout
-            heroTextContent={heroText.certificationText}
+            heroTextContent={heroText.certyfikacjaWykonawcy}
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Lista certyfikowanych wykonawców - CEPHT</h2>
                 <strong>Certyfikowany Mistrz Wykonawca Budownictwa Pasywnego</strong>
                 <p>
                     Budynek pasywny to więcej niż suma jego części. Aby uniknąć błędów, konieczne

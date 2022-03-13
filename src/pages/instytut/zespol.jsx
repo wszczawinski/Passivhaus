@@ -8,13 +8,12 @@ import './Firm.scss';
 export default function Zespol() {
     return (
         <Layout
-            heroTextContent={heroText.firmText}
+            heroTextContent={heroText.instytutZespół}
             heroClass={'hero__subpage'}
             heroBackgroundImage={heroImage}
         >
             <section className="layout-content">
                 <div className="team">
-                    <h3>Nasz zespół:</h3>
                     <ul>
                         <li>Maciej Kuzawiński - prezes PiBP </li>
                         <li>

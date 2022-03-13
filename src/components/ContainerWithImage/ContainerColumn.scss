@@ -45,4 +45,45 @@
     img {
         width: 80%;
     }
+
+    .text-image-row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 30px;
+        p {
+            text-align: justify;
+        }
+
+        img {
+            width: auto;
+            height: auto;
+            border-radius: 10px;
+        }
+        @media (max-width: $break-point-desktop) {
+            flex-direction: column;
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+.smallPadding {
+    padding: 0 15%;
+}
+
+@media (max-width: $break-point-desktop) {
+    .smallPadding {
+        padding: 0 10%;
+    }
+}
+
+.colorCream {
+    background-color: $color-cream;
+    padding-bottom: 3%;
+    padding-top: 3%;
+
+    p {
+        color: black;
+    }
 }

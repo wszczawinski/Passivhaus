@@ -1,0 +1,41 @@
+@import '../App.scss';
+
+.home-container {
+    display: flex;
+    text-align: center;
+}
+
+.aside-container {
+    width: 35%;
+    background-color: $color-rust;
+    padding: 0 5%;
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    max-height: 100vh;
+    
+}
+
+.news-container {
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__title {
+        padding: 4%;
+        margin: 0;
+        font-size: 48px;
+        color: $color-navy;
+        width: 100%;
+        text-align: center;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        flex: 50%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

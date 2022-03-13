@@ -68,6 +68,7 @@
 .navbar-item {
     position: relative;
     color: white;
+    cursor: pointer;
 
     &__active {
         color: $color-orange;

@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft } from '@fortawesome/free-solid-svg-icons';
+import { FaChevronLeft } from 'react-icons/fa';
 import { Button } from '../';
 import { checkActiveNavigation } from '../../helpers/checkActiveNavigation';
 
@@ -41,7 +40,7 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem }) => {
                         className={'btn__white dropdown__back-button'}
                         textContent={
                             <span>
-                                <FontAwesomeIcon icon={faChevronLeft} />
+                                <FaChevronLeft />
                                 <p>Menu główne</p>
                             </span>
                         }

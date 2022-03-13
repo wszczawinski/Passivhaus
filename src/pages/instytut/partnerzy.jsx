@@ -1,6 +1,5 @@
 import React from 'react';
-import { Layout, ContainerColumn, ContainerBlue } from '../../components';
-import FullImageContainer from '../../components/ContainerWithImage/FullImageContainer';
+import { Layout, ContainerColumn, ContainerBlue, FullImageContainer } from '../../components';
 import { heroText } from '../../constants/heroContent';
 import heroImage from '../../images/heroImages/hero_institute.svg';
 
@@ -10,12 +9,11 @@ import Konferencja from '../../images/firm/conference.svg';
 export default function About() {
     return (
         <Layout
-            heroTextContent={heroText.firmText}
+            heroTextContent={heroText.instytutPartnerzy}
             heroClass={'hero__subpage'}
             heroBackgroundImage={heroImage}
         >
             <section className="layout-content">
-                <h3>Partnerzy</h3>
                 <ContainerBlue
                     text={
                         <>
