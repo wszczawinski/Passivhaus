@@ -6,12 +6,11 @@ import { heroText } from '../../constants/heroContent';
 export default function Projektanci() {
     return (
         <Layout
-            heroTextContent={heroText.certificationText}
+            heroTextContent={heroText.certyfikacjaProjektanci}
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Lista certyfikowanych projektantów - CEPHD</h2>
                 <strong>Certyfikowany Projektant \ Doradca Budownictwa Pasywnego</strong>
                 <p>
                     <a href="https://service.passivehouse.com/de/profis/planerkarte">

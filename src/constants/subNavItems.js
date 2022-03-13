@@ -11,13 +11,13 @@ export const ambassadorNavItems = [
 ];
 
 export const certificationNavItems = [
-    { name: 'Informacje ogólne', path: '/certyfikacja' },
-    { name: 'Certyfikacja budynków', path: '/certyfikacja/budynkow' },
-    { name: 'Certyfikacja komponentów', path: '/certyfikacja/komponentow' },
-    { name: 'Lista certyfikowanych budynków', path: '/certyfikacja/lista-budynkow' },
-    { name: 'Lista certyfikowanych projektantow', path: '/certyfikacja/projektanci' },
-    { name: 'Lista certyfikowanych wykonawców', path: '/certyfikacja/wykonawcy' },
-    { name: 'Lista akredytowanych weryfikatorów', path: '/certyfikacja/weryfikatorzy' },
+    { name: 'Informacje', path: '/certyfikacja' },
+    { name: 'Budynki', path: '/certyfikacja/budynkow' },
+    { name: 'Komponenty', path: '/certyfikacja/komponentow' },
+    { name: 'Lista budynków', path: '/certyfikacja/lista-budynkow' },
+    { name: 'Lista projektantow', path: '/certyfikacja/projektanci' },
+    { name: 'Lista wykonawców', path: '/certyfikacja/wykonawcy' },
+    { name: 'Lista weryfikatorów', path: '/certyfikacja/weryfikatorzy' },
 ];
 
 export const literatureNavItems = [

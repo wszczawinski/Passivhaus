@@ -1,5 +1,12 @@
 import React from 'react';
-import { Layout, ContainerRow, ContainerColumn, ContainerBlue } from '../../components';
+import {
+    Layout,
+    ContainerRow,
+    ContainerColumn,
+    ContainerBlue,
+    TransparentContainer,
+    FullImageContainer,
+} from '../../components';
 import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 import budynek from '../../images/certyfikacja/budynek.svg';
@@ -10,18 +17,15 @@ import ksiazki from '../../images/certyfikacja/icons/books.svg';
 import check from '../../images/certyfikacja/icons/check.svg';
 import idea from '../../images/certyfikacja/icons/idea.svg';
 import certyfikat from '../../images/certyfikacja/certyfikat.svg';
-import FullImageContainer from '../../components/ContainerWithImage/FullImageContainer';
-import TransparentContainer from '../../components/ContainerWithImage/TransparentContainer';
 
 export default function Budynkow() {
     return (
         <Layout
-            heroTextContent={heroText.certificationText}
+            heroTextContent={heroText.certyfikacjaBudynkow}
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Certyfikacja budynkow</h2>
                 <ContainerRow
                     text={
                         <p>

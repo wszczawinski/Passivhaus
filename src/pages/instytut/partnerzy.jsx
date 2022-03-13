@@ -1,6 +1,5 @@
 import React from 'react';
-import { Layout, ContainerColumn, ContainerBlue } from '../../components';
-import FullImageContainer from '../../components/ContainerWithImage/FullImageContainer';
+import { Layout, ContainerColumn, ContainerBlue, FullImageContainer } from '../../components';
 import { heroText } from '../../constants/heroContent';
 import heroImage from '../../images/heroImages/hero_institute.svg';
 

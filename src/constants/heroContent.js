@@ -61,7 +61,48 @@ export const heroText = {
             <BsArrowReturnRight /> Wymagania
         </p>
     ),
-    certificationText: <p>CERTYFIKACJA</p>,
+    certyfikacja: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Informacje
+        </p>
+    ),
+    certyfikacjaBudynkow: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Budynków
+        </p>
+    ),
+    certyfikacjaKomponentow: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Komponentów
+        </p>
+    ),
+    certyfikacjaListaBudynkow: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Lista certyfikowanych budynków
+        </p>
+    ),
+    certyfikacjaProjektanci: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Lista certyfikowanych projektantów
+        </p>
+    ),
+    certyfikacjaWeryfikatorzy: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Lista certyfikowanych weryfikatorów
+        </p>
+    ),
+    certyfikacjaWykonawcy: (
+        <p>
+            Certyfikacja <br />
+            <BsArrowReturnRight /> Lista akredytowanych wykonawców
+        </p>
+    ),
     workshopsText: <p>SZKOLENIA</p>,
     literatureText: <p>MATERIAŁY ONLINE</p>,
     ambassadorText: (

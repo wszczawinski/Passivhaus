@@ -9,7 +9,7 @@ import './Certification.scss';
 export default function Certification() {
     return (
         <Layout
-            heroTextContent={heroText.certificationText}
+            heroTextContent={heroText.certyfikacja}
             heroBackgroundImage={heroCertification}
             heroClass={'hero__subpage'}
         >
