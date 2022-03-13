@@ -54,11 +54,6 @@ export default function Komponentow() {
                             </p>
                         </>
                     }
-                    // textEnd={
-
-                    // }
-                    // imgSrc={Standard}
-                    // alt="Standard"
                     shortBorder
                 />
                 <TransparentContainer

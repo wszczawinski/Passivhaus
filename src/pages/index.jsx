@@ -22,7 +22,7 @@ export default function Home({ data }) {
                     <h1 className="news-container__title">Aktualności</h1>
                     <div className="news-container__content">
                         {sortByDateNews.map(element => (
-                            <News singleNews={element} />
+                            <News singleNews={element} key={element.id} />
                         ))}
                     </div>
                 </div>
