@@ -77,6 +77,7 @@ export default function Historia() {
                     shortBorder
                     smallPadding
                     colorCream
+                    noBorder
                 />
                 <ContainerColumn
                     textStartRow
@@ -131,6 +132,7 @@ export default function Historia() {
                     shortBorder
                     smallPadding
                     colorCream
+                    noBorder
                 />
                 <ContainerColumn
                     textStartRow
@@ -172,6 +174,7 @@ export default function Historia() {
                     shortBorder
                     noBorder
                     smallPadding
+                    borderEnd
                 />
                 <ContainerColumn
                     textStartRow
@@ -193,6 +196,7 @@ export default function Historia() {
                     shortBorder
                     smallPadding
                     colorCream
+                    noBorder
                 />
 
                 <ContainerColumn
@@ -227,6 +231,7 @@ export default function Historia() {
                     shortBorder
                     noBorder
                     smallPadding
+                    borderEnd
                 />
 
                 <ContainerColumn
@@ -312,6 +317,7 @@ export default function Historia() {
                     shortBorder
                     noBorder
                     smallPadding
+                    borderEnd
                 />
 
                 <ContainerColumn
@@ -376,6 +382,7 @@ export default function Historia() {
                     shortBorder
                     noBorder
                     smallPadding
+                    borderEnd
                 />
 
                 <ContainerColumn

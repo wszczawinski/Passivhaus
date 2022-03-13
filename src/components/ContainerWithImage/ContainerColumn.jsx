@@ -11,6 +11,7 @@ export function ContainerColumn({
     noBorder,
     smallPadding,
     colorCream,
+    borderEnd,
 }) {
     return (
         <div
@@ -34,6 +35,12 @@ export function ContainerColumn({
                 <span className={`container-column__border${shortBorder ? '--short' : ''}`}></span>
             )}
             {textEnd}
+
+            {borderEnd ? (
+                <span className={`container-column__border${shortBorder ? '--short' : ''}`}></span>
+            ) : (
+                ''
+            )}
         </div>
     );
 }
