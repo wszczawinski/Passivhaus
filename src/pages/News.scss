@@ -1,0 +1,23 @@
+@import '../App.scss';
+
+.news-container {
+    &__title {
+        padding: 2%;
+        margin: 0;
+        font-size: 48px;
+        color: $color-navy;
+        width: 100%;
+        background-color: $color-cookie;
+        text-align: center;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+    }
+
+    &__content {
+        display: flex;
+        width: 100%;
+        flex: 50%;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}

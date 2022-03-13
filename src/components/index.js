@@ -6,3 +6,4 @@ export * from './TextArea/TextArea';
 export * from './ContainerWithImage/ContainerBlue';
 export * from './ContainerWithImage/ContainerColumn';
 export * from './ContainerWithImage/ContainerRow';
+export * from './News/News';
