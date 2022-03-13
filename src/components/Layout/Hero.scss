@@ -44,6 +44,12 @@
 
         p {
             color: white;
+            svg {
+                height: 20px;
+                @media (min-width: $break-point-desktop) {
+                    height: 50px;
+                }
+            }
         }
 
         &--title {

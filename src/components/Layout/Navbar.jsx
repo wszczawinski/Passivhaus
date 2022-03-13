@@ -27,15 +27,12 @@ export default function Navbar() {
     useEffect(() => {
         setShowItem(null);
         window.addEventListener('scroll', stickNavbar);
-        stickNavbar();
     }, []);
 
     const stickNavbar = () => {
         if (window !== undefined) {
-            let navbar = document.getElementsByClassName('navbar')[0];
-            let sticky = navbar.offsetTop;
-
-            window.pageYOffset > sticky ? setStickyClass('sticky') : setStickyClass('');
+            let navbarOffset = document.querySelector('.navbar').offsetTop;
+            window.pageYOffset > navbarOffset ? setStickyClass('sticky') : setStickyClass('');
         }
     };
 

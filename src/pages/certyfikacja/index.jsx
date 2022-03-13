@@ -33,11 +33,11 @@ export default function Certification() {
                             komponentów, które są certyfikowane przez Instytut Budownictwa
                             Pasywnego, ułatwia planowanie budynków i znacznie przyczynia się do
                             zapewnienia prawidłowego funkcjonowania powstających budynków pasywnych.
-                            Certyfikaty{' '}
+                            Certyfikaty
                             <strong>
                                 "Certyfikowany Budynek Pasywny ", "EnerPHit - Certyfikowana
                                 modernizacja" i "Dom energooszczędny"
-                            </strong>{' '}
+                            </strong>
                             przyznawane są dopiero po szczegółowym zbadaniu przez Instytut
                             Budownictwa Pasywnego lub inny podmiot akredytowany. Jest to znak
                             jakości dla całego budynku.

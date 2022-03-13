@@ -23,6 +23,13 @@
         margin-bottom: 5%;
     }
 
+    &__borderBottom {
+        border-top: white 3px solid;
+        box-shadow: 0 0 20px white;
+        width: 80%;
+        margin-top: 5%;
+    }
+
     @media (max-width: $break-point-desktop) {
         font-size: $font-size-mobile;
         padding: 25px;

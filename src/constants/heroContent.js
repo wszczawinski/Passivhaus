@@ -31,7 +31,36 @@ export const heroText = {
             <BsArrowReturnRight /> Zespół
         </p>
     ),
-    passivhausText: <p>BUDYNEK PASYWNY</p>,
+    passivhausHistoria: (
+        <p>
+            Budynek pasywny <br />
+            <BsArrowReturnRight /> Historia
+        </p>
+    ),
+    passivhausCharakterystyka: (
+        <p>
+            Budynek pasywny <br />
+            <BsArrowReturnRight /> Charakterystyka
+        </p>
+    ),
+    passivhausInstrukcja: (
+        <p>
+            Budynek pasywny <br />
+            <BsArrowReturnRight /> Instrukcja
+        </p>
+    ),
+    passivhausPassipedia: (
+        <p>
+            Budynek pasywny <br />
+            <BsArrowReturnRight /> Passipedia
+        </p>
+    ),
+    passivhausWymagania: (
+        <p>
+            Budynek pasywny <br />
+            <BsArrowReturnRight /> Wymagania
+        </p>
+    ),
     certificationText: <p>CERTYFIKACJA</p>,
     workshopsText: <p>SZKOLENIA</p>,
     literatureText: <p>MATERIAŁY ONLINE</p>,
