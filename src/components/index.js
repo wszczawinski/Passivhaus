@@ -9,3 +9,4 @@ export * from './ContainerWithImage/ContainerRow';
 export * from './ContainerWithImage/TransparentContainer';
 export * from './ContainerWithImage/FullImageContainer';
 export * from './News/News';
+export * from './Schedule/Schedule';
