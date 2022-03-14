@@ -1,9 +1,11 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import heroImage from '../../images/heroImages/hero_institute.svg';
 
-export default function About() {
+export default function Contact({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.instytutKontakt}
@@ -47,3 +49,13 @@ export default function About() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query InstQuery1 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_institute.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

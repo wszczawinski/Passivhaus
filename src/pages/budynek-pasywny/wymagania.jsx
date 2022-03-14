@@ -1,17 +1,19 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn } from '../../components';
-import heroPassivhaus from '../../images/heroImages/hero_passivehouse.svg';
 import { heroText } from '../../constants/heroContent';
 
 import wymagania1 from '../../images/budynek-pasywny/wymagania1.png';
 
 import './Passivhaus.scss';
 
-export default function Wymagania() {
+export default function Wymagania({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.passivhausWymagania}
-            heroBackgroundImage={heroPassivhaus}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -82,3 +84,13 @@ export default function Wymagania() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query PassQuery2 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_passivehouse.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

@@ -1,13 +1,15 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 
-export default function Weryfikatorzy() {
+export default function Weryfikatorzy({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.certyfikacjaWeryfikatorzy}
-            heroBackgroundImage={heroCertification}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -22,3 +24,13 @@ export default function Weryfikatorzy() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query CertQuery5 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_certification.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

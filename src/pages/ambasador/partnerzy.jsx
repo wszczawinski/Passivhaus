@@ -1,15 +1,17 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Button, Layout } from '../../components';
-import heroAmbassador from '../../images/heroImages/hero_ambassador.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Ambassador.scss';
 
-export default function Partnerzy() {
+export default function Partnerzy({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.ambassadorText}
-            heroBackgroundImage={heroAmbassador}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -45,3 +47,13 @@ export default function Partnerzy() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query AmbQuery1 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_ambassador.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

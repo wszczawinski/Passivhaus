@@ -1,16 +1,18 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 import Standard from '../../images/certyfikacja/standard.svg';
 
 import './Certification.scss';
 
-export default function Certification() {
+export default function Certification({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.certyfikacja}
-            heroBackgroundImage={heroCertification}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -51,3 +53,13 @@ export default function Certification() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query CertQuery {
+        heroImage: file(relativePath: { eq: "heroImages/hero_certification.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;
