@@ -10,7 +10,7 @@ export default function Partnerzy({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.ambassadorText}
+            heroTextContent={heroText.ambassadorPartnerzy}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >

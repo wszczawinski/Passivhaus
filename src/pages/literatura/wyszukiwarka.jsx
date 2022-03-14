@@ -10,7 +10,7 @@ export default function Wyszukiwarka({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.literatureText}
+            heroTextContent={heroText.literatureWyszukiwarka}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >

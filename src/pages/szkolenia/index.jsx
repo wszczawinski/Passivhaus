@@ -10,12 +10,12 @@ export default function Workshops({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.workshopsText}
+            heroTextContent={heroText.workshopsPhpp}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Workshops</h2>
+                <h2>PHPP</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
                     nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias

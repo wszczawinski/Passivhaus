@@ -10,7 +10,7 @@ export default function ProjektantDoradztwo({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.workshopsText}
+            heroTextContent={heroText.workshopsProjektant}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >

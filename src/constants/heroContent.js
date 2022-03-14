@@ -103,11 +103,52 @@ export const heroText = {
             <BsArrowReturnRight /> Lista akredytowanych wykonawców
         </p>
     ),
-    workshopsText: <p>SZKOLENIA</p>,
-    literatureText: <p>MATERIAŁY ONLINE</p>,
-    ambassadorText: (
+    workshopsPhpp: (
         <p>
-            ZOSTAŃ <br /> AMBASADOREM!
+            Szkolenia <br />
+            <BsArrowReturnRight /> PHPP
+        </p>
+    ),
+    workshopsProjektant: (
+        <p>
+            Szkolenia <br />
+            <BsArrowReturnRight /> CEPHD - projektant doradztwa
+        </p>
+    ),
+    workshopsMistrz: (
+        <p>
+            Szkolenia <br />
+            <BsArrowReturnRight /> CEPHT - mistrz wykonawca
+        </p>
+    ),
+    workshopsMostki: (
+        <p>
+            Szkolenia <br />
+            <BsArrowReturnRight /> Mostki cieplne
+        </p>
+    ),
+    literatureNarzedzia: (
+        <p>
+            Literatura <br />
+            <BsArrowReturnRight /> Narzędzia
+        </p>
+    ),
+    literatureWyszukiwarka: (
+        <p>
+            Literatura <br />
+            <BsArrowReturnRight /> Wyszukiwarka Budynków pasywnych
+        </p>
+    ),
+    ambassador: (
+        <p>
+            Ambasador Budownictwa Pasywnego <br />
+            <BsArrowReturnRight /> Ambasadorzy
+        </p>
+    ),
+    ambassadorPartnerzy: (
+        <p>
+            Ambasador Budownictwa Pasywnego <br />
+            <BsArrowReturnRight /> Partnerzy
         </p>
     ),
 };

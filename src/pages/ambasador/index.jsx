@@ -10,12 +10,11 @@ export default function Ambassador({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.ambassadorText}
+            heroTextContent={heroText.ambassador}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Ambasador</h2>
                 <p>
                     Ambasadorzy Budownictwa Pasywnego to grupa firm z różnych sektorów branży
                     budowlanej, które wprowadzają innowacje na Polski rynek w postaci komponentów i

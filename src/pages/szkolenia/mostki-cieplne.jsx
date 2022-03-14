@@ -10,7 +10,7 @@ export default function MostkiCieplne({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.workshopsText}
+            heroTextContent={heroText.workshopsMostki}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
