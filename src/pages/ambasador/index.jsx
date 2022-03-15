@@ -1,19 +1,20 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Button, Layout } from '../../components';
-import heroAmbassador from '../../images/heroImages/hero_ambassador.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Ambassador.scss';
 
-export default function Ambassador() {
+export default function Ambassador({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.ambassadorText}
-            heroBackgroundImage={heroAmbassador}
+            heroTextContent={heroText.ambassador}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Ambasador</h2>
                 <p>
                     Ambasadorzy Budownictwa Pasywnego to grupa firm z różnych sektorów branży
                     budowlanej, które wprowadzają innowacje na Polski rynek w postaci komponentów i
@@ -28,3 +29,13 @@ export default function Ambassador() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query AmbQuery {
+        heroImage: file(relativePath: { eq: "heroImages/hero_ambassador.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

@@ -1,13 +1,15 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 
-export default function Wykonawcy() {
+export default function Wykonawcy({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.certyfikacjaWykonawcy}
-            heroBackgroundImage={heroCertification}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -42,3 +44,13 @@ export default function Wykonawcy() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query CertQuery6 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_certification.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

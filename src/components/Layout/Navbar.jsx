@@ -83,7 +83,7 @@ export default function Navbar() {
                     showItem={showItem}
                 />
                 <NavbarItem
-                    item="Literatura i narzędzia"
+                    item="Literatura"
                     subNavItems={literatureNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}

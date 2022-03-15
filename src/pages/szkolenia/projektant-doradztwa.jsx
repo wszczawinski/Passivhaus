@@ -1,15 +1,17 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Button, Layout } from '../../components';
-import heroWorkshops from '../../images/heroImages/hero_workshops.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Workshops.scss';
 
-export default function ProjektantDoradztwo() {
+export default function ProjektantDoradztwo({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.workshopsText}
-            heroBackgroundImage={heroWorkshops}
+            heroTextContent={heroText.workshopsProjektant}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -26,3 +28,13 @@ export default function ProjektantDoradztwo() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query WorkQuery4 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_workshops.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

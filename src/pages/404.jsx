@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
+
+import './News.scss';
 
 export default function NotFound() {
     return (
-        <div>
+        <div className="full-screen">
             <h2>404</h2>
-            <p>Doesn't exist</p>
+            <p>This page does not exist </p>
         </div>
-    )
+    );
 }

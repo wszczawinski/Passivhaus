@@ -21,11 +21,11 @@ export const certificationNavItems = [
 ];
 
 export const literatureNavItems = [
+    { name: 'Narzędzia', path: '/literatura' },
     {
         name: 'Wyszukiwarka budynków pasywnych',
         path: '/literatura/wyszukiwarka',
     },
-    { name: 'Literatura', path: '/literatura' },
 ];
 
 export const passivhausNavItems = [

@@ -1,15 +1,17 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, ContainerRow, ContainerColumn, ContainerBlue } from '../../components';
 import oNas1 from '../../images/firm/o-nas-1.svg';
 import oNas2 from '../../images/firm/o-nas-2.svg';
 import leaf from '../../images/firm/icons/leaf.svg';
 import { heroText } from '../../constants/heroContent';
-import heroImage from '../../images/heroImages/hero_institute.svg';
 
 import './Firm.scss';
 
-export default function About() {
+export default function About({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.instytutOnas}
@@ -171,3 +173,13 @@ export default function About() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query InstQuery {
+        heroImage: file(relativePath: { eq: "heroImages/hero_institute.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

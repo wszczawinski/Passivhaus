@@ -1,6 +1,7 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn, ContainerRow } from '../../components';
-import heroPassivhaus from '../../images/heroImages/hero_passivehouse.svg';
 import { heroText } from '../../constants/heroContent';
 
 import charakterystyka2 from '../../images/budynek-pasywny/charakterystyka2.png';
@@ -12,11 +13,12 @@ import charakterystyka7 from '../../images/budynek-pasywny/charakterystyka7.png'
 
 import './Passivhaus.scss';
 
-export default function Charakterystyka() {
+export default function Charakterystyka({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.passivhausCharakterystyka}
-            heroBackgroundImage={heroPassivhaus}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -140,3 +142,13 @@ export default function Charakterystyka() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query PassQuery {
+        heroImage: file(relativePath: { eq: "heroImages/hero_passivehouse.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

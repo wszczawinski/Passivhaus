@@ -1,4 +1,6 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import {
     Layout,
     ContainerRow,
@@ -7,7 +9,7 @@ import {
     TransparentContainer,
     FullImageContainer,
 } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.svg';
+
 import { heroText } from '../../constants/heroContent';
 import budynek from '../../images/certyfikacja/budynek.svg';
 import benefity from '../../images/certyfikacja/benefits.svg';
@@ -18,11 +20,12 @@ import check from '../../images/certyfikacja/icons/check.svg';
 import idea from '../../images/certyfikacja/icons/idea.svg';
 import certyfikat from '../../images/certyfikacja/certyfikat.svg';
 
-export default function Budynkow() {
+export default function Budynkow({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.certyfikacjaBudynkow}
-            heroBackgroundImage={heroCertification}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -232,3 +235,13 @@ export default function Budynkow() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query CertQuery1 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_certification.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

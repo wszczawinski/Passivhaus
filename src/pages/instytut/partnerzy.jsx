@@ -1,12 +1,14 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn, ContainerBlue, FullImageContainer } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import heroImage from '../../images/heroImages/hero_institute.svg';
 
 import Partnerstwo from '../../images/firm/partnership.svg';
 import Konferencja from '../../images/firm/conference.svg';
 
-export default function About() {
+export default function Partners({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.instytutPartnerzy}
@@ -128,3 +130,13 @@ export default function About() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query InstQuery2 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_institute.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

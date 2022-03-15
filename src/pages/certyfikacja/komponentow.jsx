@@ -1,13 +1,15 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn, TransparentContainer } from '../../components';
-import heroCertification from '../../images/heroImages/hero_certification.svg';
 import { heroText } from '../../constants/heroContent';
 
-export default function Komponentow() {
+export default function Komponentow({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
             heroTextContent={heroText.certyfikacjaKomponentow}
-            heroBackgroundImage={heroCertification}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
@@ -92,3 +94,13 @@ export default function Komponentow() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query CertQuery2 {
+        heroImage: file(relativePath: { eq: "heroImages/hero_certification.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

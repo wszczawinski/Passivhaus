@@ -1,19 +1,20 @@
 import React from 'react';
+import { graphql } from 'gatsby';
+import { getImage } from 'gatsby-plugin-image';
 import { Button, Layout } from '../../components';
-import heroLiterature from '../../images/heroImages/hero_literature.svg';
 import { heroText } from '../../constants/heroContent';
 
 import './Literature.scss';
 
-export default function Literature() {
+export default function Literature({ data }) {
+    const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.literatureText}
-            heroBackgroundImage={heroLiterature}
+            heroTextContent={heroText.literatureNarzedzia}
+            heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Literatura</h2>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
                     nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias
@@ -26,3 +27,13 @@ export default function Literature() {
         </Layout>
     );
 }
+
+export const pageQuery = graphql`
+    query LitQuery {
+        heroImage: file(relativePath: { eq: "heroImages/hero_literature.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
+        }
+    }
+`;

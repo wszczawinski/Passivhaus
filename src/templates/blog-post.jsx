@@ -1,13 +1,12 @@
 import React from 'react';
 import { Layout } from '../components';
-
 import { graphql } from 'gatsby';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
-import heroImage from '../images/heroImages/hero_home.svg';
 
 import './blogPost.scss';
 
 export default function BlogPost({ data }) {
+    const heroImage = getImage(data.heroImage);
     const { html } = data.markdownRemark;
     const { title, date, featuredImage, slug } = data.markdownRemark.frontmatter;
     const displayDate = new Date(date).toISOString().split('T')[0]
@@ -40,6 +39,11 @@ export const query = graphql`
                 date
             }
             html
+        }
+        heroImage: file(relativePath: { eq: "heroImages/hero_home.png" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 1900)
+            }
         }
     }
 `;
