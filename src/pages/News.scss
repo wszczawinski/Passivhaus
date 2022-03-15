@@ -3,16 +3,28 @@
 .home-container {
     display: flex;
     text-align: center;
+
+    @media (max-width: $break-point-desktop) {
+        flex-direction: column;
+    }
 }
 
 .aside-container {
     width: 35%;
-    background-color: $color-rust;
+    background-color: $color-orange;
     padding: 0 5%;
     color: white;
     font-weight: 700;
     font-size: 25px;
     max-height: 100vh;
+    position: sticky;
+    top: 10vh;
+
+    @media (max-width: $break-point-desktop) {
+        width: 100%;
+        font-size: 20px;
+        position: static;
+    }
     
 }
 
@@ -22,6 +34,10 @@
     flex-direction: column;
     align-items: center;
 
+    @media (max-width: $break-point-desktop) {
+        width: 100%;
+    }
+
     &__title {
         padding: 4%;
         margin: 0;
@@ -29,6 +45,10 @@
         color: $color-navy;
         width: 100%;
         text-align: center;
+
+        @media (max-width: $break-point-desktop) {
+            font-size: 26px;
+        }
     }
 
     &__content {

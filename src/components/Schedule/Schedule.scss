@@ -9,6 +9,10 @@
         font-size: 36px;
         margin: 10% 2%;
         color: $color-navy;
+
+        @media (max-width: $break-point-desktop) {
+            font-size: 20px;
+        }
     }
 
     &__training-title {
