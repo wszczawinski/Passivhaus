@@ -3,7 +3,7 @@
 .navbar {
     z-index: 100;
     order: 2;
-    height: 12vh;
+    height: 8vh;
     background-color: $color-cream;
     display: flex;
     align-items: center;
@@ -56,7 +56,7 @@
     }
 
     @media (min-width: $break-point-desktop) {
-        &__logo-title {
+        &__logo-title, &__logo {
             display: none;
         }
     }
@@ -115,6 +115,7 @@
     position: fixed;
     top: 0;
     box-shadow: 2px 5px 10px black;
+    height: 10vh;
 
     @media (min-width: $break-point-desktop) {
         width: 100%;
