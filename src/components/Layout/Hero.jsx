@@ -15,9 +15,12 @@ export default function Hero({ heroClass = '', text, backgroundImage }) {
 
             <article className="hero__content-area">
                 <h1 className="hero__content-area--title">
-                    POLSKI INSTYTUT <br />
-                    BUDOWNICTWA PASYWNEGO
-                    <img src={pibpLogo} />
+                    <img src={pibpLogo} alt="logo PIBP" />
+                    <div className="hero__content-area--text">
+                        <p>POLSKI INSTYTUT</p>
+                        <p>BUDOWNICTWA</p>
+                        <p>PASYWNEGO</p>
+                    </div>
                 </h1>
                 <h2 className="hero__content-area--subtitle">{text}</h2>
             </article>

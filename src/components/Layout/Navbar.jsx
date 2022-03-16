@@ -89,7 +89,7 @@ export default function Navbar() {
                     showItem={showItem}
                 />
                 <NavbarItem
-                    item="Ambasador Budownictwa Pasywnego"
+                    item="Ambasadorzy"
                     subNavItems={ambassadorNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
