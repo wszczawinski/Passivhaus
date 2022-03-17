@@ -3,7 +3,7 @@
 .navbar {
     z-index: 100;
     order: 2;
-    height: 8vh;
+    height: 10vh;
     background-color: $color-cream;
     display: flex;
     align-items: center;
@@ -35,6 +35,7 @@
         top: 5%;
         font-size: 18px;
         border-radius: 30px;
+        height: 8vh;
 
         &__hamburger {
             display: none;
