@@ -3,7 +3,7 @@
 .navbar {
     z-index: 100;
     order: 2;
-    height: 10vh;
+    height: 8vh;
     background-color: $color-cream;
     display: flex;
     align-items: center;
@@ -117,6 +117,11 @@
     & svg {
         color: $color-orange;
     }
+
+    & p {
+        color: $color-orange;
+        margin: 0;
+    }
 }
 
 .sticky {
@@ -125,7 +130,7 @@
     box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
     height: 10vh;
     border-radius: 0;
-    transition: bottom 0.7s ease-in-out;
+    transition: 0.4s ease-in-out;
 
     @media (min-width: $break-point-desktop) {
         width: 100%;

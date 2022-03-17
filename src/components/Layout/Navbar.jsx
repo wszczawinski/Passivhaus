@@ -9,7 +9,6 @@ import NavbarItem from './NavbarItem';
 import {
     certificationNavItems,
     firmNavItems,
-    ambassadorNavItems,
     workshopsNavItems,
     passivhausNavItems,
     literatureNavItems,
@@ -88,12 +87,15 @@ export default function Navbar() {
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
-                <NavbarItem
-                    item="Ambasadorzy"
-                    subNavItems={ambassadorNavItems}
-                    changeVisibility={changeNavVisibility}
-                    showItem={showItem}
-                />
+                <li>
+                    <Link
+                        to="/ambasadorzy/"
+                        onClick={changeNavVisibility}
+                        activeClassName="navbar__active-item"
+                    >
+                        <p>Ambasadorzy</p>
+                    </Link>
+                </li>
             </ul>
             <Button
                 className={'btn__mini btn__black navbar__hamburger'}

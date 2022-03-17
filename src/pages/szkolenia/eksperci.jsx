@@ -8,7 +8,7 @@ export default function Eksperci({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.certyfikacjaEksperci}
+            heroTextContent={heroText.workshopsEksperci}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
@@ -48,9 +48,9 @@ export default function Eksperci({ data }) {
 
 export const pageQuery = graphql`
     query CertQuery4 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_certification.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_workshops.png" }) {
             childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 1900)
+                gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
         }
     }
