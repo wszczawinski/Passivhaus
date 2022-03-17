@@ -34,7 +34,7 @@ export const pageQuery = graphql`
     query HomeQuery {
         heroImage: file(relativePath: { eq: "heroImages/hero_home.png" }) {
             childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 2500)
+                gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
         }
         news: allMarkdownRemark(

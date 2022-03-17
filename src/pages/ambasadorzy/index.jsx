@@ -34,7 +34,7 @@ export const pageQuery = graphql`
     query AmbQuery {
         heroImage: file(relativePath: { eq: "heroImages/hero_ambassador.png" }) {
             childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 1900)
+                gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
         }
     }

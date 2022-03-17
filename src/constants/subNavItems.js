@@ -5,14 +5,11 @@ export const firmNavItems = [
     { name: 'Zespół', path: '/instytut/zespol' },
 ];
 
-export const ambassadorNavItems = [{ name: 'Ambasadorzy', path: '/ambasadorzy' }];
-
 export const certificationNavItems = [
     { name: 'Informacje', path: '/certyfikacja' },
     { name: 'Budynki', path: '/certyfikacja/budynkow' },
     { name: 'Komponenty', path: '/certyfikacja/komponentow' },
     { name: 'Lista budynków', path: '/certyfikacja/lista-budynkow' },
-    { name: 'Lista ekspertów', path: '/certyfikacja/eksperci' },
 ];
 
 export const literatureNavItems = [
@@ -36,4 +33,5 @@ export const workshopsNavItems = [
     { name: 'CEPHD - projektant doradztwa', path: '/szkolenia/projektant-doradztwa' },
     { name: 'CEPHT - mistrz wykonawca', path: '/szkolenia/mistrz-wykonawca' },
     { name: 'Mostki cieplne', path: '/szkolenia/mostki-cieplne' },
+    { name: 'Lista ekspertów', path: '/szkolenia/eksperci' },
 ];

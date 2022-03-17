@@ -147,7 +147,7 @@ export const pageQuery = graphql`
     query PassQuery {
         heroImage: file(relativePath: { eq: "heroImages/hero_passivehouse.png" }) {
             childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 1900)
+                gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
         }
     }

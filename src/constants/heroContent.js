@@ -85,12 +85,6 @@ export const heroText = {
             <BsArrowReturnRight /> Lista certyfikowanych budynków
         </p>
     ),
-    certyfikacjaEksperci: (
-        <p>
-            Certyfikacja <br />
-            <BsArrowReturnRight /> Lista ekspertów
-        </p>
-    ),
     workshopsPhpp: (
         <p>
             Szkolenia <br />
@@ -115,6 +109,12 @@ export const heroText = {
             <BsArrowReturnRight /> Mostki cieplne
         </p>
     ),
+    workshopsEksperci: (
+        <p>
+            Szkolenia <br />
+            <BsArrowReturnRight /> Lista ekspertów
+        </p>
+    ),
     literatureNarzedzia: (
         <p>
             Literatura <br />
@@ -127,12 +127,7 @@ export const heroText = {
             <BsArrowReturnRight /> Wyszukiwarka Budynków pasywnych
         </p>
     ),
-    ambassador: (
-        <p>
-            Ambasador Budownictwa Pasywnego <br />
-            <BsArrowReturnRight /> Ambasadorzy
-        </p>
-    ),
+    ambassador: <p>Ambasador Budownictwa Pasywnego</p>,
     ambassadorPartnerzy: (
         <p>
             Ambasador Budownictwa Pasywnego <br />
