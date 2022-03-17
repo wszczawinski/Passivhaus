@@ -71,8 +71,8 @@ export default function Navbar() {
                     showItem={showItem}
                 />
                 <NavbarItem
-                    item="Certyfikacja"
-                    subNavItems={certificationNavItems}
+                    item="Sklep"
+                    subNavItems={literatureNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
@@ -83,13 +83,13 @@ export default function Navbar() {
                     showItem={showItem}
                 />
                 <NavbarItem
-                    item="Literatura"
-                    subNavItems={literatureNavItems}
+                    item="Certyfikacja"
+                    subNavItems={certificationNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
                 <NavbarItem
-                    item="Ambasador Budownictwa Pasywnego"
+                    item="Ambasadorzy"
                     subNavItems={ambassadorNavItems}
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}

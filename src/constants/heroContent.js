@@ -85,22 +85,10 @@ export const heroText = {
             <BsArrowReturnRight /> Lista certyfikowanych budynków
         </p>
     ),
-    certyfikacjaProjektanci: (
+    certyfikacjaEksperci: (
         <p>
             Certyfikacja <br />
-            <BsArrowReturnRight /> Lista certyfikowanych projektantów
-        </p>
-    ),
-    certyfikacjaWeryfikatorzy: (
-        <p>
-            Certyfikacja <br />
-            <BsArrowReturnRight /> Lista certyfikowanych weryfikatorów
-        </p>
-    ),
-    certyfikacjaWykonawcy: (
-        <p>
-            Certyfikacja <br />
-            <BsArrowReturnRight /> Lista akredytowanych wykonawców
+            <BsArrowReturnRight /> Lista ekspertów
         </p>
     ),
     workshopsPhpp: (

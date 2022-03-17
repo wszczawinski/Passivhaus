@@ -5,26 +5,21 @@ export const firmNavItems = [
     { name: 'Zespół', path: '/instytut/zespol' },
 ];
 
-export const ambassadorNavItems = [
-    { name: 'Partnerzy', path: '/ambasador/partnerzy' },
-    { name: 'Ambasadorzy', path: '/ambasador' },
-];
+export const ambassadorNavItems = [{ name: 'Ambasadorzy', path: '/ambasadorzy' }];
 
 export const certificationNavItems = [
     { name: 'Informacje', path: '/certyfikacja' },
     { name: 'Budynki', path: '/certyfikacja/budynkow' },
     { name: 'Komponenty', path: '/certyfikacja/komponentow' },
     { name: 'Lista budynków', path: '/certyfikacja/lista-budynkow' },
-    { name: 'Lista projektantow', path: '/certyfikacja/projektanci' },
-    { name: 'Lista wykonawców', path: '/certyfikacja/wykonawcy' },
-    { name: 'Lista weryfikatorów', path: '/certyfikacja/weryfikatorzy' },
+    { name: 'Lista ekspertów', path: '/certyfikacja/eksperci' },
 ];
 
 export const literatureNavItems = [
-    { name: 'Narzędzia', path: '/literatura' },
+    { name: 'Narzędzia', path: '/sklep' },
     {
         name: 'Wyszukiwarka budynków pasywnych',
-        path: '/literatura/wyszukiwarka',
+        path: '/sklep/wyszukiwarka',
     },
 ];
 

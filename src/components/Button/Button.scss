@@ -14,18 +14,9 @@ button {
 
 .btn__white {
     color: white;
+    padding: 0;
 }
 
 .btn__black {
     color: black;
-}
-
-.btn__default {
-    font-size: 1rem;
-    border: 1px solid $color-orange;
-    background-color: $color-orange;
-    border-radius: 10px;
-    padding: 10px 20px;
-    text-align: center;
-    color: white;
 }

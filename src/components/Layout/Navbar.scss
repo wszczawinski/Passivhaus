@@ -3,7 +3,7 @@
 .navbar {
     z-index: 100;
     order: 2;
-    height: 8vh;
+    height: 10vh;
     background-color: $color-cream;
     display: flex;
     align-items: center;
@@ -12,6 +12,7 @@
     top: 5%;
     width: 100%;
     font-size: 20px;
+    transition: top 0.6s ease-in-out;
 
     &__header {
         display: flex;
@@ -21,11 +22,8 @@
         & svg {
             width: 30px;
             height: auto;
+            color: white;
         }
-    }
-
-    &__active-item {
-        color: $color-orange;
     }
 
     @media (min-width: $break-point-desktop) {
@@ -34,11 +32,18 @@
         background-color: white;
         width: 80%;
         position: absolute;
-        top: 75%;
+        top: 5%;
         font-size: 18px;
+        border-radius: 30px;
 
         &__hamburger {
             display: none;
+        }
+
+        &__header {
+            & svg {
+                color: $color-navy;
+            }
         }
     }
 
@@ -56,7 +61,8 @@
     }
 
     @media (min-width: $break-point-desktop) {
-        &__logo-title, &__logo {
+        &__logo-title,
+        &__logo {
             display: none;
         }
     }
@@ -102,20 +108,24 @@
             li {
                 padding: 20px 0;
                 width: 80%;
-
-                a {
-                    color: #ffffff;
-                }
             }
         }
+    }
+}
+
+.navbar__active-item {
+    & svg {
+        color: $color-orange;
     }
 }
 
 .sticky {
     position: fixed;
     top: 0;
-    box-shadow: 2px 5px 10px black;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.5);
     height: 10vh;
+    border-radius: 0;
+    transition: bottom 0.7s ease-in-out;
 
     @media (min-width: $break-point-desktop) {
         width: 100%;

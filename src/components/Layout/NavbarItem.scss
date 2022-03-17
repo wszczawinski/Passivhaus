@@ -11,14 +11,16 @@
     position: fixed;
     top: 0;
     left: 0;
-    color: white;
+    
     z-index: 1;
     padding: 10%;
-
+    
     & a {
         margin: 5% 0;
         font-size: 20px;
         text-align: start;
+        text-decoration: none;
+        color: white;
     }
 
     &__back-button {
@@ -37,15 +39,11 @@
         }
     }
 
-    &__active-item {
-        color: $color-rust;
-    }
-
     @media (min-width: $break-point-desktop) {
         position: absolute;
         top: 95%;
         transform: translateX(10%);
-        background: $color-cookie;
+        background: $color-navy;
         padding: 20px;
         border-radius: 10px;
         display: flex;
@@ -56,13 +54,23 @@
 
         & a {
             margin: 10px 0;
-            font-size: 18px;
+            font-size: 17px;
+            font-weight: 600;
+            color: white;
         }
 
         &__back-button {
             display: none;
         }
+
+        a.dropdown__active-item {
+            color: $color-orange;
+        }
     }
+}
+
+a.dropdown__active-item {
+    color: $color-orange;
 }
 
 .navbar-item {

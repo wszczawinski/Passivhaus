@@ -4,11 +4,11 @@ import { getImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
-export default function Projektanci({ data }) {
+export default function Eksperci({ data }) {
     const heroImage = getImage(data.heroImage);
     return (
         <Layout
-            heroTextContent={heroText.certyfikacjaProjektanci}
+            heroTextContent={heroText.certyfikacjaEksperci}
             heroBackgroundImage={heroImage}
             heroClass={'hero__subpage'}
         >
