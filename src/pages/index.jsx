@@ -15,7 +15,7 @@ export default function Home({ data }) {
         <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <section className="home-container">
                 <aside className="aside-container">
-                    <Schedule dates={trainingSchedule} title="Projektant budownictwa pasywnego" />
+                    <Schedule />
                 </aside>
                 <div className="news-container">
                     <h1 className="news-container__title">Aktualności</h1>
