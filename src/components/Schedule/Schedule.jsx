@@ -1,5 +1,5 @@
 import React from 'react';
-import reklama from '../../images/home/szkolenie_reklama.png';
+import reklama from '../../images/home/szkolenie_reklama_2.png';
 
 import './Schedule.scss';
 

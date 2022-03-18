@@ -93,7 +93,7 @@ export default function Navbar() {
                         onClick={changeNavVisibility}
                         activeClassName="navbar__active-item"
                     >
-                        <p>Ambasadorzy</p>
+                        <p>AMBASADORZY</p>
                     </Link>
                 </li>
             </ul>

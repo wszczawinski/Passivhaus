@@ -43,7 +43,7 @@
         position: absolute;
         top: 95%;
         transform: translateX(10%);
-        background: $color-navy;
+        background: $color-orange;
         padding: 20px;
         border-radius: 10px;
         display: flex;
@@ -64,7 +64,7 @@
         }
 
         a.dropdown__active-item {
-            color: $color-orange;
+            color: $color-navy;
         }
     }
 }
