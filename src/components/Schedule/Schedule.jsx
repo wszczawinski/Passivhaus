@@ -1,9 +1,9 @@
 import React from 'react';
-import reklama from '../../images/home/szkolenie_reklama_2.svg';
+import reklama from '../../images/home/szkolenie_reklama.png';
 
 import './Schedule.scss';
 
-export function Schedule({ title }) {
+export function Schedule() {
     return (
         <div className="schedule">
             <span className="schedule__title">Terminarz najbliższych szkoleń:</span>
