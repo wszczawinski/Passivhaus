@@ -4,29 +4,30 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 
     &__title {
         font-size: 36px;
-        margin: 10% 2%;
+        margin: 5% 2%;
 
         @media (max-width: $break-point-desktop) {
             font-size: 20px;
+            margin: 10% 2%;
         }
     }
 
     &__training-title {
-        margin-bottom: 2%;
+        margin-bottom: 5%;
         color: $color-navy;
     }
 
-    &__date {
-        display: flex;
-        align-items: center;
-        margin: 5%;
+    & img {
+        width: auto;
+        height: 70vh;
 
-        & img {
-            width: 120px;
-            height: auto;
+        @media (max-width: $break-point-desktop) {
+            margin-bottom: 10%;
+            height: 60vh;
         }
     }
 }
