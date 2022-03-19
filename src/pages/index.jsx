@@ -39,7 +39,7 @@ export const pageQuery = graphql`
         }
         scheduleImage: file(relativePath: { eq: "home/szkolenie_reklama.png" }) {
             childImageSharp {
-                gatsbyImageData(placeholder: BLURRED, width: 800)
+                gatsbyImageData(placeholder: BLURRED, width: 700)
             }
         }
         news: allMarkdownRemark(

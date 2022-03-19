@@ -5,14 +5,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    height: 100%;
 
     &__title {
-        font-size: 36px;
+        font-size: 20px;
         margin: 5% 2%;
 
         @media (max-width: $break-point-desktop) {
-            font-size: 20px;
-            margin: 10% 2%;
+            font-size: 18px;
         }
     }
 
@@ -21,9 +21,16 @@
         color: $color-navy;
     }
 
-    & img {
-        width: 100%;
-        height: auto;
-        margin-bottom: 10%;
+    &__image {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            height: auto;
+            padding-top: 5%;
+            padding-bottom: 5%;
+        }
     }
 }
