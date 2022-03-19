@@ -32,7 +32,7 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem }) => {
 
     return (
         <li className="navbar-item" id={item} onClick={handleClick} onKeyDown={handleClick}>
-            <div className={activeItem ? 'navbar-item__active' : ''}>{item}</div>
+            <div className={activeItem ? 'navbar-item__active' : ''}>{item.toUpperCase()}</div>
 
             {open && (
                 <div className="dropdown">
