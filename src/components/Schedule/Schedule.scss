@@ -19,6 +19,7 @@
 
     &__image {
         display: flex;
+        max-height: 80%;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -27,8 +28,9 @@
         margin-bottom: 5%;
 
         img {
-            height: auto;
-            width: 100%;
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
         }
     }
 }
