@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { BiDownArrow, BiUpArrow } from 'react-icons/bi';
-import { Subcategory } from '../';
+import { Subcategory, Company } from '../';
 
 import './Ambassadors.scss';
 
@@ -10,6 +10,7 @@ export const Category = ({ item }) => {
     const changeSubcategoryVisibility = () => {
         setShowSubcategory(!showSubcategory);
     };
+
     return (
         <article className="ambassador__category">
             <button onClick={changeSubcategoryVisibility} className="ambassador__category-title">
@@ -17,11 +18,11 @@ export const Category = ({ item }) => {
                 {!showSubcategory ? <BiDownArrow /> : <BiUpArrow />}
             </button>
             {showSubcategory
-                ? item.subcategories.map(subcategory => (
-                      <div className="ambassador__category-subcategories">
+                ? item.subcategories
+                    ? item.subcategories.map(subcategory => (
                           <Subcategory subcategory={subcategory} />
-                      </div>
-                  ))
+                      ))
+                    : item.companies?.map(company => <Company company={company} />)
                 : null}
         </article>
     );

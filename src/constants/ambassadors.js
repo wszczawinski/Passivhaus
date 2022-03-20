@@ -12,6 +12,14 @@ import megatherm from '../images/ambasadorzy/megatherm_logo.jpg';
 import infatec from '../images/ambasadorzy/infatec_logo.jpg';
 import izodom from '../images/ambasadorzy/izodom_logo.jpg';
 import solcraft from '../images/ambasadorzy/solcraft_logo.png';
+import glassolutions from '../images/ambasadorzy/glassolutions_logo.jpg';
+import cal from '../images/ambasadorzy/cal_logo.png';
+import variotec from '../images/ambasadorzy/variotec_logo.png';
+import domel from '../images/ambasadorzy/domel_logo.png';
+import elwiz from '../images/ambasadorzy/elwiz_logo.jpg';
+import internorm from '../images/ambasadorzy/internorm_logo.jpg';
+import aluplast from '../images/ambasadorzy/aluplast_logo.png';
+import aluprof from '../images/ambasadorzy/aluprof_logo.png';
 
 export const ambassadors = [
     {
@@ -171,6 +179,15 @@ export const ambassadors = [
                         image: infatec,
                     },
                     {
+                        name: 'Saint-Gobain Construction Products Polska Sp. z o.o.',
+                        link: 'http://www.isover.pl/',
+                        address: 'ul. Okrężna 16, 44-100 Gliwice',
+                        phone: '+48 32 339 63 00',
+                        email: 'konsultanci.isover@saint-gobain.com',
+                        website: 'www.isover.pl',
+                        image: isover,
+                    },
+                    {
                         name: 'Izodom 2000 Polska Sp. z o.o.',
                         link: 'http://www.izodom2000polska.com/index.php?lang=pl',
                         address: 'ul. Ceramiczna 2A, 98-220 Zduńska Wola',
@@ -178,6 +195,15 @@ export const ambassadors = [
                         email: 'izodom@izodom.pl',
                         website: 'www.tremco-illbruck.pl',
                         image: izodom,
+                    },
+                    {
+                        name: 'Kingspan Insulation',
+                        link: 'http://www.kingspaninsulation.pl/',
+                        address: 'ul. Gdańska 134, 62-200 Gniezno',
+                        phone: '+48 (0) 61 425 56 48 wew.56',
+                        email: 'info@kingspaninsulation.pl',
+                        website: 'http://www.kingspaninsulation.pl/',
+                        image: kingspan,
                     },
                     {
                         name: 'Solcraft Sp. z o.o.',
@@ -188,13 +214,169 @@ export const ambassadors = [
                         website: 'www.solcraft.pl',
                         image: solcraft,
                     },
+                    {
+                        name: 'STEICO S.A',
+                        link: 'http://www.steico.com/pl/',
+                        address: 'ul. Przemysłowa 2, 64-700 Czarnków',
+                        phone: '+48 (67) 35 60 999',
+                        email: 'info@steico.pl',
+                        website: 'www.steico.com',
+                        image: steico,
+                    },
                 ],
             },
         ],
     },
     {
         category: '2. Powłoki i elementy przezierne - Transparent building envelope',
-        subcategories: [],
+        subcategories: [
+            {
+                title: 'Drzwi przesuwane - Sliding doors',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+            {
+                title: 'Drzwi wejściowe - Entry doors',
+                companies: [
+                    {
+                        name: 'Zakład Stolarki Budowlanej „CAL” Z. Cywiński  i wspólnicy Sp. J',
+                        link: 'https://www.drzwi-cal.pl/',
+                        address: 'ul. Piaskowa 5, 16-400 Suwałki',
+                        phone: '+48(87) 563 11 11',
+                        email: '',
+                        website: 'www.drzwi-cal.pl',
+                        image: cal,
+                    },
+                    {
+                        name: 'VARIOTEC GmbH & Co. KG',
+                        link: 'http://variotec.de/hp358/Startseite.htm',
+                        address: 'Weißmarterstraße 3-5, D-92318 Neumarkt/OPf.',
+                        phone: '+49 9181 6946-0',
+                        email: 'info@variotec.de',
+                        website: 'www.variotec.de',
+                        image: variotec,
+                    },
+                ],
+            },
+            {
+                title: 'Okna - Windows',
+                companies: [
+                    {
+                        name: 'Domel Sp. z o.o.',
+                        link: 'www.domel.pl',
+                        address: 'Aleja Józefa Piłsudskiego 70, 18-400 Łomża',
+                        phone: '+48 86 215 66 88',
+                        email: 'domel@domel.pl',
+                        website: 'www.domel.pl',
+                        image: domel,
+                    },
+                    {
+                        name: 'Elwiz S.A.',
+                        link: 'http://www.elwiz.eu/j/index.php?lang=pl',
+                        address: '66-008 Świdnica, ul. Obwodowa 11',
+                        phone: '+48 68 327 32 26',
+                        email: 'sekretariat@elwiz.eu',
+                        website: 'www.elwiz.eu',
+                        image: elwiz,
+                    },
+                    {
+                        name: 'IFTM Internorm Sp. z o.o.',
+                        link: 'https://www.internorm.com/pl-pl/internorm.html',
+                        address: 'ul. Nad Wilanówką 9, 02-993 Warszawa',
+                        phone: '+48 22 842 82 99',
+                        email: 'biuro@internorm.com.pl',
+                        website: 'www.internorm.pl',
+                        image: internorm,
+                    },
+                ],
+            },
+            {
+                title: 'Okna dachowe - Roof Windows',
+                companies: [
+                    {
+                        name: 'FAKRO Sp. z o.o.',
+                        link: 'http://www.fakro.pl/',
+                        address: 'ul. Węgierska 144a, 33-300 Nowy Sącz',
+                        phone: '+48 (18) 444 04 44',
+                        email: 'fakro@fakro.pl',
+                        website: 'www.fakro.pl',
+                        image: fakro,
+                    },
+                ],
+            },
+            {
+                title: 'Profile okienne - Window profiles',
+                companies: [
+                    {
+                        name: 'Aluplast Sp. z o.o.',
+                        link: 'http://www.aluplast.com.pl/',
+                        address: 'ul. Gołężycka 25 A, 61-357 Poznań',
+                        phone: '+48 61 654 34 00',
+                        email: 'aluplast@aluplast.com.pl',
+                        website: 'www.aluplast.com.pl',
+                        image: aluplast,
+                    },
+                    {
+                        name: 'Aluprof S.A.',
+                        link: 'http://www.aluprof.eu/budownictwo-pasywne-i-energooszczedne-3',
+                        address: 'ul. Warszawska 153, 43-300 Bielsko-Biała',
+                        phone: '+48 (33) 819 53 00',
+                        email: 'aluprof@aluprof.eu',
+                        website: 'www.aluprof.eu',
+                        image: aluprof,
+                    },
+                ],
+            },
+            {
+                title: 'Przekładki - Spacers',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+            {
+                title: 'Rolety  Żaluzje - Shutters',
+                companies: [
+                    {
+                        name: 'Aluprof S.A.',
+                        link: 'http://www.aluprof.eu/budownictwo-pasywne-i-energooszczedne-3',
+                        address: 'ul. Warszawska 153, 43-300 Bielsko-Biała',
+                        phone: '+48 (33) 819 53 00',
+                        email: 'aluprof@aluprof.eu',
+                        website: 'www.aluprof.eu',
+                        image: aluprof,
+                    },
+                ],
+            },
+            {
+                title: 'Systemy fasadowe - Curtain wall systems',
+                companies: [
+                    {
+                        name: 'Aluprof S.A.',
+                        link: 'http://www.aluprof.eu/budownictwo-pasywne-i-energooszczedne-3',
+                        address: 'ul. Warszawska 153, 43-300 Bielsko-Biała',
+                        phone: '+48 (33) 819 53 00',
+                        email: 'aluprof@aluprof.eu',
+                        website: 'www.aluprof.eu',
+                        image: aluprof,
+                    },
+                ],
+            },
+            {
+                title: 'Szklane dachy, świetliki - Glass roofs, skylights',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+            {
+                title: 'Szklenie - Glazing',
+                companies: [
+                    {
+                        name: 'Glassolutions Saint-Gobain',
+                        link: 'http://glassolutions.pl/pl',
+                        address: 'ul. Kolejowa 1, 32-312 Jaroszewiec',
+                        phone: '+49 32 649950',
+                        email: '',
+                        website: 'www.glassolutions.pl',
+                        image: glassolutions,
+                    },
+                ],
+            },
+        ],
     },
     {
         category: '3. Urządzenia, systemy, instalacje - Units, systems, building services',
