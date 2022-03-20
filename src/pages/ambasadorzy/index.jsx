@@ -1,13 +1,15 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Button, Layout } from '../../components';
+import { Layout, ContainerBlue, Category } from '../../components';
 import { heroText } from '../../constants/heroContent';
+import { ambassadors } from '../../constants/ambassadors';
 
 import './Ambassador.scss';
 
 export default function Ambassador({ data }) {
     const heroImage = getImage(data.heroImage);
+    console.log(ambassadors);
     return (
         <Layout
             heroTextContent={heroText.ambassador}
@@ -15,16 +17,25 @@ export default function Ambassador({ data }) {
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <p>
-                    Ambasadorzy Budownictwa Pasywnego to grupa firm z różnych sektorów branży
-                    budowlanej, które wprowadzają innowacje na Polski rynek w postaci komponentów i
-                    systemów budowlanych zalecanych do stosowania w budynkach pasywnych oraz
-                    świadczą usługi projektowania i budowy takich obiektów w oparciu o kryteria
-                    budownictwa pasywnego według najwyższych standardów opracowanych przez
-                    Passivhaus Institut Darmstadt.
-                </p>
+                <ContainerBlue
+                    text={
+                        <p>
+                            Ambasadorzy Budownictwa Pasywnego to grupa firm z różnych sektorów
+                            branży budowlanej, które wprowadzają innowacje na Polski rynek w postaci
+                            komponentów i systemów budowlanych zalecanych do stosowania w budynkach
+                            pasywnych oraz świadczą usługi projektowania i budowy takich obiektów w
+                            oparciu o kryteria budownictwa pasywnego według najwyższych standardów
+                            opracowanych przez Passivhaus Institut Darmstadt.
+                        </p>
+                    }
+                    border
+                />
 
-                <Button textContent={'Ambasador button'} />
+                <div className="ambassador__categories-container">
+                    {ambassadors.map(item => (
+                        <Category category={item} />
+                    ))}
+                </div>
             </section>
         </Layout>
     );
