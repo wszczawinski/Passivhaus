@@ -53,7 +53,7 @@ export const pageQuery = graphql`
                     title
                     thumb {
                         childImageSharp {
-                            gatsbyImageData(placeholder: BLURRED, width: 700)
+                            gatsbyImageData(placeholder: BLURRED, width: 1100)
                         }
                     }
                 }

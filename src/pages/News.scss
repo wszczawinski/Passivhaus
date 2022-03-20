@@ -42,19 +42,23 @@
     &__title {
         padding: 4%;
         margin: 0;
-        font-size: 48px;
+        font-size: 26px;
         color: $color-navy;
         width: 100%;
         text-align: center;
 
-        @media (max-width: $break-point-desktop) {
-            font-size: 26px;
+        @media (min-width: $break-point-desktop) {
+            font-size: 40px;
+        }
+
+        @media (min-width: $break-point-monitor) {
+            font-size: 46px;
         }
     }
 
     &__content {
         display: flex;
-        width: 100%;
+        width: 85%;
         flex: 50%;
         justify-content: center;
         flex-wrap: wrap;

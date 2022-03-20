@@ -116,6 +116,12 @@
                 }
             }
         }
+
+        @media (min-width: $break-point-monitor) {
+            &--subtitle {
+                font-size: 70px;
+            }
+        }
     }
 
     &__figure {
