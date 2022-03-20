@@ -7,16 +7,22 @@
 
     &__title {
         font-weight: 700;
-        font-size: 18px;
+        font-size: $font-size-mobile;
 
-    & p {
-            font-size: 12px;
-    }
+        @media (min-width: $break-point-desktop) {
+            font-size: $font-size-desktop;
+        }
 
-        @media (max-width: $break-point-desktop) {
-            font-size: 14px;
+        @media (min-width: $break-point-monitor) {
+            font-size: 22px;
         }
     }
+
+    & p {
+        @media (min-width: $break-point-monitor) {
+            font-size: 22px;
+        }
+}
 
     &__img {
         display: flex;
@@ -30,7 +36,7 @@
             position: absolute;
             width: 100%;
             bottom: 5%;
-            padding: 3% 3% 3% 10%;
+            padding: 3%;
             background-color: rgba(255, 255, 255, 0.78);
         }
     }

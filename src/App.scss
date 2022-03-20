@@ -8,7 +8,9 @@ $color-cream: #faf2e8;
 $color-cookie: #fcdcb4;
 
 $break-point-desktop: 1000px;
+$break-point-monitor: 1920px;
 
+$font-size-monitor: 20px;
 $font-size-desktop: 16px;
 $font-size-mobile: 14px;
 
@@ -43,11 +45,15 @@ main {
     .layout-content {
         display: flex;
         flex-direction: column;
-        font-size: $font-size-desktop;
+        font-size: $font-size-mobile;
         width: 100%;
 
-        @media (max-width: $break-point-desktop) {
-            font-size: $font-size-mobile;
+        @media (min-width: $break-point-desktop) {
+            font-size: $font-size-desktop;
+        }
+
+        @media (min-width: $break-point-monitor) {
+            font-size: $font-size-monitor;
         }
     }
 }

@@ -4,17 +4,17 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 80%;
-    margin: 5% 10%;
-    padding: 5% 10%;
+    width: 90%;
+    margin: 10% 5%;
+    padding: 5% 5%;
     background-color: $color-navy;
+    border-radius: 30px;
 
     color: white;
     border-radius: 40px;
     letter-spacing: 1px;
     line-height: 26px;
     font-weight: 450;
-    font-size: $font-size-desktop;
 
     &__border {
         border-top: white 3px solid;
@@ -30,12 +30,15 @@
         margin-top: 5%;
     }
 
-    @media (max-width: $break-point-desktop) {
-        font-size: $font-size-mobile;
-        padding: 25px;
-        border-radius: 30px;
-        width: 90%;
-        margin: 10% 5%;
-        padding: 5% 5%;
+    @media (min-width: $break-point-desktop) {
+        width: 80%;
+        margin: 5% 10%;
+        padding: 5% 10%;
+    }
+
+    @media (min-width: $break-point-monitor) {
+        margin: 5% 10%;
+        padding: 3% 5%;
+        text-align: center;
     }
 }

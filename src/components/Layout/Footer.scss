@@ -1,7 +1,6 @@
 @import '../../App.scss';
 
 .footer {
-    font-size: 12px;
     background-color: $color-navy;
     color: white;
     display: flex;
@@ -32,7 +31,6 @@
     }
 
     @media (min-width: $break-point-desktop) {
-        font-size: 14px;
         flex-direction: row;
         align-items: flex-start;
         padding: 2% 10%;

@@ -18,7 +18,6 @@
         letter-spacing: 1px;
         line-height: 26px;
         font-weight: 450;
-        font-size: $font-size-desktop;
         padding: 0 5% 2%;
         border-radius: 40px;
         
@@ -32,7 +31,6 @@
 
         @media (max-width: $break-point-desktop) {
             width: 100%;
-            font-size: $font-size-mobile;
             padding: 5px;
             border-radius: 30px;
         }
