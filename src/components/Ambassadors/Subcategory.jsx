@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
 
-export const Subcategory = () => {
-  return (
-    <div>Subcategory</div>
-  )
-}
+import './Ambassadors.scss';
+
+export const Subcategory = ({ subcategory }) => {
+    return <div>{subcategory.title}</div>;
+};

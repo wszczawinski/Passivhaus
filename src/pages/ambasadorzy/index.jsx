@@ -31,9 +31,9 @@ export default function Ambassador({ data }) {
                     border
                 />
 
-                <div className="ambassador__categories-container">
+                <div className="ambassador__container">
                     {ambassadors.map(item => (
-                        <Category category={item} />
+                        <Category item={item} />
                     ))}
                 </div>
             </section>

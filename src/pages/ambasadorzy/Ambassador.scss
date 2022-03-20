@@ -1,1 +1,15 @@
 @import '../../App.scss';
+
+.ambassador__container {
+    background-color: $color-orange;
+    padding: 5%;
+    color: white;
+
+    @media (min-width: $break-point-desktop) {
+        padding: 5% 10%;
+    }
+
+    @media (min-width: $break-point-monitor) {
+        
+    }
+}

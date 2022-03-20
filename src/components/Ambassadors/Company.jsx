@@ -1,7 +1,7 @@
-import React from 'react'
+import React from 'react';
+
+import './Ambassadors.scss';
 
 export const Company = () => {
-  return (
-    <div>Company</div>
-  )
-}
+    return <div>Company</div>;
+};
