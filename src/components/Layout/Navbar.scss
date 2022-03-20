@@ -82,6 +82,11 @@
                 font-weight: bold;
                 color: $color-navy;
                 cursor: pointer;
+
+                &:hover {
+                    text-decoration: underline;
+                    color:rgba(250, 100, 0, 0.8)
+                }
             }
         }
 
