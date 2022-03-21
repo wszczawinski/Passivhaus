@@ -26,6 +26,7 @@ import csstudio from '../images/ambasadorzy/csstudio_logo.jpg';
 import greencherry from '../images/ambasadorzy/greencherry_logo.jpg';
 import ls from '../images/ambasadorzy/ls_logo.jpg';
 import pasywnym from '../images/ambasadorzy/pasywnym_logo.jpg';
+import slomniki from '../images/ambasadorzy/slomniki_logo.png';
 
 export const ambassadors = [
     {
@@ -484,13 +485,13 @@ export const ambassadors = [
         category: '10. Honorowi  Ambasadorzy Budownictwa Pasywnego',
         companies: [
             {
-                name: 'ARCHITEKTURA PASYWNA PYSZCZEK I STELMACH SP.J.',
-                link: 'http://www.architekturapasywna.pl/start/',
-                address: 'ul. Białoprądnicka 24d/50, Kraków 31-223',
-                phone: '+48 12 6337908',
-                email: 'biuro@architekturapasywna.pl',
-                website: 'www.architekturapasywna.pl',
-                image: aura,
+                name: 'Gmina Słomniki jest liderem Budownictwa Pasywnego w Polsce',
+                link: 'http://www.slomniki.pl/index.php/budownictwo-pasywne',
+                address: 'Urząd Miejski w Słomnikach, ul. Tadeusza Kościuszki 64, 32-090 Słomniki ',
+                phone: '+48 12 388 11 02',
+                email: '',
+                website: 'http://www.slomniki.pl',
+                image: slomniki,
             },
         ],
     },

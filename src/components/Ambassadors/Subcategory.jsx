@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { BiDownArrow, BiUpArrow } from 'react-icons/bi';
+import { BiDownArrow, BiUpArrow, BiInfoCircle } from 'react-icons/bi';
 import { Company } from '../';
 
 import './Ambassadors.scss';
@@ -20,9 +20,15 @@ export const Subcategory = ({ subcategory }) => {
 
             {showCompanies ? (
                 subcategory.companies ? (
-                    subcategory.companies.map(company => <Company company={company} />)
+                    <div className="ambassador__category-companies">
+                        {subcategory.companies.map(company => (
+                            <Company company={company} />
+                        ))}
+                    </div>
                 ) : (
-                    <p>{subcategory.text}</p>
+                    <div className="ambassador__category-text">
+                        <BiInfoCircle /> <p>{subcategory.text}</p>
+                    </div>
                 )
             ) : null}
         </>
