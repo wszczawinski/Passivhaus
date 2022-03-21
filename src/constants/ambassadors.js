@@ -20,6 +20,12 @@ import elwiz from '../images/ambasadorzy/elwiz_logo.jpg';
 import internorm from '../images/ambasadorzy/internorm_logo.jpg';
 import aluplast from '../images/ambasadorzy/aluplast_logo.png';
 import aluprof from '../images/ambasadorzy/aluprof_logo.png';
+import bemares from '../images/ambasadorzy/bemares_logo.png';
+import aura from '../images/ambasadorzy/aura_logo.png';
+import csstudio from '../images/ambasadorzy/csstudio_logo.jpg';
+import greencherry from '../images/ambasadorzy/greencherry_logo.jpg';
+import ls from '../images/ambasadorzy/ls_logo.jpg';
+import pasywnym from '../images/ambasadorzy/pasywnym_logo.jpg';
 
 export const ambassadors = [
     {
@@ -385,16 +391,82 @@ export const ambassadors = [
     {
         category:
             '4. Certyfikowany pasywny montaż okien i drzwi - Certified passive installation of windows and doors',
-        subcategories: [],
+        companies: [
+            {
+                name: 'BEMA-RES Nowoczesne Budownictwo',
+                link: 'http://bemares.pl/',
+                address: '',
+                phone: '+48 510 218 680',
+                email: '',
+                website: 'www.bemares.pl',
+                image: bemares,
+            },
+        ],
     },
     {
         category: '5. Projektowania instalacji - Designing of sanitary installation',
-        subcategories: [],
+        companies: [
+            {
+                name: 'AURA Plus Sp. z o.o. Sp.k.',
+                link: 'https://auraplus.pl/',
+                address: 'ul. Antoniego Baraniaka 96/98, 61-245 Poznań',
+                phone: '+48 575 702 039',
+                email: 'biuro@auraplus.pl',
+                website: 'www.auraplus.pl',
+                image: aura,
+            },
+        ],
     },
     {
         category:
             '6. Projektowanie architektoniczne, nadzory autorskie, inwestorskie - Architectural design, supervisions',
-        subcategories: [],
+        companies: [
+            {
+                name: 'ARCHITEKTURA PASYWNA PYSZCZEK I STELMACH SP.J.',
+                link: 'http://www.architekturapasywna.pl/start/',
+                address: 'ul. Białoprądnicka 24d/50, Kraków 31-223',
+                phone: '+48 12 6337908',
+                email: 'biuro@architekturapasywna.pl',
+                website: 'www.architekturapasywna.pl',
+                image: aura,
+            },
+            {
+                name: 'CS studio',
+                link: 'www.dom-pasywny.com',
+                address: 'ul. Konstancińska 2 lok.U21, 02-942 Warszawa',
+                phone: '+48 691 59 87 73',
+                email: 'mail@cezary-sankowski.pl',
+                website: 'www.dom-pasywny.com',
+                image: csstudio,
+            },
+            {
+                name: 'GreenCherry Architecture',
+                link: 'www.greencherry.eu',
+                address: 'ul. Purkyniego 1, lokal 114, 50-155 Wrocław',
+                phone: '+48 508 449 288',
+                email: 'arch.kamil.wisniewski@gmail.com',
+                website: 'www.greencherry.eu',
+                image: greencherry,
+            },
+            {
+                name: 'Pracownia Architektoniczna Łukasz Smól',
+                link: 'www.eko-architektura.pl',
+                address: 'ul. Świętego Mikołaja 3/1, 81-062 Gdynia',
+                phone: '+48 694 86 04 28',
+                email: 'lsmol@interia.pl',
+                website: 'www.eko-architektura.pl',
+                image: ls,
+            },
+            {
+                name: 'Projektowanie budynków pasywnych',
+                link: 'www.pasywnym2.pl',
+                address: 'ul. Szamotulska 40/1, 60-366 Poznań',
+                phone: '+48 695 647 058',
+                email: 'biuro@pasywnym2.pl',
+                website: 'www.pasywnym2.pl',
+                image: pasywnym,
+            },
+        ],
     },
     {
         category: '7. Producenci budynków pasywnych - Manufacturers of passive houses',
@@ -410,6 +482,16 @@ export const ambassadors = [
     },
     {
         category: '10. Honorowi  Ambasadorzy Budownictwa Pasywnego',
-        subcategories: [],
+        companies: [
+            {
+                name: 'ARCHITEKTURA PASYWNA PYSZCZEK I STELMACH SP.J.',
+                link: 'http://www.architekturapasywna.pl/start/',
+                address: 'ul. Białoprądnicka 24d/50, Kraków 31-223',
+                phone: '+48 12 6337908',
+                email: 'biuro@architekturapasywna.pl',
+                website: 'www.architekturapasywna.pl',
+                image: aura,
+            },
+        ],
     },
 ];

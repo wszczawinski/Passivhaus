@@ -17,13 +17,15 @@ export const Category = ({ item }) => {
                 <h3>{item.category}</h3>
                 {!showSubcategory ? <BiDownArrow /> : <BiUpArrow />}
             </button>
-            {showSubcategory
-                ? item.subcategories
-                    ? item.subcategories.map(subcategory => (
-                          <Subcategory subcategory={subcategory} />
-                      ))
-                    : item.companies?.map(company => <Company company={company} />)
-                : null}
+            <div className="ambassador__category-container">
+                {showSubcategory
+                    ? item.subcategories
+                        ? item.subcategories.map(subcategory => (
+                              <Subcategory subcategory={subcategory} />
+                          ))
+                        : item.companies?.map(company => <Company company={company} />)
+                    : null}
+            </div>
         </article>
     );
 };
