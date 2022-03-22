@@ -27,6 +27,9 @@ import greencherry from '../images/ambasadorzy/greencherry_logo.jpg';
 import ls from '../images/ambasadorzy/ls_logo.jpg';
 import pasywnym from '../images/ambasadorzy/pasywnym_logo.jpg';
 import slomniki from '../images/ambasadorzy/slomniki_logo.png';
+import phpp from '../images/ambasadorzy/phpp_logo.jpg';
+import blower from '../images/ambasadorzy/blower_logo.jpg';
+import pass from '../images/ambasadorzy/pass_logo.png';
 
 export const ambassadors = [
     {
@@ -475,19 +478,57 @@ export const ambassadors = [
     },
     {
         category: '8. Pomiary budynków - measurement of buildings',
-        subcategories: [],
+        companies: [
+            {
+                name: 'Angstorm Wiesława Stempel',
+                link: '',
+                address: '',
+                phone: '+48 609 78 09 69',
+                email: 'biuro@angstrom.pl',
+                website: 'www.angstrom.pl',
+                image: null,
+            },
+            {
+                name: 'BlowerDoor GmbH Przedstawicielstwo generalne w Polsce: Biuro Techniczne Michał Szymański',
+                link: 'http://www.blowerdoor.pl',
+                address: 'Jana Pawła II 28, 61-131 Poznań',
+                phone: '+48 600 448 458',
+                email: 'info@bowerdoor.pl',
+                website: 'www.blowerdoor.pl',
+                image: blower,
+            },
+            {
+                name: 'PASS Doradztwo Energetyczne Katarzyna Jarocka',
+                link: 'http://www.passdoradztwo.pl/',
+                address: '',
+                phone: '+48 795 435 837',
+                email: 'biuro@passdoradztwo.pl',
+                website: 'www.passdoradztwo.pl',
+                image: pass,
+            },
+        ],
     },
     {
         category: '9. Oprogramowanie specjalistyczne',
-        subcategories: [],
+        companies: [
+            {
+                name: 'Polski Instytut Budownictwa Pasywnego',
+                link: '',
+                address: 'ul. Homera 55, 80-299 GDAŃSK',
+                phone: '+48 58 524 12 06',
+                email: 'pibp@pibp.pl',
+                website: '',
+                image: phpp,
+            },
+        ],
     },
     {
         category: '10. Honorowi  Ambasadorzy Budownictwa Pasywnego',
         companies: [
             {
                 name: 'Gmina Słomniki jest liderem Budownictwa Pasywnego w Polsce',
-                link: 'http://www.slomniki.pl/index.php/budownictwo-pasywne',
-                address: 'Urząd Miejski w Słomnikach, ul. Tadeusza Kościuszki 64, 32-090 Słomniki ',
+                link: '',
+                address: 'Urząd Miejski w Słomnikach, ul. Tadeusza Kościuszki 64, 32-090 Słomniki',
                 phone: '+48 12 388 11 02',
                 email: '',
                 website: 'http://www.slomniki.pl',
