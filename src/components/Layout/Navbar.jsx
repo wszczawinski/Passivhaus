@@ -11,7 +11,6 @@ import {
     firmNavItems,
     workshopsNavItems,
     passivhausNavItems,
-    literatureNavItems,
 } from '../../constants/subNavItems';
 
 export default function Navbar() {
@@ -69,12 +68,15 @@ export default function Navbar() {
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
-                <NavbarItem
-                    item="Sklep"
-                    subNavItems={literatureNavItems}
-                    changeVisibility={changeNavVisibility}
-                    showItem={showItem}
-                />
+                <li>
+                    <Link
+                        to="/sklep/"
+                        onClick={changeNavVisibility}
+                        activeClassName="navbar__active-item"
+                    >
+                        <p>SKLEP</p>
+                    </Link>
+                </li>
                 <NavbarItem
                     item="Szkolenia"
                     subNavItems={workshopsNavItems}
