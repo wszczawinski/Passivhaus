@@ -18,7 +18,7 @@ export default function Home({ data }) {
                     <Schedule scheduleImage={scheduleImage} />
                 </aside>
                 <div className="news-container">
-                    <h1 className="news-container__title">Aktualności</h1>
+                    <h1 className="news-container__title">AKTUALNOŚCI</h1>
                     <div className="news-container__content">
                         {news.map(element => (
                             <News singleNews={element} key={element.id} />

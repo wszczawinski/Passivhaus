@@ -1,8 +1,9 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Layout } from '../../components';
+import { FullImageContainer, Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
+import zespolImg from '../../images/firm/zespol.jpeg';
 
 import './Firm.scss';
 
@@ -56,6 +57,8 @@ export default function Team({ data }) {
                         </li>
                     </ul>
                 </div>
+
+                <img src={zespolImg} alt="Zespół" className="team-img" />
             </section>
         </Layout>
     );
