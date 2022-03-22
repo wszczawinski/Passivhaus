@@ -3,8 +3,12 @@ import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { Button, Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
+import phpp from '../../images/sklep/phpp.svg';
+import ogrzewanie from '../../images/sklep/ogrzewanie.svg';
+import budynekPas from '../../images/sklep/bud-pas.svg';
 
 import './Literature.scss';
+import ShopItem from '../../components/ShopItem/ShopItem';
 
 export default function Literature({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -15,14 +19,17 @@ export default function Literature({ data }) {
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
-                    nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias
-                    cum incidunt, dignissimos dolorum possimus provident quidem nostrum laudantium.
-                    Nemo!
-                </p>
-
-                <Button textContent={'Literature button'} />
+                <div className="shop-items-list">
+                    <ShopItem
+                        img={phpp}
+                        alt="Pakiet do projektowania budynków pasywnych PHPPp"
+                        title="Pakiet do projektowania budynków pasywnych PHPP"
+                        description="gggg"
+                        price='123 zł'
+                    />
+                    <ShopItem img={ogrzewanie} alt="Poradnik OGRZEWANIE I KLIMATYZACJA" title="Poradnik OGRZEWANIE I KLIMATYZACJA" description="gggg" />
+                    <ShopItem img={budynekPas} alt="Budownictwo Pasywne 2017" title="Budownictwo Pasywne 2017 Materiały konferencyjne" description="gggg" />
+                </div>
             </section>
         </Layout>
     );
