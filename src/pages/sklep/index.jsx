@@ -1,14 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Button, Layout } from '../../components';
+import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import phpp from '../../images/sklep/phpp.svg';
-import ogrzewanie from '../../images/sklep/ogrzewanie.svg';
-import budynekPas from '../../images/sklep/bud-pas.svg';
 
 import './Literature.scss';
 import ShopItem from '../../components/ShopItem/ShopItem';
+import { shopItems } from './shopItems';
 
 export default function Literature({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -20,15 +18,15 @@ export default function Literature({ data }) {
         >
             <section className="layout-content">
                 <div className="shop-items-list">
-                    <ShopItem
-                        img={phpp}
-                        alt="Pakiet do projektowania budynków pasywnych PHPPp"
-                        title="Pakiet do projektowania budynków pasywnych PHPP"
-                        description="gggg"
-                        price='123 zł'
-                    />
-                    <ShopItem img={ogrzewanie} alt="Poradnik OGRZEWANIE I KLIMATYZACJA" title="Poradnik OGRZEWANIE I KLIMATYZACJA" description="gggg" />
-                    <ShopItem img={budynekPas} alt="Budownictwo Pasywne 2017" title="Budownictwo Pasywne 2017 Materiały konferencyjne" description="gggg" />
+                    {shopItems.map(shopItem => (
+                        <ShopItem
+                            img={shopItem.img}
+                            alt={shopItem.title}
+                            title={shopItem.title}
+                            description={shopItem.description}
+                            price={shopItem.price}
+                        />
+                    ))}
                 </div>
             </section>
         </Layout>

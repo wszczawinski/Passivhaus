@@ -12,7 +12,7 @@ function ShopItem({ img, alt, title, description, price }) {
             <span className="shopItem__title">{title}</span>
             {price && <p className="shopItem__price">{price}</p>}
             {!modalOpen &&<button onClick={handleOpen}>Szczegóły</button>}
-            {modalOpen && <Modal title={title} content={description} handleClose={handleClose} />}
+            {modalOpen && <Modal content={description} handleClose={handleClose} />}
         </div>
     );
 }

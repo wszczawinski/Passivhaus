@@ -1,11 +1,14 @@
 import React from 'react';
 
-function Modal({ title, content, handleClose }) {
+import './Modal.scss';
+
+function Modal({ content, handleClose }) {
     return (
-        <div>
-            <span>{title}</span>
-            <span>{content}</span>
-            <button onClick={handleClose}>X</button>
+        <div className="modal">
+            <section className="modal__window">
+                <span>{content.map(item => <p>{item}</p>)}</span>
+                <button className='modal__window--close' onClick={handleClose}>X</button>
+            </section>
         </div>
     );
 }
