@@ -30,6 +30,16 @@ import slomniki from '../images/ambasadorzy/slomniki_logo.png';
 import phpp from '../images/ambasadorzy/phpp_logo.jpg';
 import blower from '../images/ambasadorzy/blower_logo.jpg';
 import pass from '../images/ambasadorzy/pass_logo.png';
+import biedrzycki from '../images/ambasadorzy/biedrzycki_logo.png';
+import ecofix from '../images/ambasadorzy/ecofix_logo.png';
+import gc from '../images/ambasadorzy/gc_logo.jpg';
+import ibud from '../images/ambasadorzy/ibud_logo.jpg';
+import inhom from '../images/ambasadorzy/inhom_logo.jpg';
+import multi from '../images/ambasadorzy/multi_logo.jpg';
+import oszczednydom from '../images/ambasadorzy/oszczednydom_logo.png';
+import szreder from '../images/ambasadorzy/szreder_logo.jpg';
+import tadeks from '../images/ambasadorzy/tadeks_logo.jpg';
+import thermblock from '../images/ambasadorzy/thermblock_logo.jpg';
 
 export const ambassadors = [
     {
@@ -474,7 +484,98 @@ export const ambassadors = [
     },
     {
         category: '7. Producenci budynków pasywnych - Manufacturers of passive houses',
-        subcategories: [],
+        companies: [
+            {
+                name: 'Domy Biedrzycki',
+                link: 'http://domybiedrzycki.pl/',
+                address: 'Wilków nad Wisłą 27, 05-155 Leoncin',
+                phone: '+48 501 660 408',
+                email: 'biuro@domybiedrzycki.pl',
+                website: 'www.domybiedrzycki.pl',
+                image: biedrzycki,
+            },
+            {
+                name: 'Eco-Fix Sp. z o.o.',
+                link: 'http://ecofix.biz/',
+                address: '65-729 Zielona Góra, ul. Energetyków 7',
+                phone: '+48 68 400 0007',
+                email: 'info@ecofix.biz',
+                website: 'www.ecofix.biz',
+                image: ecofix,
+            },
+            {
+                name: 'Green Collective Sp. z o.o.',
+                link: 'http://greencollective.pl/',
+                address: 'ul. Pasterska 35, 62-064 Plewiska',
+                phone: '+48 695 888 835',
+                email: 'piotr@greencollective.pl',
+                website: 'www.greencollective.pl',
+                image: gc,
+            },
+            {
+                name: 'IBUDHAUS Jakub Matusiński',
+                link: 'http://www.ibudhaus.pl',
+                address: 'Pszczyna, ul. Bielska 41',
+                phone: '+48 601 477 086',
+                email: '',
+                website: 'www.ibudhaus.pl',
+                image: ibud,
+            },
+            {
+                name: 'Inhom Sp. z o.o.',
+                link: 'http://www.inhom.pl/',
+                address: 'Leśny Stok 25, 80-260 Gdańsk',
+                phone: '+48 606 143 901',
+                email: 'biuro@inhom.pl',
+                website: 'www.inhom.pl',
+                image: inhom,
+            },
+            {
+                name: 'Multicomfort Sp. z o.o.',
+                link: 'http://www.multicomfort.pl/',
+                address: 'ul. Pod Pomnikiem 13, 30-898 Kraków',
+                phone: '+48 697 008 908',
+                email: 'biuro@multicomfort.pl',
+                website: 'www.multicomfort.pl/',
+                image: multi,
+            },
+            {
+                name: 'Oszczędny Dom',
+                link: 'http://www.oszczednydom.org.pl/',
+                address: '00-023 Warszawa, ul. Widok 24 lok. 17',
+                phone: '+48 663 077 077',
+                email: 'kontakt@oszczednydom.org.pl',
+                website: 'www.oszczednydom.org.pl/',
+                image: oszczednydom,
+            },
+            {
+                name: 'SZREDER A.C.',
+                link: 'http://www.oszczednydom.org.pl/',
+                address: 'ul. Kościuszki 35, 96-316 Międzyborów',
+                phone: '+48 46 855 25 66',
+                email: 'szrederac@gmail.com',
+                website: 'www.szreder.pl',
+                image: szreder,
+            },
+            {
+                name: 'Z.P.H.U. TADEKS FERTIG HAUS',
+                link: 'http://www.tadeks.pl',
+                address: '42-141 Przystajń, ul. Nowa 56',
+                phone: '+48 691 524 232',
+                email: 'biuro@tadeks.pl',
+                website: 'www.tadeks.pl',
+                image: tadeks,
+            },
+            {
+                name: 'THERMBLOCK DOMY PASYWNE',
+                link: 'http://www.therm-block.pl',
+                address: '',
+                phone: '+48 725 398 388',
+                email: 'biuro@therm-block.pl',
+                website: 'www.therm-block.pl',
+                image: thermblock,
+            },
+        ],
     },
     {
         category: '8. Pomiary budynków - measurement of buildings',
