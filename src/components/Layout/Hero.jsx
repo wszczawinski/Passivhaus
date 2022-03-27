@@ -20,9 +20,9 @@ export default function Hero({ heroClass = '', text, backgroundImage }) {
                         <img src={pibpLogo} alt="logo PIBP" />
                         <span className="hero__content-area--text">
                             <h1>
-                                <p>POLSKI INSTYTUT</p>
-                                <p>BUDOWNICTWA</p>
-                                <p>PASYWNEGO</p>
+                                <p>Polski Instytut</p>
+                                <p>Budownictwa</p>
+                                <p>Pasywnego</p>
                             </h1>
                         </span>
                     </div>
