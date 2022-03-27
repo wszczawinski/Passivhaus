@@ -50,6 +50,26 @@
             text-align: justify;
         }
 
+        &__images {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            & img {
+                margin: 2% 0;
+                max-height: 20vh;
+            }
+
+            @media (min-width: $break-point-desktop) {
+                flex-direction: row;
+
+                & img {
+                    max-height: 50vh;
+                }
+            }
+        }
+
         img {
             width: auto;
             height: auto;
@@ -80,5 +100,16 @@
 
     p {
         color: black;
+    }
+}
+
+.image-description {
+    font-size: 9px;
+    margin: 0;
+    text-align: center;
+
+    @media (min-width: $break-point-desktop) {
+        font-size: 11px;
+        width: 60%;
     }
 }

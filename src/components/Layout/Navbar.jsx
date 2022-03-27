@@ -5,6 +5,7 @@ import './Navbar.scss';
 
 import { FaBars, FaHome, FaTimes } from 'react-icons/fa';
 import pibpLogo from '../../images/pibpLogo.png';
+import ambassadordLogo from '../../images/neu_AMBASSADOR_LOGO_PL.svg';
 import NavbarItem from './NavbarItem';
 import {
     certificationNavItems,
@@ -94,8 +95,16 @@ export default function Navbar() {
                         to="/ambasadorzy/"
                         onClick={changeNavVisibility}
                         activeClassName="navbar__active-item"
+                        className="navbar__ambassadors"
                     >
-                        <p>AMBASADORZY</p>
+                        <p>
+                            <img
+                                src={ambassadordLogo}
+                                alt="Logo ambasadorów budownictwa pasywnego"
+                                className="navbar__ambassadors--logo"
+                            />
+                            MBASADORZY
+                        </p>
                     </Link>
                 </li>
             </ul>

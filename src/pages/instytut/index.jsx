@@ -46,13 +46,11 @@ export default function About({ data }) {
                                 akredytację PHI do przeprowadzania certyfikacji budynków pasywnych
                                 na terenie Europy.
                             </p>
-                            <p>
-                                Na zdjęciach: Budynek biurowy Polskiego Instytutu Budownictwa
-                                Pasywnego i Energii Odnawialnej w Gdańsku oraz kompleks 3 domów
-                                (energooszczędny 5l, niskoenergetyczny 3l, pasywny 1,5l).
-                            </p>
                         </>
                     }
+                    imageDescription="Na zdjęciach: Budynek biurowy Polskiego Instytutu Budownictwa
+                    Pasywnego i Energii Odnawialnej w Gdańsku oraz kompleks 3 domów
+                    (energooszczędny 5l, niskoenergetyczny 3l, pasywny 1,5l)."
                     textEnd={
                         <>
                             <p>
@@ -73,8 +71,10 @@ export default function About({ data }) {
                             </p>
                         </>
                     }
-                    imgSrc={oNas2}
-                    alt="Kompleks trzech domów energooszczędnych obok Instytutu"
+                    imgSrc={oNas1}
+                    alt="Budynek siedziby Polskiego Instytutu Budownictwa Pasywnego"
+                    img2Src={oNas2}
+                    alt2="Kompleks trzech domów energooszczędnych obok Instytutu"
                     shortBorder
                 />
 

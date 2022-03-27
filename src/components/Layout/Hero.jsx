@@ -1,7 +1,7 @@
 import React from 'react';
 import { GatsbyImage } from 'gatsby-plugin-image';
 import pibpLogo from '../../images/pibpLogo.png';
-import akredytacja from '../../images/akredytacja.png';
+import akredytacja from '../../images/akredytacja.svg';
 
 import './Hero.scss';
 
