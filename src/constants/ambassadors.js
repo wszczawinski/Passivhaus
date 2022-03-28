@@ -40,6 +40,13 @@ import oszczednydom from '../images/ambasadorzy/oszczednydom_logo.png';
 import szreder from '../images/ambasadorzy/szreder_logo.jpg';
 import tadeks from '../images/ambasadorzy/tadeks_logo.jpg';
 import thermblock from '../images/ambasadorzy/thermblock_logo.jpg';
+import ewfe from '../images/ambasadorzy/ewfe_logo.png';
+import paul from '../images/ambasadorzy/paul_logo.jpg';
+import bartosz from '../images/ambasadorzy/bartosz_logo.jpg';
+import stiebel from '../images/ambasadorzy/stiebel_logo.jpg';
+import simet from '../images/ambasadorzy/simet_logo.png';
+import ftronic from '../images/ambasadorzy/ftronic_logo.jpg';
+import viessmann from '../images/ambasadorzy/viessmann_logo.png';
 
 export const ambassadors = [
     {
@@ -400,7 +407,162 @@ export const ambassadors = [
     },
     {
         category: '3. Urządzenia, systemy, instalacje - Units, systems, building services',
-        subcategories: [],
+        subcategories: [
+            {
+                title: 'Automatyka budynkowa - building automation',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+            {
+                title: 'Centrale wentylacyjne o wydajności do 600 m^3/h - Ventilation systems (capacity up to 600 m^3/h)',
+                companies: [
+                    {
+                        name: 'EWFE - Polonia Sp. z o. o.',
+                        link: 'http://www.ewfe.com.pl/produkty/pompy.html',
+                        address: 'ul. Homera 55, 80 - 299 Gdańsk',
+                        phone: '+48 58 342 12 61',
+                        email: 'ewfe@ewfe.com.pl',
+                        website: 'www.ewfe.com.pl',
+                        image: ewfe,
+                    },
+                    {
+                        name: 'Zehnder Polska Sp. z o.o.',
+                        link: 'https://www.zehnder.pl/',
+                        address: 'ul. Irysowa 1, 55-040 Bielany Wrocławskie',
+                        phone: '+48 71 367 64 24',
+                        email: 'info@zehnder.pl',
+                        website: 'www.zehnder.pl',
+                        image: paul,
+                    },
+                    {
+                        name: 'Bartosz Sp. J. Bujwicki, Sobiech',
+                        link: 'http://www.bartosz.com.pl/',
+                        address: 'ul. Sejneńska 7, 15-399 Białystok',
+                        phone: '+48 85 745 57 12',
+                        email: 'handlowy@bartosz.com.pl',
+                        website: 'www.bartosz.com.pl/',
+                        image: bartosz,
+                    },
+                ],
+            },
+            {
+                title: 'Centrale wentylacyjne o wydajności od 600 m^3/h - Ventilation systems (capacity  from 600 m^3/h)',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+            {
+                title: 'Kondensacyjne kotły gazowe - Gas condensing boilers',
+                companies: [
+                    {
+                        name: 'EWFE - Polonia Sp. z o. o.',
+                        link: 'http://www.ewfe.com.pl/produkty/pompy.html',
+                        address: 'ul. Homera 55, 80 - 299 Gdańsk',
+                        phone: '+48 58 342 12 61',
+                        email: 'ewfe@ewfe.com.pl',
+                        website: 'www.ewfe.com.pl',
+                        image: ewfe,
+                    },
+                ],
+            },
+            {
+                title: 'Odzysk ciepła ze ścieków bytowych - Drain water heat recovery',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+            {
+                title: 'Ogrzewanie płaszczyznowe- Surface heating',
+                companies: [
+                    {
+                        name: 'EWFE - Polonia Sp. z o. o.',
+                        link: 'http://www.ewfe.com.pl/produkty/pompy.html',
+                        address: 'ul. Homera 55, 80 - 299 Gdańsk',
+                        phone: '+48 58 342 12 61',
+                        email: 'ewfe@ewfe.com.pl',
+                        website: 'www.ewfe.com.pl',
+                        image: ewfe,
+                    },
+                ],
+            },
+            {
+                title: 'Pomy ciepla - Heat pump units',
+                companies: [
+                    {
+                        name: 'EWFE - Polonia Sp. z o. o.',
+                        link: 'http://www.ewfe.com.pl/produkty/pompy.html',
+                        address: 'ul. Homera 55, 80 - 299 Gdańsk',
+                        phone: '+48 58 342 12 61',
+                        email: 'ewfe@ewfe.com.pl',
+                        website: 'www.ewfe.com.pl',
+                        image: ewfe,
+                    },
+                    {
+                        name: 'Stiebel Eltron-Polska Sp. z o.o.',
+                        link: 'https://www.rehau.com/pl-pl',
+                        address: 'ul. Działkowa 2, 02-234 Warszawa',
+                        phone: '+48 22 609 20 30',
+                        email: 'biuro@stiebel-eltron.pl',
+                        website: 'www.stiebel-eltron.pl',
+                        image: stiebel,
+                    },
+                ],
+            },
+            {
+                title: 'Produkty elektrotechniczne- Electrotechnical products',
+                companies: [
+                    {
+                        name: 'f-tronic GmbH',
+                        link: 'https://www.f-tronic.com',
+                        address: 'Zum Gerlen 21-25, D-66131 Saarbrücken',
+                        phone: '+49 6893 9483-18',
+                        email: 'b.sosniok@f-tronic.de',
+                        website: 'www.f-tronic.com',
+                        image: ftronic,
+                    },
+                    {
+                        name: 'Przedsiębiorstwo „SIMET”',
+                        link: 'http://www.simet.com.pl',
+                        address: 'Al. Jana Pawła II 33, 58-506 Jelenia Góra',
+                        phone: '+48 75 647 14 89',
+                        email: 'mmariusz@simet.com.pl',
+                        website: 'www.simet.com.pl',
+                        image: simet,
+                    },
+                ],
+            },
+            {
+                title: 'Systemy słoneczne,  fotowoltaiczne, termiczne - Solar, thermal, photovoltaic systems',
+                companies: [
+                    {
+                        name: 'Bartosz Sp. J. Bujwicki, Sobiech',
+                        link: 'http://www.bartosz.com.pl/',
+                        address: 'ul. Sejneńska 7, 15-399 Białystok',
+                        phone: '+48 85 745 57 12',
+                        email: 'handlowy@bartosz.com.pl',
+                        website: 'www.bartosz.com.pl/',
+                        image: bartosz,
+                    },
+                    {
+                        name: 'EWFE - Polonia Sp. z o. o.',
+                        link: 'http://www.ewfe.com.pl/produkty/pompy.html',
+                        address: 'ul. Homera 55, 80 - 299 Gdańsk',
+                        phone: '+48 58 342 12 61',
+                        email: 'ewfe@ewfe.com.pl',
+                        website: 'www.ewfe.com.pl',
+                        image: ewfe,
+                    },
+                    {
+                        name: 'Viessmann Sp. z o.o.',
+                        link: 'http://www.viessmann.pl',
+                        address: 'al. Karkonoska 65, 53-015 Wrocław',
+                        phone: '+48 71 36 07 100',
+                        email: 'biuro@viessmann-wroclaw.pl',
+                        website: 'www.viessmann.pl',
+                        image: viessmann,
+                    },
+                ],
+            },
+            {
+                title: 'Turbiny wiatrowe - Wind turbines',
+                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+            },
+        ],
     },
     {
         category:
