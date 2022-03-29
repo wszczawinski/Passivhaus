@@ -10,13 +10,15 @@ export default function Home({ data }) {
     const news = data.news.nodes;
     const heroImage = getImage(data.heroImage);
 
+    console.log('gh', news)
+
     return (
         <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <section className="home-container">
                 <div className="news-container">
                     <div className="news-container__content">
-                        {news.map(element => (
-                            <News singleNews={element} key={element.id} />
+                        {news.map((element, index) => (
+                            <News singleNews={element} key={element.id} className={`news-background-${index+1}`} imgSrc={element.featuredImage} alt={element.slug}  />
                         ))}
                     </div>
                 </div>

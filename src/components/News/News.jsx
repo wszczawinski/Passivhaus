@@ -1,24 +1,19 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 import './News.scss';
 
-export function News({ singleNews }) {
+export function News({ singleNews, className, imgSrc, alt }) {
     const {
-        frontmatter: { slug, thumb, title, content },
-        id,
+        frontmatter: { title, content, thumb, slug },
     } = singleNews;
+
     return (
-        <div className="single-news">
-            <Link to={'/blog/' + slug} key={id}>
-                <div className="single-news__img">
-                    <GatsbyImage image={getImage(thumb)} alt={slug} />
-                </div>
-            </Link>
+        <div className={`single-news ${className}`}>
             <span className="single-news__title">
                 {title} <p>{content}</p>
             </span>
+            <GatsbyImage image={getImage(thumb)} alt={slug} className="single-news__image"  />
         </div>
     );
 }
