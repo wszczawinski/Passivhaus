@@ -3,8 +3,8 @@ title: Informujemy, że z dniem 1 marca na stronie naszej akademii została uruc
 date: 2021-10-02
 slug: second-news
 type: news
-thumb: ../images/newsThumbs/lista.jpg
-featuredImage: ../images/newsThumbs/lista.jpg
+thumb: ../images/newsThumbs/news-3-mobile.png
+featuredImage: ../images/newsThumbs/news-3-mobile.png
 content: Wykaz ma być pomocny w znalezieniu kompetentnych firm wykonawczych i doradczych na terenie Polski.  Lista będzie sukcesywnie aktualizowana i z czasem rozbudowana o pozostałe grupy profesjonalistów w tym certyfikowanych architektów CEPHdesigners.
 ---
 

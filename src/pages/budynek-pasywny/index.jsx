@@ -50,8 +50,6 @@ export default function Charakterystyka({ data }) {
                     alt="charakterystyka4"
                     shortBorder
                     smallPadding
-                    colorCream
-                    noBorder
                 />
                 <ContainerColumn
                     textStart={
@@ -69,8 +67,9 @@ export default function Charakterystyka({ data }) {
                     }
                     imgSrc={charakterystyka3}
                     alt="charakterystyka3"
-                    shortBorder
                     smallPadding
+                    colorCream
+                    noBorder
                 />
                 <ContainerColumn
                     textStartRow
@@ -97,10 +96,7 @@ export default function Charakterystyka({ data }) {
                     }
                     imgSrc={charakterystyka5}
                     alt="charakterystyka5"
-                    shortBorder
                     smallPadding
-                    colorCream
-                    noBorder
                 />
                 <ContainerColumn
                     textStartRow
@@ -119,6 +115,7 @@ export default function Charakterystyka({ data }) {
                     alt="charakterystyka6"
                     shortBorder
                     noBorder
+                    colorCream
                 />
                 <ContainerColumn
                     textStartRow
@@ -135,7 +132,6 @@ export default function Charakterystyka({ data }) {
                     alt="charakterystyka7"
                     shortBorder
                     smallPadding
-                    colorCream
                     noBorder
                 />
             </section>

@@ -69,7 +69,7 @@ export default function Navbar() {
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
-                <li>
+                <li className="navbar__single-link">
                     <Link
                         to="/sklep/"
                         onClick={changeNavVisibility}
@@ -90,12 +90,11 @@ export default function Navbar() {
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
-                <li>
+                <li className="navbar__single-link">
                     <Link
                         to="/ambasadorzy/"
                         onClick={changeNavVisibility}
                         activeClassName="navbar__active-item"
-                        className="navbar__ambassadors"
                     >
                         <p>
                             <img
