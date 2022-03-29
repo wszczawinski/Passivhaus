@@ -1,12 +1,12 @@
-import phpp from '../../images/sklep/phpp.svg';
-import ogrzewanie from '../../images/sklep/ogrzewanie.svg';
-import budynekPas from '../../images/sklep/bud-pas.svg';
+import phpp from '../images/sklep/phpp.svg';
+import ogrzewanie from '../images/sklep/ogrzewanie.svg';
+import budynekPas from '../images/sklep/bud-pas.svg';
 
 export const shopItems = [
     {
         title: 'Pakiet do projektowania budynków pasywnych PHPP',
         description: [
-            'PHPP – narzędzie do planowania efektywności energetycznej budynków w Polsce i na Świecie w najnowszej polskiej wersji językowej',
+            'PHPP - narzędzie do planowania efektywności energetycznej budynków w Polsce i na Świecie w najnowszej polskiej wersji językowej',
             'PHPP to łatwe w użyciu oprogramowanie do planowania efektywności energetycznej przeznaczone głównie architektom i doradcom ds. planowania budynków. Jego największym atutem jest wiarygodność wyników i łatwość obsługi. W styczniu 2019 r. narzędzie (PHPP) w najnowszej wersji 9.6 zostało bardzo wysoko ocenione przy użyciu ANSI / ASHRAE Standard 140, metody testowania porównawczego programów energetycznych budynków. Warto nadmienić, że od pierwszych wersji PHPP wyróżniało się nadzwyczaj wysoką skutecznością w symulacjach zużycia energii w budynkach. Najnowsza wersja oprogramowania umożliwia precyzyjne zaplanowanie termomodernizacji starego budownictwa uwzględniając nawet takie szczegóły jak detale połączeń.',
             'Korzystając z narzędzia PHPP zyskujesz wiarygodne wyniki w zakresie:',
         ],
@@ -26,7 +26,7 @@ export const shopItems = [
     {
         title: 'Budownictwo Pasywne 2017 Materiały konferencyjne',
         description: [
-            'BUDOWNICTWO PASYWNE 2017 – wydanie zawiera opis doświadczeń pionierów oraz podstawybudownictwa pasywnego.',
+            'BUDOWNICTWO PASYWNE 2017 - wydanie zawiera opis doświadczeń pionierów oraz podstawybudownictwa pasywnego.',
             'Publikacja wydana została w języku polskim z okazji jubileuszu 25 lecia budownictwa pasywnego na świecie przy okazji Forum Budownictwa Pasywnego i Energooszczędnego. Budownictwo Pasywne 2017 zawiera opisy zarówno pierwszych dokonań pionierskich, jak i jest swoistym zbiorem dobrych praktyk. W publikacji znajdują się również polskie przykłady stosowania standardu pasywnego.',
             'Publikacja zawiera dodatkowo informacje w zakresie podstaw budownictwa pasywnego, dlatego uznawana jest za poradnik dla osób zamierzających budować jak również początkujących branżystów.',
         ],
