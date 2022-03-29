@@ -6,17 +6,19 @@ import './News.scss';
 
 export function News({ singleNews }) {
     const {
-        frontmatter: { date, slug, thumb, title },
+        frontmatter: { slug, thumb, title, content },
         id,
     } = singleNews;
-    const displayDate = new Date(date).toISOString().split('T')[0];
     return (
-        <Link to={'/blog/' + slug} key={id} className="single-news">
-            <div className="single-news__img">
-                <GatsbyImage image={getImage(thumb)} alt={slug} />
-                <span className="single-news__title">{title}</span>
-            </div>
-            <p>Dodano: {displayDate}</p>
-        </Link>
+        <div className="single-news">
+            <Link to={'/blog/' + slug} key={id}>
+                <div className="single-news__img">
+                    <GatsbyImage image={getImage(thumb)} alt={slug} />
+                </div>
+            </Link>
+            <span className="single-news__title">
+                {title} <p>{content}</p>
+            </span>
+        </div>
     );
 }

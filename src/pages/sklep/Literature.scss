@@ -1,0 +1,13 @@
+@import '../../App.scss';
+
+.shop-items-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    @media (min-width: $break-point-desktop) {
+        flex-direction: row;
+        align-items: flex-start;
+    }
+}

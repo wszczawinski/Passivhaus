@@ -117,8 +117,7 @@ export const heroText = {
     ),
     literatureNarzedzia: (
         <p>
-            Literatura <br />
-            <BsArrowReturnRight /> Narzędzia
+            Narzędzia
         </p>
     ),
     literatureWyszukiwarka: (

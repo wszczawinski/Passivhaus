@@ -1,3 +1,6 @@
+export * from './Ambassadors/Category';
+export * from './Ambassadors/Company';
+export * from './Ambassadors/Subcategory';
 export * from './Announcements/Announcements';
 export * from './Button/Button';
 export * from './ImageComponent/Image';
