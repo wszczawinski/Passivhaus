@@ -6,7 +6,7 @@ import { heroText } from '../../constants/heroContent';
 
 import './Literature.scss';
 import ShopItem from '../../components/ShopItem/ShopItem';
-import { shopItems } from './shopItems';
+import { shopItems } from '../../constants/shopItems';
 
 export default function Literature({ data }) {
     const heroImage = getImage(data.heroImage);
