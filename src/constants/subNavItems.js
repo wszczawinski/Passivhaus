@@ -9,14 +9,10 @@ export const certificationNavItems = [
     { name: 'Informacje', path: '/certyfikacja' },
     { name: 'Budynki', path: '/certyfikacja/budynkow' },
     { name: 'Komponenty', path: '/certyfikacja/komponentow' },
-    { name: 'Lista budynków', path: '/certyfikacja/lista-budynkow' },
-];
-
-export const literatureNavItems = [
-    { name: 'Narzędzia', path: '/sklep' },
+    // { name: 'Lista budynków', path: '/certyfikacja/lista-budynkow' },
     {
         name: 'Wyszukiwarka budynków pasywnych',
-        path: '/sklep/wyszukiwarka',
+        path: '/certyfikacja/wyszukiwarka-budynkow',
     },
 ];
 

@@ -1,10 +1,11 @@
 ---
-title: Second news
+title: Informujemy, że z dniem 1 marca na stronie naszej akademii została uruchomiona  listę online Certyfikowanych Mistrzów Budownictwa Pasywnego i Energooszczędnego CEPHtradespersons. 
 date: 2021-10-02
 slug: second-news
 type: news
-thumb: ../images/newsThumbs/thumb1.png
-featuredImage: ../images/newsThumbs/thumb1.png
+thumb: ../images/newsThumbs/lista.jpg
+featuredImage: ../images/newsThumbs/lista.jpg
+content: Wykaz ma być pomocny w znalezieniu kompetentnych firm wykonawczych i doradczych na terenie Polski.  Lista będzie sukcesywnie aktualizowana i z czasem rozbudowana o pozostałe grupy profesjonalistów w tym certyfikowanych architektów CEPHdesigners.
 ---
 
 Lorem ninja ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut ninja wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit ninja lobortis nisl ut aliquip ex ea commodo consequat. Duis ninja autem vel eum iriure dolor in hendrerit in vulputate ninja velit esse molestie consequat, vel illum dolore eu feugiat nulla ninja facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam ninja ipsum liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum. Typi ninja non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes ninja demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas ninja est etiam processus dynamicus, qui ninja sequitur mutationem consuetudium lectorum. Mirum ninja est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem ninja ipsum modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in ninja futurum.

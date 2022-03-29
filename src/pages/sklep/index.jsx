@@ -1,10 +1,12 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Button, Layout } from '../../components';
+import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
 import './Literature.scss';
+import ShopItem from '../../components/ShopItem/ShopItem';
+import { shopItems } from './shopItems';
 
 export default function Literature({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -15,14 +17,17 @@ export default function Literature({ data }) {
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
-                    nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias
-                    cum incidunt, dignissimos dolorum possimus provident quidem nostrum laudantium.
-                    Nemo!
-                </p>
-
-                <Button textContent={'Literature button'} />
+                <div className="shop-items-list">
+                    {shopItems.map(shopItem => (
+                        <ShopItem
+                            img={shopItem.img}
+                            alt={shopItem.title}
+                            title={shopItem.title}
+                            description={shopItem.description}
+                            price={shopItem.price}
+                        />
+                    ))}
+                </div>
             </section>
         </Layout>
     );
