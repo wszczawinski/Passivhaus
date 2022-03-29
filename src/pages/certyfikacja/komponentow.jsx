@@ -1,8 +1,14 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Layout, ContainerColumn, TransparentContainer } from '../../components';
+import {
+    Layout,
+    ContainerColumn,
+    TransparentContainer,
+    FullImageContainer,
+} from '../../components';
 import { heroText } from '../../constants/heroContent';
+import okna from '../../images/certyfikacja/okna.svg';
 
 export default function Komponentow({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -58,6 +64,7 @@ export default function Komponentow({ data }) {
                     }
                     shortBorder
                 />
+                <FullImageContainer image={okna} alt="okna" />
                 <TransparentContainer
                     text={
                         <>
