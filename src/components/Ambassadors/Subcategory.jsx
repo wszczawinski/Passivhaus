@@ -7,13 +7,13 @@ import './Ambassadors.scss';
 export const Subcategory = ({ subcategory }) => {
     const [showCompanies, setShowCompanies] = useState(false);
 
-    const companiesVisibility = () => {
+    const handleCompaniesVisibility = () => {
         setShowCompanies(!showCompanies);
     };
 
     return (
         <>
-            <button onClick={companiesVisibility} className="ambassador__category-subcategory">
+            <button onClick={handleCompaniesVisibility} className="ambassador__category-subcategory">
                 <p>{subcategory.title}</p>
                 {!showCompanies ? <BiDownArrow /> : <BiUpArrow />}
             </button>

@@ -7,31 +7,33 @@ import './Ambassadors.scss';
 export const Category = ({ item }) => {
     const [showSubcategory, setShowSubcategory] = useState(false);
 
-    const changeSubcategoryVisibility = () => {
+    const handleSubcategoryVisibility = () => {
         setShowSubcategory(!showSubcategory);
     };
 
+    const { category, subcategories, companies, text } = item;
+
     return (
         <article className="ambassador__category">
-            <button onClick={changeSubcategoryVisibility} className="ambassador__category-title">
-                <h3>{item.category}</h3>
+            <button onClick={handleSubcategoryVisibility} className="ambassador__category-title">
+                <h3>{category}</h3>
                 {!showSubcategory ? <BiDownArrow /> : <BiUpArrow />}
             </button>
             <div className="ambassador__category-container">
                 {showSubcategory ? (
-                    item.subcategories ? (
-                        item.subcategories.map(subcategory => (
+                    subcategories ? (
+                        subcategories.map(subcategory => (
                             <Subcategory subcategory={subcategory} />
                         ))
-                    ) : item.companies ? (
+                    ) : companies ? (
                         <div className="ambassador__category-companies">
-                            {item.companies?.map(company => (
+                            {companies?.map(company => (
                                 <Company company={company} />
                             ))}
                         </div>
                     ) : (
                         <div className="ambassador__category-text">
-                            <BiInfoCircle /> <p>{item.text}</p>
+                            <BiInfoCircle /> <p>{text}</p>
                         </div>
                     )
                 ) : null}
