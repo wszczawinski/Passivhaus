@@ -3,8 +3,8 @@ title: Zakończyliśmy nabór na wiosenną edycję kursu CEPHdesigner z projekto
 date: 2021-08-05
 slug: third-news
 type: news
-thumb: ../images/newsThumbs/szkolenie.png
-featuredImage: ../images/newsThumbs/szkolenie.png
+thumb: ../images/newsThumbs/news-2-mobile.png
+featuredImage: ../images/newsThumbs/news-2-mobile.png
 content: 'Osoby zainteresowane uczestnictwem w kolejnej edycji (jesień 2022 r.) mają możliwość zapisu na listę uczestniczących. UWAGA: na kursie obowiązuje ścisły limit 15 uczestników. Zapisy oraz informacje dostępne pod nr. 58 524 12 06.'
 
 ---
