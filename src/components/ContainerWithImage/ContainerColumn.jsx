@@ -18,10 +18,6 @@ export function ContainerColumn({
 }) {
     const imageDesc = <p className="image-description">{imageDescription}</p>;
 
-    const textAndImage = <div className="text-and-image">
-        {textStart}
-        <img src={imgSrc} alt={alt} />
-    </div>
     return (
         <div
             className={`container-column 
@@ -30,12 +26,13 @@ export function ContainerColumn({
         >
             {textStartRow ? (
                 <div className="text-image-row">
-                    {textAndImage}
+                    {textStart}
+                    <img src={imgSrc} alt={alt} />
                 </div>
             ) : (
                 <>
                     {textStart}
-                    <div className="text-image-row__images">
+                    <div className="container-column__images">
                         <img src={imgSrc} alt={alt} />
                         {img2Src && <img src={img2Src} alt={alt2} />}
                     </div>
