@@ -1,10 +1,10 @@
 ---
 title: Informujemy, że z dniem 1 marca na stronie naszej akademii została uruchomiona  listę online Certyfikowanych Mistrzów Budownictwa Pasywnego i Energooszczędnego CEPHtradespersons. 
-date: 2021-10-02
+date: 2022-03-25
 slug: second-news
 type: news
-thumb: ../images/newsThumbs/news-3-mobile.png
-featuredImage: ../images/newsThumbs/news-3-mobile.png
+thumb: ../images/newsThumbs/news-3.png
+featuredImage: ../images/newsThumbs/news-3.png
 content: Wykaz ma być pomocny w znalezieniu kompetentnych firm wykonawczych i doradczych na terenie Polski.  Lista będzie sukcesywnie aktualizowana i z czasem rozbudowana o pozostałe grupy profesjonalistów w tym certyfikowanych architektów CEPHdesigners.
 ---
 
