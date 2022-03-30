@@ -48,7 +48,6 @@ export default function Charakterystyka({ data }) {
                     }
                     imgSrc={charakterystyka4}
                     alt="charakterystyka4"
-                    shortBorder
                     smallPadding
                 />
                 <ContainerColumn
@@ -130,9 +129,7 @@ export default function Charakterystyka({ data }) {
                     }
                     imgSrc={charakterystyka7}
                     alt="charakterystyka7"
-                    shortBorder
                     smallPadding
-                    noBorder
                 />
             </section>
         </Layout>

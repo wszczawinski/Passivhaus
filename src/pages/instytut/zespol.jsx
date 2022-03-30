@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { FullImageContainer, Layout } from '../../components';
+import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 import zespolImg from '../../images/firm/zespol.jpeg';
 
