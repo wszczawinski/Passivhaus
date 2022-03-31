@@ -1,12 +1,11 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Layout } from '../../components';
+import { Layout, ShopItem } from '../../components';
 import { heroText } from '../../constants/heroContent';
+import { shopItems } from '../../constants/shopItems';
 
 import './Literature.scss';
-import ShopItem from '../../components/ShopItem/ShopItem';
-import { shopItems } from '../../constants/shopItems';
 
 export default function Literature({ data }) {
     const heroImage = getImage(data.heroImage);

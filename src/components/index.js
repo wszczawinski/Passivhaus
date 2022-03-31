@@ -13,3 +13,5 @@ export * from './ContainerWithImage/TransparentContainer';
 export * from './ContainerWithImage/FullImageContainer';
 export * from './News/News';
 export * from './Schedule/Schedule';
+export * from './ShopItem/ShopItem';
+export * from './Modal/Modal';

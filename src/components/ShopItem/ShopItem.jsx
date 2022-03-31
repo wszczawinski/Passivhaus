@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Modal from '../Modal/Modal';
+import { Modal } from '../';
 import './ShopItem.scss';
 
-function ShopItem({ img, alt, title, description, price }) {
+export function ShopItem({ img, alt, title, description, price }) {
     const [modalOpen, setModalOpen] = useState(false);
     const handleOpen = () => setModalOpen(true);
     const handleClose = () => setModalOpen(false);
@@ -11,10 +11,10 @@ function ShopItem({ img, alt, title, description, price }) {
             <img src={img} alt={alt} />
             <span className="shopItem__title">{title}</span>
             {price && <p className="shopItem__price">{price}</p>}
-            {!modalOpen &&<button onClick={handleOpen}>Szczegóły</button>}
+            <button className="shopItem__btn" onClick={handleOpen}>
+                Szczegóły
+            </button>
             {modalOpen && <Modal content={description} handleClose={handleClose} />}
         </div>
     );
 }
-
-export default ShopItem;
