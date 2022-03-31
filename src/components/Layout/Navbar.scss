@@ -24,6 +24,10 @@
         &--logo {
             width: 35px;
             height: auto;
+
+            @media (min-width: $break-point-monitor) {
+                width: 50px;
+            }
         }
     }
 
