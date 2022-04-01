@@ -46,40 +46,7 @@
         margin-top: 3%;
 
         @media (min-width: $break-point-desktop) {
-            display: none;
+            width: 55%
         }
-    }
-}
-
-.news-background-1 {
-    background: none;
-
-    @media (min-width: $break-point-desktop) {
-        background: url('../../images/newsThumbs/news-1.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.news-background-2 {
-    background: none;
-
-    @media (min-width: $break-point-desktop) {
-        background: url('../../images/newsThumbs/news-2.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-}
-
-.news-background-3 {
-    background: none;
-
-    @media (min-width: $break-point-desktop) {
-        background: url('../../images/newsThumbs/news-3.svg');
-        background-size: contain;
-        background-repeat: no-repeat;
-        background-position: center;
     }
 }

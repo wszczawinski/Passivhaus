@@ -3,7 +3,7 @@ import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 import './News.scss';
 
-export function News({ singleNews, className, imgSrc, alt }) {
+export function News({ singleNews, className }) {
     const {
         frontmatter: { title, content, thumb, slug },
     } = singleNews;

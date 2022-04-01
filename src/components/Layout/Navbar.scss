@@ -24,6 +24,10 @@
         &--logo {
             width: 35px;
             height: auto;
+
+            @media (min-width: $break-point-monitor) {
+                width: 50px;
+            }
         }
     }
 
@@ -35,6 +39,17 @@
         & svg {
             width: 30px;
             height: auto;
+            color: white;
+        }
+    }
+
+    &__single-link {
+        color: white;
+        & p {
+            padding: 0;
+            display: flex;
+            align-items: center;
+            margin: 0;
             color: white;
         }
     }
