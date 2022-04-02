@@ -9,7 +9,6 @@ export const certificationNavItems = [
     { name: 'Informacje', path: '/certyfikacja' },
     { name: 'Budynki', path: '/certyfikacja/budynkow' },
     { name: 'Komponenty', path: '/certyfikacja/komponentow' },
-    // { name: 'Lista budynków', path: '/certyfikacja/lista-budynkow' },
     {
         name: 'Wyszukiwarka budynków pasywnych',
         path: '/certyfikacja/wyszukiwarka-budynkow',
@@ -19,8 +18,6 @@ export const certificationNavItems = [
 export const passivhausNavItems = [
     { name: 'Charakterystyka', path: '/budynek-pasywny' },
     { name: 'Wymagania', path: '/budynek-pasywny/wymagania' },
-    // { name: 'Instrukcja', path: '/budynek-pasywny/instrukcja' },
-    // { name: 'Passipedia', path: '/budynek-pasywny/passipedia' },
     { name: 'Historia', path: '/budynek-pasywny/historia' },
 ];
 

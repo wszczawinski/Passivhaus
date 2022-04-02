@@ -79,10 +79,10 @@ export const heroText = {
             <BsArrowReturnRight /> Komponentów
         </p>
     ),
-    certyfikacjaListaBudynkow: (
+    certyfikacjaWyszukiwarkaBudynkow: (
         <p>
             Certyfikacja <br />
-            <BsArrowReturnRight /> Lista certyfikowanych budynków
+            <BsArrowReturnRight /> Wyszukiwarka budynków pasywnych
         </p>
     ),
     workshopsPhpp: (
@@ -115,11 +115,7 @@ export const heroText = {
             <BsArrowReturnRight /> Lista ekspertów
         </p>
     ),
-    literatureNarzedzia: (
-        <p>
-            Narzędzia
-        </p>
-    ),
+    literatureNarzedzia: <p>Narzędzia</p>,
     literatureWyszukiwarka: (
         <p>
             Literatura <br />
