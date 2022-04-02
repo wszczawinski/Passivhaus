@@ -16,32 +16,34 @@ export default function WyszukiwarkaBudynkow({ data }) {
             <section className="layout-content">
                 <ContainerBlue
                     text={
-                        <p>
-                            <h3>Bazy danych dla projektów budownictwa pasywnego</h3> Wyszukiwarka ta
-                            jest projektem społecznym głównego Instytutu Budownictwa Pasywnego w
-                            Darmstadt, Passivhaus Dienstleistung GmbH, IG Passivhaus Deutschland
-                            Niemcy i Międzynarodowego Stowarzyszenia Budownictwa Pasywnego (iPHA).
-                            Znajdą tutaj Państwo przegląd zrealizowanych projektów budownictwa
-                            pasywnego z całego świata. Jeśli zbudowali Państwo budynek pasywny lub
-                            taki znają, a nie ma go w naszej bazie danych, proszę go zarejestrować
-                            lub dać podać wymagane informacje zgodnie z procedurą rejestracji!
-                            <h4>
-                                <a
-                                    className="wyszukiwarka"
-                                    href="http://www.passivhausprojekte.de/index.php"
-                                    target="_blank"
-                                    rel="noopener noreferrer"
-                                >
-                                    <img src={wyszukiwarka} alt="wyszukiwarka" />
-                                    Przejdź do wyszukiwarki!
-                                </a>
-                            </h4>
-                        </p>
+                        <>
+                            <p>
+                                <h3 className="title">
+                                    Bazy danych dla projektów budownictwa pasywnego
+                                </h3>
+                                Wyszukiwarka ta jest projektem społecznym głównego Instytutu
+                                Budownictwa Pasywnego w Darmstadt, Passivhaus Dienstleistung GmbH,
+                                IG Passivhaus Deutschland Niemcy i Międzynarodowego Stowarzyszenia
+                                Budownictwa Pasywnego (iPHA). Znajdą tutaj Państwo przegląd
+                                zrealizowanych projektów budownictwa pasywnego z całego świata.
+                                Jeśli zbudowali Państwo budynek pasywny lub taki znają, a nie ma go
+                                w naszej bazie danych, proszę go zarejestrować lub dać podać
+                                wymagane informacje zgodnie z procedurą rejestracji!
+                            </p>
+                            <a
+                                className="wyszukiwarka"
+                                href="http://www.passivhausprojekte.de/index.php"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                <img src={wyszukiwarka} alt="wyszukiwarka" />
+                                Przejdź do wyszukiwarki!
+                            </a>
+                        </>
                     }
                     borderBottom
                 />
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3>Rejestracja projektu</h3> W tej bazie danych projektów rejestrujemy
@@ -68,7 +70,6 @@ export default function WyszukiwarkaBudynkow({ data }) {
                     smallPadding
                 />
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3> Certyfikowane budynki pasywne</h3>
@@ -90,7 +91,6 @@ export default function WyszukiwarkaBudynkow({ data }) {
                 />
 
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3>Wyłączenie odpowiedzialności</h3> Zawarte informacje na temat
