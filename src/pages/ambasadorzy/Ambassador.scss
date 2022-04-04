@@ -1,5 +1,28 @@
 @import '../../App.scss';
 
+.ambasador__main-container {
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    margin: 5vw;
+
+    a {
+        width: 100%;
+        img {
+            width: 100%;
+            max-width: 400px;
+        }
+    }
+    @media (min-width: $break-point-desktop) {
+        flex-direction: row;
+    }
+
+    @media (min-width: $break-point-monitor) {
+    }
+}
+
 .ambassador__container {
     background-color: $color-orange;
     padding: 5%;
@@ -10,6 +33,5 @@
     }
 
     @media (min-width: $break-point-monitor) {
-        
     }
 }

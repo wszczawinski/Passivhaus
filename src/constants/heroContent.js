@@ -126,7 +126,13 @@ export const heroText = {
     ambassadorPartnerzy: (
         <p>
             Ambasador Budownictwa Pasywnego <br />
-            <BsArrowReturnRight /> Partnerzy
+            <BsArrowReturnRight /> Lista ambasadorów
+        </p>
+    ),
+    ambassadorFormularz: (
+        <p>
+            Ambasador Budownictwa Pasywnego <br />
+            <BsArrowReturnRight /> Formularz
         </p>
     ),
 };
