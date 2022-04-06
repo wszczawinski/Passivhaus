@@ -25,9 +25,9 @@ export default function Charakterystyka({ data }) {
                 <ContainerRow
                     text={
                         <p>
-                            <h3>Zwarta bryła budynku i bardzo dobra termoizolacja:</h3> Wszystkie
-                            elementy zewnętrznych przegród budynku są izolowane termicznie w takim
-                            stopniu, aby współczynnik U całej bryły budynku ze wszystkimi
+                            <h3>Zwarta bryła budynku i bardzo dobra termoizolacja:</h3>
+                            Wszystkie elementy zewnętrznych przegród budynku są izolowane termicznie
+                            w takim stopniu, aby współczynnik U całej bryły budynku ze wszystkimi
                             przegrodami zewnętrznymi nie przekraczał wartości 0,15 W/(m2K) przy
                             jednoczesnej eliminacji wszystkich znaczących mostków cieplnych.
                         </p>
@@ -57,7 +57,7 @@ export default function Charakterystyka({ data }) {
                             Pasywne wykorzystanie energii słonecznej jest znaczącym czynnikiem przy
                             projektowaniu budynku pasywnego. Południowa strona budynku ma za zadanie
                             pozyskanie możliwie największej ilości ciepła od słońca w sezonie
-                            grzewczym. -{' '}
+                            grzewczym.{' '}
                             <strong>
                                 Do precyzyjnego oszacowania zysków od słońca najlepiej sprawdza się
                                 Pakiet do Projektowania Budynków Pasywnych PHPP.
