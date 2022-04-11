@@ -10,7 +10,7 @@ export function ShopItem({ img, alt, title, description, price }) {
         <div className="shopItem">
             <img src={img} alt={alt} />
             <span className="shopItem__title">{title}</span>
-            {price && <p className="shopItem__price">{price}</p>}
+            <p className="shopItem__price">{price}</p>
             <button className="shopItem__btn" onClick={handleOpen}>
                 Szczegóły
             </button>
