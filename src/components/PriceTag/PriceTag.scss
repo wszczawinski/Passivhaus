@@ -1,0 +1,33 @@
+@import '../../App.scss';
+
+.pricetag {
+    display: flex;
+    justify-content: center;
+    margin: 5% 0;
+
+    & h4:first-of-type {
+        margin-top: 0;
+    }
+
+    &__info {
+        margin: 0 2%;
+        width: 40%;
+
+        &--order {
+            font-weight: 600;
+            &-list li {
+                margin: 2% 0;
+            }
+        }
+    }
+
+    @media (max-width: $break-point-desktop) {
+        flex-direction: column;
+        margin: 5% 10%;
+
+        &__info {
+            margin: 0;
+            width: 100%;
+        }
+    }
+}
