@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .pricetag {
     display: flex;
     justify-content: center;
@@ -16,6 +18,16 @@
             &-list li {
                 margin: 2% 0;
             }
+        }
+    }
+
+    @media (max-width: $break-point-desktop) {
+        flex-direction: column;
+        margin: 5% 10%;
+
+        &__info {
+            margin: 0;
+            width: 100%;
         }
     }
 }
