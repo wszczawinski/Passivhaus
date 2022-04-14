@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
+import { AiOutlineForm } from 'react-icons/ai';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 import { ambassadors } from '../../constants/ambassadors';
@@ -22,9 +23,16 @@ export default function Ambassador({ data }) {
                 <div className="ambasador__main-container">
                     <Link to="/ambasadorzy/lista-ambasadorow">
                         <img src={listaAmbasadorow} alt="" />
-                        Lista ambasadorów
                     </Link>
-                    <Link to="/ambasadorzy/formularz">Formularz</Link>
+
+                    <a
+                        href="https://forms.gle/8en6jMugSQqJ3a347"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <AiOutlineForm />
+                        Formularz kontaktowy
+                    </a>
                 </div>
             </section>
         </Layout>
