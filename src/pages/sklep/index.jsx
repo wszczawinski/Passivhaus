@@ -4,8 +4,10 @@ import { getImage } from 'gatsby-plugin-image';
 import { Layout, ShopItem } from '../../components';
 import { heroText } from '../../constants/heroContent';
 import { shopItems } from '../../constants/shopItems';
+import packages from '../../images/sklep/package.svg';
 
 import './Literature.scss';
+import PriceTag from '../../components/PriceTag/PriceTag';
 
 export default function Literature({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -27,6 +29,9 @@ export default function Literature({ data }) {
                         />
                     ))}
                 </div>
+                <h3 className='shop-items-h3'>KOSZTY DOSTAWY:</h3>
+                <img src={packages} alt="Koszty dostawy" className='package' />
+                <PriceTag />
             </section>
         </Layout>
     );

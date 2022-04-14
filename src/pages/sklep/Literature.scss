@@ -1,6 +1,7 @@
 @import '../../App.scss';
 
 .shop-items-list {
+    padding-top: 3vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -8,6 +9,16 @@
 
     @media (min-width: $break-point-desktop) {
         flex-direction: row;
-        align-items: flex-start;
+        align-items: stretch;
     }
+}
+
+.package {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.shop-items-h3 {
+    margin: 0 auto;
+    padding-bottom: 5%;
 }
