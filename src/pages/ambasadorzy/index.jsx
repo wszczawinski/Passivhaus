@@ -31,7 +31,7 @@ export default function Ambassador({ data }) {
                         rel="noopener noreferrer"
                     >
                         <AiOutlineForm />
-                        Formularz kontaktowy
+                        Dołącz do Ambasadorów
                     </a>
                 </div>
             </section>
