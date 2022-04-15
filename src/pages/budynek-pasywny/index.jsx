@@ -138,7 +138,7 @@ export default function Charakterystyka({ data }) {
 
 export const pageQuery = graphql`
     query PassQuery {
-        heroImage: file(relativePath: { eq: "heroImages/hero_passivehouse.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_passivehouse_police.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

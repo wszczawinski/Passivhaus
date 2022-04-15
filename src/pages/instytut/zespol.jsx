@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import zespolImg from '../../images/firm/zespol.jpeg';
+// import zespolImg from '../../images/firm/zespol.jpeg';
 
 import './Firm.scss';
 
@@ -58,7 +58,7 @@ export default function Team({ data }) {
                     </ul>
                 </div>
 
-                <img src={zespolImg} alt="Zespół" className="team-img" />
+                {/* <img src={zespolImg} alt="Zespół" className="team-img" /> */}
             </section>
         </Layout>
     );
@@ -66,7 +66,7 @@ export default function Team({ data }) {
 
 export const pageQuery = graphql`
     query InstQuery3 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_institute.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_team.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

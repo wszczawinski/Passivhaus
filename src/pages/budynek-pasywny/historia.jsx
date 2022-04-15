@@ -424,7 +424,7 @@ export default function Historia({ data }) {
 
 export const pageQuery = graphql`
     query PassQuery1 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_passivehouse.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_history.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

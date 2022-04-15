@@ -52,7 +52,7 @@ export default function Contact({ data }) {
 
 export const pageQuery = graphql`
     query InstQuery1 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_institute.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_contact.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
