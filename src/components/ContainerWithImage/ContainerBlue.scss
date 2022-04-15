@@ -16,6 +16,10 @@
     line-height: 26px;
     font-weight: 450;
 
+    h3{
+        margin-top: 0;
+    }
+
     &__border {
         border-top: white 3px solid;
         box-shadow: 0 0 20px white;
@@ -40,5 +44,23 @@
         margin: 5% 10%;
         padding: 3% 5%;
         text-align: center;
+    }
+
+    .wyszukiwarka {
+        margin: 20px;
+        color: $color-navy;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        background-color: $color-cookie;
+        border-radius: 20px;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .wyszukiwarka:hover {
+        background-color: $color-cream;
     }
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './News.scss';
+import './404.scss';
 
 export default function NotFound() {
     return (

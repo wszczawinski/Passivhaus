@@ -1,5 +1,55 @@
 @import '../../App.scss';
 
+.ambasador__main-container {
+    padding: 5%;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 90vw;
+    margin: 5vw;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        padding: 20px 20px;
+        border-radius: 10px;
+        max-width: 400px;
+        font-weight: 600;
+        transition: all 0.4s ease-in-out;
+        background-color: $color-cookie;
+
+        img {
+            width: 80%;
+            max-width: 400px;
+        }
+        svg {
+            width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: $break-point-monitor) {
+            max-width: 600px;
+        }
+    }
+
+    a:hover {
+        background-color: $color-orange;
+        color: white;
+    }
+
+    @media (min-width: $break-point-desktop) {
+        gap: 100px;
+        justify-content: space-around;
+        flex-direction: row;
+        width: 80vw;
+        margin: 0 10vw;
+    }
+}
+
 .ambassador__container {
     background-color: $color-orange;
     padding: 5%;
@@ -10,6 +60,5 @@
     }
 
     @media (min-width: $break-point-monitor) {
-        
     }
 }
