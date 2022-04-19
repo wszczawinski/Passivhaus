@@ -31,7 +31,7 @@ export default function MistrzWykonawca({ data }) {
 
 export const pageQuery = graphql`
     query WorkQuery1 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_workshops.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_cepht.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

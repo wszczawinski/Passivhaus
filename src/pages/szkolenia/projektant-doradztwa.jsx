@@ -31,7 +31,7 @@ export default function ProjektantDoradztwo({ data }) {
 
 export const pageQuery = graphql`
     query WorkQuery4 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_workshops.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_cephd.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

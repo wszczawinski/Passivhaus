@@ -1,0 +1,9 @@
+---
+title: Związek POiD podejmuje współpracę z Polskim Instytutem Budownictwa Pasywnego i Energii Odnawialnej
+date: 2021-07-30
+slug: second-news
+type: news
+thumb: ../images/newsThumbs/news-4.png
+featuredImage: ../images/newsThumbs/news-4.png
+content: Nawiązanie współpracy Związku POiD z Instytutem Budownictwa Pasywnego i Energii Odnawialnej, to krok do podjęcia działań w zakresie transferu interdyscyplinarnej wiedzy w zakresie budownictwa pasywnego i wysoce energooszczędnego dla całej branży stolarki budowlanej w Polsce. Strony deklarują również chęć doradztwa na rzecz dostosowania stolarki budowlanej do obecnych standardów budownictwa pasywnego i wysoce energooszczędnego oraz ich weryfikacji, jako Certyfikowanych Komponentów Produktów Pasywnych dedykowanych do obiektów w najwyższych standardach energetycznych a także promocji Certyfikowanych produktów, szkoleń producentów, dostawców i dystrybutorów stolarki budowlanej, dzięki którym uczestnicy mogą zyskać tytuły Mistrzów Budownictwa Pasywnego i Energooszczędnego oraz Ambasadorów Budownictwa Pasywnego.
+---

@@ -133,7 +133,7 @@ export default function Partners({ data }) {
 
 export const pageQuery = graphql`
     query InstQuery2 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_institute.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_partners.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

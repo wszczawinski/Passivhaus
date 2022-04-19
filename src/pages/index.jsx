@@ -14,9 +14,10 @@ export default function Home({ data }) {
         <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <section className="home-container">
                 <div className="news-container">
+                    <h3>AKTUALNOŚCI</h3>
                     <div className="news-container__content">
-                        {news.map((element, index) => (
-                            <News singleNews={element} key={element.id} className={`news-background-${index+1}`}  />
+                        {news.map(element => (
+                            <News singleNews={element} key={element.id} />
                         ))}
                     </div>
                 </div>
@@ -48,6 +49,7 @@ export const pageQuery = graphql`
                         }
                     }
                 }
+                html
                 id
             }
         }

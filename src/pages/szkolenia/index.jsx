@@ -58,7 +58,7 @@ export default function Workshops({ data }) {
 
 export const pageQuery = graphql`
     query WorkQuery {
-        heroImage: file(relativePath: { eq: "heroImages/hero_workshops.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_phpp.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

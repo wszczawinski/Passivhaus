@@ -1,0 +1,11 @@
+---
+title: Najnowszy PHPP v9 dostępny w języku polskim
+date: 2018-07-30
+slug: second-news
+type: news
+thumb: ../images/newsThumbs/news-7.png
+featuredImage: ../images/newsThumbs/news-7.png
+content: Zapraszamy do zakupu najnowszej polskiej wersji programu PHPP w wersji 9.  Ogólnoświatowa przydatność, wiele nowych funkcji, ułatwiona obsługa, aktualizacja parametrów,  współpraca ze sketchupem, kompatybilność oraz dostosowanie do dyrektyw unijnych oraz nZEB  to główne zalety nowego programu.
+
+---
+Szerszy opis i możliwość złożenia zamówienia dostępne są w <a href="https://passivhaus.onrender.com/sklep/" target="_blank">SKLEPIE</a>

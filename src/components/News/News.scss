@@ -6,11 +6,17 @@
     text-align: start;
     align-items: center;
     min-height: 80vh;
+    font-size: $font-size-mobile;
+
+    & a {
+        text-decoration: underline;
+    }
 
     @media (min-width: $break-point-desktop) {
         flex-direction: row;
         padding: 0 10%;
-        margin: 0;
+        margin: 0 0 1%;
+        font-size: $font-size-desktop;
     }
 
     &:nth-child(odd) {
@@ -23,8 +29,9 @@
         font-weight: 700;
         font-size: $font-size-mobile;
         margin-top: 5%;
-        padding: 5%;
         width: 100%;
+        text-indent: 0;
+        padding: 3% 0;
 
         & p {
             font-weight: 300;
@@ -32,13 +39,22 @@
 
         @media (min-width: $break-point-desktop) {
             font-size: $font-size-desktop;
-            padding: 2%;
-            width: 40%;
+            padding: 0;
         }
 
         @media (min-width: $break-point-monitor) {
             font-size: 22px;
         }
+    }
+
+    &__text-content {
+        width: 90%;
+        margin: 0 3%;
+
+        @media (min-width: $break-point-desktop) {
+            width: 40%;
+        }
+        
     }
 
     &__image {
