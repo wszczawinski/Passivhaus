@@ -1,0 +1,15 @@
+---
+title: Zakończyliśmy nabór na wiosenną edycję kursu CEPHdesigner z projektowania budynków pasywnych. 
+date: 2022-03-26
+slug: third-news
+type: news
+thumb: ../images/newsThumbs/news-2.png
+featuredImage: ../images/newsThumbs/news-2.png
+content: 'Osoby zainteresowane uczestnictwem w kolejnej edycji (jesień 2022 r.) mają możliwość zapisu na listę uczestniczących.'
+
+
+---
+
+**UWAGA: na kursie obowiązuje ścisły limit 15 uczestników.**
+
+Zapisy oraz informacje dostępne pod nr. **58 524 12 06**

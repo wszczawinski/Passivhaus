@@ -1,0 +1,25 @@
+---
+title: Audyt zwieńczony pierwszym w Polsce Certyfikatem Pasywnego Produktu dla okna AdamS Passiv-line Ultra
+date: 2020-05-03
+slug: second-news
+type: news
+thumb: ../images/newsThumbs/news-5.png
+featuredImage: ../images/newsThumbs/news-5.png
+content: Okna PASSIV – LINE ULTRA od tej chwili można uznać za nr. 1 w Polsce w kategorii komponentów przeziernych dla budownictwa pasywnego i energoszooszczędnego pod względem parametrów przy zagwarantowaniu najwyższej jakości wykonania.
+
+---
+#### Nasi Eksperci w osobach:
+
+-> międzynarodowy trener budownictwa pasywnego **arch. Kamil Wiśniewski**
+
+-> ekspert od powłok przeziernych **Sławomir Kwiatkowski** przeprowadzili audyt w firmie AdamS. Okna i drzwi
+
+Rangę audytu podnosi przeprowadzone przez nas szkolenie I stopnia, wraz z Certyfikatami dla jego uczestników, pt.: <br />
+#### ✅ Budownictwo Pasywne wg PHI Darmstadt; <br />
+#### ✅ Budynki o niemal Zerowym Zapotrzebowaniu na Energii;
+
+Przed wybranymi Uczestnikami jeszcze SZKOLENIE II STOPNIA pt:
+
+#### ✅ Europejski Certyfikowany Mistrz Budownictwa Energooszczędnego i Pasywnego
+
+Właścicielowi firmy AdamS Panu Adamowi Pędzich serdecznie gratulujemy doskonałego produktu! A już dziś, z ogromną przyjemnością przedstawiamy kolejnych Absolwentów Akademia Zdrowego Budownictwa > Uczestnikom gratulujemy i do zobaczenia przy realizacji budynków energooszczędnych i pasywnych!
