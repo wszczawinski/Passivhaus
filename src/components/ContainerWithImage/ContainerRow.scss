@@ -37,6 +37,7 @@
 
     img {
         width: 100%;
+        padding-left: 5%;
         @media (min-width: $break-point-desktop) {
             width: 50%;
         }

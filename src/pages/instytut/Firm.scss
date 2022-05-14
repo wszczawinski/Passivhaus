@@ -79,17 +79,21 @@
 }
 
 .team {
-    width: 80%;
-    margin: 5% 10%;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
     padding: 3% 5%;
     display: flex;
     flex-direction: column;
     color: white;
-    background-color: $color-navy;
+    background-color: $color-orange;
     border-radius: 40px;
 
     a {
-        color: $color-orange;
+        color: black;
+        font-weight: 700;
+        display: flex;
     }
 
     ul {

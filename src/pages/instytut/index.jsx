@@ -3,8 +3,9 @@ import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { StaticImage } from 'gatsby-plugin-image';
 import { Layout, ContainerRow, ContainerColumn, ContainerBlue } from '../../components';
-import oNas1 from '../../images/firm/o-nas-1.svg';
+import oNas3 from '../../images/firm/o-nas-1.svg';
 import oNas2 from '../../images/firm/o-nas-2.svg';
+import oNas1 from '../../images/firm/inst-o_nas.jpg';
 import leaf from '../../images/firm/icons/leaf.svg';
 import { heroText } from '../../constants/heroContent';
 
@@ -71,7 +72,7 @@ export default function About({ data }) {
                             </p>
                         </>
                     }
-                    imgSrc={oNas1}
+                    imgSrc={oNas3}
                     alt="Budynek siedziby Polskiego Instytutu Budownictwa Pasywnego"
                     img2Src={oNas2}
                     alt2="Kompleks trzech domów energooszczędnych obok Instytutu"
