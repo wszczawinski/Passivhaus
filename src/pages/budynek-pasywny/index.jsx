@@ -23,7 +23,6 @@ export default function Charakterystyka({ data }) {
         >
             <section className="layout-content">
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3>
@@ -42,6 +41,7 @@ export default function Charakterystyka({ data }) {
                     alt="charakterystyka4"
                     smallPadding
                     colorCream
+                    noBorder
                     textEnd={
                         <p>
                             Budynek pasywny jest tak dobrze zaizolowany termicznie, że prawie przez
@@ -88,7 +88,6 @@ export default function Charakterystyka({ data }) {
                 />
 
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3>1. Zwarta bryła budynku i bardzo dobra termoizolacja: </h3>
@@ -113,7 +112,13 @@ export default function Charakterystyka({ data }) {
                                 nocować w górach w bardzo dobrze ocieplonych puchowych śpiworach. W
                                 takim przypadku ciepło ludzkiego ciała jest wystarczające.
                             </p>
-                            <p>
+                        </p>
+                    }
+                    imgSrc={charakterystyka4}
+                    alt="charakterystyka4"
+                    smallPadding
+                    textEnd={
+                        <p>
                                 Budynki pasywne są z każdej strony mocno ocieplone, dlatego też,
                                 dodatkowe ciepło wytwarzane przez cały rok przez mieszkańców i
                                 urządzenia oraz darmowe zyski z promieniowania słońca wystarczą aby
@@ -126,7 +131,6 @@ export default function Charakterystyka({ data }) {
                                 o masywne budynki w technologii murowanej, konstrukcje żelbetowe,
                                 domy drewniane, prefabrykaty czy wszystkie inne mieszane technologie
                                 budowlane.
-                            </p>
                             <p>
                                 W domu pasywnym należy dążyć do uzyskania współczynnika U o wartości
                                 0,1 W / (m²K). (Im mniejsza jest wartość współczynnika ‘U’ tym
@@ -145,9 +149,6 @@ export default function Charakterystyka({ data }) {
                             </p>
                         </p>
                     }
-                    imgSrc={charakterystyka4}
-                    alt="charakterystyka4"
-                    smallPadding
                 />
                 <ContainerColumn
                     textStart={
