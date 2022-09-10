@@ -13,7 +13,7 @@
     left: 0;
     z-index: 1;
     padding: 10%;
-    
+
     & a {
         margin: 5% 0;
         font-size: 20px;
@@ -41,8 +41,8 @@
     @media (min-width: $break-point-desktop) {
         position: absolute;
         top: 100%;
-        transform: translateY(5%);
-        background: $color-orange;
+        transform: translateY(10px) translateX(-10px);
+        background: $color-navy;
         border-radius: 10px;
         display: flex;
         flex-direction: column;
@@ -62,7 +62,7 @@
         }
 
         a.dropdown__active-item {
-            color: $color-navy;
+            color: $color-orange;
         }
     }
 

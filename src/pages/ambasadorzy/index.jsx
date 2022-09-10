@@ -31,7 +31,7 @@ export default function Ambassador({ data }) {
                         rel="noopener noreferrer"
                     >
                         <AiOutlineForm />
-                        Dołącz do Ambasadorów
+                        DOŁĄCZ | JOIN
                     </a>
                 </div>
             </section>

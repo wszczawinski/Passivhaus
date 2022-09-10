@@ -3,7 +3,7 @@ import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
-// import zespolImg from '../../images/firm/zespol.jpeg';
+import zespolImg from '../../images/firm/zespol.png';
 
 import './Firm.scss';
 
@@ -16,11 +16,28 @@ export default function Team({ data }) {
             heroBackgroundImage={heroImage}
         >
             <section className="layout-content">
+                <div className='team'>
+                    <p>
+                        Naszym podejściem jest pełne zweryfikowanie Twojego marzenia, czyli projektu
+                        budynku, zgodnie z wiodącymi na świecie zasadami energooszczędnego
+                        projektowania. My nie skupiamy się na pięknym efekcie architektonicznym (to
+                        pozostawiamy naszym utalentowanym absolwentom - CEPHdesigners ). Wdrażamy
+                        zasady projektowania budynków pasywnych we wszystkie sprawdzane przez nas
+                        projekty, tak aby każda zweryfikowana przez naszych certyfikatorów
+                        dokumentacja rokowała możliwie wysoką efektywność energetyczną.
+                    </p>
+                    <p>
+                        Zrównoważony rozwój dotyczy każdego aspektu naszego życia. Naszym zdaniem
+                        efektywność energetyczna jest tak samo ważna jak styl architektoniczny. Obie
+                        te kwestie wpływają na trwałość budynku i otaczające środowisko.
+                    </p>
+                </div>
+                <img src={zespolImg} alt="Zespół" className="team-img" />
                 <div className="team">
                     <ul>
                         <li>Maciej Kuzawiński - prezes PiBP </li>
                         <li>
-                            Kamil Wiśniewski - dyrektor instytutu, trener,certyfikator PIBP
+                            Kamil Wiśniewski - dyrektor instytutu, trener, certyfikator PIBP
                             <a href="mailto:kamil.wisniewski@pibp.pl"> kamil.wisniewski@pibp.pl</a>
                         </li>
                         <li>
@@ -52,13 +69,11 @@ export default function Team({ data }) {
                             <a href="mailto: s.kwiatkowski@pibp.pl"> s.kwiatkowski@pibp.pl</a>
                         </li>
                         <li>
-                            Księgowość - tel. +48 (58) 524 12 00
+                            Halina Fiuczek - księgowość - tel. +48 (58) 524 12 00
                             <a href="mailto:h.fiuczek@pibp.pl"> h.fiuczek@pibp.pl</a>
                         </li>
                     </ul>
                 </div>
-
-                {/* <img src={zespolImg} alt="Zespół" className="team-img" /> */}
             </section>
         </Layout>
     );
