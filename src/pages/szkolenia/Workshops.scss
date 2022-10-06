@@ -74,3 +74,33 @@
   justify-content: center;
   margin: 5%;
 }
+
+.signup {
+  display: flex;
+  justify-content: center;
+}
+
+.faq-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  margin-bottom: 2%;
+  padding: 3% 7%;
+  background-color: $color-navy;
+  color: white;
+  font-size: 26px;
+  font-weight: 600;
+  width: 100px;
+  border-radius: 40px;
+  cursor: pointer;
+}
+
+.faq-ul {
+  li {
+    margin-top: 4%;
+  }
+  li:first-of-type {
+    margin-top: 0;
+  }
+}
