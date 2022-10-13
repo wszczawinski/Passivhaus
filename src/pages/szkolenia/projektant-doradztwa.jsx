@@ -369,7 +369,7 @@ export default function ProjektantDoradztwo({ data }) {
                                     * jeżeli nigdy nie pracowałeś nad projektem budowlanym i
                                     uważasz, że nie masz żadnego doświadczenia zalecamy rozpoczęcie
                                     nauki budownictwa pasywnego od szkolenia niższego szczebla{' '}
-                                    <a href="">
+                                    <a href="/szkolenia/mistrz-wykonawca">
                                         Certified Passive House Tradesperson ( Certyfikowany Mistrz
                                         \ Nadzorca Budownictwa Pasywnego)
                                     </a>
@@ -604,6 +604,7 @@ export default function ProjektantDoradztwo({ data }) {
                                 href={withPrefix('formularz-zgloszeniowy-CEPHd.pdf')}
                                 className="signup"
                                 target="_blank"
+                                rel="noreferrer"
                             >
                                 <StaticImage src="../../images/szkolenia/6.png" />
                             </a>
@@ -827,6 +828,7 @@ export default function ProjektantDoradztwo({ data }) {
                                                 <a
                                                     href="https://cms.passivehouse.com/media/filer_public/20/51/20512233-5aa9-47f9-b0ca-223e7e75431d/vorlage_0195_passivhausprojektdokumentation.pptx"
                                                     target="_blank"
+                                                    rel="noreferrer"
                                                 >
                                                     wzoru
                                                 </a>
@@ -846,6 +848,7 @@ export default function ProjektantDoradztwo({ data }) {
                                                 <a
                                                     href="https://passivehouse-database.org/index.php?lang=en"
                                                     target={'_blank'}
+                                                    rel="noreferrer"
                                                 >
                                                     bazie danych budynków pasywnych
                                                 </a>
