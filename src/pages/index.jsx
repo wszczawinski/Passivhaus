@@ -28,7 +28,7 @@ export default function Home({ data }) {
 
 export const pageQuery = graphql`
     query HomeQuery {
-        heroImage: file(relativePath: { eq: "heroImages/hero_home_ugly.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_home_2.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

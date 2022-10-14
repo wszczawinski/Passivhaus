@@ -22,8 +22,6 @@ export default function MostkiCieplne({ data }) {
                     cum incidunt, dignissimos dolorum possimus provident quidem nostrum laudantium.
                     Nemo!
                 </p>
-
-                <Button textContent={'Workshops button'} />
             </section>
         </Layout>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Layout, ContainerColumn, ContainerRow } from '../../components';
+import { Layout, ContainerColumn } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
 import charakterystyka2 from '../../images/budynek-pasywny/charakterystyka2.png';
@@ -37,8 +37,8 @@ export default function Charakterystyka({ data }) {
                             użytkowany budynek.
                         </p>
                     }
-                    imgSrc={charakterystyka4}
-                    alt="charakterystyka4"
+                    imgSrc={charakterystyka2}
+                    alt="charakterystyka2"
                     smallPadding
                     colorCream
                     noBorder
@@ -90,7 +90,7 @@ export default function Charakterystyka({ data }) {
                 <ContainerColumn
                     textStart={
                         <p>
-                            <h3>1. Zwarta bryła budynku i bardzo dobra termoizolacja: </h3>
+                            <h3>Zwarta bryła budynku i bardzo dobra termoizolacja: </h3>
                             Najłatwiej osiągnąć standard pasywny jeżeli zaprojektowana bryła budynku
                             będzie zwarta i prosta z możliwie najmniejszą liczbą wykuszy, balkonów
                             etc. Każde odstępstwo od tej zasady utrudnia a co za tym idzie podraża
