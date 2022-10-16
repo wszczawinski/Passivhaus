@@ -45,7 +45,6 @@
 
       @media (max-width: $break-point-desktop) {
           margin: 0 5%;
-          margin-top: 10%;
       }
 
       &--single-icon {
@@ -62,13 +61,21 @@
               font-weight: 450;
               color: $color-rust;
               font-weight: 600;
+
+              @media (max-width: $break-point-desktop) {
+                margin: 5%;
+            }
           }
 
           & img {
-            width: 50%;
-            max-width: 250px;
+            width: 40%;
+            max-width: 150px;
             height: auto;
             margin: 0 auto;
+
+            @media (max-width: $break-point-desktop) {
+              margin-top: 5%;
+          }
           }
       }
   }
