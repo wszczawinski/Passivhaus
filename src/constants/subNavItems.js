@@ -8,7 +8,7 @@ export const firmNavItems = [
 export const certificationNavItems = [
     { name: 'Informacje', path: '/certyfikacja' },
     { name: 'Budynki', path: '/certyfikacja/budynkow' },
-    { name: 'Komponenty', path: '/certyfikacja/komponentow' },
+    // { name: 'Komponenty', path: '/certyfikacja/komponentow' },
     {
         name: 'Wyszukiwarka budynków pasywnych',
         path: '/certyfikacja/wyszukiwarka-budynkow',
@@ -22,9 +22,9 @@ export const passivhausNavItems = [
 ];
 
 export const workshopsNavItems = [
-    { name: 'PHPP', path: '/szkolenia' },
+    // { name: 'PHPP', path: '/szkolenia' },
     { name: 'CEPHD - projektant doradztwa', path: '/szkolenia/projektant-doradztwa' },
     { name: 'CEPHT - mistrz wykonawca', path: '/szkolenia/mistrz-wykonawca' },
-    { name: 'Mostki cieplne', path: '/szkolenia/mostki-cieplne' },
+    // { name: 'Mostki cieplne', path: '/szkolenia/mostki-cieplne' },
     { name: 'Lista ekspertów', path: '/szkolenia/eksperci' },
 ];

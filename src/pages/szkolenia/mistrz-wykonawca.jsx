@@ -1,14 +1,13 @@
 import React from 'react';
 import { graphql, withPrefix } from 'gatsby';
 import { getImage, StaticImage } from 'gatsby-plugin-image';
-import { Button, ContainerColumn, ContainerRow, Layout } from '../../components';
+import { ContainerColumn, ContainerRow, Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
 import './Workshops.scss';
 
 import mistrz0 from '../../images/szkolenia/mistrz0.png';
 import cert from '../../images/szkolenia/cert-mistrz.jpg';
-import zgloszenie from '../../images/szkolenia/zgloszenie.png';
 
 export default function MistrzWykonawca({ data }) {
     const heroImage = getImage(data.heroImage);

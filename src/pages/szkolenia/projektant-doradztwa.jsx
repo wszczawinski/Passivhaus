@@ -352,7 +352,7 @@ export default function ProjektantDoradztwo({ data }) {
                 <ContainerColumn
                     textStartRow
                     textStart={
-                        <p>
+                        <p className='dots'>
                             <h3>Wymagania dla uczestnictwa w kursie CEPHd</h3>
                             <li>
                                 bardzo dobra znajomość języka polskiego w mowie i piśmie – kurs
@@ -451,7 +451,7 @@ export default function ProjektantDoradztwo({ data }) {
                 </div>
                 <ContainerColumn
                     textStart={
-                        <p className="bullets">
+                        <p className="pros-cephd">
                             <h3>Zalety kursu CEPHd</h3>
                             Pod okiem naszych ekspertów nauczysz się projektować energooszczędne i
                             optymalne pod względem kosztów budynki na całym świecie i zostaniesz
