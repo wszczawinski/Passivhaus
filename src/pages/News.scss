@@ -17,6 +17,10 @@
     align-items: center;
 
     @media (min-width: $break-point-desktop) {
+        & h3 {
+            margin: 3% 0 0;
+            font-size: 30px;
+        }
        
     }
 

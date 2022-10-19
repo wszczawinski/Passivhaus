@@ -14,7 +14,7 @@ export default function Home({ data }) {
         <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <section className="home-container">
                 <div className="news-container">
-                    <h3>AKTUALNOŚCI</h3>
+                    <h3><u>AKTUALNOŚCI</u></h3>
                     <div className="news-container__content">
                         {news.map(element => (
                             <News singleNews={element} key={element.id} />
@@ -28,7 +28,7 @@ export default function Home({ data }) {
 
 export const pageQuery = graphql`
     query HomeQuery {
-        heroImage: file(relativePath: { eq: "heroImages/hero_home_2.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_home_new.jpeg" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
