@@ -34,6 +34,7 @@ export function Layout({ children, heroTextContent, heroBackgroundImage, heroCla
                     color: '#043454',
                     fontSize: '14px',
                     justifyContent: 'center',
+                    alignItems: 'center',
                 }}
                 buttonStyle={{
                     background: '#D86018',
@@ -43,22 +44,19 @@ export function Layout({ children, heroTextContent, heroBackgroundImage, heroCla
                 }}
                 expires={150}
             >
-                Pliki cookies na pibp.pl <br />
-                Przeglądając naszą stronę internetową bez zmian w swojej przeglądarce, wyrażasz
-                zgodę na wykorzystywanie przez nas plików cookies. Dzięki temu serwis internetowy
-                pibp.pl może być maksymalnie bezpieczny i wygodny. <BiCookie />
-                <br />
-                <br />
+                <BiCookie /> Przeglądając naszą stronę internetową bez zmian w swojej przeglądarce,
+                wyrażasz zgodę na wykorzystywanie przez nas plików cookies. Dzięki temu serwis
+                internetowy pibp.pl może być maksymalnie bezpieczny i wygodny. Dowiec się więcej z
+                naszej{' '}
                 <a
                     href={withPrefix('polityka-prywatnosci.pdf')}
                     className="privacy-policy"
                     target="_blank"
                     rel="noreferrer"
                 >
-                    Polityka prywatności
+                    Polityki prywatności
                 </a>
-                <br />
-                <br />
+                .
             </CookieConsent>
         </>
     );
