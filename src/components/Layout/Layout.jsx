@@ -5,6 +5,8 @@ import Head from './Head';
 import Footer from './Footer';
 import Hero from './Hero';
 import Navbar from './Navbar';
+import { withPrefix } from 'gatsby';
+import './Layout.scss';
 
 export function Layout({ children, heroTextContent, heroBackgroundImage, heroClass }) {
     return (
@@ -32,6 +34,7 @@ export function Layout({ children, heroTextContent, heroBackgroundImage, heroCla
                     color: '#043454',
                     fontSize: '14px',
                     justifyContent: 'center',
+                    alignItems: 'center',
                 }}
                 buttonStyle={{
                     background: '#D86018',
@@ -41,7 +44,19 @@ export function Layout({ children, heroTextContent, heroBackgroundImage, heroCla
                 }}
                 expires={150}
             >
-                Gdybyśmy używali cookies to tutaj byłaby informacja na ten temat <BiCookie />
+                <BiCookie /> Przeglądając naszą stronę internetową bez zmian w swojej przeglądarce,
+                wyrażasz zgodę na wykorzystywanie przez nas plików cookies. Dzięki temu serwis
+                internetowy pibp.pl może być maksymalnie bezpieczny i wygodny. Dowiec się więcej z
+                naszej{' '}
+                <a
+                    href={withPrefix('polityka-prywatnosci.pdf')}
+                    className="privacy-policy"
+                    target="_blank"
+                    rel="noreferrer"
+                >
+                    Polityki prywatności
+                </a>
+                .
             </CookieConsent>
         </>
     );

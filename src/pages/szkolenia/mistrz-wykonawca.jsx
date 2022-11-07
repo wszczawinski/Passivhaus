@@ -1,14 +1,13 @@
 import React from 'react';
 import { graphql, withPrefix } from 'gatsby';
 import { getImage, StaticImage } from 'gatsby-plugin-image';
-import { Button, ContainerColumn, ContainerRow, Layout } from '../../components';
+import { ContainerColumn, ContainerRow, Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
 import './Workshops.scss';
 
 import mistrz0 from '../../images/szkolenia/mistrz0.png';
 import cert from '../../images/szkolenia/cert-mistrz.jpg';
-import zgloszenie from '../../images/szkolenia/zgloszenie.png';
 
 export default function MistrzWykonawca({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -112,8 +111,8 @@ export default function MistrzWykonawca({ data }) {
                             <h4>Termin najbliższej edycji szkolenia CEPHt </h4>
                             IV Kwartał 2022
                             <h4>Koszt uczestnictwa w szkoleniu CEPHt</h4> 3990 PLN netto – za 50h
-                            interdyscyplinarnego doskonalenia <br /> 2750 PLN netto – podwójny egzamin z
-                            wpisem na listę ekspertów
+                            interdyscyplinarnego doskonalenia <br /> 2750 PLN netto – podwójny
+                            egzamin z wpisem na listę ekspertów
                         </p>
                     }
                     imgSrc={cert}
@@ -151,6 +150,74 @@ export default function MistrzWykonawca({ data }) {
                         </p>
                     }
                 />
+                <ContainerColumn
+                    textStart={
+                        <p>
+                            Certyfikacja mistrzów i wykonawców ma charakter dobrowolny. Zdarza się,
+                            że osoby nie posiadające certyfikatu Certified Passive House
+                            Tradesperson (CEPHt) biorą udział w budowie obiektów pasywnych lub
+                            pełnią nadzór na takich budowach. Z drugiej strony aby budynek mógł
+                            uzyskać certyfikat nie wystarczy, że zaprojektuje lub wybuduje go ekipa
+                            posiadająca certyfikat. Dla każdego budynku, który ma otrzymać
+                            certyfikat należy wykazać odpowiednio wysoki poziom jakości
+                            projektowania i na ostatnim etapie potwierdzić wytyczne projektowe
+                            rzetelnym wykonawstwem.
+                        </p>
+                    }
+                    textEnd={
+                        <p>
+                            Kurs Certified Passive House Tradesperson – Certifikowany Mistrz
+                            Nadzorca Budownictwa Pasywnego został opracowany przez Passivhaus
+                            Institut w Darmstadt (PHI). Za realizację tego doskonalenia w Polsce
+                            jest odpowiedzialna nasza Akademia Zdrowego Budownictwa GreenCherry
+                            prowadzona przez naszego eksperta p. Kamila Wiśniewskiego. W celu
+                            skutecznego nauczania w Polsce treść kursu została dostosowana i
+                            przetłumaczona na język Polski. Polska wersja kursu została rozbudowana
+                            przez naszego eksperta do 55 h zegarowych w oparciu o bogate
+                            doświadczenie zdobyte na budowach w Polsce i za granicą. zegarowych
+                            kursu ma za zadanie dostarczyć wiedzę z zakresu budownictwa pasywnego
+                            Uczestnictwo w kursie CEPHt to możliwość uzyskania interdyscyplinarnej
+                            wiedzy, ale dla wielu i unikalnej, ze względu na autorskie rady i
+                            rozwiązania wynikające z doświadczenia trenerań
+                        </p>
+                    }
+                    colorCream
+                    noBorder
+                />
+                <div className='pros-cepht'>
+                <StaticImage src="../../images/szkolenia/mistrz-warto.png" />
+                </div>
+                <ContainerColumn
+                    textStart={
+                        <p>
+                            <h3>Dlaczego warto?</h3>
+                            Aby pozostać na rynku i rozwijać swoją działalność, zwiększać swoje
+                            zyski, działać z sukcesem na innych rynkach, musisz dostosować się do
+                            rozpoczętych w budownictwie zmian. Nie traktuj tego jak obowiązek – to
+                            się po prostu opłaca. Wiedzę, którą otrzymasz zastosujesz w każdym
+                            budynku, bez względu na jego wielkość, technologię czy kubaturę, jak
+                            również sam standard energetyczny.
+                        </p>
+                    }
+                    textEnd={
+                        <p>
+                            <h3>Zalety szkolenia CEPHt</h3> 
+                            - 55h intensywnego szkolenia, ponad 1000 stron
+                            prezentacji, ćwiczenia praktyczne i teoretyczne, to wszystko na
+                            podstawie 25 letnich doświadczeń w projektowaniu i realizowaniu obiektów
+                            w standardzie pasywnym i wyższym <br />
+                            - Europejski certyfikat, tytuł oraz
+                            logo rozpoznawalne i uznawane w całej Europie - Konkurencyjność i
+                            wyróżnienie spośród wszystkich innych firm <br />
+                            - Zwielokrotniona szansa na
+                            wybór firmy w procesie budowy obiektów pasywnych i energooszczędnych-
+                            wpis na polską i międzynarodową listę ekspertów
+                        </p>
+                    }
+                />
+                <div className='pros-cepht'>
+                <StaticImage src="../../images/szkolenia/zalety-mistrz.png" />
+                </div>
             </section>
         </Layout>
     );

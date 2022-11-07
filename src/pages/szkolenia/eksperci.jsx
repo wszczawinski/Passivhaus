@@ -1,9 +1,10 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { ContainerColumn, ContainerRow, Layout } from '../../components';
+import { ContainerBlue, ContainerColumn, ContainerRow, Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 import expertImage from '../../images/szkolenia/expert.png';
+import './Workshops.scss'
 
 export default function Eksperci({ data }) {
     const heroImage = getImage(data.heroImage);
@@ -14,8 +15,6 @@ export default function Eksperci({ data }) {
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                {/* <a href="https://service.passivehouse.com/de/profis/planerkarte"> */}
-
                 <ContainerRow
                     text={
                         <p>
@@ -39,13 +38,63 @@ export default function Eksperci({ data }) {
                 <ContainerColumn
                     textStart={
                         <p>
-                            CEPHdesigner oraz CEPHtradesperson są jedynymi, akredytowanymi przez
-                            PHI Darmstadt szkoleniami budowlanymi, które są dostosowane do polskich
-                            i europejskich warunków rynkowych. Wszyscy absolwenci naszej akademii są
+                            <h3 className="title">Lista polskich ekspertów</h3>
+                            Zapraszamy do skorzystania z bazy polskich podwykonawców, którzy
+                            uzyskali miano mistrzów budownictwa pasywnego w swojej dziedzinie. To
+                            rzetelna wyszukiwarka firm i wykonawców dostępnych na polskim rynku,
+                            którzy kompleksowo i z najwyższą dbałością zajmą się wykonaniem
+                            poszczególnych etapów i/lub elementów budynków pasywnych.
+                        </p>
+                    }
+                    textEnd={
+                        <p>
+                            <a
+                                className="wyszukiwarka"
+                                href="https://akademiazdrowegobudownictwa.pl/znajdz-mistrza/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Przejdź do wyszukiwarki polskich ekspertów
+                            </a>
+                        </p>
+                    }
+                />
+                <ContainerColumn
+                    textStart={
+                        <p>
+                            CEPHdesigner oraz CEPHtradesperson są jedynymi, akredytowanymi przez PHI
+                            Darmstadt szkoleniami budowlanymi, które są dostosowane do polskich i
+                            europejskich warunków rynkowych. Wszyscy absolwenci naszej akademii są
                             osobami kompetentnymi w prowadzeniu, projektowaniu i budowaniu wysokiej
                             jakości obiektów pasywnych.
                         </p>
                     }
+                    colorCream
+                    noBorder
+                />
+                <ContainerBlue
+                    text={
+                        <>
+                            <h3>Listy ekspertów działających na całym świecie:</h3>
+                            <a
+                                className="wyszukiwarka"
+                                href="https://cms.passivehouse.com/en/training/data/tradespersons/search/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Wyszukaj certyfikowanego mistrza
+                            </a>
+                            <a
+                                className="wyszukiwarka"
+                                href="https://cms.passivehouse.com/de/training/data/designers/search/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Wyszukaj certyfikowanego projektanta doradcę
+                            </a>
+                        </>
+                    }
+                    borderBottom
                 />
             </section>
         </Layout>

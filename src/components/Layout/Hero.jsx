@@ -16,7 +16,7 @@ export default function Hero({ heroClass = '', text, backgroundImage }) {
 
             <article className="hero__content-area">
                 <div className="hero__content-area--title">
-                    <div className="hero__content-area--logo">
+                    <a href="/" className="hero__content-area--logo">
                         <img src={pibpLogo} alt="logo PIBP" />
                         <span className="hero__content-area--text">
                             <h1>
@@ -25,7 +25,7 @@ export default function Hero({ heroClass = '', text, backgroundImage }) {
                                 <p>Pasywnego</p>
                             </h1>
                         </span>
-                    </div>
+                    </a>
                     <img src={akredytacja} alt="Akredytacja Instytutu Budownictwa Pasywnego" />
                 </div>
                 <h2 className="hero__content-area--subtitle">{text}</h2>

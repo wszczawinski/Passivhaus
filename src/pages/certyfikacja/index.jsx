@@ -3,7 +3,6 @@ import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn, ContainerBlue } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import Standard from '../../images/certyfikacja/standard.svg';
 
 import certyfikacja1 from '../../images/certyfikacja/certyfikacj1.png';
 import certyfikacja2 from '../../images/certyfikacja/certyfikacj2.png';
@@ -346,7 +345,7 @@ export default function Certification({ data }) {
                 />
                 <ContainerColumn
                     textStart={
-                        <p>
+                        <p className="certification-process">
                             <h3>Proces certyfikacji składa się z następujących faz:</h3>
                             <p>
                                 <strong>Weryfikacja wstępna - etap projektowania</strong>
@@ -394,18 +393,21 @@ export default function Certification({ data }) {
                                 zweryfikowaną uprzednio dokumentacją.
                             </p>
                             <p>
-                                Zdecydowanie zalecamy skontaktowanie się z jednostką certyfikującą
-                                na wczesnym etapie planowania, ponieważ jednostka certyfikująca może
-                                zidentyfikować wszelkie problemy w projekcie. Generalnie jednak o
-                                certyfikację można ubiegać się na każdym etapie procesu budowy.W
-                                przypadku budynków (w szczególności niemieszkalnych), które są już
-                                użytkowane w momencie certyfikacji, organ oddający do użytku obiekt
-                                powinien dostarczyć za pośrednictwem Certyfikatora PIBP, określonych
-                                przez PHI Darmstadt informacji dodatkowych, w tym informacji na
-                                temat doświadczeń użytkowników. Jeśli okaże się, że są jakieś
-                                problemy lub trwające konflikty, certyfikację należy odłożyć do
-                                czasu ich rozwiązania lub wyjaśnienia złożonego do PHI za
-                                pośrednictwem certyfikatora PIBP.
+                                <i>
+                                    Zdecydowanie zalecamy skontaktowanie się z jednostką
+                                    certyfikującą na wczesnym etapie planowania, ponieważ jednostka
+                                    certyfikująca może zidentyfikować wszelkie problemy w projekcie.
+                                    Generalnie jednak o certyfikację można ubiegać się na każdym
+                                    etapie procesu budowy.W przypadku budynków (w szczególności
+                                    niemieszkalnych), które są już użytkowane w momencie
+                                    certyfikacji, organ oddający do użytku obiekt powinien
+                                    dostarczyć za pośrednictwem Certyfikatora PIBP, określonych
+                                    przez PHI Darmstadt informacji dodatkowych, w tym informacji na
+                                    temat doświadczeń użytkowników. Jeśli okaże się, że są jakieś
+                                    problemy lub trwające konflikty, certyfikację należy odłożyć do
+                                    czasu ich rozwiązania lub wyjaśnienia złożonego do PHI za
+                                    pośrednictwem certyfikatora PIBP.
+                                </i>
                             </p>
                         </p>
                     }

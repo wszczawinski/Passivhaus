@@ -1,7 +1,7 @@
 import React from 'react';
 import { graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
-import { Button, Layout } from '../../components';
+import {  Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
 import './Workshops.scss';
@@ -15,13 +15,7 @@ export default function MostkiCieplne({ data }) {
             heroClass={'hero__subpage'}
         >
             <section className="layout-content">
-                <h2>Mostki</h2>
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet, eligendi natus
-                    nulla ratione quam aspernatur consequuntur doloribus iste repellendus molestias
-                    cum incidunt, dignissimos dolorum possimus provident quidem nostrum laudantium.
-                    Nemo!
-                </p>
+                <h2>Więcej informacji wkrótce!</h2>
             </section>
         </Layout>
     );

@@ -45,7 +45,6 @@
 
       @media (max-width: $break-point-desktop) {
           margin: 0 5%;
-          margin-top: 10%;
       }
 
       &--single-icon {
@@ -62,15 +61,22 @@
               font-weight: 450;
               color: $color-rust;
               font-weight: 600;
+
+              @media (max-width: $break-point-desktop) {
+                margin: 5%;
+            }
           }
 
-          & img {
-            width: 50%;
+          & .gatsby-image-wrapper img  {
+            width: 40%;
+            max-width: 200px;
             margin: 0 auto;
           }
       }
   }
 }
+
+
 
 .for-who {
   margin: 0;
@@ -95,6 +101,13 @@
 .signup {
   display: flex;
   justify-content: center;
+
+  & .gatsby-image-wrapper.gatsby-image-wrapper-constrained {
+    & img {
+    margin: 0 auto;
+    }
+  }
+ 
 }
 
 .faq-button {
@@ -103,10 +116,10 @@
   align-items: center;
   margin: 0 auto;
   margin-bottom: 2%;
-  padding: 3% 7%;
+  padding: 1% 7%;
   background-color: $color-navy;
   color: white;
-  font-size: 26px;
+  font-size: 30px;
   font-weight: 600;
   width: 100px;
   border-radius: 40px;
@@ -119,5 +132,49 @@
   }
   li:first-of-type {
     margin-top: 0;
+  }
+}
+
+.dots {
+  & li {
+    margin-top: 2%;
+  }
+}
+
+.pros-cephd {
+  & li {
+    margin-top: 4%;
+  }
+}
+
+.pros-cepht {
+  margin: 5% 3%;
+  display: flex;
+  justify-content: center;
+
+  & img {
+    margin: 0 auto;
+    @media (min-width: $break-point-desktop) {
+      width: 70%;
+  }
+  }
+
+}
+
+.wyszukiwarka {
+  background-color: $color-navy;
+  color: white;
+  padding: 2% 5%;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: center;
+  border-radius: 20px;
+  font-weight: 600;
+  text-align: center;
+  transition: all 0.35s ease-in-out;
+
+  &:hover {
+    background-color: $color-cookie;
+    color: black;
   }
 }
