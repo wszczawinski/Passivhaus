@@ -6,7 +6,7 @@ export default function NotFound() {
     return (
         <div className="full-screen">
             <h2>404</h2>
-            <p>This page does not exist </p>
+            <p>Strona, której szukasz nie istnieje.</p>
         </div>
     );
 }

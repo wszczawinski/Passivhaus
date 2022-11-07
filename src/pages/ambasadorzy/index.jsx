@@ -26,7 +26,7 @@ export default function Ambassador({ data }) {
                     </Link>
 
                     <a
-                        href="https://forms.gle/8en6jMugSQqJ3a347"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSepV9lsiuSdgigihEfUKW0tGyuwLWEIyCj8Q7taWLMAUmkTlw/viewform?embedded=true"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
