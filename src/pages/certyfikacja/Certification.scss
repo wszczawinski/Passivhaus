@@ -1,3 +1,5 @@
+@import '../../App.scss';
+
 .certificate__main {
     margin-bottom: 5%;
 }
@@ -6,4 +8,35 @@
     & p {
         margin-top: 4%;
     }
+}
+
+.criteria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & p {
+        color: white;
+        font-weight: 600;
+        margin-bottom: 0;
+    }
+    
+    & img {
+        width: 150px;
+        height: auto;
+
+        @media (min-width: $break-point-desktop) {
+            margin-top: 10%;
+            width: 300px;
+        }
+       
+    }
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }

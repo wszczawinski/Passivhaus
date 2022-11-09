@@ -1,6 +1,6 @@
 import React from 'react';
-import { graphql } from 'gatsby';
-import { getImage } from 'gatsby-plugin-image';
+import { graphql, withPrefix } from 'gatsby';
+import { getImage, StaticImage } from 'gatsby-plugin-image';
 import { Layout, ContainerColumn, ContainerBlue } from '../../components';
 import { heroText } from '../../constants/heroContent';
 
@@ -15,6 +15,8 @@ import certyfikacja8 from '../../images/certyfikacja/certyfikacja8.png';
 import certyfikacja9 from '../../images/certyfikacja/certyfikacja9.png';
 import certyfikacja10 from '../../images/certyfikacja/certyfikacja10.png';
 import certyfikacja11 from '../../images/certyfikacja/certyfikacja11.png';
+import dolar from '../../images/certyfikacja/icons/money.svg';
+import check from '../../images/certyfikacja/icons/check.svg';
 
 import './Certification.scss';
 
@@ -465,8 +467,10 @@ export default function Certification({ data }) {
                     smallPadding
                 />
                 <ContainerBlue
+                    image={dolar}
+                    imageAlt="dolar"
                     text={
-                        <p>
+                        <p className="center">
                             <h3>Koszt weryfikacji i certyfikacji</h3>
                             <p>
                                 Każda projekt rozpatrywany jest indywidualnie. O wysokości kosztów
@@ -513,13 +517,24 @@ export default function Certification({ data }) {
                                 być uzupełnione dodatkowymi oznaczeniami (kolorowymi) i etykietami
                                 lub numerami pozycji.
                             </p>
+                            <a
+                                href={withPrefix('kryteria.pdf')}
+                                className="criteria"
+                                target="_blank"
+                                rel="noreferrer"
+                            >
+                                <StaticImage src="../../images/certyfikacja/criteria.png" />
+                                <p>Pobierz aktualne kryteria</p>
+                            </a>
                         </p>
                     }
                     smallPadding
                 />
                 <ContainerBlue
+                    image={check}
+                    alt="check"
                     text={
-                        <p>
+                        <p className="center">
                             <h3>Wydanie oryginalnego certyfikatu</h3>
                             <p>
                                 Jeśli wszystkie kryteria zostaną spełnione, inwestor otrzymuje:

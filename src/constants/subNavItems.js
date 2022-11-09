@@ -7,7 +7,7 @@ export const firmNavItems = [
 
 export const certificationNavItems = [
     { name: 'Informacje', path: '/certyfikacja' },
-    { name: 'Budynki', path: '/certyfikacja/budynkow' },
+    // { name: 'Budynki', path: '/certyfikacja/budynkow' },
     // { name: 'Komponenty', path: '/certyfikacja/komponentow' },
     {
         name: 'Wyszukiwarka budynków pasywnych',

@@ -18,6 +18,7 @@ import szkolenia5 from '../../images/szkolenia/5.png';
 import ekspert from '../../images/szkolenia/expert.png';
 import cennik from '../../images/szkolenia/cennik.png';
 import exam from '../../images/szkolenia/exam.png';
+import requirements from '../../images/szkolenia/requirements.jpeg'
 
 import './Workshops.scss';
 
@@ -351,6 +352,8 @@ export default function ProjektantDoradztwo({ data }) {
                 />
                 <ContainerColumn
                     textStartRow
+                    imgSrc={requirements}
+                    alt="wymagania"
                     textStart={
                         <p className="dots">
                             <h3>Wymagania dla uczestnictwa w kursie CEPHd</h3>
