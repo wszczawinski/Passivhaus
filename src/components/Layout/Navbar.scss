@@ -166,6 +166,15 @@
             }
         }
     }
+
+    .mobile-logo {
+        display: flex;
+        justify-content: center;
+        flex-wrap: nowrap;
+        align-items: center;
+
+        height: 100%;
+    }
 }
 
 .navbar__active-item {

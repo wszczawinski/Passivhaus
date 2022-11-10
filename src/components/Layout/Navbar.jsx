@@ -37,9 +37,11 @@ export default function Navbar() {
 
     return (
         <div className={`navbar ${stickyClass}`}>
-            <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
+            <a href="/" className="mobile-logo">
+                <img className="navbar__logo" src={pibpLogo} alt="PiBP Logo" />
 
-            <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
+                <p className="navbar__logo-title">POLSKI INSTYTUT BUDOWNICTWA PASYWNEGO</p>
+            </a>
 
             <ul className={`navbar__list ${navVisibility ? 'navbar__visible' : ''}`}>
                 <li className="navbar__header">
