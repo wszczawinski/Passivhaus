@@ -1,7 +1,10 @@
 @import '../../App.scss';
 
 .bullets {
+  @media (min-width: $break-point-desktop) {
     margin-left: 15%;
+}
+    
     li::before { 
         content: "";
         border-color: transparent #111;

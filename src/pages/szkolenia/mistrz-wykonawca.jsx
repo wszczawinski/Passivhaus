@@ -20,7 +20,6 @@ export default function MistrzWykonawca({ data }) {
             <section className="layout-content">
                 <ContainerColumn
                     imgSrc={mistrz0}
-                    textStartRow
                     textStart={
                         <p>
                             Szkolenie Certified Passive House Tradesperson – Europejski,
