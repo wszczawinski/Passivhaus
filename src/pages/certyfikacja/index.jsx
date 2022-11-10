@@ -416,7 +416,6 @@ export default function Certification({ data }) {
                     smallPadding
                 />
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3>

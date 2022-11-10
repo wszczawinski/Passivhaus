@@ -18,7 +18,7 @@ import szkolenia5 from '../../images/szkolenia/5.png';
 import ekspert from '../../images/szkolenia/expert.png';
 import cennik from '../../images/szkolenia/cennik.png';
 import exam from '../../images/szkolenia/exam.png';
-import requirements from '../../images/szkolenia/requirements.jpeg'
+import requirements from '../../images/szkolenia/requirements.jpeg';
 
 import './Workshops.scss';
 
@@ -34,7 +34,6 @@ export default function ProjektantDoradztwo({ data }) {
         >
             <section className="layout-content">
                 <ContainerColumn
-                    textStartRow
                     textStart={
                         <p>
                             <h3>Kurs CEPHd – geneza i założenia</h3>
@@ -108,11 +107,11 @@ export default function ProjektantDoradztwo({ data }) {
                             Darmstadt kilka lat temu wprowadził certyfikację uczestników procesu
                             budowlanego m. in. projektantów (CEPHdesigners) i doradców
                             (CEPHconsultants). <br />
-                            Cel jest podobny jak w przypadku certyfikacji budynków
-                            - wskazanie kompetentnych osób, które potencjalnie są w stanie wykonać
-                            usługę na wymaganym poziomie a więc posiadają odpowiednią wiedzę i
-                            umiejętności z zakresu budownictwa pasywnego, tym samym wyodrębnienie
-                            ich spośród wielu takich, które nadużywają technik marketingowych.
+                            Cel jest podobny jak w przypadku certyfikacji budynków - wskazanie
+                            kompetentnych osób, które potencjalnie są w stanie wykonać usługę na
+                            wymaganym poziomie a więc posiadają odpowiednią wiedzę i umiejętności z
+                            zakresu budownictwa pasywnego, tym samym wyodrębnienie ich spośród wielu
+                            takich, które nadużywają technik marketingowych.
                         </p>
                     }
                     textEnd={<p></p>}
@@ -351,7 +350,6 @@ export default function ProjektantDoradztwo({ data }) {
                     colorCream
                 />
                 <ContainerColumn
-                    textStartRow
                     imgSrc={requirements}
                     alt="wymagania"
                     textStart={
