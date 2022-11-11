@@ -40,7 +40,6 @@
     img {
         width: 100%;
         height: auto;
-        
     }
 
     .text-image-row {
@@ -59,14 +58,12 @@
         }
 
         & img {
-            
-            height: 50vh;
-            width: auto;
+            width: 100%;
+            height: auto;
             @media (min-width: $break-point-desktop) {
                 max-height: 30vh;
                 margin: 2% 0;
             }
-            
         }
 
         @media (max-width: $break-point-desktop) {
