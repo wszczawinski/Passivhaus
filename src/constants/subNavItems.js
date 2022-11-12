@@ -23,8 +23,8 @@ export const passivhausNavItems = [
 
 export const workshopsNavItems = [
     // { name: 'PHPP', path: '/szkolenia' },
-    { name: 'CEPHD - projektant doradztwa', path: '/szkolenia/projektant-doradztwa' },
-    { name: 'CEPHT - mistrz wykonawca', path: '/szkolenia/mistrz-wykonawca' },
+    { name: 'CEPHd – Architektura, Projektowanie', path: '/szkolenia/projektant-doradztwa' },
+    { name: 'CEPHt – Wykonawstwo, Nadzorowanie', path: '/szkolenia/mistrz-wykonawca' },
     // { name: 'Mostki cieplne', path: '/szkolenia/mostki-cieplne' },
     { name: 'Lista ekspertów', path: '/szkolenia/eksperci' },
 ];
