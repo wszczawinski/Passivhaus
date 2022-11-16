@@ -620,7 +620,7 @@ export const ambassadors = [
             },
             {
                 name: 'CS studio',
-                link: 'www.dom-pasywny.com',
+                link: 'http://www.dom-pasywny.com/',
                 address: 'ul. Konstancińska 2 lok.U21, 02-942 Warszawa',
                 phone: '+48 691 59 87 73',
                 email: 'mail@cezary-sankowski.pl',
@@ -629,7 +629,7 @@ export const ambassadors = [
             },
             {
                 name: 'GreenCherry Architecture',
-                link: 'www.greencherry.eu',
+                link: 'https://greencherry.eu/',
                 address: 'ul. Purkyniego 1, lokal 114, 50-155 Wrocław',
                 phone: '+48 508 449 288',
                 email: 'arch.kamil.wisniewski@gmail.com',
@@ -638,11 +638,11 @@ export const ambassadors = [
             },
             {
                 name: 'Hexa Green Architekt',
-                link: 'www.greencherry.eu',
+                link: 'https://hexagreen.pl/',
                 address: 'ul. Zagórska 49, 26-085 Miedziana Góra',
                 phone: '+48 604 773 903',
                 email: 'domy@hexagreen.pl',
-                website: 'https://hexagreen.pl/',
+                website: 'www.hexagreen.pl/',
                 image: hexaGreen,
             },
             {
