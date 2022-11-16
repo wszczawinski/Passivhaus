@@ -47,6 +47,9 @@ import stiebel from '../images/ambasadorzy/stiebel_logo.jpg';
 import simet from '../images/ambasadorzy/simet_logo.png';
 import ftronic from '../images/ambasadorzy/ftronic_logo.jpg';
 import viessmann from '../images/ambasadorzy/viessmann_logo.png';
+import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
+import passiveHouseSystems from '../images/ambasadorzy/passiveHouseSystems.png';
+import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
 
 export const ambassadors = [
     {
@@ -130,11 +133,20 @@ export const ambassadors = [
                     {
                         name: 'ISO-Chemie GmbH - Biuro Polska',
                         link: 'https://www.iso-chemie.eu/pl/',
-                        address: 'Rontgenst. 12, 73431 Aalen Niemc',
+                        address: 'Rontgenst. 12, 73431 Aalen Niemcy',
                         phone: '+48 (71) 881 00 48',
                         email: 'c.lupak@iso-chemie.pl',
                         website: 'www.iso-chemie.pl',
                         image: isoChemie,
+                    },
+                    {
+                        name: 'Passive House Systems',
+                        link: 'https://passivehousesystems.pl/',
+                        address: '',
+                        phone: '+48 500 646 654',
+                        email: 'agata@passivehousesystems.pl',
+                        website: 'www.passivehousesystems.pl/',
+                        image: passiveHouseSystems,
                     },
                     {
                         name: 'pro clima - Bauservice Sosnowsk',
@@ -604,7 +616,7 @@ export const ambassadors = [
                 phone: '+48 12 6337908',
                 email: 'biuro@architekturapasywna.pl',
                 website: 'www.architekturapasywna.pl',
-                image: aura,
+                image: APpyszczekStelmach,
             },
             {
                 name: 'CS studio',
@@ -623,6 +635,15 @@ export const ambassadors = [
                 email: 'arch.kamil.wisniewski@gmail.com',
                 website: 'www.greencherry.eu',
                 image: greencherry,
+            },
+            {
+                name: 'Hexa Green Architekt',
+                link: 'www.greencherry.eu',
+                address: 'ul. Zagórska 49, 26-085 Miedziana Góra',
+                phone: '+48 604 773 903',
+                email: 'domy@hexagreen.pl',
+                website: 'https://hexagreen.pl/',
+                image: hexaGreen,
             },
             {
                 name: 'Pracownia Architektoniczna Łukasz Smól',
