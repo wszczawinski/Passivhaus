@@ -10,7 +10,7 @@ content: Rozpoczynamy nabór do zimowej edycji kursu przygotowującego do planow
 ---
 #### UWAGA: na kursie obowiązuje nieprzekraczalny  limit 15 uczestników.
 
-Zapisu należy dokonać przez wypełnienie i wysłanie formularza zgłoszeniowego na adres info@pibp.pl lub pibp@pibp.pl
+Zapisu należy dokonać przez wypełnienie i wysłanie <a href="../../formularz-zgloszeniowy-CEPHd.pdf" target="_blank"><strong>formularza zgłoszeniowego</strong></a> na adres info@pibp.pl lub pibp@pibp.pl
 
 <a href="/szkolenia/projektant-doradztwa/" taget="_blank">Więcej informacji o kursie i egzaminie</a>
 
