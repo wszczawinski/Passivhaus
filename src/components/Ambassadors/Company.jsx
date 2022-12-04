@@ -3,7 +3,7 @@ import React from 'react';
 import './Ambassadors.scss';
 
 export const Company = ({ company }) => {
-    const { name, address, website, email, phone, link, image } = company; 
+    const { name, address, website, email, phone, link, image } = company;
 
     return (
         <div className="ambassador__category-company">
@@ -18,14 +18,16 @@ export const Company = ({ company }) => {
                 {email ? <a href={`mailto:${email}`}>{email}</a> : null}
                 {phone ? <a href={`tel:+${phone}`}> {phone}</a> : null}
             </div>
-            <a
-                className="ambassador__category-company-image"
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                <img src={image} alt={name} />
-            </a>
+            {image ? (
+                <a
+                    className="ambassador__category-company-image"
+                    href={link ? link : null}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <img src={image} alt={name} />
+                </a>
+            ) : null}
         </div>
     );
 };
