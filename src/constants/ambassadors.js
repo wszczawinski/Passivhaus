@@ -53,6 +53,9 @@ import knaufterm from '../images/ambasadorzy/knaufterm_logo.png';
 import nf15 from '../images/ambasadorzy/nf15_logo.png';
 import siergiejstudio from '../images/ambasadorzy/siergiejstudio.logo.png';
 import diagnostykaenergetyczna from '../images/ambasadorzy/diagnostykaenergetyczna_logo.png';
+import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
+import passiveHouseSystems from '../images/ambasadorzy/passiveHouseSystems.png';
+import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
 
 export const ambassadors = [
     {
@@ -145,11 +148,20 @@ export const ambassadors = [
                     {
                         name: 'ISO-Chemie GmbH - Biuro Polska',
                         link: 'https://www.iso-chemie.eu/pl/',
-                        address: 'Rontgenst. 12, 73431 Aalen Niemc',
+                        address: 'Rontgenst. 12, 73431 Aalen Niemcy',
                         phone: '+48 (71) 881 00 48',
                         email: 'c.lupak@iso-chemie.pl',
                         website: 'www.iso-chemie.pl',
                         image: isoChemie,
+                    },
+                    {
+                        name: 'Passive House Systems',
+                        link: 'https://passivehousesystems.pl/',
+                        address: '',
+                        phone: '+48 500 646 654',
+                        email: 'agata@passivehousesystems.pl',
+                        website: 'www.passivehousesystems.pl/',
+                        image: passiveHouseSystems,
                     },
                     {
                         name: 'pro clima - Bauservice Sosnowsk',
@@ -628,11 +640,11 @@ export const ambassadors = [
                 phone: '+48 12 6337908',
                 email: 'biuro@architekturapasywna.pl',
                 website: 'www.architekturapasywna.pl',
-                image: aura,
+                image: APpyszczekStelmach,
             },
             {
                 name: 'CS studio',
-                link: 'www.dom-pasywny.com',
+                link: 'http://www.dom-pasywny.com/',
                 address: 'ul. Konstancińska 2 lok.U21, 02-942 Warszawa',
                 phone: '+48 691 59 87 73',
                 email: 'mail@cezary-sankowski.pl',
@@ -647,6 +659,15 @@ export const ambassadors = [
                 email: 'kamil.wisniewski@greencherry.eu',
                 website: 'www.greencherry.eu',
                 image: greencherry,
+            },
+            {
+                name: 'Hexa Green Architekt',
+                link: 'https://hexagreen.pl/',
+                address: 'ul. Zagórska 49, 26-085 Miedziana Góra',
+                phone: '+48 604 773 903',
+                email: 'domy@hexagreen.pl',
+                website: 'www.hexagreen.pl/',
+                image: hexaGreen,
             },
             {
                 name: 'Pracownia Architektoniczna Łukasz Smól',
