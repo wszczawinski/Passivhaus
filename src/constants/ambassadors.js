@@ -23,7 +23,6 @@ import aluprof from '../images/ambasadorzy/aluprof_logo.png';
 import bemares from '../images/ambasadorzy/bemares_logo.png';
 import aura from '../images/ambasadorzy/aura_logo.png';
 import csstudio from '../images/ambasadorzy/csstudio_logo.jpg';
-import greencherry from '../images/ambasadorzy/greencherry_logo.jpg';
 import ls from '../images/ambasadorzy/ls_logo.jpg';
 import pasywnym from '../images/ambasadorzy/pasywnym_logo.jpg';
 import slomniki from '../images/ambasadorzy/slomniki_logo.png';
@@ -47,6 +46,13 @@ import stiebel from '../images/ambasadorzy/stiebel_logo.jpg';
 import simet from '../images/ambasadorzy/simet_logo.png';
 import ftronic from '../images/ambasadorzy/ftronic_logo.jpg';
 import viessmann from '../images/ambasadorzy/viessmann_logo.png';
+import adams from '../images/ambasadorzy/adams_logo.png';
+import budynkipasywnetv from '../images/ambasadorzy/budynkipasywnetv_logo.png';
+import greencherry from '../images/ambasadorzy/greencherry_logo.png';
+import knaufterm from '../images/ambasadorzy/knaufterm_logo.png';
+import nf15 from '../images/ambasadorzy/nf15_logo.png';
+import siergiejstudio from '../images/ambasadorzy/siergiejstudio.logo.png';
+import diagnostykaenergetyczna from '../images/ambasadorzy/diagnostykaenergetyczna_logo.png';
 import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
 import passiveHouseSystems from '../images/ambasadorzy/passiveHouseSystems.png';
 import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
@@ -106,6 +112,15 @@ export const ambassadors = [
                         email: 'info@steico.pl',
                         website: 'www.steico.com',
                         image: steico,
+                    },
+                    {
+                        name: 'Knauf Industries Polska Sp. z o.o. ',
+                        link: 'https://www.knauf-industries.pl/',
+                        address: 'ul. Styropianowa 1, 96-320 Adamowice',
+                        phone: '+48 667 662 217',
+                        email: 'cezary.biezonski@knauf.com',
+                        website: 'www.styropianknauf.pl',
+                        image: knaufterm,
                     },
                 ],
             },
@@ -325,6 +340,15 @@ export const ambassadors = [
                         email: 'biuro@internorm.com.pl',
                         website: 'www.internorm.pl',
                         image: internorm,
+                    },
+                    {
+                        name: 'Adams',
+                        link: 'https://www.adams.com.pl/',
+                        address: 'ul. Leśna Droga 10A, 11-700 Mrągowo',
+                        phone: '+48 89 741 32 48',
+                        email: 'adams@adams.com.pl',
+                        website: 'www.adams.com.pl',
+                        image: adams,
                     },
                 ],
             },
@@ -628,11 +652,11 @@ export const ambassadors = [
                 image: csstudio,
             },
             {
-                name: 'GreenCherry Architecture',
-                link: 'https://greencherry.eu/',
-                address: 'ul. Purkyniego 1, lokal 114, 50-155 Wrocław',
+                name: 'Kamil Wiśniewski GreenCherry Architecture S.K.A.',
+                link: 'www.greencherry.eu',
+                address: 'ul. Grabiszyńska 163/407, 53-439 Wrocław',
                 phone: '+48 508 449 288',
-                email: 'arch.kamil.wisniewski@gmail.com',
+                email: 'kamil.wisniewski@greencherry.eu',
                 website: 'www.greencherry.eu',
                 image: greencherry,
             },
@@ -662,6 +686,33 @@ export const ambassadors = [
                 email: 'biuro@pasywnym2.pl',
                 website: 'www.pasywnym2.pl',
                 image: pasywnym,
+            },
+            {
+                name: 'NF15',
+                link: 'http://nf15.pl/',
+                address: 'ul. Plantowa 4/22, 05-800 Pruszków',
+                phone: '+48 691 069 812',
+                email: 'remigiusz.miszczak@gmail.com',
+                website: 'www.nf15.pl',
+                image: nf15,
+            },
+            {
+                name: 'SIERGIEJ studio architektury',
+                link: '',
+                address: 'ul. Puszczykowska 11/1, 50-559 Wrocław',
+                phone: '+48 604 539 771',
+                email: 'studio@siergiejstudio.pl',
+                website: '',
+                image: siergiejstudio,
+            },
+            {
+                name: 'CML GROUP Kamil Lesiuk',
+                link: 'https://www.budynekpasywny.pl/SuperDeweloper',
+                address: 'ul. Barbakan 1/15, 71-028 Szczecin',
+                phone: '+48 510 410 040',
+                email: 'kamil.lesiuk@budynekpasywny.pl',
+                website: 'www.budynekpasywny.pl ',
+                image: budynkipasywnetv,
             },
         ],
     },
@@ -761,7 +812,7 @@ export const ambassadors = [
         ],
     },
     {
-        category: '8. Pomiary budynków - measurement of buildings',
+        category: '8. Diagnostyka, pomiary - diagnostics, measurements',
         companies: [
             {
                 name: 'Angstorm Wiesława Stempel',
@@ -789,6 +840,15 @@ export const ambassadors = [
                 email: 'biuro@passdoradztwo.pl',
                 website: 'www.passdoradztwo.pl',
                 image: pass,
+            },
+            {
+                name: 'Diagnostyka Energetyczna Budynków - Dr inż. Andrzej Górka ',
+                link: 'https://www.gorka.poznan.pl/',
+                address: '',
+                phone: '+48 697 237 429',
+                email: 'biuro@gorka.poznan.pl',
+                website: 'www.gorka.poznan.pl',
+                image: diagnostykaenergetyczna,
             },
         ],
     },
