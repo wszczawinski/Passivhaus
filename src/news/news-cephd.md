@@ -1,5 +1,5 @@
 ---
-title: Nabór do zimowej edycji kursu
+title: Nabór do zimowej edycji kursu 2023
 date: 2022-11-11
 slug: second-news
 type: news
