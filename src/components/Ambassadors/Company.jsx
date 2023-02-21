@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiPhone, BiEnvelope, BiInfoCircle } from 'react-icons/bi';
 
 import './Ambassadors.scss';
 
@@ -8,15 +9,27 @@ export const Company = ({ company }) => {
     return (
         <div className="ambassador__category-company">
             <div className="ambassador__category-company-info">
-                <p>{name}</p>
+                <p className="ambassador__category-company-name">{name}</p>
                 {address ? <p>{address}</p> : null}
                 {website ? (
-                    <a href={`http://${website}`} target="_blank" rel="noopener noreferrer">
-                        {website}
-                    </a>
+                    <span className="ambassador__category-company-contact">
+                        <BiInfoCircle />{' '}
+                        <a href={`http://${website}`} target="_blank" rel="noopener noreferrer">
+                            {website}
+                        </a>
+                    </span>
                 ) : null}
-                {email ? <a href={`mailto:${email}`}>{email}</a> : null}
-                {phone ? <a href={`tel:+${phone}`}> {phone}</a> : null}
+                {email ? (
+                    <span className="ambassador__category-company-contact">
+                        <BiEnvelope /> <a href={`mailto:${email}`}>{email}</a>
+                    </span>
+                ) : null}
+                {phone ? (
+                    <span className="ambassador__category-company-contact">
+                        {' '}
+                        <BiPhone /> <a href={`tel:+${phone}`}> {phone}</a>{' '}
+                    </span>
+                ) : null}
             </div>
             {image ? (
                 <a

@@ -126,6 +126,22 @@
             }
         }
 
+        &-name {
+            font-size: 20px;
+            font-weight: bold;
+            color: black;
+        }
+
+        &-contact {
+            display: flex;
+            align-items: center;
+            margin: 2% 0;
+
+            & a {
+                padding: 0 2%;
+            }
+        }
+
         &-image {
             width: auto;
             max-width: 80%;
