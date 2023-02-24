@@ -1,16 +1,15 @@
 import kreisel from '../images/ambasadorzy/Kreisel_logo.png';
 import isover from '../images/ambasadorzy/Isover_logo.png';
-import kingspan from '../images/ambasadorzy/Kingspan_logo.jpg';
 import steico from '../images/ambasadorzy/Steico_logo.png';
 import knelsen from '../images/ambasadorzy/Knelsen_logo.jpg';
-import isoChemie from '../images/ambasadorzy/isoChemie_logo.png';
+import isoChemie from '../images/ambasadorzy/isochemie_logo.jpg';
 import proclima from '../images/ambasadorzy/proclima_logo.png';
 import tremco from '../images/ambasadorzy/tremco_logo.jpg';
 import fakro from '../images/ambasadorzy/fakro_logo.jpg';
 import brinkmann from '../images/ambasadorzy/Brinkmann_Consulting_logo.png';
 import megatherm from '../images/ambasadorzy/megatherm_logo.jpg';
 import infatec from '../images/ambasadorzy/infatec_logo.jpg';
-import izodom from '../images/ambasadorzy/izodom_logo.jpg';
+import izodom from '../images/ambasadorzy/izodom2000_logo.jpg';
 import solcraft from '../images/ambasadorzy/solcraft_logo.png';
 import glassolutions from '../images/ambasadorzy/glassolutions_logo.jpg';
 import cal from '../images/ambasadorzy/cal_logo.png';
@@ -56,6 +55,7 @@ import diagnostykaenergetyczna from '../images/ambasadorzy/diagnostykaenergetycz
 import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
 import passiveHouseSystems from '../images/ambasadorzy/passiveHouseSystems.png';
 import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
+import lammi from '../images/ambasadorzy/lammi_logo.png';
 
 const companiesPlaceholder =
     'Do tej pory Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej nie nadał tytułu ambasadora w tej kategorii. Jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.';
@@ -97,15 +97,6 @@ export const ambassadors = [
                         email: 'konsultanci.isover@saint-gobain.com',
                         website: 'www.isover.pl',
                         image: isover,
-                    },
-                    {
-                        name: 'Kingspan Insulation',
-                        link: 'http://www.kingspaninsulation.pl/',
-                        address: 'ul. Gdańska 134, 62-200 Gniezno',
-                        phone: '+48 (0) 61 425 56 48 wew.56',
-                        email: 'info@kingspaninsulation.pl',
-                        website: 'www.kingspaninsulation.pl/',
-                        image: kingspan,
                     },
                     {
                         name: 'STEICO S.A',
@@ -150,10 +141,10 @@ export const ambassadors = [
                 companies: [
                     {
                         name: 'ISO-Chemie GmbH - Biuro Polska',
-                        link: 'https://www.iso-chemie.eu/pl/',
-                        address: 'Rontgenst. 12, 73431 Aalen Niemcy',
-                        phone: '+48 (71) 881 00 48',
-                        email: 'c.lupak@iso-chemie.pl',
+                        link: 'https://www.iso-chemie.eu/pl/home',
+                        address: 'Röntgenstr. 12, 73431 Aalen, Niemcy',
+                        phone: '+48 795 535 705',
+                        email: 'j.wiczuk@iso-chemie.pl',
                         website: 'www.iso-chemie.pl',
                         image: isoChemie,
                     },
@@ -236,6 +227,15 @@ export const ambassadors = [
                         image: infatec,
                     },
                     {
+                        name: 'Lammi-Fundament Sp. z o.o.',
+                        link: 'https://lammi.pl/',
+                        address: 'ul. Przybylaka 15, 41-300 Dąbrowa Górnicza',
+                        phone: '+48 533 299 665',
+                        email: 'marcin.radola@lammifundament.pl',
+                        website: 'www.lammi.pl/',
+                        image: lammi,
+                    },
+                    {
                         name: 'Saint-Gobain Construction Products Polska Sp. z o.o.',
                         link: 'http://www.isover.pl/',
                         address: 'ul. Okrężna 16, 44-100 Gliwice',
@@ -252,15 +252,6 @@ export const ambassadors = [
                         email: 'izodom@izodom.pl',
                         website: 'www.tremco-illbruck.pl',
                         image: izodom,
-                    },
-                    {
-                        name: 'Kingspan Insulation',
-                        link: 'http://www.kingspaninsulation.pl/',
-                        address: 'ul. Gdańska 134, 62-200 Gniezno',
-                        phone: '+48 (0) 61 425 56 48 wew.56',
-                        email: 'info@kingspaninsulation.pl',
-                        website: 'http://www.kingspaninsulation.pl/',
-                        image: kingspan,
                     },
                     {
                         name: 'Solcraft Sp. z o.o.',
@@ -759,7 +750,7 @@ export const ambassadors = [
                 image: ibud,
             },
             {
-                name: 'Inhom Sp. z o.o.',
+                name: 'INHOM - Domy Pasywne i Energooszczędne',
                 link: 'http://www.inhom.pl/',
                 address: 'Leśny Stok 25, 80-260 Gdańsk',
                 phone: '+48 606 143 901',
