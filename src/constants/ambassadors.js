@@ -1,16 +1,15 @@
 import kreisel from '../images/ambasadorzy/Kreisel_logo.png';
 import isover from '../images/ambasadorzy/Isover_logo.png';
-import kingspan from '../images/ambasadorzy/Kingspan_logo.jpg';
-import steico from '../images/ambasadorzy/Steico_logo.jpg';
+import steico from '../images/ambasadorzy/Steico_logo.png';
 import knelsen from '../images/ambasadorzy/Knelsen_logo.jpg';
-import isoChemie from '../images/ambasadorzy/isoChemie_logo.png';
+import isoChemie from '../images/ambasadorzy/isochemie_logo.jpg';
 import proclima from '../images/ambasadorzy/proclima_logo.png';
 import tremco from '../images/ambasadorzy/tremco_logo.jpg';
 import fakro from '../images/ambasadorzy/fakro_logo.jpg';
 import brinkmann from '../images/ambasadorzy/Brinkmann_Consulting_logo.png';
 import megatherm from '../images/ambasadorzy/megatherm_logo.jpg';
 import infatec from '../images/ambasadorzy/infatec_logo.jpg';
-import izodom from '../images/ambasadorzy/izodom_logo.jpg';
+import izodom from '../images/ambasadorzy/izodom2000_logo.jpg';
 import solcraft from '../images/ambasadorzy/solcraft_logo.png';
 import glassolutions from '../images/ambasadorzy/glassolutions_logo.jpg';
 import cal from '../images/ambasadorzy/cal_logo.png';
@@ -56,6 +55,10 @@ import diagnostykaenergetyczna from '../images/ambasadorzy/diagnostykaenergetycz
 import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
 import passiveHouseSystems from '../images/ambasadorzy/passiveHouseSystems.png';
 import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
+import lammi from '../images/ambasadorzy/lammi_logo.png';
+
+const companiesPlaceholder =
+    'Do tej pory Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej nie nadał tytułu ambasadora w tej kategorii. Jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.';
 
 export const ambassadors = [
     {
@@ -77,11 +80,11 @@ export const ambassadors = [
             },
             {
                 title: 'Dedykowana izolacja akustyczna - Dedicated sound Insulation',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
-                title: 'Izolacja akustyczna- Acoustic insulation',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                title: 'Izolacja akustyczna - Acoustic insulation',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Izolacja cieplna - Thermalinsulation',
@@ -94,15 +97,6 @@ export const ambassadors = [
                         email: 'konsultanci.isover@saint-gobain.com',
                         website: 'www.isover.pl',
                         image: isover,
-                    },
-                    {
-                        name: 'Kingspan Insulation',
-                        link: 'http://www.kingspaninsulation.pl/',
-                        address: 'ul. Gdańska 134, 62-200 Gniezno',
-                        phone: '+48 (0) 61 425 56 48 wew.56',
-                        email: 'info@kingspaninsulation.pl',
-                        website: 'http://www.kingspaninsulation.pl/',
-                        image: kingspan,
                     },
                     {
                         name: 'STEICO S.A',
@@ -140,17 +134,17 @@ export const ambassadors = [
             },
             {
                 title: 'Łączniki balkonowe, attykowe, balustradowe etc. - ICF, Balcony, Attic connections etc',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Materiały zapewniające szczelność powietrzną - Airtightness components',
                 companies: [
                     {
                         name: 'ISO-Chemie GmbH - Biuro Polska',
-                        link: 'https://www.iso-chemie.eu/pl/',
-                        address: 'Rontgenst. 12, 73431 Aalen Niemcy',
-                        phone: '+48 (71) 881 00 48',
-                        email: 'c.lupak@iso-chemie.pl',
+                        link: 'https://www.iso-chemie.eu/pl/home',
+                        address: 'Röntgenstr. 12, 73431 Aalen, Niemcy',
+                        phone: '+48 795 535 705',
+                        email: 'j.wiczuk@iso-chemie.pl',
                         website: 'www.iso-chemie.pl',
                         image: isoChemie,
                     },
@@ -213,8 +207,8 @@ export const ambassadors = [
                         name: 'FAKRO Sp. z o.o.',
                         link: 'http://www.fakro.pl/',
                         address: 'ul. Węgierska 144a, 33-300 Nowy Sącz',
-                        phone: '+48 (18) 444 04 44',
-                        email: 'fakro@fakro.pl',
+                        phone: '+48 (18) 444 0 400',
+                        email: 'kontakt@fakro.pl',
                         website: 'www.fakro.pl',
                         image: fakro,
                     },
@@ -231,6 +225,15 @@ export const ambassadors = [
                         email: 'infatec@infatec.pl',
                         website: 'www.infatec.pl',
                         image: infatec,
+                    },
+                    {
+                        name: 'Lammi-Fundament Sp. z o.o.',
+                        link: 'https://lammi.pl/',
+                        address: 'ul. Przybylaka 15, 41-300 Dąbrowa Górnicza',
+                        phone: '+48 533 299 665',
+                        email: 'marcin.radola@lammifundament.pl',
+                        website: 'www.lammi.pl/',
+                        image: lammi,
                     },
                     {
                         name: 'Saint-Gobain Construction Products Polska Sp. z o.o.',
@@ -251,15 +254,6 @@ export const ambassadors = [
                         image: izodom,
                     },
                     {
-                        name: 'Kingspan Insulation',
-                        link: 'http://www.kingspaninsulation.pl/',
-                        address: 'ul. Gdańska 134, 62-200 Gniezno',
-                        phone: '+48 (0) 61 425 56 48 wew.56',
-                        email: 'info@kingspaninsulation.pl',
-                        website: 'http://www.kingspaninsulation.pl/',
-                        image: kingspan,
-                    },
-                    {
                         name: 'Solcraft Sp. z o.o.',
                         link: 'http://www.solcraft.pl/',
                         address: 'ul. Dębowa 5, 05-816 Michałowice',
@@ -272,9 +266,9 @@ export const ambassadors = [
                         name: 'STEICO S.A',
                         link: 'http://www.steico.com/pl/',
                         address: 'ul. Przemysłowa 2, 64-700 Czarnków',
-                        phone: '+48 (67) 35 60 999',
-                        email: 'info@steico.pl',
-                        website: 'www.steico.com',
+                        phone: '+48 (67) 36 66 215',
+                        email: 'infocee@steico.pl',
+                        website: 'www.steico.com/pl',
                         image: steico,
                     },
                 ],
@@ -286,17 +280,17 @@ export const ambassadors = [
         subcategories: [
             {
                 title: 'Drzwi przesuwane - Sliding doors',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Drzwi wejściowe - Entry doors',
                 companies: [
                     {
-                        name: 'Zakład Stolarki Budowlanej „CAL” Z. Cywiński  i wspólnicy Sp. J',
+                        name: 'CAL prawdziwe drzwi ZSB CAL Z. Cywiński i wspólnicy sp. j. ',
                         link: 'https://www.drzwi-cal.pl/',
                         address: 'ul. Piaskowa 5, 16-400 Suwałki',
-                        phone: '+48(87) 563 11 11',
-                        email: '',
+                        phone: '+48 (87) 563 11 55',
+                        email: 'biuro@drzwi-cal.pl',
                         website: 'www.drzwi-cal.pl',
                         image: cal,
                     },
@@ -391,7 +385,7 @@ export const ambassadors = [
             },
             {
                 title: 'Przekładki - Spacers',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Rolety  Żaluzje - Shutters',
@@ -423,7 +417,7 @@ export const ambassadors = [
             },
             {
                 title: 'Szklane dachy, świetliki - Glass roofs, skylights',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Szklenie - Glazing',
@@ -446,7 +440,7 @@ export const ambassadors = [
         subcategories: [
             {
                 title: 'Automatyka budynkowa - building automation',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Centrale wentylacyjne o wydajności do 600 m^3/h - Ventilation systems (capacity up to 600 m^3/h)',
@@ -482,7 +476,7 @@ export const ambassadors = [
             },
             {
                 title: 'Centrale wentylacyjne o wydajności od 600 m^3/h - Ventilation systems (capacity  from 600 m^3/h)',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Kondensacyjne kotły gazowe - Gas condensing boilers',
@@ -500,7 +494,7 @@ export const ambassadors = [
             },
             {
                 title: 'Odzysk ciepła ze ścieków bytowych - Drain water heat recovery',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
             {
                 title: 'Ogrzewanie płaszczyznowe- Surface heating',
@@ -596,7 +590,7 @@ export const ambassadors = [
             },
             {
                 title: 'Turbiny wiatrowe - Wind turbines',
-                text: 'Do tej pory polski instytut budownictwa pasywnego i energii odnawialnej nie nadał tytułu ambasadora w tej kategorii. jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.',
+                text: companiesPlaceholder,
             },
         ],
     },
@@ -756,7 +750,7 @@ export const ambassadors = [
                 image: ibud,
             },
             {
-                name: 'Inhom Sp. z o.o.',
+                name: 'INHOM - Domy Pasywne i Energooszczędne',
                 link: 'http://www.inhom.pl/',
                 address: 'Leśny Stok 25, 80-260 Gdańsk',
                 phone: '+48 606 143 901',
