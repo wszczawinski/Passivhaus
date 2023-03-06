@@ -37,11 +37,11 @@ export default function Team({ data }) {
                     <ul>
                         <li>Maciej Kuzawiński - prezes PiBP </li>
                         <li>
-                            Kamil Wiśniewski - dyrektor instytutu, trener, certyfikator PIBP
+                            Kamil Wiśniewski - dyrektor instytutu ds. szkoleń i rozwoju
                             <a href="mailto:kamil.wisniewski@pibp.pl"> kamil.wisniewski@pibp.pl</a>
                         </li>
                         <li>
-                            Łukasz Krzysztoń - dyrektor ds. szkoleń i rozwoju
+                            Łukasz Krzysztoń - dyrektor ds. marketingu i sprzedaży
                             <a href="mailto:l.krzyszton@pibp.pl"> l.krzyszton@pibp.pl</a>
                         </li>
                         <li>
