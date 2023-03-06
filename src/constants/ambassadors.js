@@ -673,15 +673,6 @@ export const ambassadors = [
                 image: ls,
             },
             {
-                name: 'Projektowanie budynków pasywnych',
-                link: 'www.pasywnym2.pl',
-                address: 'ul. Szamotulska 40/1, 60-366 Poznań',
-                phone: '+48 695 647 058',
-                email: 'biuro@pasywnym2.pl',
-                website: 'www.pasywnym2.pl',
-                image: pasywnym,
-            },
-            {
                 name: 'NF15',
                 link: 'http://nf15.pl/',
                 address: 'ul. Plantowa 4/22, 05-800 Pruszków',
