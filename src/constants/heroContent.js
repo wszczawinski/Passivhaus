@@ -4,7 +4,7 @@ import { BsArrowReturnRight } from 'react-icons/bs';
 export const heroText = {
     home: (
         <p>
-            ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br /> <u>AKTYWNIE</u>
+            {/* ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br /> <u>AKTYWNIE</u> */}
         </p>
     ),
     instytutOnas: (

@@ -1,0 +1,49 @@
+---
+title: Szkolenie Mistrz Budownictwa Pasywnego i Energooszczędnego
+date: 2023-03-07
+slug: cepht-news
+type: news
+thumb: ../images/newsThumbs/news-11.jpeg
+featuredImage: ../images/newsThumbs/news-11.jpeg
+---
+
+🔥 Ruszyliśmy z naborem do VI-tej, otwartej edycji Międzynarodowego Programu Szkoleniowego: Mistrz Budownictwa Pasywnego i Energooszczędnego❗
+
+👉 <a href="http://tiny.cc/nabor_MBPiE0323"> Więcej informacji (klik) </a>
+
+⏰ Nabór potrwa do 17 marca (godz. 21:00) lub wyczerpania miejsc❗
+
+📌 Naucz się projektować, wykonywać i nadzorować budynki pasywne, wysoce
+energooszczędne i zeroenergetyczne – istotnie odporne na wzrosty cen energii czy
+przerwy w jej dostawie!
+
+📌 Ponadto rozwijaj kompetencje z zakresu modernizacji starych budynków i ich
+instalacji do najwyższych standardów energetycznych!
+
+📌 Wzmocnij ekspercką pozycję doradców działu sprzedaży, monterów i serwisantów
+w relacji z innymi uczestnikami procesu budowy, jak np.: inwestorzy, wykonawcy,
+architekci i inni!
+
+👍 Jedyny taki Międzynarodowy Program Szkoleniowy dla Profesjonalistów branży
+budowlanej i sektorów powiązanych w sprawdzonej i cenionej wersji online!
+
+🤓 10-tygodniowy - wygodny program nauki, webinary i sesje Q&A z trenerem, 2 lata
+dostępu do platformy szkoleniowej i aktualizacje!
+
+⭐ Akredytacja Polskiego i Niemieckiego Instytutu Budownictwa Pasywnego!
+
+🏅 Po zdanym egzaminie (opcja) - Międzynarodowy Certyfikat, Tytuł, Wpis na
+Międzynarodową i Ogólnopolską listę Ekspertów oraz dostęp do zamkniętej Grupy
+Absolwentów: wsparcie, rozwój, współpraca!
+
+📈 Efektywność energetyczna stała się walutą naszych czasów! Brak wiedzy z zakresu
+budownictwa pasywnego i energooszczędnego już teraz negatywnie wpływa na Twoje
+dochody i pozycję na rynku❗
+
+🔴 Możesz uczyć się na własnych błędach latami, albo zrobić olbrzymi krok naprzód,
+sięgając po 33 lata doświadczeń fizyków budowli, projektantów i wykonawców w
+formie Certyfikowanego Programu Szkoleniowego 👌
+
+👉 Kup teraz i dołącz do uczestników VI edycji: <a href="http://tiny.cc/nabor_MBPiE0323">http://tiny.cc/nabor_MBPiE0323</a>
+
+👋 Do zobaczenia!

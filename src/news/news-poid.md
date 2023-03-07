@@ -1,7 +1,7 @@
 ---
 title: Związek POiD podejmuje współpracę z Polskim Instytutem Budownictwa Pasywnego i Energii Odnawialnej
 date: 2021-07-30
-slug: second-news
+slug: poid-news
 type: news
 thumb: ../images/newsThumbs/news-4.png
 featuredImage: ../images/newsThumbs/news-4.png

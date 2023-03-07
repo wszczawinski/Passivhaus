@@ -1,7 +1,7 @@
 ---
 title: Najnowszy PHPP v9 dostępny w języku polskim
 date: 2018-07-30
-slug: second-news
+slug: new-phpp-news
 type: news
 thumb: ../images/newsThumbs/news-7.png
 featuredImage: ../images/newsThumbs/news-7.png
