@@ -39,7 +39,7 @@ import szreder from '../images/ambasadorzy/szreder_logo.jpg';
 import tadeks from '../images/ambasadorzy/tadeks_logo.jpg';
 import thermblock from '../images/ambasadorzy/thermblock_logo.jpg';
 import ewfe from '../images/ambasadorzy/ewfe_logo.png';
-import paul from '../images/ambasadorzy/paul_logo.jpg';
+import zehnder from '../images/ambasadorzy/zehnder_logo.png';
 import bartosz from '../images/ambasadorzy/bartosz_logo.jpg';
 import stiebel from '../images/ambasadorzy/stiebel_logo.jpg';
 import simet from '../images/ambasadorzy/simet_logo.png';
@@ -461,7 +461,7 @@ export const ambassadors = [
                         phone: '+48 71 367 64 24',
                         email: 'info@zehnder.pl',
                         website: 'www.zehnder.pl',
-                        image: paul,
+                        image: zehnder,
                     },
                     {
                         name: 'Bartosz Sp. J. Bujwicki, Sobiech',
