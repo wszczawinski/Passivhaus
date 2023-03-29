@@ -9,17 +9,35 @@ export default function BlogPost({ data }) {
     const heroImage = getImage(data.heroImage);
     const { html } = data.markdownRemark;
     const { title, date, featuredImage, slug } = data.markdownRemark.frontmatter;
-    const displayDate = new Date(date).toISOString().split('T')[0]
+    const displayDate = new Date(date).toISOString().split('T')[0];
 
-    const displayTitle = <p>{title}</p>
+    const handleClick = () => {
+        if (slug === 'cepht-news') {
+            const link = document.createElement('a');
+			link.href = 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323';
+			link.target = '_blank';
+			document.body.appendChild(link);
+			link.click();
+			link.remove();
+        }
+    }
+
+    const displayTitle = <p>{title}</p>;
     return (
         <Layout heroTextContent={displayTitle} heroBackgroundImage={heroImage}>
             <section className="news">
-                <div className='news-content'>
-                    <GatsbyImage image={getImage(featuredImage)} alt={slug} />
-                    <div className='news-content__text' dangerouslySetInnerHTML={{ __html: html }} />
+                <div className="news-content">
+                    <div onClick={handleClick}>
+                        <GatsbyImage
+                            image={getImage(featuredImage)}
+                            alt={slug}
+                        />
+                    </div>
+                    <div
+                        className="news-content__text"
+                        dangerouslySetInnerHTML={{ __html: html }}
+                    />
                 </div>
-                <span className='news__date'>Dodano: {displayDate}</span>
             </section>
         </Layout>
     );

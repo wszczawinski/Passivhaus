@@ -1,6 +1,6 @@
 ---
 title: 61 Międzynarodowe Targi Budownictwa - wystawa domów gotowych
-date: 2023-01-03
+date: 2023-03-05
 slug: ninth-news
 type: news
 thumb: ../images/newsThumbs/news-9.png

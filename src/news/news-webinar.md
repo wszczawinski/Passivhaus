@@ -1,6 +1,6 @@
 ---
 title: Budynki pasywne, energooszczędne i zeroenergetyczne a wiedza profesjonalistów
-date: 2023-03-01
+date: 2023-03-04
 slug: tenth-news
 type: news
 thumb: ../images/newsThumbs/news-10.jpeg

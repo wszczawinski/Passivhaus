@@ -1,7 +1,7 @@
 ---
 title: Audyt zwieńczony pierwszym w Polsce Certyfikatem Pasywnego Produktu dla okna AdamS Passiv-line Ultra
 date: 2020-05-03
-slug: second-news
+slug: audit-news
 type: news
 thumb: ../images/newsThumbs/news-5.png
 featuredImage: ../images/newsThumbs/news-5.png

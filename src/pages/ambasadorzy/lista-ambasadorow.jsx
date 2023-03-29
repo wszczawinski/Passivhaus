@@ -9,7 +9,6 @@ import './Ambassador.scss';
 
 export default function Ambassador({ data }) {
     const heroImage = getImage(data.heroImage);
-    console.log(ambassadors);
     return (
         <Layout
             heroTextContent={heroText.ambassadorPartnerzy}
