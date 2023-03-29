@@ -56,6 +56,9 @@ import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
 import passiveHouseSystems from '../images/ambasadorzy/passiveHouseSystems.png';
 import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
 import lammi from '../images/ambasadorzy/lammi_logo.png';
+import foss from '../images/ambasadorzy/foss_logo.png';
+import viar from '../images/ambasadorzy/viar_logo.png';
+
 
 const companiesPlaceholder =
     'Do tej pory Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej nie nadał tytułu ambasadora w tej kategorii. Jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.';
@@ -115,6 +118,15 @@ export const ambassadors = [
                         email: 'cezary.biezonski@knauf.com',
                         website: 'www.styropianknauf.pl',
                         image: knaufterm,
+                    },
+                    {
+                        name: 'FOSS DYSTRYBUCJA',
+                        link: 'https://www.termolock.pl/',
+                        address: 'ul. Polna 9, 97-310 Daszówka',
+                        phone: '+48 791 178 081',
+                        email: 'sekretariatfoss@gmail.com',
+                        website: 'www.termolock.pl',
+                        image: foss,
                     },
                 ],
             },
@@ -684,7 +696,7 @@ export const ambassadors = [
             {
                 name: 'NF15',
                 link: 'http://nf15.pl/',
-                address: 'ul. Plantowa 4/22, 05-800 Pruszków',
+                address: 'ul. Kazimierzowska 83a, 05-822 Milanówek',
                 phone: '+48 691 069 812',
                 email: 'remigiusz.miszczak@gmail.com',
                 website: 'www.nf15.pl',
@@ -707,6 +719,11 @@ export const ambassadors = [
                 email: 'kamil.lesiuk@budynekpasywny.pl',
                 website: 'www.budynekpasywny.pl ',
                 image: budynkipasywnetv,
+            },
+            {
+                name: 'ViAr Pracownia Projektowa Wiktor Kuchniak',
+                phone: '+48 504 777 656',
+                image: viar,
             },
         ],
     },
