@@ -1,7 +1,7 @@
 ---
 title: Pierwsze obiekty publiczne w standardzie pasywnym w Polsce. 
 date: 2019-11-14
-slug: second-news
+slug: passive-public-news
 type: news
 thumb: ../images/newsThumbs/news-6.png
 featuredImage: ../images/newsThumbs/news-6.png

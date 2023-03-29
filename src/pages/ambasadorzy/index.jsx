@@ -5,14 +5,12 @@ import { getImage } from 'gatsby-plugin-image';
 import { AiOutlineForm } from 'react-icons/ai';
 import { Layout } from '../../components';
 import { heroText } from '../../constants/heroContent';
-import { ambassadors } from '../../constants/ambassadors';
 import listaAmbasadorow from '../../images/lista_ambasadorow.png';
 
 import './Ambassador.scss';
 
 export default function Ambassador({ data }) {
     const heroImage = getImage(data.heroImage);
-    console.log(ambassadors);
     return (
         <Layout
             heroTextContent={heroText.ambassador}

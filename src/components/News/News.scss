@@ -69,4 +69,12 @@
             width: 55%
         }
     }
+
+    &__more {
+        cursor: pointer;
+        padding: 2% 10%;
+        border-radius: 10px;
+        background-color: $color-orange;
+        color: white
+    }
 }
