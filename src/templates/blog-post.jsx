@@ -8,13 +8,13 @@ import './blogPost.scss';
 export default function BlogPost({ data }) {
     const heroImage = getImage(data.heroImage);
     const { html } = data.markdownRemark;
-    const { title, date, featuredImage, slug } = data.markdownRemark.frontmatter;
-    const displayDate = new Date(date).toISOString().split('T')[0];
+    const { title, featuredImage, slug } = data.markdownRemark.frontmatter;
 
     const handleClick = () => {
-        if (slug === 'cepht-news') {
+        if (slug === 'cepht-news' || slug === 'news-campaigne') {
+            const href = slug === 'news-campaigne' ? 'http://tiny.cc/oczekujacy-cephd01' : 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323';
             const link = document.createElement('a');
-			link.href = 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323';
+			link.href = href;
 			link.target = '_blank';
 			document.body.appendChild(link);
 			link.click();
