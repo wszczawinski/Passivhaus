@@ -16,7 +16,7 @@ import szkolenia2 from '../../images/szkolenia/2.png';
 import szkolenia4 from '../../images/szkolenia/4.png';
 import szkolenia5 from '../../images/szkolenia/5.png';
 import ekspert from '../../images/szkolenia/expert.png';
-import cennik from '../../images/szkolenia/cennik.png';
+import cennikOnline from '../../images/szkolenia/cennik_on-line.png';
 import exam from '../../images/szkolenia/exam.png';
 import requirements from '../../images/szkolenia/requirements.jpeg';
 
@@ -511,26 +511,20 @@ export default function ProjektantDoradztwo({ data }) {
                     }
                     noBorder
                 />
+                <a target='_blank' href='https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1'>
                 <ContainerColumn
                     textStart={
                         <p>
-                            <h2>Terminy najbliższej edycji kursu CEPHd</h2>
+                            <h2>Terminy najbliższej edycji kursu CEPHd online</h2>
                         </p>
                     }
                     noBorder
-                    imgSrc={cennik}
+                    imgSrc={cennikOnline}
                     alt="cennik"
                     colorCream
-                    textEnd={
-                        <p>
-                            Na koszt uczestnictwa w kursie CEPH składa się udział w szkoleniu wraz z
-                            wyżywieniem i dedykowanymi dla każdego uczestnika materiałami
-                            szkoleniowymi: najnowsza polska wersja oprogramowania PHPP, podręcznik
-                            PHPP, segregator z materiałami szkoleniowymi. Powyższa cena nie obejmuje
-                            kosztów dojazdu i zakwaterowania - noclegów.
-                        </p>
-                    }
                 />
+                </a>
+                
                 <FullImageContainer image={exam} />
                 <ContainerColumn
                     textStart={
@@ -584,8 +578,7 @@ export default function ProjektantDoradztwo({ data }) {
                     textStart={
                         <p>
                             <h2>Zgłoszenie swojego udziału w kursie CEPHd</h2>W celu skutecznego
-                            zgłoszenia należy kliknąć w poniższą grafikę a następnie wypełnić i
-                            przesłać do PIBP formularz zgłoszeniowy. Opcjonalnie można pobrać
+                            zgłoszenia należy kliknąć w poniższą grafikę. Opcjonalnie można pobrać
                             formularz zgłoszeniowy na dysk komputera , wypełnić ręcznie i wysłać
                             zgłoszenie na email:{' '}
                             <i>
@@ -602,12 +595,12 @@ export default function ProjektantDoradztwo({ data }) {
                             <br />
                             <br />
                             <a
-                                href={withPrefix('formularz-zgloszeniowy-CEPHd.pdf')}
+                                href='https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1'
                                 className="signup"
                                 target="_blank"
                                 rel="noreferrer"
                             >
-                                <StaticImage src="../../images/szkolenia/6.png" />
+                                <StaticImage src="../../images/szkolenia/campaigne-signup.jpg" />
                             </a>
                         </p>
                     }
@@ -909,7 +902,7 @@ export default function ProjektantDoradztwo({ data }) {
 
 export const pageQuery = graphql`
     query WorkQuery4 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_cephd.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_cepht_campaigne.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
