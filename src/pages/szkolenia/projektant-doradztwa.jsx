@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { graphql, withPrefix } from 'gatsby';
+import { graphql } from 'gatsby';
 import { getImage, StaticImage } from 'gatsby-plugin-image';
 import {
     Button,
@@ -511,7 +511,7 @@ export default function ProjektantDoradztwo({ data }) {
                     }
                     noBorder
                 />
-                <a target='_blank' href='https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1'>
+                <a target='_blank' rel="noreferrer" href='https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1'>
                 <ContainerColumn
                     textStart={
                         <p>
