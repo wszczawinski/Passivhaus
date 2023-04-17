@@ -9,7 +9,7 @@ import fakro from '../images/ambasadorzy/fakro_logo.jpg';
 import brinkmann from '../images/ambasadorzy/Brinkmann_Consulting_logo.png';
 import megatherm from '../images/ambasadorzy/megatherm_logo.jpg';
 import infatec from '../images/ambasadorzy/infatec_logo.jpg';
-import izodom from '../images/ambasadorzy/izodom2000_logo.jpg';
+import izodom from '../images/ambasadorzy/izodom.png';
 import solcraft from '../images/ambasadorzy/solcraft_logo.png';
 import glassolutions from '../images/ambasadorzy/glassolutions_logo.jpg';
 import cal from '../images/ambasadorzy/cal_logo.png';
@@ -23,7 +23,6 @@ import bemares from '../images/ambasadorzy/bemares_logo.png';
 import aura from '../images/ambasadorzy/aura_logo.png';
 import csstudio from '../images/ambasadorzy/csstudio_logo.jpg';
 import ls from '../images/ambasadorzy/ls_logo.jpg';
-import pasywnym from '../images/ambasadorzy/pasywnym_logo.jpg';
 import slomniki from '../images/ambasadorzy/slomniki_logo.png';
 import phpp from '../images/ambasadorzy/phpp_logo.jpg';
 import blower from '../images/ambasadorzy/blower_logo.jpg';
@@ -246,11 +245,11 @@ export const ambassadors = [
                     },
                     {
                         name: 'Izodom 2000 Polska Sp. z o.o.',
-                        link: 'http://www.izodom2000polska.com/index.php?lang=pl',
+                        link: 'https://izodom.pl',
                         address: 'ul. Ceramiczna 2A, 98-220 Zduńska Wola',
                         phone: '+48 (43) 823 41 88',
                         email: 'izodom@izodom.pl',
-                        website: 'www.tremco-illbruck.pl',
+                        website: 'www.izodom.pl',
                         image: izodom,
                     },
                     {
