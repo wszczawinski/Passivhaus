@@ -27,9 +27,10 @@ export function News({ singleNews }) {
     };
 
     const isNewsTooLong = slug === 'cepht-news';
+    const isNewsClickable = slug === 'news-campaigne'
 
     const handleClick = (goToUrl) => {
-        if (isNewsTooLong) {
+        if (isNewsTooLong || isNewsClickable) {
             const url = goToUrl || 'https://pibp.pl/blog/cepht-news';
             const link = document.createElement('a');
             link.href = url;
@@ -56,8 +57,7 @@ export function News({ singleNews }) {
             </div>
 
             <div className="single-news__image" 
-                onClick={() => handleClick(
-                    'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323',
+                onClick={() => handleClick(isNewsClickable ? 'http://tiny.cc/oczekujacy-cephd01' : 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323',
                 )}
             >
                 <GatsbyImage image={getImage(thumb)} alt={slug} />
