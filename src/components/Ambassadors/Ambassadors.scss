@@ -135,10 +135,12 @@
         &-contact {
             display: flex;
             align-items: center;
-            margin: 2% 0;
+            margin: 1% 0;
+            width: 100%;
+            
 
-            & a {
-                padding: 0 2%;
+            a {
+                margin: 0 2%;
             }
         }
 
