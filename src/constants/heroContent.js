@@ -93,8 +93,9 @@ export const heroText = {
     ),
     workshopsProjektant: (
         <p>
-            Szkolenia <br />
-            <BsArrowReturnRight /> CEPHD - projektant doradztwa
+            {/*TODO: remove comment here once proper hero image in this section is provided */}
+            {/* Szkolenia <br />
+            <BsArrowReturnRight /> CEPHD - projektant doradztwa */}
         </p>
     ),
     workshopsMistrz: (

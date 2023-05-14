@@ -511,20 +511,24 @@ export default function ProjektantDoradztwo({ data }) {
                     }
                     noBorder
                 />
-                <a target='_blank' rel="noreferrer" href='https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1'>
-                <ContainerColumn
-                    textStart={
-                        <p>
-                            <h2>Terminy najbliższej edycji kursu CEPHd online</h2>
-                        </p>
-                    }
-                    noBorder
-                    imgSrc={cennikOnline}
-                    alt="cennik"
-                    colorCream
-                />
+                <a
+                    target="_blank"
+                    rel="noreferrer"
+                    href="https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1"
+                >
+                    <ContainerColumn
+                        textStart={
+                            <p>
+                                <h2>Terminy najbliższej edycji kursu CEPHd online</h2>
+                            </p>
+                        }
+                        noBorder
+                        imgSrc={cennikOnline}
+                        alt="cennik"
+                        colorCream
+                    />
                 </a>
-                
+
                 <FullImageContainer image={exam} />
                 <ContainerColumn
                     textStart={
@@ -595,7 +599,7 @@ export default function ProjektantDoradztwo({ data }) {
                             <br />
                             <br />
                             <a
-                                href='https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1'
+                                href="https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1"
                                 className="signup"
                                 target="_blank"
                                 rel="noreferrer"
@@ -902,7 +906,7 @@ export default function ProjektantDoradztwo({ data }) {
 
 export const pageQuery = graphql`
     query WorkQuery4 {
-        heroImage: file(relativePath: { eq: "heroImages/hero_cepht_campaigne.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_after-case-study.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }

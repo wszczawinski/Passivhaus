@@ -27,7 +27,7 @@ export function News({ singleNews }) {
     };
 
     const isNewsTooLong = slug === 'cepht-news';
-    const isNewsClickable = slug === 'news-campaigne'
+    const isNewsClickable = slug === 'news-after-case-study'
 
     const handleClick = (goToUrl) => {
         if (isNewsTooLong || isNewsClickable) {
@@ -46,7 +46,7 @@ export function News({ singleNews }) {
             <div className="single-news__text-content">
                 <div className="single-news__title">{title}</div>
                 <p>{content}</p>
-                <div dangerouslySetInnerHTML={{ __html: truncateString(html, 1000) }} />
+                <div dangerouslySetInnerHTML={{ __html: truncateString(html, 1100) }} />
                 {isNewsTooLong && (
                     <button className="single-news__more" onClick={() => handleClick()}>
                         <strong>
@@ -57,7 +57,7 @@ export function News({ singleNews }) {
             </div>
 
             <div className="single-news__image" 
-                onClick={() => handleClick(isNewsClickable ? 'http://tiny.cc/oczekujacy-cephd01' : 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323',
+                onClick={() => handleClick(isNewsClickable ? 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp_www&utm_medium=r1m&utm_campaign=cephd1' : 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323',
                 )}
             >
                 <GatsbyImage image={getImage(thumb)} alt={slug} />
