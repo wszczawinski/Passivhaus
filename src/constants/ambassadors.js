@@ -20,6 +20,7 @@ import internorm from '../images/ambasadorzy/internorm_logo.jpg';
 import aluplast from '../images/ambasadorzy/aluplast_logo.png';
 import aluprof from '../images/ambasadorzy/aluprof_logo.png';
 import bemares from '../images/ambasadorzy/bemares_logo.png';
+import meesenburg from '../images/ambasadorzy/meesenburg_logo.png';
 import aura from '../images/ambasadorzy/aura_logo.png';
 import csstudio from '../images/ambasadorzy/csstudio_logo.jpg';
 import ls from '../images/ambasadorzy/ls_logo.jpg';
@@ -57,7 +58,6 @@ import APpyszczekStelmach from '../images/ambasadorzy/APpyszczekStelmach.png';
 import lammi from '../images/ambasadorzy/lammi_logo.png';
 import foss from '../images/ambasadorzy/foss_logo.png';
 import viar from '../images/ambasadorzy/viar_logo.png';
-
 
 const companiesPlaceholder =
     'Do tej pory Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej nie nadał tytułu ambasadora w tej kategorii. Jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.';
@@ -281,6 +281,20 @@ export const ambassadors = [
                         email: 'infocee@steico.pl',
                         website: 'www.steico.com/pl',
                         image: steico,
+                    },
+                ],
+            },
+            {
+                title: 'Systemy montażu okien',
+                companies: [
+                    {
+                        name: 'Meesenburg Polska Sp. z o.o.',
+                        link: 'http://www.meesenburg.com',
+                        address: 'ul. Krucza 17, 87-123 Głogowo',
+                        phone: '+48 798 888 845',
+                        email: 'p.wojtal@meesenburg.pl',
+                        website: 'www.meesenburg.com',
+                        image: meesenburg,
                     },
                 ],
             },
@@ -617,6 +631,15 @@ export const ambassadors = [
                 email: '',
                 website: 'www.bemares.pl',
                 image: bemares,
+            },
+            {
+                name: 'Meesenburg Polska Sp. z o.o.',
+                link: 'http://www.meesenburg.com',
+                address: 'ul. Krucza 17, 87-123 Głogowo',
+                phone: '+48 798 888 845',
+                email: 'p.wojtal@meesenburg.pl',
+                website: 'www.meesenburg.com',
+                image: meesenburg,
             },
         ],
     },
