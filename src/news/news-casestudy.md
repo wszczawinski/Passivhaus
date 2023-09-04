@@ -1,23 +1,18 @@
 ---
-title: 'Case study!'
+title: 'Czy na pewno projektujesz i wykonujesz budynki szczelne powietrznie'
 date: 2023-05-11
 slug: news-case-study
 type: news
-thumb: ../images/newsThumbs/news_case-study.png
-featuredImage: ../images/newsThumbs/news_case-study.png
+thumb: ../images/newsThumbs/news_case-study.webp
+featuredImage: ../images/newsThumbs/news_case-study.webp
 ---
 
-Zapraszamy na fascynujące studium przypadków, które poprowadzi właściciel biura
-architektonicznego GreenCherry Architecture - arch. Kamil Wiśniewski. Spotkanie jest darmowe i odbędzie się na żywo w dniu 16 maja o godz. 20:00.
+👌 Zapraszamy do obejrzenia fascynującego studium przypadków, które poprowadził założyciel Akademii Zdrowego Budownictwa i Dyrektor naszego Instytutu - arch. Kamil Wiśniewski!
 
-Początkujący architekci zainteresowani projektowaniem budynków zero-energetycznych powinni
-zainteresować się tym wydarzeniem gdyż każdy budynek zaprojektowany zgodnie z kryteriami
-budownictwa pasywnego automatycznie spełni wymagania budownictwa zero-energetycznego.
+🎯 Case study dla projektantów, wykonawców, audytorów energetycznych i inwestorów na przykładzie kilku budynków pasywnych i energooszczędnych!
 
-Najbliższe case study poświęcimy na wytłumaczenie nie tylko na czym polega stosunek
-współczynników A&amp;V, ale przed wszystkim jak mocno złożony jest ich wpływ na dany projekt i na ile
-wymaga uwzględnienia innych czynników.
+⭐️ Gościnią specjalną była Katarzyna Jarocka - Certyfikowana Konsultantka ds. Budynków Pasywnych oraz Mistrzyni Budownictwa Pasywnego i Energooszczędnego!
 
-👉 <strong>Rejestracja: <a href="http://tiny.cc/zapisy-webinar-azb-1605">http://tiny.cc/zapisy-webinar-azb-1605</a></strong>
+✅ Jej specjalizacja to m.in. testy szczelności i poprawianie szczelnośc powietrznej w budynkach o różnej skali i przeznaczeniu, nadzór oraż planowanie budowy w zakresie jakości.
 
-⏰ Liczba miejsc ograniczona!
+👉 <strong>Oglądaj już teraz: <a href="https://www.youtube.com/watch?v=SNzUzyWuEPw">tutaj</a></strong>
