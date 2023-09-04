@@ -27,9 +27,9 @@ export function News({ singleNews }) {
     };
 
     const isNewsTooLong = slug === 'cepht-news';
-    const isNewsClickable = slug === 'news-after-case-study'
+    const isNewsClickable = slug === 'news-after-case-study';
 
-    const handleClick = (goToUrl) => {
+    const handleClick = goToUrl => {
         if (isNewsTooLong || isNewsClickable) {
             const url = goToUrl || 'https://pibp.pl/blog/cepht-news';
             const link = document.createElement('a');
@@ -46,7 +46,11 @@ export function News({ singleNews }) {
             <div className="single-news__text-content">
                 <div className="single-news__title">{title}</div>
                 <p>{content}</p>
-                <div dangerouslySetInnerHTML={{ __html: truncateString(html, 1100) }} />
+                <div
+                    dangerouslySetInnerHTML={{
+                        __html: truncateString(html, isNewsTooLong ? 1100 : 1550),
+                    }}
+                />
                 {isNewsTooLong && (
                     <button className="single-news__more" onClick={() => handleClick()}>
                         <strong>
@@ -56,9 +60,15 @@ export function News({ singleNews }) {
                 )}
             </div>
 
-            <div className="single-news__image" 
-                onClick={() => handleClick(isNewsClickable ? 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp_www&utm_medium=r1m&utm_campaign=cephd1' : 'https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1_pibp&utm_campaign=mbpie0323',
-                )}
+            <div
+                className="single-news__image"
+                onClick={() =>
+                    handleClick(
+                        isNewsClickable
+                            ? 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp_www&utm_medium=r1m&utm_campaign=cephd1'
+                            : 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp&amp;utm_medium=www&amp;utm_campaign=cephd2',
+                    )
+                }
             >
                 <GatsbyImage image={getImage(thumb)} alt={slug} />
             </div>
