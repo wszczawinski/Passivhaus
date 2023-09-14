@@ -1,18 +1,19 @@
-import React, { useState, useEffect } from 'react';
 import { Link } from 'gatsby';
+import React, { useEffect, useState } from 'react';
 import { Button } from '../';
 import './Navbar.scss';
 
 import { FaBars, FaHome, FaTimes } from 'react-icons/fa';
-import pibpLogo from '../../images/pibpLogo.png';
-import ambassadordLogo from '../../images/neu_AMBASSADOR_LOGO_PL.svg';
-import NavbarItem from './NavbarItem';
 import {
     certificationNavItems,
     firmNavItems,
-    workshopsNavItems,
     passivhausNavItems,
+    shopNavItems,
+    workshopsNavItems,
 } from '../../constants/subNavItems';
+import ambassadordLogo from '../../images/neu_AMBASSADOR_LOGO_PL.svg';
+import pibpLogo from '../../images/pibpLogo.png';
+import NavbarItem from './NavbarItem';
 
 export default function Navbar() {
     const [navVisibility, setNavVisibility] = useState(false);
@@ -71,15 +72,12 @@ export default function Navbar() {
                     changeVisibility={changeNavVisibility}
                     showItem={showItem}
                 />
-                <li className="navbar__single-link">
-                    <Link
-                        to="/sklep/"
-                        onClick={changeNavVisibility}
-                        activeClassName="navbar__active-item"
-                    >
-                        <p>SKLEP</p>
-                    </Link>
-                </li>
+                <NavbarItem
+                    item="Sklep"
+                    subNavItems={shopNavItems}
+                    changeVisibility={changeNavVisibility}
+                    showItem={showItem}
+                />
                 <NavbarItem
                     item="Szkolenia"
                     subNavItems={workshopsNavItems}

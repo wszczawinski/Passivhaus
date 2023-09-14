@@ -28,3 +28,8 @@ export const workshopsNavItems = [
     // { name: 'Mostki cieplne', path: '/szkolenia/mostki-cieplne' },
     { name: 'Lista ekspertów', path: '/szkolenia/eksperci' },
 ];
+
+export const shopNavItems = [
+    { name: 'Artykuły', path: '/sklep' },
+    { name: 'Regulamin', path: '/sklep/regulamin' },
+];
