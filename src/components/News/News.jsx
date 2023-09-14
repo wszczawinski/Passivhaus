@@ -1,5 +1,5 @@
+import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import React from 'react';
-import { getImage, GatsbyImage } from 'gatsby-plugin-image';
 
 import './News.scss';
 
@@ -48,7 +48,7 @@ export function News({ singleNews }) {
                 <p>{content}</p>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: truncateString(html, isNewsTooLong ? 1100 : 1550),
+                        __html: truncateString(html, isNewsTooLong ? 1100 : 2650),
                     }}
                 />
                 {isNewsTooLong && (
