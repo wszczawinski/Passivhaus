@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { Link } from 'gatsby';
+import { Link, withPrefix } from 'gatsby';
+import React, { useEffect, useState } from 'react';
 import { FaChevronLeft } from 'react-icons/fa';
 import { Button } from '../';
 import { checkActiveNavigation } from '../../helpers/checkActiveNavigation';
@@ -46,16 +46,26 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem }) => {
                         }
                         onClick={handleClose}
                     />
-                    {subNavItems.map(item => (
-                        <Link
-                            key={item.name}
-                            to={item.path}
-                            onClick={changeVisibility}
-                            activeClassName="dropdown__active-item"
-                        >
-                            {item.name}
-                        </Link>
-                    ))}
+                    {subNavItems.map(item =>
+                        item.name === 'Regulamin' ? (
+                            <a
+                                href={withPrefix('Regulamin.pdf')}
+                                target="_blank"
+                                rel="noreferrer noopener"
+                            >
+                                {item.name}
+                            </a>
+                        ) : (
+                            <Link
+                                key={item.name}
+                                to={item.path}
+                                onClick={changeVisibility}
+                                activeClassName="dropdown__active-item"
+                            >
+                                {item.name}
+                            </Link>
+                        ),
+                    )}
                 </div>
             )}
         </li>
