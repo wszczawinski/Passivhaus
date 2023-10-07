@@ -1,6 +1,7 @@
 import React from 'react';
-import { FaPhone, FaEnvelope } from 'react-icons/fa';
+import { FaEnvelope, FaPhone } from 'react-icons/fa';
 
+import { withPrefix } from 'gatsby';
 import './Footer.scss';
 
 export default function Footer() {
@@ -27,7 +28,17 @@ export default function Footer() {
             <p className="footer__adress">
                 ul. Homera 55, 80-299 Gdańsk (Osowa) <br />
                 NIP: 204-000-04-44 <br />
-                Instytut działa na zasadach non-profit
+                <a href={withPrefix('Regulamin.pdf')} target="_blank" rel="noreferrer noopener">
+                    Regulamin
+                </a>{' '}
+                |{' '}
+                <a
+                    href={withPrefix('polityka-prywatnosci.pdf')}
+                    target="_blank"
+                    rel="noreferrer noopener"
+                >
+                    Polityka prywatności
+                </a>
             </p>
         </div>
     );
