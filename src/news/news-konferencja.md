@@ -1,37 +1,29 @@
 ---
-title: 'Zapraszamy na wyjątkowe wydarzenie dla branży budowlanej. Pierwsza edycja totalnie za FREE'
-date: 2023-10-06
+title: '🌟 Zdobądź Certyfikat Mistrza Budownictwa Pasywnego i Energooszczędnego! To bardzo porządny dokument! 🏆 '
+date: 2023-10-25
 slug: news-konferencja
 type: news
-thumb: ../images/newsThumbs/news-6.10.23.jpg
-featuredImage: ../images/newsThumbs/news-6.10.23.jpg
+thumb: ../images/newsThumbs/news-konferencja-25.10.jpg
+featuredImage: ../images/newsThumbs/news-konferencja-25.10.jpg
 ---
 
-🔥 3-dniowa, konferencja online: <strong>ERA BUDYNKÓW PASYWNYCH - CZAS MISTRZÓW!</strong> ⏰
+W obliczu niepewnych czasów, takich jak kryzysy gospodarcze, inwestowanie w swój rozwój staje się kluczem do powodzenia. Tak rozpoznawalny certyfikat to gwarancja Twojej interdyscyplinarnej wiedzy oraz wspaniały argument przekonujący inwestorów, zarówno prywatnych, jak i instytucjonalnych, do wyboru Twoich usług.
 
-Już tej jesieni ruszy II, otwarta Edycja Międzynarodowego Programu Szkoleniowego Online: Certyfikowany Projektant Budynków Pasywnych❗
+🌍 Ten certyfikat ma zasięg międzynarodowy! Oznacza to, że możesz go wykorzystać nie tylko na rodzimym rynku, ale także za granicą.
 
-📌 Wysłuchaj znanych w całej Europie pionierów i ekspertów.
+🌟 Co otrzymasz z naszym certyfikatem? Jasny komunikat dla inwestorów: "Posiadam niezbędne umiejętności i aktualną wiedzę w zakresie planowania, wykonywania i nadzorowania budynków pasywnych, zeroenergetycznych, wysoce energooszczędnych i modernizacji istniejących obiektów do najwyższych standardów energetycznych."
 
-🤓 Posłuchaj jakie mają oni doświadczenia w realizowaniu budynków o różnej skali i przeznaczeniu.
+🔴 Jak zdobyć Międzynarodowy Certyfikat? To proste:
 
-🎯 Co mają do powiedzenia w kwestiach instalacji w takich obiektach.
+✅Ukończ nasz Międzynarodowy Program Szkoleniowy.
+✅Zdobądź Międzynarodowy Egzamin – dostępny online w języku polskim.
 
-📈 Nie może zabraknąć kwestii nowych przepisów Od 2024 przecież nadchodzą nowe klasy energetyczne budynków, co będzie miało wpływ na zmiany w wycenach nieruchomości.
+🎯 Nasza Akademia Zdrowego Budownictwa oraz Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej będą Twoimi partnerami w dalszej drodze do sukcesu.
 
-🏅 Nadchodzące lata to <strong>CZAS MISTRZÓW!</strong>
+⏰ W tej chwili trwają zapisy na VII edycję Międzynarodowego Programu Szkoleniowego Online: Mistrz Budownictwa Pasywnego i Energooszczędnego❗
 
-</br>
-</br>
+👉 Informacje i kup teraz: <a href="http://tiny.cc/NABOR-MBPiE-VII ">**TUTAJ**</a>
 
-**Szczegóły wydarzenia:**
+⏰ Nabór trwa tylko do 27 października do godz. 21:00 lub do wyczerpania miejsc!
 
-📆 Data: 17 - 19 października 2023 r.
-
-⏰ Godziny: 20:00 - 21:35 każdego dnia
-
-👉 Tytuł: Era Budynków Pasywnych - Czas Mistrzów
-
-💻 Forma: Konferencja online
-
-💸 Koszt udziału: BEZPŁATNY po <a href="https://akademiazdrowegobudownictwa.clickmeeting.com/era-budynkow-pasywnych-czas-mistrzow/register" target="\_blank" rel="noopener noreferrer">**rejestracji**</a>❗
+🔴 Pamiętaj, że potencjalni klienci będą Cię szukać także na naszej liście ekspertów w sekcji "Znajdź Mistrza"!
