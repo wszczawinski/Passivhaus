@@ -71,7 +71,7 @@ export const ambassadors = [
                 companies: [
                     {
                         name: 'KREISEL Technika Budowlana Sp. z o.o.',
-                        link: 'https://www.kreisel.pl/narzedzia/katalog',
+                        link: 'http://www.kreisel.pl/narzedzia/katalog',
                         address: '60-462 Poznań, ul. Szarych Szeregów 23',
                         phone: '+48 61 846-79-00',
                         email: 'sekretariat@kreisel.pl',
@@ -111,7 +111,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Knauf Industries Polska Sp. z o.o. ',
-                        link: 'https://www.knauf-industries.pl/',
+                        link: 'http://www.knauf-industries.pl/',
                         address: 'ul. Styropianowa 1, 96-320 Adamowice',
                         phone: '+48 667 662 217',
                         email: 'cezary.biezonski@knauf.com',
@@ -120,7 +120,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'FOSS DYSTRYBUCJA',
-                        link: 'https://www.termolock.pl/',
+                        link: 'http://www.termolock.pl/',
                         address: 'ul. Polna 9, 97-310 Daszówka',
                         phone: '+48 791 178 081',
                         email: 'sekretariatfoss@gmail.com',
@@ -152,7 +152,7 @@ export const ambassadors = [
                 companies: [
                     {
                         name: 'ISO-Chemie GmbH - Biuro Polska',
-                        link: 'https://www.iso-chemie.eu/pl/home',
+                        link: 'http://www.iso-chemie.eu/pl/home',
                         address: 'Röntgenstr. 12, 73431 Aalen, Niemcy',
                         phone: '+48 795 535 705',
                         email: 'j.wiczuk@iso-chemie.pl',
@@ -161,7 +161,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Passive House Systems',
-                        link: 'https://passivehousesystems.pl/',
+                        link: 'http://passivehousesystems.pl/',
                         address: '',
                         phone: '+48 500 646 654',
                         email: 'agata@passivehousesystems.pl',
@@ -239,7 +239,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Lammi-Fundament Sp. z o.o.',
-                        link: 'https://lammi.pl/',
+                        link: 'http://lammi.pl/',
                         address: 'ul. Przybylaka 15, 41-300 Dąbrowa Górnicza',
                         phone: '+48 533 299 665',
                         email: 'marcin.radola@lammifundament.pl',
@@ -257,7 +257,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Izodom 2000 Polska Sp. z o.o.',
-                        link: 'https://izodom.pl',
+                        link: 'http://izodom.pl',
                         address: 'ul. Ceramiczna 2A, 98-220 Zduńska Wola',
                         phone: '+48 (43) 823 41 88',
                         email: 'izodom@izodom.pl',
@@ -312,7 +312,7 @@ export const ambassadors = [
                 companies: [
                     {
                         name: 'CAL prawdziwe drzwi ZSB CAL Z. Cywiński i wspólnicy sp. j. ',
-                        link: 'https://www.drzwi-cal.pl/',
+                        link: 'http://www.drzwi-cal.pl/',
                         address: 'ul. Piaskowa 5, 16-400 Suwałki',
                         phone: '+48 (87) 563 11 55',
                         email: 'biuro@drzwi-cal.pl',
@@ -353,7 +353,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'IFTM Internorm Sp. z o.o.',
-                        link: 'https://www.internorm.com/pl-pl/internorm.html',
+                        link: 'http://www.internorm.com/pl-pl/internorm.html',
                         address: 'ul. Nad Wilanówką 9, 02-993 Warszawa',
                         phone: '+48 22 842 82 99',
                         email: 'biuro@internorm.com.pl',
@@ -362,7 +362,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Adams',
-                        link: 'https://www.adams.com.pl/',
+                        link: 'http://www.adams.com.pl/',
                         address: 'ul. Leśna Droga 10A, 11-700 Mrągowo',
                         phone: '+48 89 741 32 48',
                         email: 'adams@adams.com.pl',
@@ -481,7 +481,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Zehnder Polska Sp. z o.o.',
-                        link: 'https://www.zehnder.pl/',
+                        link: 'http://www.zehnder.pl/',
                         address: 'ul. Irysowa 1, 55-040 Bielany Wrocławskie',
                         phone: '+48 71 367 64 24',
                         email: 'info@zehnder.pl',
@@ -549,7 +549,7 @@ export const ambassadors = [
                     },
                     {
                         name: 'Stiebel Eltron-Polska Sp. z o.o.',
-                        link: 'https://www.rehau.com/pl-pl',
+                        link: 'http://www.rehau.com/pl-pl',
                         address: 'ul. Działkowa 2, 02-234 Warszawa',
                         phone: '+48 22 609 20 30',
                         email: 'biuro@stiebel-eltron.pl',
@@ -563,7 +563,7 @@ export const ambassadors = [
                 companies: [
                     {
                         name: 'f-tronic GmbH',
-                        link: 'https://www.f-tronic.com',
+                        link: 'http://www.f-tronic.com',
                         address: 'Zum Gerlen 21-25, D-66131 Saarbrücken',
                         phone: '+49 6893 9483-18',
                         email: 'b.sosniok@f-tronic.de',
@@ -648,7 +648,7 @@ export const ambassadors = [
         companies: [
             {
                 name: 'AURA Plus Sp. z o.o. Sp.k.',
-                link: 'https://auraplus.pl/',
+                link: 'http://auraplus.pl/',
                 address: 'ul. Antoniego Baraniaka 96/98, 61-245 Poznań',
                 phone: '+48 575 702 039',
                 email: 'biuro@auraplus.pl',
@@ -681,7 +681,7 @@ export const ambassadors = [
             },
             {
                 name: 'Kamil Wiśniewski GreenCherry Architecture S.K.A.',
-                link: 'www.greencherry.eu',
+                link: 'http://www.greencherry.eu',
                 address: 'ul. Grabiszyńska 163/407, 53-439 Wrocław',
                 phone: '+48 508 449 288',
                 email: 'kamil.wisniewski@greencherry.eu',
@@ -690,7 +690,7 @@ export const ambassadors = [
             },
             {
                 name: 'Hexa Green Architekt',
-                link: 'https://hexagreen.pl/',
+                link: 'http://hexagreen.pl/',
                 address: 'ul. Zagórska 49, 26-085 Miedziana Góra',
                 phone: '+48 604 773 903',
                 email: 'domy@hexagreen.pl',
@@ -699,7 +699,7 @@ export const ambassadors = [
             },
             {
                 name: 'Pracownia Architektoniczna Łukasz Smól',
-                link: 'www.eko-architektura.pl',
+                link: 'http://www.eko-architektura.pl',
                 address: 'ul. Świętego Mikołaja 3/1, 81-062 Gdynia',
                 phone: '+48 694 86 04 28',
                 email: 'lsmol@interia.pl',
@@ -708,7 +708,7 @@ export const ambassadors = [
             },
             {
                 name: 'NF15',
-                link: 'http://nf15.pl/',
+                link: 'http://www.nf15.pl/',
                 address: 'ul. Kazimierzowska 83a, 05-822 Milanówek',
                 phone: '+48 691 069 812',
                 email: 'remigiusz.miszczak@gmail.com',
@@ -726,11 +726,11 @@ export const ambassadors = [
             },
             {
                 name: 'CML GROUP Kamil Lesiuk',
-                link: 'https://www.budynekpasywny.pl/SuperDeweloper',
+                link: 'http://www.budynekpasywny.pl/SuperDeweloper',
                 address: 'ul. Barbakan 1/15, 71-028 Szczecin',
                 phone: '+48 510 410 040',
                 email: 'kamil.lesiuk@budynekpasywny.pl',
-                website: 'www.budynekpasywny.pl ',
+                website: 'www.budynekpasywny.pl',
                 image: budynkipasywnetv,
             },
             {
@@ -840,7 +840,7 @@ export const ambassadors = [
         companies: [
             {
                 name: 'Angstorm Wiesława Stempel',
-                link: '',
+                link: 'http://www.angstrom.pl',
                 address: '',
                 phone: '+48 609 78 09 69',
                 email: 'biuro@angstrom.pl',
@@ -867,7 +867,7 @@ export const ambassadors = [
             },
             {
                 name: 'Diagnostyka Energetyczna Budynków - Dr inż. Andrzej Górka ',
-                link: 'https://www.gorka.poznan.pl/',
+                link: 'http://www.gorka.poznan.pl/',
                 address: '',
                 phone: '+48 697 237 429',
                 email: 'biuro@gorka.poznan.pl',
@@ -895,11 +895,11 @@ export const ambassadors = [
         companies: [
             {
                 name: 'Gmina Słomniki jest liderem Budownictwa Pasywnego w Polsce',
-                link: '',
+                link: 'http://www.slomniki.pl',
                 address: 'Urząd Miejski w Słomnikach, ul. Tadeusza Kościuszki 64, 32-090 Słomniki',
                 phone: '+48 12 388 11 02',
                 email: '',
-                website: 'http://www.slomniki.pl',
+                website: 'www.slomniki.pl',
                 image: slomniki,
             },
         ],
