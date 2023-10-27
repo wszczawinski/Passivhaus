@@ -10,7 +10,7 @@ export const shopItems = [
             'PHPP to łatwe w użyciu oprogramowanie do planowania efektywności energetycznej przeznaczone głównie architektom i doradcom ds. planowania budynków. Jego największym atutem jest wiarygodność wyników i łatwość obsługi. W styczniu 2019 r. narzędzie (PHPP) w najnowszej wersji 9.6 zostało bardzo wysoko ocenione przy użyciu ANSI / ASHRAE Standard 140, metody testowania porównawczego programów energetycznych budynków. Warto nadmienić, że od pierwszych wersji PHPP wyróżniało się nadzwyczaj wysoką skutecznością w symulacjach zużycia energii w budynkach. Najnowsza wersja oprogramowania umożliwia precyzyjne zaplanowanie termomodernizacji starego budownictwa uwzględniając nawet takie szczegóły jak detale połączeń.',
             'Korzystając z narzędzia PHPP zyskujesz wiarygodne wyniki w zakresie:',
         ],
-        price: '1107 zł (w tym 23% VAT)',
+        price: '1353 zł (w tym 23% VAT)',
         img: phpp,
     },
     {
