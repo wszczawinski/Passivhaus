@@ -9,7 +9,7 @@
     font-size: $font-size-mobile;
 
     & a {
-        text-decoration: underline;
+        font-weight: 700;
     }
 
     @media (min-width: $break-point-desktop) {
@@ -56,7 +56,7 @@
         }
 
         a {
-            color: black;
+            color: red;
         }
         
     }
