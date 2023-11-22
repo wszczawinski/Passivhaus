@@ -1,0 +1,26 @@
+---
+title: '🔥 Zapraszamy na wyjątkowe wydarzenie! ❗'
+date: 2023-11-22
+slug: news-webinar-22-11
+type: news
+thumb: ../images/newsThumbs/news-webinar-22-11.webp
+featuredImage: ../images/newsThumbs/news-webinar-22-11.webp
+---
+
+<strong>WEBINAR ONLINE: Jak zacząć projektować PRAWDZIWE budynki pasywne?</strong>
+
+🎯 Zarejestruj się bezpłatnie już teraz! 👉 <a target="_blank" href="http://tiny.cc/AZB-WEBINAR-22-11-23">**TUTAJ**</a>
+
+<strong>O czym będziemy rozmawiać?</strong>
+
+📌 Poznasz kluczowe czynniki, które musisz spełnić, aby projektować <strong>PRAWDZIWE budynki pasywne i zeroenergetyczne.</strong> 
+
+📌  Dowiesz się, czy <strong>każdy nowy budynek może być zrealizowany w standardzie pasywnym.</strong> 
+
+📌  Przekonasz się, czy <strong>każdy budynek modernizowany może osiągnąć standard budynku pasywnego.</strong> 
+
+📌  Dowiesz się, jak przebiega i co daje <strong> Certyfikacja Budynków Pasywnych.</strong> 
+
+📌  Uzyskasz odpowiedzi na własne pytania w ramach sesji Q&A (od godz. 21:00).
+
+🌟 <strong>Tradycyjnie, w trakcie spotkania nastąpi oficjalne otwarcie naboru uczestników do II  Edycji on-line Międzynarodowego Programu Szkoleniowego – Certyfikowany Projektant Budynków Pasywnych – Certified PassiveHouse Designer.</strong>
