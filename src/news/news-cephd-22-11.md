@@ -1,0 +1,41 @@
+---
+title: 'Certyfikowany Projektant Budynków Pasywnych'
+date: 2023-11-22
+slug: news-cephd-22-11
+type: news
+thumb: ../images/newsThumbs/news-CEPHD-22-11.webp
+featuredImage: ../images/newsThumbs/news-CEPHD-22-11.webp
+---
+
+Międzynarodowy Program Szkoleniowy Online
+
+🔥 Ruszyliśmy z naborem do II - otwartej edycji Międzynarodowego Programu
+Szkoleniowego Online: Certyfikowany Projektant Budynków Pasywnych❗
+
+👉 <a href="https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=www_pibp&amp;utm_medium=dr_r1k&amp;utm_campaign=cephd2" target="_blank" rel="noopener noreferrer">** NIE PRZEGAP – KUP UDZIAŁ JUŻ TERAZ **</a>
+
+🎯 Nabór potrwa do 1 grudnia 2023 (godz. 21:00) lub wyczerpania miejsc.
+
+📌 Naucz się projektować budynki pasywne, zeroenergetyczne, wysoce
+energooszczędne i ich instalacje oraz wykonywać obliczenia dla takich obiektów.
+
+👍 Jedyny taki Międzynarodowy Program Szkoleniowy Online, przeznaczony dla
+wszystkich uczestników procesu projektowego, a także osób pełniących podczas
+realizacji budynków różne funkcje konsultacyjno-doradcze!
+
+⏰ 11-tygodniowy - wygodny program nauki, webinary i sesje Q&amp;A z trenerem, 2 lata
+dostępu do platformy szkoleniowej i aktualizacje!
+
+⭐ Akredytacja Instytutu Budownictwa Pasywnego w Darmstadt oraz Polskiego
+Instytutu Budownictwa Pasywnego i Energii Odnawialnej w Gdańsku!
+
+🏅 Po zdanym egzaminie (opcja) - Międzynarodowy Certyfikat, Tytuł, Wpis na
+Międzynarodową listę Ekspertów PHI Darmstadt, Ogólnopolską listę Ekspertów
+Akademii Zdrowego Budownictwa „Znajdź Mistrza” oraz dostęp do zamkniętej Grupy
+Absolwentów: czyli wsparcie, rozwój i współpraca!
+
+📈 Efektywność energetyczna stała się walutą naszych czasów!
+
+👉 <a href="https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=www_pibp&amp;utm_medium=dr_r1k&amp;utm_campaign=cephd2" target="_blank" rel="noopener noreferrer">** NIE PRZEGAP – KUP UDZIAŁ JUŻ TERAZ **</a>
+
+👋 Do zobaczenia!
