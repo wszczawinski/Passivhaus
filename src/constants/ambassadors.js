@@ -53,6 +53,7 @@ import solcraft from '../images/ambasadorzy/solcraft_logo.png';
 import stiebel from '../images/ambasadorzy/stiebel_logo.jpg';
 import szreder from '../images/ambasadorzy/szreder_logo.jpg';
 import tadeks from '../images/ambasadorzy/tadeks_logo.jpg';
+import termwall from '../images/ambasadorzy/termwall_logo.png';
 import thermblock from '../images/ambasadorzy/thermblock_logo.jpg';
 import tremco from '../images/ambasadorzy/tremco_logo.jpg';
 import variotec from '../images/ambasadorzy/variotec_logo.png';
@@ -126,6 +127,15 @@ export const ambassadors = [
                         email: 'sekretariatfoss@gmail.com',
                         website: 'www.termolock.pl',
                         image: foss,
+                    },
+                    {
+                        name: 'TERMWALL',
+                        link: 'http://www.termwall.eu/zalety_systemu.html',
+                        address: 'ul. Szczęśliwa 1, 35-234 Rzeszów',
+                        phone: '+48 508 950 176',
+                        email: 'r.zielinski@termwall.eu',
+                        website: 'www.termwall.eu',
+                        image: termwall,
                     },
                 ],
             },
@@ -282,6 +292,15 @@ export const ambassadors = [
                         website: 'www.steico.com/pl',
                         image: steico,
                     },
+                    {
+                        name: 'TERMWALL',
+                        link: 'http://www.termwall.eu/zalety_systemu.html',
+                        address: 'ul. Szczęśliwa 1, 35-234 Rzeszów',
+                        phone: '+48 508 950 176',
+                        email: 'r.zielinski@termwall.eu',
+                        website: 'www.termwall.eu',
+                        image: termwall,
+                    },
                 ],
             },
             {
@@ -352,12 +371,12 @@ export const ambassadors = [
                         image: elwiz,
                     },
                     {
-                        name: 'IFTM Internorm Sp. z o.o.',
-                        link: 'http://www.internorm.com/pl-pl/internorm.html',
-                        address: 'ul. Nad Wilanówką 9, 02-993 Warszawa',
-                        phone: '+48 22 842 82 99',
-                        email: 'biuro@internorm.com.pl',
-                        website: 'www.internorm.pl',
+                        name: 'IFTM Group Sp. z o.o.',
+                        link: 'http://www.iftm-group.com/#contact',
+                        address: 'ul. Wołoska 9a, 02-583 Warszawa',
+                        phone: '+48 801 88 99 87',
+                        email: 'biuro@iftm-group.com',
+                        website: 'www.iftm-group.com',
                         image: internorm,
                     },
                     {
