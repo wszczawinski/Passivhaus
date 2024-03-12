@@ -53,6 +53,7 @@ export function News({ singleNews }) {
         <section className="single-news">
             <div className="single-news__text-content">
                 <div className="single-news__title">{title}</div>
+                {year >= 2023 && <div className="single-news__date">{formattedDate}</div>}
                 <p>{content}</p>
                 <div
                     dangerouslySetInnerHTML={{
@@ -79,7 +80,6 @@ export function News({ singleNews }) {
                 }
             >
                 <GatsbyImage image={getImage(thumb)} alt={slug} />
-                <div className="single-news__date">{formattedDate}</div>
             </div>
         </section>
     );

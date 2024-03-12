@@ -1,6 +1,6 @@
 ---
 title: '🔥 Zapraszamy na wyjątkowe wydarzenie! ❗'
-date: 2023-11-22
+date: 2023-10-25
 slug: news-webinar-22-11
 type: news
 thumb: ../images/newsThumbs/news-webinar-22-11.webp
