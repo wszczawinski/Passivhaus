@@ -77,4 +77,12 @@
         background-color: $color-orange;
         color: white
     }
+
+    &__date {
+        width: 100%;
+       display: flex;
+         justify-content: flex-end;
+        margin-top: 2%;
+        font-weight: 600;
+    }
 }

@@ -5,7 +5,7 @@ import './News.scss';
 
 export function News({ singleNews }) {
     const {
-        frontmatter: { title, content, thumb, slug },
+        frontmatter: { title, content, thumb, slug, date },
         html,
     } = singleNews;
 
@@ -41,6 +41,14 @@ export function News({ singleNews }) {
         }
     };
 
+    const dateToFormat = new Date(date);
+
+    const day = dateToFormat.getUTCDate().toString().padStart(2, '0');
+    const month = (dateToFormat.getUTCMonth() + 1).toString().padStart(2, '0');
+    const year = dateToFormat.getUTCFullYear();
+
+    const formattedDate = `${day}.${month}.${year} r.`;
+
     return (
         <section className="single-news">
             <div className="single-news__text-content">
@@ -71,6 +79,7 @@ export function News({ singleNews }) {
                 }
             >
                 <GatsbyImage image={getImage(thumb)} alt={slug} />
+                <div className="single-news__date">{formattedDate}</div>
             </div>
         </section>
     );
