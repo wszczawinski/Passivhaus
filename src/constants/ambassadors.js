@@ -691,7 +691,7 @@ export const ambassadors = [
             {
                 name: 'Hexa Green Architekt',
                 link: 'http://hexagreen.pl/',
-                address: 'ul. Zagórska 49, 26-085 Miedziana Góra',
+                address: 'ul. Przelot 12, 25-534 Kielce',
                 phone: '+48 604 773 903',
                 email: 'domy@hexagreen.pl',
                 website: 'www.hexagreen.pl/',
