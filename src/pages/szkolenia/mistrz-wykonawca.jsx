@@ -119,11 +119,11 @@ export default function MistrzWykonawca({ data }) {
                             terminach, ustalonych wspólnie przez PIBP oraz Akademię Zdrowego
                             Budownictwa.
                             <h4>Termin najbliższej edycji szkolenia CEPHt </h4>
-                            Nabór trwa do 27 października (godz. 21:00) lub wyczerpania miejsc.
-                            <h4>Koszt uczestnictwa w szkoleniu CEPHt</h4>4 498,37 PLN netto – za 55h
+                            Nabór trwa do 22 marca 2024 (godz. 21:00) lub do wyczerpania miejsc.
+                            <h4>Koszt uczestnictwa w szkoleniu CEPHt</h4>4 699,00 PLN netto – za 55h
                             godzin szkoleniowych (zegarowych)
                             <h4>Koszt uczestnictwa w egzaminie CEPHt</h4>
-                            2750,00 PLN netto – po zdanym egzaminie certyfikat i wpis na listę
+                            3490,00 PLN netto – po zdanym egzaminie certyfikat i wpis na listę
                             ekspertów
                         </p>
                     }
