@@ -1,0 +1,35 @@
+---
+title: Mistrz Budownictwa Pasywnego i Energooszczędnego!
+date: 2024-03-12
+slug: news-12.03.24
+type: news
+thumb: ../images/newsThumbs/news-mistrz-12.03.24.jpg
+featuredImage: ../images/newsThumbs/news-mistrz-12.03.24.jpg
+---
+
+🔥 Rozpoczynamy <a href="https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1k_pibp&utm_campaign=mbpie8" target="_blank" rel="noopener noreferrer">nabór</a> do VIII edycji Międzynarodowego Programu Szkoleniowego Online: Mistrz Budownictwa Pasywnego i Energooszczędnego❗
+
+⏰ Termin zgłoszeń upływa 22 marca o godzinie 21:00 lub do wyczerpania miejsc
+
+🎯 Program szkoleniowy trwa 10 tygodni. Zajęcia są realizowane w wygodnej formie, zarówno w
+postaci spotkań na żywo jak i w formie nagrań do odtworzenia. Po każdym etapie następują sesje
+Q&amp;A z trenerem.
+
+⭐ Jest to jedyny w Polsce program akredytowany przez Instytut Budownictwa Pasywnego w
+Darmstadt oraz Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej w Gdańsku.
+
+🏅 Po ukończeniu kursu otrzymasz certyfikat potwierdzający Twoje uczestnictwo w zajęciach lub
+otrzymasz Międzynarodowy Certyfikat po zdaniu egzaminu. Po zdaniu egzaminu uzyskujesz tytuł,
+którym możesz posługiwać się na Całym Świecie oraz zostaniesz wpisany na Międzynarodową Listę
+Ekspertów Instytutu Budownictwa Pasywnego w Darmstadt i na Ogólnopolską Listę Akademii
+Zdrowego Budownictwa „Znajdź Mistrza”. Dodatkowo, uzyskasz dostęp do zamkniętej Grupy
+Absolwentów, co zapewni wsparcie, rozwój oraz możliwości współpracy!
+
+🤓 Bazowy program szkoleniowy został opracowany przez Instytut Budownictwa Pasywnego w
+Darmstadt. Zawiera 31 lat doświadczeń fizyków budowli, projektantów, wykonawców i został
+zaktualizowany o doświadczenia Akademii Zdrowego Budownictwa oraz Polskiego Instytutu
+Budownictwa Pasywnego.
+
+👉 Kliknij <a href="https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/?utm_source=facebook&utm_medium=r1k_pibp&utm_campaign=mbpie8">tutaj</a>, aby się zapisać i dołączyć do grupy bieżących uczestników.
+
+📈 Efektywność energetyczna stała się walutą naszych czasów❗
