@@ -15,7 +15,7 @@ export default function Home({ data }) {
             <section className="home-container">
                 <div className="news-container">
                     <h3>
-                        <u>AKTUALNOŚCI</u>
+                        AKTUALNOŚCI
                     </h3>
                     <div className="news-container__content">
                         {news.map(element => (
@@ -50,6 +50,7 @@ export const pageQuery = graphql`
                             gatsbyImageData(placeholder: BLURRED, width: 1100)
                         }
                     }
+                    ytVideoSrc
                 }
                 html
                 id

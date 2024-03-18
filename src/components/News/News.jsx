@@ -5,7 +5,7 @@ import './News.scss';
 
 export function News({ singleNews }) {
     const {
-        frontmatter: { title, content, thumb, slug, date },
+        frontmatter: { title, content, thumb, slug, date, ytVideoSrc },
         html,
     } = singleNews;
 
@@ -69,18 +69,28 @@ export function News({ singleNews }) {
                 )}
             </div>
 
-            <div
-                className="single-news__image"
-                onClick={() =>
-                    handleClick(
-                        isNewsClickable
-                            ? 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp_www&utm_medium=r1m&utm_campaign=cephd1'
-                            : 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp&amp;utm_medium=www&amp;utm_campaign=cephd2',
-                    )
-                }
-            >
-                <GatsbyImage image={getImage(thumb)} alt={slug} />
-            </div>
+            {!!ytVideoSrc ? (
+                <iframe
+                    src={ytVideoSrc}
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen
+                ></iframe>
+            ) : (
+                <div
+                    className="single-news__image"
+                    onClick={() =>
+                        handleClick(
+                            isNewsClickable
+                                ? 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp_www&utm_medium=r1m&utm_campaign=cephd1'
+                                : 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp&amp;utm_medium=www&amp;utm_campaign=cephd2',
+                        )
+                    }
+                >
+                    <GatsbyImage image={getImage(thumb)} alt={slug} />
+                </div>
+            )}
         </section>
     );
 }

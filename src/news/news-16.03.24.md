@@ -1,0 +1,11 @@
+---
+title: Budowa i nadzór – domy pasywne , budynki zeroemisyjne \ zeroenergetyczne
+date: 2024-03-16
+slug: news-16.03.24
+type: news
+ytVideoSrc: https://www.youtube.com/embed/pQTOdcHjVEU?si=ZWJTKeb094mIfot8
+---
+
+⏰ 12 marca 2024r. dyrektywa budynkowa EPBD zaczęła obowiązywać nasz kraj. Zatem zapraszamy na
+szkolenie z realizowania, planowania i nadzorowania najlepszych budynków zeroemisyjnych.
+Zapisy na szkolenie możliwe przez stronę naszej <a href="https://szkolenia.akademiazdrowegobudownictwa.pl/mistrz-budownictwa-pasywnego/" target="_blank" rel="noopener noreferrer"> Akademii Zdrowego Budownictwa</a> lub tradycyjnie przez <a href="https://www.pibp.pl/szkolenia/mistrz-wykonawca/" target="_blank" rel="noopener noreferrer"> Zgłoszenie swojego udziału w kursie CEPHt </a>

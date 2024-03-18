@@ -5,7 +5,6 @@
     flex-direction: column;
     text-align: start;
     align-items: center;
-    min-height: 80vh;
     font-size: $font-size-mobile;
 
     & a {
@@ -14,7 +13,7 @@
 
     @media (min-width: $break-point-desktop) {
         flex-direction: row;
-        padding: 0 8%;
+        padding: 2% 8%;
         margin: 0 0 1%;
         font-size: $font-size-desktop;
     }
@@ -65,6 +64,17 @@
         margin-top: 3%;
 
         @media (min-width: $break-point-desktop) {
+            width: 45%;
+        }
+    }
+
+    iframe {
+        padding: 5%;
+        width: 100%;
+        aspect-ratio: 560/315;
+
+        @media (min-width: $break-point-desktop) {
+            padding: 0;
             width: 45%;
         }
     }
