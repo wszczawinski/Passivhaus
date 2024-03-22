@@ -597,6 +597,7 @@ export default function ProjektantDoradztwo({ data }) {
                                 className="signup"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="outside link"
                             >
                                 <StaticImage src="../../images/szkolenia/campaigne-signup.jpg" />
                             </a>

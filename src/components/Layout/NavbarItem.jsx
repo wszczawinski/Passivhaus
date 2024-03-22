@@ -49,6 +49,7 @@ const NavbarItem = ({ item, subNavItems, changeVisibility, showItem }) => {
                     {subNavItems.map(item =>
                         item.name === 'Regulamin' ? (
                             <a
+                                key={item.name}
                                 href={withPrefix('Regulamin.pdf')}
                                 target="_blank"
                                 rel="noreferrer noopener"

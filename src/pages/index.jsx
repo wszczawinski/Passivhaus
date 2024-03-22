@@ -14,9 +14,7 @@ export default function Home({ data }) {
         <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <section className="home-container">
                 <div className="news-container">
-                    <h3>
-                        AKTUALNOŚCI
-                    </h3>
+                    <h3>AKTUALNOŚCI</h3>
                     <div className="news-container__content">
                         {news.map(element => (
                             <News singleNews={element} key={element.id} />
@@ -50,6 +48,7 @@ export const pageQuery = graphql`
                             gatsbyImageData(placeholder: BLURRED, width: 1100)
                         }
                     }
+                    imageLink
                     ytVideoSrc
                 }
                 html

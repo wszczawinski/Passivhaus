@@ -12,7 +12,7 @@ export function Modal({ content, handleClose }) {
                         <p>{item}</p>
                     ))}
                 </span>
-                <button className="modal__window--close" onClick={handleClose}>
+                <button className="modal__window--close" onClick={handleClose} aria-label='close modal'>
                     <FaTimes />
                 </button>
             </section>
