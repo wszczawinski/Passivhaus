@@ -156,6 +156,7 @@ export default function MistrzWykonawca({ data }) {
                                 className="signup"
                                 target="_blank"
                                 rel="noreferrer"
+                                aria-label="formularz"
                             >
                                 <StaticImage src="../../images/szkolenia/mistrz-zapisy.png" />
                             </a>

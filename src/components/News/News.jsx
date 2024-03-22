@@ -1,13 +1,18 @@
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
+import { Link } from 'gatsby';
 import React from 'react';
 
 import './News.scss';
+import { formatDate, getDayMonthYear } from '../../helpers/formatDate';
 
 export function News({ singleNews }) {
     const {
-        frontmatter: { title, content, thumb, slug, date },
+        frontmatter: { title, content, thumb, slug, date, ytVideoSrc, imageLink },
         html,
     } = singleNews;
+
+    const { year } = getDayMonthYear(date);
+    const formatedDate = formatDate(date);
 
     const truncateString = (inputString, maxLength) => {
         if (inputString.length <= maxLength) {
@@ -26,61 +31,48 @@ export function News({ singleNews }) {
         }
     };
 
-    const isNewsTooLong = slug === 'cepht-news';
-    const isNewsClickable = slug === 'news-after-case-study';
-
-    const handleClick = goToUrl => {
-        if (isNewsTooLong || isNewsClickable) {
-            const url = goToUrl || 'https://pibp.pl/blog/cepht-news';
-            const link = document.createElement('a');
-            link.href = url;
-            link.target = '_blank';
-            document.body.appendChild(link);
-            link.click();
-            link.remove();
-        }
-    };
-
-    const dateToFormat = new Date(date);
-
-    const day = dateToFormat.getUTCDate().toString().padStart(2, '0');
-    const month = (dateToFormat.getUTCMonth() + 1).toString().padStart(2, '0');
-    const year = dateToFormat.getUTCFullYear();
-
-    const formattedDate = `${day}.${month}.${year} r.`;
-
     return (
         <section className="single-news">
             <div className="single-news__text-content">
                 <div className="single-news__title">{title}</div>
-                {year >= 2023 && <div className="single-news__date">{formattedDate}</div>}
+                {year >= 2023 && <div className="single-news__date">{formatedDate}</div>}
                 <p>{content}</p>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: truncateString(html, isNewsTooLong ? 1100 : 2650),
+                        __html: truncateString(html, 1000),
                     }}
                 />
-                {isNewsTooLong && (
-                    <button className="single-news__more" onClick={() => handleClick()}>
-                        <strong>
-                            <i>czytaj dalej</i>
-                        </strong>
-                    </button>
-                )}
+                {html.length >= 1000 ? (
+                    <div className="single-news__more">
+                        <Link to={`blog/${slug}`}>
+                            <strong>
+                                <i>czytaj dalej</i>
+                            </strong>
+                        </Link>
+                    </div>
+                ) : null}
             </div>
 
-            <div
-                className="single-news__image"
-                onClick={() =>
-                    handleClick(
-                        isNewsClickable
-                            ? 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp_www&utm_medium=r1m&utm_campaign=cephd1'
-                            : 'https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=pibp&amp;utm_medium=www&amp;utm_campaign=cephd2',
-                    )
-                }
-            >
-                <GatsbyImage image={getImage(thumb)} alt={slug} />
-            </div>
+            {!!ytVideoSrc ? (
+                <iframe
+                    src={ytVideoSrc}
+                    title="YouTube video player"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                />
+            ) : (
+                <a
+                    className={`single-news__image ${!imageLink && 'single-news__noLink'}`}
+                    target="_blank"
+                    href={imageLink}
+                    without
+                    rel="noreferrer"
+                    aria-label="blog link"
+                >
+                    <GatsbyImage image={getImage(thumb)} alt={slug} />
+                </a>
+            )}
         </section>
     );
 }
