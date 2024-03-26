@@ -4,32 +4,16 @@ import React from 'react';
 
 import './News.scss';
 import { formatDate, getDayMonthYear } from '../../helpers/formatDate';
+import { truncateHtmlContent } from '../../helpers/truncateHtmlContent';
 
 export function News({ singleNews }) {
     const {
-        frontmatter: { title, content, thumb, slug, date, ytVideoSrc, imageLink },
+        frontmatter: { title, content, thumb, slug, date, youtubeLink, imageLink },
         html,
     } = singleNews;
 
     const { year } = getDayMonthYear(date);
     const formatedDate = formatDate(date);
-
-    const truncateString = (inputString, maxLength) => {
-        if (inputString.length <= maxLength) {
-            return inputString;
-        } else {
-            let truncated = inputString.substr(0, maxLength - 3) + '...';
-            const lastOpenTagIndex = truncated.lastIndexOf('<');
-            const lastCloseTagIndex = truncated.lastIndexOf('>');
-            if (lastOpenTagIndex > lastCloseTagIndex) {
-                const tagNameStartIndex = lastOpenTagIndex + 1;
-                const tagNameEndIndex = truncated.indexOf(' ', tagNameStartIndex);
-                const tagName = truncated.substring(tagNameStartIndex, tagNameEndIndex);
-                truncated += `</${tagName}>`;
-            }
-            return truncated;
-        }
-    };
 
     return (
         <section className="single-news">
@@ -39,12 +23,12 @@ export function News({ singleNews }) {
                 <p>{content}</p>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: truncateString(html, 1000),
+                        __html: truncateHtmlContent(html, 1000),
                     }}
                 />
                 {html.length >= 1000 ? (
                     <div className="single-news__more">
-                        <Link to={`blog/${slug}`}>
+                        <Link to={`news/${slug}`}>
                             <strong>
                                 <i>czytaj dalej</i>
                             </strong>
@@ -53,9 +37,9 @@ export function News({ singleNews }) {
                 ) : null}
             </div>
 
-            {!!ytVideoSrc ? (
+            {!!youtubeLink ? (
                 <iframe
-                    src={ytVideoSrc}
+                    src={youtubeLink}
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"

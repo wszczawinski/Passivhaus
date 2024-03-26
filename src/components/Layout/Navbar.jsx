@@ -102,7 +102,7 @@ export default function Navbar() {
                                 alt="Logo ambasadorów budownictwa pasywnego"
                                 className="navbar__ambassadors--logo"
                             />
-                            MBASADORZY
+                            mbasadorzy
                         </p>
                     </Link>
                 </li>

@@ -36,7 +36,7 @@ export function ContainerColumn({
                         <img src={imgSrc} alt={alt} />
                         {img2Src && <img src={img2Src} alt={alt2} />}
                     </div>
-                    {imageDesc}
+                    {imageDescription && imageDesc}
                 </>
             )}
 

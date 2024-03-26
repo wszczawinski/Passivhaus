@@ -3,7 +3,7 @@ import './PriceTag.scss';
 
 function PriceTag() {
     return (
-        <section className='pricetag'>
+        <section className="pricetag">
             <div>
                 <h4>PACZKOMATY PRZEDPŁATA:</h4>
                 <p>Gabaryt A - 12,99 zł (kwota zawiera 23% VAT)</p>
@@ -14,11 +14,13 @@ function PriceTag() {
                 <h4>POBRANIE:</h4>
                 <p>Do powyższych cen należy doliczyć 4zł (kwota zawiera 23% VAT)</p>
             </div>
-            <div className='pricetag__info'>
+            <div className="pricetag__info">
                 <u>Chwilowo nie działa nasz sklep internetowy.</u>
-                <p className='pricetag__info--order'>Zamówienia prosimy wysyłać mailowo na adres info@pibp.pl 🔥🔥🔥</p>W zamówieniu
-                prosimy podać:
-                <ul className='pricetag__info--order-list'>
+                <p className="pricetag__info--order">
+                    Zamówienia prosimy wysyłać mailowo na adres info@pibp.pl 🔥🔥🔥
+                </p>
+                W zamówieniu prosimy podać:
+                <ul className="pricetag__info--order-list">
                     <li>- nazwa i ilość wybranych produktów </li>
                     <li>- dane zamawiającego do faktury</li>
                     <li>
@@ -26,7 +28,9 @@ function PriceTag() {
                         telefonu adresata przesyłki
                     </li>
                 </ul>
-                <p className='pricetag__info--order'>Zazwyczaj czas realizacji zamówień to 2-3 dni.</p>
+                <p className="pricetag__info--order">
+                    Zazwyczaj czas realizacji zamówień to 2-3 dni.
+                </p>
             </div>
         </section>
     );

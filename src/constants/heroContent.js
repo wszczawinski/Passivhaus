@@ -1,10 +1,12 @@
 import React from 'react';
 import { BsArrowReturnRight } from 'react-icons/bs';
+import { LuNewspaper } from 'react-icons/lu';
 
 export const heroText = {
-    home: (
+    home: <p>{/* ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br /> <u>AKTYWNIE</u> */}</p>,
+    blog: (
         <p>
-            {/* ALE PRZYSZŁOŚĆ <br /> TWORZYMY <br /> <u>AKTYWNIE</u> */}
+            <LuNewspaper /> Blog
         </p>
     ),
     instytutOnas: (

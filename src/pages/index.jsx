@@ -14,7 +14,7 @@ export default function Home({ data }) {
         <Layout heroTextContent={heroText.home} heroBackgroundImage={heroImage}>
             <section className="home-container">
                 <div className="news-container">
-                    <h3>AKTUALNOŚCI</h3>
+                    <h3>Aktualności</h3>
                     <div className="news-container__content">
                         {news.map(element => (
                             <News singleNews={element} key={element.id} />
@@ -26,45 +26,47 @@ export default function Home({ data }) {
     );
 }
 
-export const pageQuery = graphql`query HomeQuery {
-  heroImage: file(relativePath: {eq: "heroImages/hero_home_new.jpeg"}) {
-    childImageSharp {
-      gatsbyImageData(placeholder: BLURRED, width: 2600)
-    }
-  }
-  news: allMarkdownRemark(
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {type: {eq: "news"}}}
-  ) {
-    nodes {
-      frontmatter {
-        date
-        slug
-        title
-        content
-        thumb {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED, width: 1100)
-          }
+export const pageQuery = graphql`
+    query HomeQuery {
+        heroImage: file(relativePath: { eq: "heroImages/hero_home_new.jpeg" }) {
+            childImageSharp {
+                gatsbyImageData(placeholder: BLURRED, width: 2600)
+            }
         }
-        imageLink
-        ytVideoSrc
-      }
-      html
-      id
+        news: allMarkdownRemark(
+            sort: { frontmatter: { date: DESC } }
+            filter: { frontmatter: { type: { eq: "news" } } }
+        ) {
+            nodes {
+                frontmatter {
+                    date
+                    slug
+                    title
+                    content
+                    thumb {
+                        childImageSharp {
+                            gatsbyImageData(placeholder: BLURRED, width: 1100)
+                        }
+                    }
+                    imageLink
+                    youtubeLink
+                }
+                html
+                id
+            }
+        }
+        events: allMarkdownRemark(
+            sort: { frontmatter: { date: DESC } }
+            filter: { frontmatter: { type: { eq: "events" } } }
+        ) {
+            nodes {
+                frontmatter {
+                    date
+                    slug
+                    title
+                }
+                id
+            }
+        }
     }
-  }
-  events: allMarkdownRemark(
-    sort: {frontmatter: {date: DESC}}
-    filter: {frontmatter: {type: {eq: "events"}}}
-  ) {
-    nodes {
-      frontmatter {
-        date
-        slug
-        title
-      }
-      id
-    }
-  }
-}`;
+`;

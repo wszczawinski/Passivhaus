@@ -513,7 +513,7 @@ export default function ProjektantDoradztwo({ data }) {
                 />
 
                 <div className="workshop__pricing">
-                    <h2>Terminy najbliższej edycji kursu CEPHd online</h2>
+                    <h3>Terminy najbliższej edycji kursu CEPHd online</h3>
                     <a
                         target="_blank"
                         rel="noreferrer"
@@ -617,277 +617,247 @@ export default function ProjektantDoradztwo({ data }) {
                                 textContent={'FAQ'}
                             />{' '}
                             {faqOpened && (
-                                <ContainerColumn
-                                    textStart={
-                                        <p>
-                                            <ul className="faq-ul">
-                                                <li>
-                                                    <strong>
-                                                        Dlaczego warto zostać Certyfikowanym
-                                                        Projektantem lub Doradcą Budownictwa
-                                                        Pasywnego?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Nie dla wszystkich oczywistym jest, że prawdziwy
-                                                    budynek pasywny bez odpowiednich narzędzi nie
-                                                    może być zaprojektowany. Zasadniczą kwestią jest
-                                                    choćby znajomość pakietu do planowania budynków
-                                                    pasywnych. Jeżeli nie znasz możliwości
-                                                    oprogramowania PHPP (Passive House Planing
-                                                    Package) to prawdopodobnie nie bierzesz pod
-                                                    uwagę wielu ważnych aspektów podczas planowania
-                                                    budynku pasywnego. W efekcie nie dopracowany
-                                                    projekt a następnie na jego podstawie
-                                                    zrealizowany budynek w najlepszym wypadku będzie
-                                                    jedynie uchodził za pasywny, ale w
-                                                    rzeczywistości nie spełni kryteriów certyfikacji
-                                                    ‘passivhaus’.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Jak zostać Certyfikowanym Projektantem a jak
-                                                        zostać Certyfikowanym Doradcą ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Po pomyślnym zakończeniu egzaminu Polski
-                                                    Instytut Budownictwa Pasywnego i Energii
-                                                    Odnawialnej wyśle do Niemieckiego Instytutu
-                                                    Budownictwa Pasywnego rekomendację z
-                                                    proponowanym tytułem Certyfikowanego Projektanta
-                                                    lub Certyfikowanego Doradcy. Niemiecki Instytut
-                                                    Budownictwa Pasywnego po otrzymaniu rekomendacji
-                                                    ze strony PIBP analizuje dokumenty uczestnika. W
-                                                    tym wypadku są to świadectwa wykształcenia.
-                                                    Przedłożenie dyplomu z kierunków budownictwo i
-                                                    architektura uprawnia PIBPiEO do rekomendacji na
-                                                    Certyfikowanego Projektanta. Uprawnienia
-                                                    budowlane do projektowania nie są wymagane. Na
-                                                    potrzeby tej decyzji wymagana jest jedynie
-                                                    udokumentowana wiedza wynikająca z
-                                                    wykształcenia.
-                                                    <br />
-                                                    <br />
-                                                    Obydwa tytuły są równoważne pod względem
-                                                    kwalifikacji w zakresie wiedzy związanej z
-                                                    budownictwem pasywnym. Warunki uzyskania tego
-                                                    certyfikatu i jego odnowienia również są takie
-                                                    same. Z reguły projektanci domów pasywnych
-                                                    pracują w biurach projektowych nad konkretnym
-                                                    wdrożeniem standardu domów pasywnych, podczas
-                                                    gdy doradcy zazwyczaj przyczyniają się do jego
-                                                    upowszechniania poprzez swoją pracę jako
-                                                    konsultanci, badacze, eksperci.
-                                                    <br />
-                                                    <br />
-                                                    Osoby, które są po kierunkach niezwiązanych z
-                                                    budownictwem i architekturą lub nie przedłożą
-                                                    świadectw wykształcenia otrzymają tytuł
-                                                    Certyfikowanego Doradcy.
-                                                    <br />
-                                                    <br />
-                                                    Wszyscy uczestnicy kursu zdają ten sam egzamin.
-                                                    Wyjściowy stopień trudności egzaminu i w efekcie
-                                                    wiedza przekazana na kursie CEPHd, są jednakowe
-                                                    i te same dla Certyfikowanych Projektantów i
-                                                    Doradców.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Czy w przyszłości mogę zmienić tytuł
-                                                        Certyfikowanego Doradcy na Certyfikowanego
-                                                        Projektanta ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Tak. Wystarczy dostarczyć nam kopię dokumentu
-                                                    świadectwa wykształcenia lub uprawnień,.
-                                                    Uzyskany tytuł Certyfikowanego Doradcy może
-                                                    zostać przekształcony w tytuł Certyfikowanego
-                                                    Projektanta, jeżeli odpowiedni dowód zostanie
-                                                    nam dostarczony. W przypadku nieprzedstawienia
-                                                    dowodu wykształcenia, przyznawany jest
-                                                    automatycznie tytuł Certyfikowanego Doradcy – w
-                                                    przypadku pozytywnego wyniku egzaminu.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Ile trzeba zdobyć punków aby ukończyć
-                                                        egzamin z wynikiem pozytywnym ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Do uzyskania tytułu Certyfikowanego Projektanta
-                                                    \ Doradcy Budownictwa Pasywnego wymagane jest
-                                                    uzyskanie minimum 50% z wszystkich możliwych do
-                                                    zdobycia punktów egzaminacyjnych.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Co mogę mieć ze sobą na egzaminie ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Możesz podczas pisania egzaminu korzystać z
-                                                    materiałów CEPHd i notatki, kalkulator
-                                                    nieprogramowalny z zapasowymi bateriami,
-                                                    przybory do pisania.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Czy mogę uczestniczyć w kursie CEPHd bez
-                                                        udziału w egzaminie ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Tak
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Czy mogę wziąć udział w egzaminie bez
-                                                        udziału w kursie CEPHd ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Tak
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        W jakim czasie muszę przystąpić do egzaminu
-                                                        od momentu ukończenia kursu CEPHd ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Przystąpienie do egzaminu nie ma ograniczeń
-                                                    czasowych. W razie niepowodzenia możesz też
-                                                    podchodzić do egzaminu dowolną ilość razy.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Czy istnieje możliwość rozłożenia płatności
-                                                        za kurs CEPHd na raty ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Tak istnieje taka możliwość, ale każdy wniosek
-                                                    jest rozpatrywany indywidualnie przez PIBP.
-                                                    Skontaktuj się w tej sprawie z nami.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Czy PIBP oferuje wsparcie przygotowawcze
-                                                        przed egzaminem?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Tak, ale jest to uzależnione zarówno od danej
-                                                    grupy uczestników kursu CEPHd jak i trenera
-                                                    PIBP.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        W jaki sposób można odnowić certyfikat CEPH
-                                                        designer \ Consultant ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    Ważność certyfikatu wygasa po pięciu latach od
-                                                    jego wydania. Na bardzo dynamicznym rynku
-                                                    konstrukcji energooszczędnych, tylko własna
-                                                    praca przy faktycznych projektach pozwoli zdobyć
-                                                    kompetencje.
-                                                    <br />
-                                                    <br />
-                                                    Certyfikat może zostać przedłużony tylko za
-                                                    pomocą przykładowego projektu domu pasywnego;
-                                                    Odnowa będzie ważna przez kolejne pięć lat.
-                                                    Odpowiedzialny i rzetelny projektant CEPHd musi
-                                                    opracować projekt (przykładowy) budynku
-                                                    pasywnego (Certified Passive House/EnerPHit
-                                                    building) lub niskoenergetycznego (PHI Low
-                                                    Energy Building), który zostanie umieszczony na
-                                                    stronie PHI po zakończeniu procesu odnowy.
-                                                    Oficjalną datą złożenia wniosku będzie dzień, w
-                                                    którym wszystkie niezbędne dokumenty i
-                                                    informacje zostały udostępnione Passive House
-                                                    Institute w Darmstadt.
-                                                    <br />
-                                                    <br />
-                                                    Czasowość certyfikatu jest zamierzona. Wbrew
-                                                    pozorom jest to słuszne podejście, ponieważ
-                                                    osoby, które wydały znaczące pieniądze na swoje
-                                                    doskonalenie zawodowe, biorąc udział w kursie
-                                                    CEPHd i egzaminie powinny rozwijać swoje
-                                                    umiejętności zdobyte na kursie. Poznanie
-                                                    tajników oprogramowania PHPP, sprawne
-                                                    posługiwanie się tym programem i optymalne jego
-                                                    wykorzystanie w planowaniu budynków (nie tylko
-                                                    pasywnych) jest możliwe tylko przez dalszą
-                                                    praktykę zawodową. Nie da się opanować w 100%
-                                                    programu PHPP przez uczestnictwo jedynie w
-                                                    szkoleniu. Nie da się również zaprojektować
-                                                    budynku rzeczywiście pasywnego, czyli wg
-                                                    kryteriów ‘Passivhaus’ bez wykorzystania
-                                                    kalkulacji z programu PHPP.
-                                                </li>
-                                                <li>
-                                                    <strong>
-                                                        Jak powinna wyglądać i co zawierać
-                                                        przykładowa dokumentacja projektowa
-                                                        przesłana do PIBP w celu odnowienia
-                                                        certyfikatu ?
-                                                    </strong>
-                                                    <br />
-                                                    <br />
-                                                    1. Szczegółowy opis budowy (format PDF i Word).
-                                                    PIBP rekomenduje skorzystanie z tego{' '}
-                                                    <u>
-                                                        <i>
-                                                            <a
-                                                                href="https://cms.passivehouse.com/media/filer_public/20/51/20512233-5aa9-47f9-b0ca-223e7e75431d/vorlage_0195_passivhausprojektdokumentation.pptx"
-                                                                target="_blank"
-                                                                rel="noreferrer"
-                                                            >
-                                                                wzoru
-                                                            </a>
-                                                        </i>
-                                                    </u>
-                                                    .
-                                                    <br />
-                                                    2. Obliczenia PHPP na podstawie, których został
-                                                    wydany certyfikat – wymagany plik w formie
-                                                    cyfrowej (niechroniony plik Ex-cel).
-                                                    <br />
-                                                    3. Kopia certyfikatów: Certyfikowanego
-                                                    Projektanta \ Doradcy oraz Certyfikowanego
-                                                    Budynku <br />
-                                                    4. Numer identyfikacyjny, pod którym budynek
-                                                    figuruje w{' '}
-                                                    <u>
-                                                        <i>
-                                                            <a
-                                                                href="https://passivehouse-database.org/index.php?lang=en"
-                                                                target={'_blank'}
-                                                                rel="noreferrer"
-                                                            >
-                                                                bazie danych budynków pasywnych
-                                                            </a>
-                                                        </i>
-                                                    </u>
-                                                    . <br />
-                                                    5. Jeżeli wnioskodawca odnowienia nie jest
-                                                    projektantem certyfikowanego budynku, projektant
-                                                    składa pisemne oświadczenie, że wnioskodawca był
-                                                    odpowiedzialny za odpowiednie części budynku
-                                                    pasywnego.
-                                                </li>
-                                            </ul>
-                                        </p>
-                                    }
-                                    noBorder
-                                    colorCream
-                                />
+                                <p>
+                                    <ul className="faq-ul">
+                                        <li>
+                                            <strong>
+                                                Dlaczego warto zostać Certyfikowanym Projektantem
+                                                lub Doradcą Budownictwa Pasywnego?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Nie dla wszystkich oczywistym jest, że prawdziwy budynek
+                                            pasywny bez odpowiednich narzędzi nie może być
+                                            zaprojektowany. Zasadniczą kwestią jest choćby znajomość
+                                            pakietu do planowania budynków pasywnych. Jeżeli nie
+                                            znasz możliwości oprogramowania PHPP (Passive House
+                                            Planing Package) to prawdopodobnie nie bierzesz pod
+                                            uwagę wielu ważnych aspektów podczas planowania budynku
+                                            pasywnego. W efekcie nie dopracowany projekt a następnie
+                                            na jego podstawie zrealizowany budynek w najlepszym
+                                            wypadku będzie jedynie uchodził za pasywny, ale w
+                                            rzeczywistości nie spełni kryteriów certyfikacji
+                                            ‘passivhaus’.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Jak zostać Certyfikowanym Projektantem a jak zostać
+                                                Certyfikowanym Doradcą ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Po pomyślnym zakończeniu egzaminu Polski Instytut
+                                            Budownictwa Pasywnego i Energii Odnawialnej wyśle do
+                                            Niemieckiego Instytutu Budownictwa Pasywnego
+                                            rekomendację z proponowanym tytułem Certyfikowanego
+                                            Projektanta lub Certyfikowanego Doradcy. Niemiecki
+                                            Instytut Budownictwa Pasywnego po otrzymaniu
+                                            rekomendacji ze strony PIBP analizuje dokumenty
+                                            uczestnika. W tym wypadku są to świadectwa
+                                            wykształcenia. Przedłożenie dyplomu z kierunków
+                                            budownictwo i architektura uprawnia PIBPiEO do
+                                            rekomendacji na Certyfikowanego Projektanta. Uprawnienia
+                                            budowlane do projektowania nie są wymagane. Na potrzeby
+                                            tej decyzji wymagana jest jedynie udokumentowana wiedza
+                                            wynikająca z wykształcenia.
+                                            <br />
+                                            <br />
+                                            Obydwa tytuły są równoważne pod względem kwalifikacji w
+                                            zakresie wiedzy związanej z budownictwem pasywnym.
+                                            Warunki uzyskania tego certyfikatu i jego odnowienia
+                                            również są takie same. Z reguły projektanci domów
+                                            pasywnych pracują w biurach projektowych nad konkretnym
+                                            wdrożeniem standardu domów pasywnych, podczas gdy
+                                            doradcy zazwyczaj przyczyniają się do jego
+                                            upowszechniania poprzez swoją pracę jako konsultanci,
+                                            badacze, eksperci.
+                                            <br />
+                                            <br />
+                                            Osoby, które są po kierunkach niezwiązanych z
+                                            budownictwem i architekturą lub nie przedłożą świadectw
+                                            wykształcenia otrzymają tytuł Certyfikowanego Doradcy.
+                                            <br />
+                                            <br />
+                                            Wszyscy uczestnicy kursu zdają ten sam egzamin.
+                                            Wyjściowy stopień trudności egzaminu i w efekcie wiedza
+                                            przekazana na kursie CEPHd, są jednakowe i te same dla
+                                            Certyfikowanych Projektantów i Doradców.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Czy w przyszłości mogę zmienić tytuł Certyfikowanego
+                                                Doradcy na Certyfikowanego Projektanta ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Tak. Wystarczy dostarczyć nam kopię dokumentu świadectwa
+                                            wykształcenia lub uprawnień,. Uzyskany tytuł
+                                            Certyfikowanego Doradcy może zostać przekształcony w
+                                            tytuł Certyfikowanego Projektanta, jeżeli odpowiedni
+                                            dowód zostanie nam dostarczony. W przypadku
+                                            nieprzedstawienia dowodu wykształcenia, przyznawany jest
+                                            automatycznie tytuł Certyfikowanego Doradcy – w
+                                            przypadku pozytywnego wyniku egzaminu.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Ile trzeba zdobyć punków aby ukończyć egzamin z
+                                                wynikiem pozytywnym ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Do uzyskania tytułu Certyfikowanego Projektanta \
+                                            Doradcy Budownictwa Pasywnego wymagane jest uzyskanie
+                                            minimum 50% z wszystkich możliwych do zdobycia punktów
+                                            egzaminacyjnych.
+                                        </li>
+                                        <li>
+                                            <strong>Co mogę mieć ze sobą na egzaminie ?</strong>
+                                            <br />
+                                            <br />
+                                            Możesz podczas pisania egzaminu korzystać z materiałów
+                                            CEPHd i notatki, kalkulator nieprogramowalny z
+                                            zapasowymi bateriami, przybory do pisania.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Czy mogę uczestniczyć w kursie CEPHd bez udziału w
+                                                egzaminie ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Tak
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Czy mogę wziąć udział w egzaminie bez udziału w
+                                                kursie CEPHd ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Tak
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                W jakim czasie muszę przystąpić do egzaminu od
+                                                momentu ukończenia kursu CEPHd ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Przystąpienie do egzaminu nie ma ograniczeń czasowych. W
+                                            razie niepowodzenia możesz też podchodzić do egzaminu
+                                            dowolną ilość razy.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Czy istnieje możliwość rozłożenia płatności za kurs
+                                                CEPHd na raty ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Tak istnieje taka możliwość, ale każdy wniosek jest
+                                            rozpatrywany indywidualnie przez PIBP. Skontaktuj się w
+                                            tej sprawie z nami.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Czy PIBP oferuje wsparcie przygotowawcze przed
+                                                egzaminem?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Tak, ale jest to uzależnione zarówno od danej grupy
+                                            uczestników kursu CEPHd jak i trenera PIBP.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                W jaki sposób można odnowić certyfikat CEPH designer
+                                                \ Consultant ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            Ważność certyfikatu wygasa po pięciu latach od jego
+                                            wydania. Na bardzo dynamicznym rynku konstrukcji
+                                            energooszczędnych, tylko własna praca przy faktycznych
+                                            projektach pozwoli zdobyć kompetencje.
+                                            <br />
+                                            <br />
+                                            Certyfikat może zostać przedłużony tylko za pomocą
+                                            przykładowego projektu domu pasywnego; Odnowa będzie
+                                            ważna przez kolejne pięć lat. Odpowiedzialny i rzetelny
+                                            projektant CEPHd musi opracować projekt (przykładowy)
+                                            budynku pasywnego (Certified Passive House/EnerPHit
+                                            building) lub niskoenergetycznego (PHI Low Energy
+                                            Building), który zostanie umieszczony na stronie PHI po
+                                            zakończeniu procesu odnowy. Oficjalną datą złożenia
+                                            wniosku będzie dzień, w którym wszystkie niezbędne
+                                            dokumenty i informacje zostały udostępnione Passive
+                                            House Institute w Darmstadt.
+                                            <br />
+                                            <br />
+                                            Czasowość certyfikatu jest zamierzona. Wbrew pozorom
+                                            jest to słuszne podejście, ponieważ osoby, które wydały
+                                            znaczące pieniądze na swoje doskonalenie zawodowe,
+                                            biorąc udział w kursie CEPHd i egzaminie powinny
+                                            rozwijać swoje umiejętności zdobyte na kursie. Poznanie
+                                            tajników oprogramowania PHPP, sprawne posługiwanie się
+                                            tym programem i optymalne jego wykorzystanie w
+                                            planowaniu budynków (nie tylko pasywnych) jest możliwe
+                                            tylko przez dalszą praktykę zawodową. Nie da się
+                                            opanować w 100% programu PHPP przez uczestnictwo jedynie
+                                            w szkoleniu. Nie da się również zaprojektować budynku
+                                            rzeczywiście pasywnego, czyli wg kryteriów ‘Passivhaus’
+                                            bez wykorzystania kalkulacji z programu PHPP.
+                                        </li>
+                                        <li>
+                                            <strong>
+                                                Jak powinna wyglądać i co zawierać przykładowa
+                                                dokumentacja projektowa przesłana do PIBP w celu
+                                                odnowienia certyfikatu ?
+                                            </strong>
+                                            <br />
+                                            <br />
+                                            1. Szczegółowy opis budowy (format PDF i Word). PIBP
+                                            rekomenduje skorzystanie z tego{' '}
+                                            <u>
+                                                <i>
+                                                    <a
+                                                        href="https://cms.passivehouse.com/media/filer_public/20/51/20512233-5aa9-47f9-b0ca-223e7e75431d/vorlage_0195_passivhausprojektdokumentation.pptx"
+                                                        target="_blank"
+                                                        rel="noreferrer"
+                                                    >
+                                                        wzoru
+                                                    </a>
+                                                </i>
+                                            </u>
+                                            .
+                                            <br />
+                                            2. Obliczenia PHPP na podstawie, których został wydany
+                                            certyfikat – wymagany plik w formie cyfrowej
+                                            (niechroniony plik Ex-cel).
+                                            <br />
+                                            3. Kopia certyfikatów: Certyfikowanego Projektanta \
+                                            Doradcy oraz Certyfikowanego Budynku <br />
+                                            4. Numer identyfikacyjny, pod którym budynek figuruje w{' '}
+                                            <u>
+                                                <i>
+                                                    <a
+                                                        href="https://passivehouse-database.org/index.php?lang=en"
+                                                        target={'_blank'}
+                                                        rel="noreferrer"
+                                                    >
+                                                        bazie danych budynków pasywnych
+                                                    </a>
+                                                </i>
+                                            </u>
+                                            . <br />
+                                            5. Jeżeli wnioskodawca odnowienia nie jest projektantem
+                                            certyfikowanego budynku, projektant składa pisemne
+                                            oświadczenie, że wnioskodawca był odpowiedzialny za
+                                            odpowiednie części budynku pasywnego.
+                                        </li>
+                                    </ul>
+                                </p>
                             )}
                         </p>
                     }
