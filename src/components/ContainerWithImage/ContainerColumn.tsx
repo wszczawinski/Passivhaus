@@ -18,7 +18,7 @@ interface ContainerColumnProps {
     imageDescription?: string;
 }
 
-export function ContainerColumn({
+export const ContainerColumn = ({
     textStartRow,
     textStart,
     textEnd,
@@ -32,7 +32,7 @@ export function ContainerColumn({
     borderEnd,
     shortBorder,
     imageDescription,
-}: ContainerColumnProps) {
+}: ContainerColumnProps) => {
     const imageDesc = <p className="image-description">{imageDescription}</p>;
 
     return (
@@ -64,4 +64,4 @@ export function ContainerColumn({
             {borderEnd ? <span className={`container-column__border${shortBorder ? '--short' : ''}`}></span> : ''}
         </div>
     );
-}
+};

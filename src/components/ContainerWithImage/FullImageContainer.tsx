@@ -7,10 +7,10 @@ interface FullImageContainerProps {
     imgAlt?: string;
 }
 
-export function FullImageContainer({ imgSrc, imgAlt }: FullImageContainerProps) {
+export const FullImageContainer = ({ imgSrc, imgAlt }: FullImageContainerProps) => {
     return (
         <div className="fullImage">
             <img className="fullImage" src={imgSrc} alt={imgAlt} />
         </div>
     );
-}
+};

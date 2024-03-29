@@ -10,7 +10,7 @@ interface ContainerBlueProps {
     imgAlt?: string;
 }
 
-export function ContainerBlue({ text, border, borderBottom, imgSrc, imgAlt }: ContainerBlueProps) {
+export const ContainerBlue = ({ text, border, borderBottom, imgSrc, imgAlt }: ContainerBlueProps) => {
     return (
         <div className="container-blue">
             {imgSrc && <img src={imgSrc} alt={imgAlt} />}
@@ -19,4 +19,4 @@ export function ContainerBlue({ text, border, borderBottom, imgSrc, imgAlt }: Co
             {borderBottom && <span className="container-blue__borderBottom"></span>}
         </div>
     );
-}
+};

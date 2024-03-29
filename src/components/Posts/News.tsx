@@ -7,7 +7,7 @@ import { truncateHtmlContent } from '@/helpers/truncateHtmlContent';
 
 import './News.scss';
 
-export function NewsPost({ singleNews }) {
+export const NewsPost = ({ singleNews }) => {
     const {
         frontmatter: { title, content, thumb, slug, date, youtubeLink, imageLink },
         html,
@@ -60,4 +60,4 @@ export function NewsPost({ singleNews }) {
             )}
         </section>
     );
-}
+};

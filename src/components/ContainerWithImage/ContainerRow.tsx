@@ -9,11 +9,11 @@ interface ContainerRowProps {
     imgSmall?: boolean;
 }
 
-export function ContainerRow({ text, imgSrc, imgAlt, imgSmall }: ContainerRowProps) {
+export const ContainerRow = ({ text, imgSrc, imgAlt, imgSmall }: ContainerRowProps) => {
     return (
         <div className="container-row">
             {text}
             <img src={imgSrc} alt={imgAlt} className={`${imgSmall ? 'imgSmall' : ''}`} />
         </div>
     );
-}
+};
