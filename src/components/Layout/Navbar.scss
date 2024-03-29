@@ -22,11 +22,12 @@
         }
 
         &--logo {
-            width: 35px;
+            width: 25px;
             height: auto;
+            padding-bottom: 10px;
 
             @media (min-width: $break-point-monitor) {
-                width: 50px;
+                width: 40px;
             }
         }
     }
@@ -60,7 +61,7 @@
         background-color: $color-cream;
         position: absolute;
         top: 70%;
-        border-radius: 20px;
+        border-radius: 10px;
         height: 8vh;
         width: 80%;
 
@@ -79,7 +80,6 @@
                 color: $color-navy;
                 display: flex;
                 align-items: center;
-                letter-spacing: 0.1rem;
                 transition: all 0.2s ease-in-out;
 
                 &:hover {
@@ -127,7 +127,6 @@
                 font-weight: bold;
                 color: $color-navy;
                 cursor: pointer;
-                letter-spacing: 0.1rem;
                 transition: all 0.2s ease-in-out;
 
                 &:hover {

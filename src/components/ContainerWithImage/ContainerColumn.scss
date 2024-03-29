@@ -4,26 +4,27 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     width: 100%;
-    padding: 5% 15%;
+    padding: 30px calc(5% + 20px);
     background-color: $color-orange;
     color: white;
 
-    @media (max-width: $break-point-desktop) {
-        padding: 5% 10%;
+    @media (min-width: $break-point-desktop) {
+        padding: 40px calc(10% + 30px);
+        gap: 32px;
     }
 
     &__border {
         border-top: white 3px solid;
         box-shadow: 0 0 20px white;
         width: 80%;
-        margin: 5% 0;
 
         &--short {
             width: 30%;
             border-top: white 3px solid;
             box-shadow: 0 0 20px white;
-            margin: 5%;
+            margin: 0 5%;
         }
     }
 
@@ -32,11 +33,13 @@
         line-height: 26px;
         font-weight: 450;
         color: white;
+        margin: 0;
 
         & strong {
             font-weight: 700;
         }
     }
+
     img {
         width: 100%;
         height: auto;
@@ -48,6 +51,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+        gap: 20px;
 
         @media (min-width: $break-point-desktop) {
             gap: 30px;
@@ -60,6 +64,7 @@
         & img {
             width: 100%;
             height: auto;
+
             @media (min-width: $break-point-desktop) {
                 max-height: 30vh;
                 margin: 2% 0;
@@ -68,6 +73,7 @@
 
         @media (max-width: $break-point-desktop) {
             flex-direction: column;
+
             p {
                 text-align: left;
             }
@@ -86,19 +92,18 @@
             & img {
                 width: 100%;
                 max-height: 50vh;
-                margin: 2% 0;
             }
         }
     }
 }
 
 .smallPadding {
-    padding: 0 15%;
+    padding: 20px calc(10% + 30px);
 }
 
 @media (max-width: $break-point-desktop) {
     .smallPadding {
-        padding: 0 10%;
+        padding: 30px 10%;
     }
 }
 

@@ -4,40 +4,43 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    gap: 20px;
     width: 90%;
     margin: 10% 5%;
-    padding: 5% 5%;
+    padding: 20px;
     background-color: $color-navy;
-    border-radius: 30px;
-
+    border-radius: 20px;
     color: white;
-    border-radius: 40px;
     letter-spacing: 1px;
     line-height: 26px;
     font-weight: 450;
 
-    h3{
+    h3 {
         margin-top: 0;
+    }
+
+    p {
+        margin: 0;
     }
 
     &__border {
         border-top: white 3px solid;
         box-shadow: 0 0 20px white;
         width: 80%;
-        margin-bottom: 5%;
     }
 
     &__borderBottom {
         border-top: white 3px solid;
         box-shadow: 0 0 20px white;
         width: 80%;
-        margin-top: 5%;
+        margin-top: 10px;
     }
 
     @media (min-width: $break-point-desktop) {
+        gap: 32px;
         width: 80%;
         margin: 5% 10%;
-        padding: 5% 10%;
+        padding: 30px;
     }
 
     @media (min-width: $break-point-monitor) {

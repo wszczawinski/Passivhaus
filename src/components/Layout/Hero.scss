@@ -36,7 +36,7 @@
             height: 80vh;
         }
     }
-    
+
     .gatsby-image-wrapper {
         position: absolute;
     }
@@ -70,7 +70,10 @@
             left: 10%;
             font-size: 30px;
             text-align: left;
-            text-shadow: 0 0 0px #fff, 0 0 8px #fff, 0 0 14px #fff;
+            text-shadow:
+                0 0 0px #fff,
+                0 0 4px #fff,
+                0 0 6px #fff;
         }
 
         &--logo {
@@ -98,7 +101,6 @@
                 & h1 {
                     margin: 0;
                 }
-                
             }
 
             &--title {
