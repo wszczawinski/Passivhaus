@@ -1,4 +1,4 @@
-const path = require('path');
+import path from 'path';
 const gatsbyRequiredRules = path.join(process.cwd(), 'node_modules', 'gatsby', 'dist', 'utils', 'eslint-rules');
 
 module.exports = {
@@ -27,6 +27,12 @@ module.exports = {
             options: {
                 name: `images`,
                 path: `${__dirname}/src/images/`,
+            },
+        },
+        {
+            resolve: `gatsby-source-wordpress`,
+            options: {
+                url: `https://blog.pibp.pl/index.php?graphql`,
             },
         },
         {

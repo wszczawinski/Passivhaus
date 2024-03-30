@@ -7,10 +7,6 @@ Gatsby based web app for Polish Passivhaus Institute which allows them to show u
 ```bash
 git clone https://github.com/wszczawinski/Passivhaus.git
 cd Passivhaus
-yarn install
-gatsby develop
+npm install
+npm run develop
 ```
-
-## Live preview 🛠
-
-<a href="https://passivhaus.onrender.com">passivhaus.onrender.com</a>
