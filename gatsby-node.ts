@@ -34,9 +34,28 @@ exports.createPages = async ({ graphql, actions }) => {
         });
     });
 
+    const { data: newsWp } = await graphql(`
+        query NewsWp {
+            allWpPost(sort: { date: DESC }, filter: { categories: { nodes: { elemMatch: { name: { eq: "news" } } } } }) {
+                nodes {
+                    slug
+                    date(formatString: "YYYY-MM-DD")
+                }
+            }
+        }
+    `);
+
+    newsWp.allWpPost.nodes.forEach(node => {
+        actions.createPage({
+            path: '/news/' + node.date + '/' + node.slug,
+            component: path.resolve('./src/templates/blog-template.tsx'),
+            context: { slug: node.slug },
+        });
+    });
+
     const { data: blogs } = await graphql(`
         query Blogs {
-            allWpPost(sort: { date: DESC }) {
+            allWpPost(sort: { date: DESC }, filter: { categories: { nodes: { elemMatch: { name: { eq: "blog" } } } } }) {
                 nodes {
                     slug
                     date(formatString: "YYYY-MM-DD")

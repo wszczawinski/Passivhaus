@@ -2,13 +2,15 @@ import React from 'react';
 import { PageProps, graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 
-import { Layout, NewsPost } from '@/components';
+import { Post, Layout } from '@/components';
 import { heroText } from '@/constants/heroContent';
+import { mapNewsToWPNews } from '@/helpers/mapNewsToWPNews';
 
 import './News.scss';
 
 export default function Home({ data }: PageProps<Queries.HomeQuery>) {
-    const news = data.news.nodes;
+    const newsMd = data.newsMd.nodes;
+    const newsWp = data.newsWP.nodes;
     const heroImage = getImage(data.heroImage);
 
     return (
@@ -17,8 +19,11 @@ export default function Home({ data }: PageProps<Queries.HomeQuery>) {
                 <div className="news-container">
                     <h3>Aktualności</h3>
                     <div className="news-container__content">
-                        {news.map(element => (
-                            <NewsPost singleNews={element} key={element.id} />
+                        {newsWp.map(news => (
+                            <Post singleNews={news} key={news.id} />
+                        ))}
+                        {newsMd.map(news => (
+                            <Post singleNews={mapNewsToWPNews(news)} key={news.id} />
                         ))}
                     </div>
                 </div>
@@ -34,33 +39,46 @@ export const pageQuery = graphql`
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
         }
-        news: allMarkdownRemark(sort: { frontmatter: { date: DESC } }, filter: { frontmatter: { type: { eq: "news" } } }) {
+        newsMd: allMarkdownRemark(sort: { frontmatter: { date: DESC } }, filter: { frontmatter: { type: { eq: "news" } } }) {
             nodes {
+                id
+                html
                 frontmatter {
                     date
                     slug
                     title
                     content
+                    imageLink
+                    youtubeLink
                     thumb {
                         childImageSharp {
                             gatsbyImageData(placeholder: BLURRED, width: 1100)
                         }
                     }
-                    imageLink
-                    youtubeLink
                 }
-                html
-                id
             }
         }
-        events: allMarkdownRemark(sort: { frontmatter: { date: DESC } }, filter: { frontmatter: { type: { eq: "events" } } }) {
+        newsWP: allWpPost(sort: { date: DESC }, filter: { categories: { nodes: { elemMatch: { name: { eq: "news" } } } } }) {
             nodes {
-                frontmatter {
-                    date
-                    slug
-                    title
-                }
                 id
+                slug
+                title
+                content
+                date(formatString: "YYYY-MM-DD")
+                featuredImage {
+                    node {
+                        gatsbyImage(width: 1000, placeholder: BLURRED)
+                    }
+                }
+                links {
+                    youtubeLink
+                    imageLink
+                }
+                categories {
+                    nodes {
+                        name
+                    }
+                }
             }
         }
     }

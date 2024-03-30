@@ -2,16 +2,37 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import React from 'react';
 
-import './Blog.scss';
+import './Post.scss';
 
 import { formatDate, getDayMonthYear } from '../../helpers/formatDate';
 import { truncateHtmlContent } from '../../helpers/truncateHtmlContent';
 
-export const BlogPost = ({ singleNews }) => {
-    const { title, content, featuredImage, slug, date, links } = singleNews;
+export const Post = ({ singleNews }: { singleNews: Queries.HomeQuery['newsWP']['nodes'][0] }) => {
+    const {
+        title,
+        content,
+        featuredImage,
+        slug,
+        date,
+        links,
+        categories: { nodes: categoriesNodes },
+    } = singleNews;
 
-    const { year } = getDayMonthYear(date);
     const formatedDate = formatDate(date);
+    const { year } = getDayMonthYear(date);
+
+    const categories = categoriesNodes?.map(node => node.name);
+
+    const getPostPath = () => {
+        if (categories.includes('blog')) {
+            return `/blog/${date}/${slug}`;
+        }
+        if (categories.includes('news')) {
+            return `/news/${date}/${slug}`;
+        }
+        // MD posts
+        return `/news/${slug}`;
+    };
 
     return (
         <section className="single-news">
@@ -23,14 +44,15 @@ export const BlogPost = ({ singleNews }) => {
                         __html: truncateHtmlContent(content, 1000),
                     }}
                 />
-
-                <div className="single-news__more">
-                    <Link to={`/blog/${date}/${slug}`}>
-                        <strong>
-                            <i>czytaj dalej</i>
-                        </strong>
-                    </Link>
-                </div>
+                {content?.length >= 1000 ? (
+                    <div className="single-news__more">
+                        <Link to={getPostPath()}>
+                            <strong>
+                                <i>czytaj dalej</i>
+                            </strong>
+                        </Link>
+                    </div>
+                ) : null}
             </div>
             {links?.youtubeLink ? (
                 <iframe
@@ -45,7 +67,6 @@ export const BlogPost = ({ singleNews }) => {
                     className={`single-news__image ${!links?.imageLink && 'single-news__noLink'}`}
                     target="_blank"
                     href={links?.imageLink}
-                    without
                     rel="noreferrer"
                     aria-label="blog link"
                 >

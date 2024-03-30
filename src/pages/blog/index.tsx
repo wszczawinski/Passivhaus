@@ -2,7 +2,7 @@ import React from 'react';
 import { PageProps, graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
 
-import { Layout, BlogPost } from '@/components';
+import { Layout, Post } from '@/components';
 import { heroText } from '@/constants/heroContent';
 
 import '../News.scss';
@@ -18,7 +18,7 @@ export default function Blog({ data }: PageProps<Queries.BlogQuery>) {
                     <h3>Blog</h3>
                     <div className="news-container__content">
                         {blogs.map(blog => (
-                            <BlogPost singleNews={blog} key={blog.id} />
+                            <Post singleNews={blog} key={blog.id} />
                         ))}
                     </div>
                 </div>
@@ -34,13 +34,13 @@ export const pageQuery = graphql`
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
         }
-        blog: allWpPost(sort: { date: DESC }) {
+        blog: allWpPost(sort: { date: DESC }, filter: { categories: { nodes: { elemMatch: { name: { eq: "blog" } } } } }) {
             nodes {
-                content
-                title
-                slug
-                date(formatString: "YYYY-MM-DD")
                 id
+                slug
+                title
+                content
+                date(formatString: "YYYY-MM-DD")
                 featuredImage {
                     node {
                         gatsbyImage(width: 1000, placeholder: BLURRED)
@@ -49,6 +49,11 @@ export const pageQuery = graphql`
                 links {
                     youtubeLink
                     imageLink
+                }
+                categories {
+                    nodes {
+                        name
+                    }
                 }
             }
         }
