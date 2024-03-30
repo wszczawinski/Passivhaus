@@ -34,4 +34,22 @@ exports.createPages = async ({ graphql, actions }) => {
         });
     });
 
+    const { data: blogs } = await graphql(`
+        query Blogs {
+            allWpPost(sort: { date: DESC }) {
+                nodes {
+                    slug
+                    date(formatString: "YYYY-MM-DD")
+                }
+            }
+        }
+    `);
+
+    blogs.allWpPost.nodes.forEach(node => {
+        actions.createPage({
+            path: '/blog/' + node.date + '/' + node.slug,
+            component: path.resolve('./src/templates/blog-template.tsx'),
+            context: { slug: node.slug },
+        });
+    });
 };
