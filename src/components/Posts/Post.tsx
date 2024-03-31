@@ -73,6 +73,7 @@ export const Post = ({ singleNews }: { singleNews: Queries.HomeQuery['newsWP']['
                     <GatsbyImage image={getImage(featuredImage?.node)} alt={slug} />
                 </a>
             )}
+            <hr />
         </section>
     );
 };
