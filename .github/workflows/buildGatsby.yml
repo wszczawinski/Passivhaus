@@ -35,3 +35,6 @@ jobs:
 
             - name: Build project
               run: npm run build
+
+            - name: Verify build
+              run: ls -la public
