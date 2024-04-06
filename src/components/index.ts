@@ -8,7 +8,7 @@ export * from './ContainerWithImage/ContainerColumn';
 export * from './ContainerWithImage/ContainerRow';
 export * from './ContainerWithImage/TransparentContainer';
 export * from './ContainerWithImage/FullImageContainer';
-export * from './Posts/News';
+export * from './Posts/Post';
 export * from './Schedule/Schedule';
 export * from './ShopItem/ShopItem';
 export * from './Modal/Modal';

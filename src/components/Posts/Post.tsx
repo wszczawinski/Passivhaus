@@ -2,34 +2,51 @@ import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import { Link } from 'gatsby';
 import React from 'react';
 
-import { formatDate, getDayMonthYear } from '@/helpers/formatDate';
-import { truncateHtmlContent } from '@/helpers/truncateHtmlContent';
+import './Post.scss';
 
-import './News.scss';
+import { formatDate, getDayMonthYear } from '../../helpers/formatDate';
+import { truncateHtmlContent } from '../../helpers/truncateHtmlContent';
 
-export const NewsPost = ({ singleNews }) => {
+export const Post = ({ singleNews }: { singleNews: Queries.HomeQuery['newsWP']['nodes'][0] }) => {
     const {
-        frontmatter: { title, content, thumb, slug, date, youtubeLink, imageLink },
-        html,
+        title,
+        content,
+        featuredImage,
+        slug,
+        date,
+        links,
+        categories: { nodes: categoriesNodes },
     } = singleNews;
 
-    const { year } = getDayMonthYear(date);
     const formatedDate = formatDate(date);
+    const { year } = getDayMonthYear(date);
+
+    const categories = categoriesNodes?.map(node => node.name);
+
+    const getPostPath = () => {
+        if (categories.includes('blog')) {
+            return `/blog/${date}/${slug}`;
+        }
+        if (categories.includes('news')) {
+            return `/news/${date}/${slug}`;
+        }
+        // MD posts
+        return `/news/${slug}`;
+    };
 
     return (
         <section className="single-news">
             <div className="single-news__text-content">
                 <div className="single-news__title">{title}</div>
                 {year >= 2023 && <div className="single-news__date">{formatedDate}</div>}
-                <p>{content}</p>
                 <div
                     dangerouslySetInnerHTML={{
-                        __html: truncateHtmlContent(html, 1000),
+                        __html: truncateHtmlContent(content, 1000),
                     }}
                 />
-                {html.length >= 1000 ? (
+                {content?.length >= 1000 ? (
                     <div className="single-news__more">
-                        <Link to={`news/${slug}`}>
+                        <Link to={getPostPath()}>
                             <strong>
                                 <i>czytaj dalej</i>
                             </strong>
@@ -37,10 +54,9 @@ export const NewsPost = ({ singleNews }) => {
                     </div>
                 ) : null}
             </div>
-
-            {youtubeLink ? (
+            {links?.youtubeLink ? (
                 <iframe
-                    src={youtubeLink}
+                    src={links.youtubeLink}
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -48,16 +64,16 @@ export const NewsPost = ({ singleNews }) => {
                 />
             ) : (
                 <a
-                    className={`single-news__image ${!imageLink && 'single-news__noLink'}`}
+                    className={`single-news__image ${!links?.imageLink && 'single-news__noLink'}`}
                     target="_blank"
-                    href={imageLink}
-                    without
+                    href={links?.imageLink}
                     rel="noreferrer"
                     aria-label="blog link"
                 >
-                    <GatsbyImage image={getImage(thumb)} alt={slug} />
+                    <GatsbyImage image={getImage(featuredImage?.node)} alt={slug} />
                 </a>
             )}
+            <hr />
         </section>
     );
 };
