@@ -92,7 +92,6 @@ yarn-debug.log*
 yarn-error.log*
 
 .npmrc
-package-lock.json
 yarn.lock
 
 gatsby-types.d.ts
