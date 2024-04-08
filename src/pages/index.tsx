@@ -1,8 +1,8 @@
-import React from 'react';
 import { PageProps, graphql } from 'gatsby';
 import { getImage } from 'gatsby-plugin-image';
+import React from 'react';
 
-import { Post, Layout } from '@/components';
+import { Layout, Post } from '@/components';
 import { heroText } from '@/constants/heroContent';
 import { mapNewsToWPNews } from '@/helpers/mapNewsToWPNews';
 
@@ -49,7 +49,6 @@ export const pageQuery = graphql`
                     title
                     content
                     imageLink
-                    youtubeLink
                     thumb {
                         childImageSharp {
                             gatsbyImageData(placeholder: BLURRED, width: 1100)
