@@ -1,6 +1,12 @@
 # Passivhaus
 
-Gatsby based web app for Polish Passivhaus Institute which allows them to show up-to-date information and sell products.
+## Stack
+
+- Gatsby
+- Typescript
+- Sass
+- Github Actions CI/CD
+- Headless WordPress CMS
 
 ## Install and Launch Project 🚀
 
