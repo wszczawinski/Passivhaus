@@ -5,12 +5,14 @@ module.exports = {
     siteMetadata: {
         title: `Passivhaus`,
         description: 'Portfolio website',
+        siteUrl: `https://www.pibp.pl`,
     },
     graphqlTypegen: true,
     plugins: [
         `gatsby-plugin-sass`,
         `gatsby-plugin-image`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-sitemap`,
         `gatsby-transformer-sharp`,
         `gatsby-transformer-remark`,
         `gatsby-plugin-react-helmet`,
