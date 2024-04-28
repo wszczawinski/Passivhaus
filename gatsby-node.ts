@@ -36,37 +36,25 @@ exports.createPages = async ({ graphql, actions }) => {
 
     const { data: newsWp } = await graphql(`
         query NewsWp {
-            allWpPost(sort: { date: DESC }, filter: { categories: { nodes: { elemMatch: { name: { eq: "news" } } } } }) {
+            allWpPost(sort: { date: DESC }) {
                 nodes {
                     slug
                     date(formatString: "YYYY-MM-DD")
+                    categories {
+                        nodes {
+                            name
+                        }
+                    }
                 }
             }
         }
     `);
 
     newsWp.allWpPost.nodes.forEach(node => {
-        actions.createPage({
-            path: '/news/' + node.date + '/' + node.slug,
-            component: path.resolve('./src/templates/blog-template.tsx'),
-            context: { slug: node.slug },
-        });
-    });
+        const category = node.categories.nodes[0].name === 'blog' ? 'blog' : 'news';
 
-    const { data: blogs } = await graphql(`
-        query Blogs {
-            allWpPost(sort: { date: DESC }, filter: { categories: { nodes: { elemMatch: { name: { eq: "blog" } } } } }) {
-                nodes {
-                    slug
-                    date(formatString: "YYYY-MM-DD")
-                }
-            }
-        }
-    `);
-
-    blogs.allWpPost.nodes.forEach(node => {
         actions.createPage({
-            path: '/blog/' + node.date + '/' + node.slug,
+            path: '/' + category + '/' + node.date + '/' + node.slug,
             component: path.resolve('./src/templates/blog-template.tsx'),
             context: { slug: node.slug },
         });
