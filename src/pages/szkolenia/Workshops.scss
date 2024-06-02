@@ -132,21 +132,16 @@
     font-weight: 600;
     text-decoration: underline;
 }
-
-.faq-button {
+.faq {
+    width: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0 auto;
-    margin-bottom: 20px;
-    padding: 1% 7%;
-    background-color: $color-navy;
-    color: white;
-    font-size: 30px;
-    font-weight: 600;
-    width: 100px;
-    border-radius: 40px;
-    cursor: pointer;
+}
+
+.faq-button {
+    width: 60%;
 }
 
 .faq-ul {
@@ -200,5 +195,32 @@
     &:hover {
         background-color: $color-cookie;
         color: black;
+    }
+}
+
+.mostki-definition {
+    color: $color-orange;
+}
+
+.mostki-link {
+    color: $color-cookie;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.mostki-signup {
+    li {
+        margin-top: 2%;
+        font-weight: 600;
+        color: black;
+    }
+}
+
+.faq-question-multiple-sections {
+    display: flex;
+    flex-direction: column;
+
+    p {
+        margin-top: 1%;
     }
 }

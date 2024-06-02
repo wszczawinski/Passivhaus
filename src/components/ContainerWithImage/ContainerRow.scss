@@ -13,29 +13,6 @@
         padding: 5% 10%;
     }
 
-    p {
-        width: 50%;
-        letter-spacing: 1px;
-        text-indent: 20px;
-        line-height: 26px;
-        font-weight: 450;
-        background-color: $color-navy;
-        color: white;
-        padding: 30px;
-        border-radius: 20px;
-
-        & strong {
-            font-weight: 900;
-            color: $color-cookie;
-        }
-
-        @media (max-width: $break-point-desktop) {
-            width: 100%;
-            padding: 25px;
-            border-radius: 20px;
-        }
-    }
-
     img {
         width: 100%;
 
@@ -58,5 +35,32 @@
             max-width: 90%;
             padding: 0;
         }
+    }
+
+    &-text {
+        width: 50%;
+        letter-spacing: 1px;
+        text-indent: 20px;
+        line-height: 26px;
+        font-weight: 450;
+        background-color: $color-navy;
+        color: white;
+        padding: 30px;
+        border-radius: 20px;
+
+        & strong {
+            font-weight: 900;
+            color: $color-cookie;
+        }
+
+        @media (max-width: $break-point-desktop) {
+            width: 100%;
+            padding: 25px;
+            border-radius: 20px;
+        }
+    }
+
+    &-full-text {
+        width: 70%;
     }
 }

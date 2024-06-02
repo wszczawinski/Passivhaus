@@ -4,7 +4,7 @@ import { BiCookie } from 'react-icons/bi';
 import { withPrefix } from 'gatsby';
 import { IGatsbyImageData } from 'gatsby-plugin-image';
 
-import { Head } from './Head';
+import { Head, MetaTags } from './Head';
 import { Footer } from './Footer';
 import { Hero } from './Hero';
 import { Navbar } from './Navbar';
@@ -16,12 +16,13 @@ interface LayoutProps {
     heroTextContent: ReactNode;
     heroBackgroundImage?: IGatsbyImageData;
     heroClass?: string;
+    metaTags?: MetaTags;
 }
 
-export const Layout = ({ children, heroTextContent, heroBackgroundImage, heroClass }: LayoutProps) => {
+export const Layout = ({ children, heroTextContent, heroBackgroundImage, heroClass, metaTags }: LayoutProps) => {
     return (
         <>
-            <Head />
+            <Head {...metaTags} />
             <header>
                 <Navbar />
                 <Hero content={heroTextContent} backgroundImage={heroBackgroundImage} heroClass={heroClass} />
