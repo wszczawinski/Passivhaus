@@ -113,7 +113,7 @@ export const heroText: IHeroText = {
     workshopsMostki: (
         <p>
             Szkolenia <br />
-            <BsArrowReturnRight /> Mostki cieplne
+            <BsArrowReturnRight /> Mostki termiczne
         </p>
     ),
     workshopsEksperci: (

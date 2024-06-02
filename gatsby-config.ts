@@ -4,8 +4,10 @@ const siteUrl = `https://www.pibp.pl`;
 
 module.exports = {
     siteMetadata: {
-        title: `Passivhaus`,
-        description: 'Portfolio website',
+        title: 'Polski Instytut Budownictwa Pasywnego',
+        keywords: 'instytut, budownictwo, pasywne',
+        description:
+            'Naszym celem jest upowszechnianie wiedzy o budownictwie pasywnym, zero energetycznym, plus energetycznym oraz o kompleksowej termomodernizacji.',
         siteUrl,
     },
     graphqlTypegen: true,

@@ -30,7 +30,7 @@ export const workshopsNavItems: SubNavItem[] = [
     // { name: 'PHPP', path: '/szkolenia' },
     { name: 'CEPHd – Architektura, Projektowanie', path: '/szkolenia/projektant-doradztwa' },
     { name: 'CEPHt – Wykonawstwo, Nadzorowanie', path: '/szkolenia/mistrz-wykonawca' },
-    { name: 'Mostki cieplne', path: '/szkolenia/mostki-cieplne' },
+    { name: 'Mostki termiczne', path: '/szkolenia/mostki-termiczne' },
     { name: 'Lista ekspertów', path: '/szkolenia/eksperci' },
 ];
 
