@@ -5,7 +5,7 @@ import React from 'react';
 import { ContainerBlue, ContainerColumn, ContainerRow, Layout } from '@/components';
 import { heroText } from '@/constants/heroContent';
 import szkolenieMostki1 from '@/images/workshops/mostki/akademia pibp mostki termiczne sankowski.png';
-import szkolenieMostki3 from '@/images/workshops/mostki/ciągłość-izolacji-zasada-domow-pasywnych.jpg';
+import szkolenieMostki3 from '@/images/workshops/mostki/ciągłość-izolacji-zasada-domow-pasywnych.jpg';
 import szkolenieMostki2 from '@/images/workshops/mostki/mostek-termiczny-plyta-fundamentowa-styk-sciany-zewnetrznej_.jpg';
 import szkolenieMostki0 from '@/images/workshops/mostki/szkolenie mostki termiczne 2024 obliczenia analiza.jpg';
 
