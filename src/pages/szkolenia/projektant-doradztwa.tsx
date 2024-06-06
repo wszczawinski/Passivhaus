@@ -17,7 +17,7 @@ import requirements from '@/images/szkolenia/requirements.jpeg';
 import { Faq } from '@/components/Faq/Faq';
 import './Workshops.scss';
 
-export default function DesignerConsulting({ data }: PageProps<Queries.DesignerConsultingQuery>) {
+export default function DesignerConsulting({ data, location }: PageProps<Queries.DesignerConsultingQuery>) {
     const heroImage = getImage(data.heroImage);
 
     const metaTags = {
