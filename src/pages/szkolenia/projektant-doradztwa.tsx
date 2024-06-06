@@ -9,7 +9,7 @@ import szkolenia1 from '@/images/szkolenia/1.png';
 import szkolenia2 from '@/images/szkolenia/2.png';
 import szkolenia4 from '@/images/szkolenia/4.png';
 import szkolenia5 from '@/images/szkolenia/5.png';
-import cennikOnline from '@/images/szkolenia/cennik_on-line.png';
+import szkolenia6 from '@/images/szkolenia/akademia pibp kurs projektowanie dom pasywny.jpg';
 import exam from '@/images/szkolenia/exam.png';
 import ekspert from '@/images/szkolenia/expert.png';
 import requirements from '@/images/szkolenia/requirements.jpeg';
@@ -20,8 +20,15 @@ import './Workshops.scss';
 export default function DesignerConsulting({ data }: PageProps<Queries.DesignerConsultingQuery>) {
     const heroImage = getImage(data.heroImage);
 
+    const metaTags = {
+        title: 'Certyfikowany Projektant Budynków Pasywnych 2024 | KURS PIBP',
+        description:
+            'Naucz się projektować budynki pasywne i zeroenergetyczne, wdrażając zasady budownictwa pasywnego w swoich projektach i zostań certyfikowanym projektantem budynków pasywnych.',
+        pathName: location.pathname,
+    };
+
     return (
-        <Layout heroTextContent={heroText.workshopsProjektant} heroBackgroundImage={heroImage} heroClass={'hero__subpage'}>
+        <Layout heroTextContent={heroText.workshopsProjektant} heroBackgroundImage={heroImage} heroClass={'hero__subpage'} metaTags={metaTags}>
             <section className="layout-content">
                 <ContainerColumn
                     textStart={
@@ -360,7 +367,7 @@ export default function DesignerConsulting({ data }: PageProps<Queries.DesignerC
                         rel="noreferrer"
                         href="https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1"
                     >
-                        <img src={cennikOnline} alt="cennik kursu on-line"></img>
+                        <img src={szkolenia6} alt="cennik kursu on-line"></img>
                     </a>
                 </div>
 
@@ -417,13 +424,16 @@ export default function DesignerConsulting({ data }: PageProps<Queries.DesignerC
                             <br />
                             <br />
                             <a
-                                href="https://szkolenia.akademiazdrowegobudownictwa.pl/certyfikowany-projektant-budynkow-pasywnych/?utm_source=facebook_pibp&utm_medium=post&utm_campaign=cephd1"
+                                href="https://akademiazdrowegobudownictwa.pl/produkt/certyfikowany-projektant-budynkow-pasywnych-miedzynarodowy-program-szkoleniowy-online/"
                                 className="signup"
                                 target="_blank"
                                 rel="noreferrer"
                                 aria-label="outside link"
                             >
-                                <StaticImage src="../../images/szkolenia/campaigne-signup.jpg" alt="szkolenia" />
+                                <StaticImage
+                                    src="../../images/szkolenia/szkolenie-certyfikowany projektant budynkow pasywnych.jpg"
+                                    alt="szkolenie-certyfikowany projektant budynkow pasywnych"
+                                />
                             </a>
                         </p>
                     }
@@ -608,7 +618,7 @@ export default function DesignerConsulting({ data }: PageProps<Queries.DesignerC
 
 export const pageQuery = graphql`
     query DesignerConsulting {
-        heroImage: file(relativePath: { eq: "heroImages/hero_after-case-study.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/szkolenie akademia pibp projektowanie bydynkow pasywnych zeroenergetycznych.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
