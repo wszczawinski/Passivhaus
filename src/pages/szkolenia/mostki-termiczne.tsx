@@ -320,7 +320,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
 
 export const pageQuery = graphql`
     query ThermalBridges {
-        heroImage: file(relativePath: { eq: "heroImages/hero_workshops.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/likwidacja mostkow termicznych budynek pasywny modernizacja.jpg" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
