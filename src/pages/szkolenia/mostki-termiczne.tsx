@@ -42,6 +42,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                         noBorder
                         smallPadding
                         colorCream
+                        textEnd={<span className="mostki-price">Koszt szkolenia 590PLN netto</span>}
                     />
                     <ContainerBlue
                         text={
