@@ -232,3 +232,12 @@
     margin-top: 2%;
     text-decoration: underline;
 }
+
+.mostki-materials {
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+    & strong {
+        color: $color-orange;
+    }
+}
