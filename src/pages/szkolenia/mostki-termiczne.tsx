@@ -7,7 +7,7 @@ import { heroText } from '@/constants/heroContent';
 import szkolenieMostki1 from '@/images/workshops/mostki/akademia pibp mostki termiczne sankowski.png';
 import szkolenieMostki3 from '@/images/workshops/mostki/ciągłość-izolacji-zasada-domow-pasywnych.jpg';
 import szkolenieMostki2 from '@/images/workshops/mostki/mostek-termiczny-plyta-fundamentowa-styk-sciany-zewnetrznej_.jpg';
-import szkolenieMostki0 from '@/images/workshops/mostki/szkolenie mostki termiczne 2024 obliczenia analiza.jpg';
+import szkolenieMostki0 from '@/images/workshops/mostki/mostki_termiczne_szkolenie_2024.jpg';
 
 import { Faq } from '@/components/Faq/Faq';
 import { Question } from '@/components/Faq/Question';
@@ -37,7 +37,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                             </p>
                         }
                         imgSrc={szkolenieMostki0}
-                        imgAlt="szkolenie mostki termiczne 2024 obliczenia analiza"
+                        imgAlt="Szkolenie mostki termiczne 2024 – obliczenia i analiza w programie Therm"
                         shortBorder
                         noBorder
                         smallPadding
@@ -181,6 +181,21 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                                         Ambasadora Budownictwa Pasywnego
                                     </a>{' '}
                                     na kolejnym etapie swojej zawodowej kariery.
+                                </p>
+                                <p className="mostki-materials">
+                                    <span>
+                                        <strong>* Program Therm jest programem darmowym także do zastosowań komercyjnych !</strong> (Nie jest to wersja trial,
+                                        za którą trzeba będzie płacić).
+                                    </span>
+                                    <span>
+                                        <strong>
+                                            ** Obliczenia mostka (wartość psi) wykonywane są w arkuszu Excel w języku polskim, który jest przekazywany w ramach
+                                            opłaty za szkolenie.
+                                        </strong>
+                                    </span>
+                                    <span>
+                                        <strong>*** Arkusz podobnie jak program Therm może być wykorzystywany do zastosowań komercyjnych.</strong>
+                                    </span>
                                 </p>
                             </>
                         }
