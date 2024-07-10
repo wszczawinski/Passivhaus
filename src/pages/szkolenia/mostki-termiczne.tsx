@@ -4,6 +4,7 @@ import React from 'react';
 
 import { ContainerBlue, ContainerColumn, ContainerRow, Layout } from '@/components';
 import { heroText } from '@/constants/heroContent';
+import szkolenieMostki4 from '@/images/workshops/mostki/Mostki_termiczne_wzor_certyfikatu_PIBP.jpg';
 import szkolenieMostki1 from '@/images/workshops/mostki/akademia pibp mostki termiczne sankowski.png';
 import szkolenieMostki3 from '@/images/workshops/mostki/ciągłość-izolacji-zasada-domow-pasywnych.jpg';
 import szkolenieMostki2 from '@/images/workshops/mostki/mostek-termiczny-plyta-fundamentowa-styk-sciany-zewnetrznej_.jpg';
@@ -156,9 +157,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                                 </p>
                             </>
                         }
-                        shortBorder
                         noBorder
-                        smallPadding
                         colorCream
                     />
                     <ContainerBlue
@@ -199,6 +198,18 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                                 </p>
                             </>
                         }
+                        borderBottom
+                    />
+                    <ContainerColumn
+                        textStart={
+                            <p>
+                                <h2>Wzór certyfikatu</h2>
+                            </p>
+                        }
+                        imgSrc={szkolenieMostki4}
+                        imgAlt="Wzór certyfikatu PIBP dla uczestników szkolenia mostki termiczne"
+                        colorCream
+                        noBorder
                     />
                     <ContainerColumn
                         textStart={
