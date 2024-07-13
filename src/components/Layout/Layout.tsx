@@ -53,7 +53,7 @@ export const Layout = ({ children, heroTextContent, heroBackgroundImage, heroCla
             >
                 <BiCookie /> Przeglądając naszą stronę internetową bez zmian w swojej przeglądarce, wyrażasz zgodę na wykorzystywanie przez nas plików cookies.
                 Dzięki temu serwis internetowy pibp.pl może być maksymalnie bezpieczny i wygodny. Dowiec się więcej z naszej{' '}
-                <a href={withPrefix('polityka-prywatnosci.pdf')} className="privacy-policy" target="_blank" rel="noreferrer">
+                <a href={withPrefix('polityka-prywatności-serwisu-www.pibp.pl.pdf')} className="privacy-policy" target="_blank" rel="noreferrer">
                     Polityki prywatności
                 </a>
                 .

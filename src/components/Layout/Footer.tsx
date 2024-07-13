@@ -29,7 +29,7 @@ export const Footer = () => {
                     Regulamin
                 </a>{' '}
                 |{' '}
-                <a href={withPrefix('polityka-prywatnosci.pdf')} target="_blank" rel="noreferrer noopener">
+                <a href={withPrefix('polityka-prywatności-serwisu-www.pibp.pl.pdf')} target="_blank" rel="noreferrer noopener">
                     Polityka prywatności
                 </a>
             </p>
