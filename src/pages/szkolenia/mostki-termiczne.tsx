@@ -8,7 +8,7 @@ import szkolenieMostki4 from '@/images/workshops/mostki/Mostki_termiczne_wzor_ce
 import szkolenieMostki1 from '@/images/workshops/mostki/akademia pibp mostki termiczne sankowski.png';
 import szkolenieMostki3 from '@/images/workshops/mostki/ciągłość-izolacji-zasada-domow-pasywnych.jpg';
 import szkolenieMostki2 from '@/images/workshops/mostki/mostek-termiczny-plyta-fundamentowa-styk-sciany-zewnetrznej_.jpg';
-import szkolenieMostki0 from '@/images/workshops/mostki/mostki_termiczne_szkolenie_2024.jpg';
+import szkolenieMostki0 from '@/images/workshops/mostki/mostki_termiczne_szkolenie_2024.png';
 
 import { Faq } from '@/components/Faq/Faq';
 import { Question } from '@/components/Faq/Question';
