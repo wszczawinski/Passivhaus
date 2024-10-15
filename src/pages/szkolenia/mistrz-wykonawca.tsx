@@ -1,6 +1,6 @@
-import React from 'react';
 import { PageProps, graphql, withPrefix } from 'gatsby';
 import { StaticImage, getImage } from 'gatsby-plugin-image';
+import React from 'react';
 
 import { ContainerColumn, ContainerRow, Layout } from '@/components';
 import { heroText } from '@/constants/heroContent';
@@ -100,10 +100,9 @@ export default function MasterContractor({ data }: PageProps<Queries.MasterContr
                             nie jest wliczony w cenę szkolenia. W Polsce, egzamin ten organizowany jest w określonych terminach, ustalonych wspólnie przez PIBP
                             oraz Akademię Zdrowego Budownictwa.
                             <h4>Termin najbliższej edycji szkolenia CEPHt </h4>
-                            Nabór trwa do 22 marca 2024 (godz. 21:00) lub do wyczerpania miejsc.
-                            <h4>Koszt uczestnictwa w szkoleniu CEPHt</h4>4 699,00 PLN netto – za 55h godzin szkoleniowych (zegarowych)
-                            <h4>Koszt uczestnictwa w egzaminie CEPHt</h4>
-                            3490,00 PLN netto – po zdanym egzaminie certyfikat i wpis na listę ekspertów
+                            Nabór trwa do 25 października 2024 (godz. 21:00) lub do wyczerpania miejsc.
+                            <h4>Koszt uczestnictwa w szkoleniu CEPHt</h4>5 290,00 PLN netto – za 55h godzin szkoleniowych (zegarowych)
+                            <h4>Koszt uczestnictwa w egzaminie CEPHt</h4>3 590,00 PLN netto – po zdanym egzaminie certyfikat i wpis na listę ekspertów
                         </p>
                     }
                     imgSrc={cert}
@@ -189,7 +188,7 @@ export default function MasterContractor({ data }: PageProps<Queries.MasterContr
 
 export const pageQuery = graphql`
     query MasterContractor {
-        heroImage: file(relativePath: { eq: "heroImages/hero_cepht.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_cepht_campaigne.jpg" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
