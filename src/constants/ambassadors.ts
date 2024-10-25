@@ -30,7 +30,7 @@ import greencherry from '../images/ambasadorzy/greencherry_logo.png';
 import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
 import ibud from '../images/ambasadorzy/ibud_logo.jpg';
 import infatec from '../images/ambasadorzy/infatec_logo.jpg';
-import inhom from '../images/ambasadorzy/inhom_logo.jpg';
+import inhom from '../images/ambasadorzy/inhom_logo.png';
 import internorm from '../images/ambasadorzy/internorm_logo.jpg';
 import isoChemie from '../images/ambasadorzy/isochemie_logo.jpg';
 import izodom from '../images/ambasadorzy/izodom.png';
@@ -826,7 +826,7 @@ export const ambassadors: AmbassadorProps[] = [
                 name: 'INHOM - Domy Pasywne i Energooszczędne',
                 link: 'http://www.inhom.pl/',
                 address: 'Leśny Stok 25, 80-260 Gdańsk',
-                phone: '+48 606 143 901',
+                phone: '+48 733 387 393',
                 email: 'biuro@inhom.pl',
                 website: 'www.inhom.pl',
                 image: inhom,
