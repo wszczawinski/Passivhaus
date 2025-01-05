@@ -8,7 +8,7 @@ import szkolenieMostki4 from '@/images/workshops/mostki/Mostki_termiczne_wzor_ce
 import szkolenieMostki1 from '@/images/workshops/mostki/akademia pibp mostki termiczne sankowski.png';
 import szkolenieMostki3 from '@/images/workshops/mostki/ciągłość-izolacji-zasada-domow-pasywnych.jpg';
 import szkolenieMostki2 from '@/images/workshops/mostki/mostek-termiczny-plyta-fundamentowa-styk-sciany-zewnetrznej_.jpg';
-import szkolenieMostki0 from '@/images/workshops/mostki/mostki_termiczne_szkolenie_2024.png';
+import szkolenieMostki0 from '@/images/workshops/mostki/mostki_termiczne_szkolenie_2025.png';
 
 import { Faq } from '@/components/Faq/Faq';
 import { Question } from '@/components/Faq/Question';
@@ -19,7 +19,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
     const heroImage = getImage(data.heroImage);
 
     const metaTags = {
-        title: 'Mostki Termiczne: Kompletne szkolenie 2024 - obliczenia i analiza w programie Therm',
+        title: 'Mostki Termiczne: Kompletne szkolenie 2025 – obliczenia i analiza w programie Therm',
         description:
             'Obliczanie mostków termicznych krok po kroku. Szkolenie zakończone certyfikatem Polskiego Instytutu Budownictwa Pasywnego. Zgodne z normą PN-EN ISO 10211:2017.',
         pathName: location.pathname,
@@ -32,7 +32,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                     <ContainerColumn
                         textStart={
                             <p>
-                                <h2>Kompletne szkolenie 2024 – obliczenia i analiza w programie Therm</h2>
+                                <h2>Kompletne szkolenie 2025 – obliczenia i analiza w programie Therm</h2>
                                 Obliczanie mostków termicznych krok po kroku. Szkolenie zakończone certyfikatem Polskiego Instytutu Budownictwa Pasywnego.
                                 Zgodne z normą PN-EN ISO 10211:2017.
                             </p>
@@ -43,7 +43,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                         noBorder
                         smallPadding
                         colorCream
-                        textEnd={<span className="mostki-price">Koszt szkolenia 590PLN netto</span>}
+                        textEnd={<span className="mostki-price">Koszt szkolenia 690PLN netto (+23% VAT)</span>}
                     />
                     <ContainerBlue
                         text={
@@ -237,7 +237,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                                     <a href={`mailto:pibp@pibp.pl`}>pibp@pibp.pl</a> lub <a href={`mailto:info@pibp.pl`}>info@pibp.pl</a>
                                 </p>
                                 <p>
-                                    2. W temacie prosimy wpisać: <strong>&quot;Szkolenie Mostki - 25 - 26 czerwca 2024&quot;</strong>.
+                                    2. W temacie prosimy wpisać: <strong>&quot;Szkolenie Mostki - 15 - 16 stycznia 2025&quot;</strong>.
                                 </p>
                                 <p>
                                     W treści prosimy o pozostawienie swoich danych tj.:
