@@ -11,6 +11,7 @@ import aluprof from '../images/ambasadorzy/aluprof_logo.png';
 import aura from '../images/ambasadorzy/aura_logo.png';
 import bartosz from '../images/ambasadorzy/bartosz_logo.jpg';
 import bemares from '../images/ambasadorzy/bemares_logo.png';
+import bewi from '../images/ambasadorzy/bewi_logo.png';
 import biedrzycki from '../images/ambasadorzy/biedrzycki_logo.png';
 import blower from '../images/ambasadorzy/blower_logo.jpg';
 import budynkipasywnetv from '../images/ambasadorzy/budynkipasywnetv_logo.png';
@@ -59,7 +60,6 @@ import tremco from '../images/ambasadorzy/tremco_logo.jpg';
 import variotec from '../images/ambasadorzy/variotec_logo.png';
 import viessmann from '../images/ambasadorzy/viessmann_logo.png';
 import zehnder from '../images/ambasadorzy/zehnder_logo.png';
-
 const companiesPlaceholder =
     'Do tej pory Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej nie nadał tytułu ambasadora w tej kategorii. Jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.';
 
@@ -201,12 +201,12 @@ export const ambassadors: AmbassadorProps[] = [
                         image: passiveHouseSystems,
                     },
                     {
-                        name: 'pro clima - Bauservice Sosnowsk',
-                        link: 'http://proclima.com/',
-                        address: 'ul. Dworcowa 26, 55-050 Sobótka',
-                        phone: '+48 534 960 000',
-                        email: 'tomasz.sosnowski@proclima.pl',
-                        website: 'www.proclima.pl',
+                        name: 'pro clima',
+                        link: 'https://proclima.com/service/distribution/polska',
+                        address: 'Rheintalstr. 35-42, 68723 Schwetzingen, Germany',
+                        phone: '+49 6202 2782 0',
+                        email: 'axel.schmidt@proclima.com',
+                        website: 'www.proclima.com',
                         image: proclima,
                     },
                     {
@@ -260,6 +260,15 @@ export const ambassadors: AmbassadorProps[] = [
             {
                 title: 'Ściany i systemy konstrukcyjne - Wall and construction systems',
                 companies: [
+                    {
+                        name: 'BEWI Poland Jerzy Tereszczuk',
+                        link: 'https://bewi-icf.pl',
+                        address: 'ul. Władysława Pytlasińskiego 16/13, 00-777 Warszawa',
+                        phone: '+48 603 558 778',
+                        email: 'Jerzy.Tereszczuk@bewi.com',
+                        website: 'www.bewi-icf.pl',
+                        image: bewi,
+                    },
                     {
                         name: 'System INFATEC',
                         link: 'http://www.infatec.pl/',
