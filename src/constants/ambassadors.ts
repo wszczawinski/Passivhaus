@@ -60,6 +60,8 @@ import tremco from '../images/ambasadorzy/tremco_logo.jpg';
 import variotec from '../images/ambasadorzy/variotec_logo.png';
 import viessmann from '../images/ambasadorzy/viessmann_logo.png';
 import zehnder from '../images/ambasadorzy/zehnder_logo.png';
+import selt from '../images/ambasadorzy/selt_logo.png';
+
 const companiesPlaceholder =
     'Do tej pory Polski Instytut Budownictwa Pasywnego i Energii Odnawialnej nie nadał tytułu ambasadora w tej kategorii. Jeżeli uważasz, że twój komponent jest godny zastosowania w realizacji budynków pasywnych wypełnij i wyślij do nas wniosek ze swoją kandydaturą.';
 
@@ -465,6 +467,15 @@ export const ambassadors: AmbassadorProps[] = [
             {
                 title: 'Rolety  Żaluzje - Shutters',
                 companies: [
+                    {
+                        name: 'Selt',
+                        link: 'https://www.selt.com/home-pl',
+                        address: 'ul. Wschodnia 23a, 45-449 Opole',
+                        phone: '+48 (77) 553 21 00',
+                        email: 'selt@selt.com',
+                        website: 'www.selt.com',
+                        image: selt,
+                    },
                     {
                         name: 'Aluprof S.A.',
                         link: 'http://www.aluprof.eu/budownictwo-pasywne-i-energooszczedne-3',
