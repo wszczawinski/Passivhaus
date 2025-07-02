@@ -38,12 +38,15 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                             </p>
                         }
                         imgSrc={szkolenieMostki0}
-                        imgAlt="Szkolenie mostki termiczne 2024 – obliczenia i analiza w programie Therm"
+                        imgAlt="Szkolenie mostki termiczne 2025 – obliczenia i analiza w programie Therm"
                         shortBorder
                         noBorder
                         smallPadding
                         colorCream
-                        textEnd={<span className="mostki-price">Koszt szkolenia 690PLN netto (+23% VAT)</span>}
+                        textEnd={<div className="mostki-price"><span>Koszt szkolenia 690PLN netto (+23% VAT)</span><span>
+                            Termin najbliższego szkolenia: 8-9 października 2025 r.
+                        </span></div>}
+                        
                     />
                     <ContainerBlue
                         text={
@@ -167,7 +170,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                                 <p>
                                     Uczestnicy szkolenia{' '}
                                     <strong className="mostki-definition">
-                                        Mostki Termiczne: Kompletne szkolenie 2024: obliczenia i analiza w programie Therm
+                                        Mostki Termiczne: Kompletne szkolenie 2025: obliczenia i analiza w programie Therm
                                     </strong>{' '}
                                     otrzymają materiały edukacyjne, które będą stanowić wartościową pomoc w zdobywaniu wiedzy na temat mostków termicznych i
                                     wykorzystywania programu Therm. Materiały te będą zawierać teoretyczne informacje, praktyczne przykłady oraz dodatkowe
@@ -232,12 +235,12 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                         textEnd={
                             <>
                                 <h3>Forma zgłoszenia uczestnictwa</h3>
-                                <p>
+                                <p className='mostki-email'>
                                     1. Aby wziąć udział w szkoleniu, należy wysłać email <BiEnvelope /> na adres{' '}
                                     <a href={`mailto:pibp@pibp.pl`}>pibp@pibp.pl</a> lub <a href={`mailto:info@pibp.pl`}>info@pibp.pl</a>
                                 </p>
                                 <p>
-                                    2. W temacie prosimy wpisać: <strong>&quot;Szkolenie Mostki - 15 - 16 stycznia 2025&quot;</strong>.
+                                    2. W temacie prosimy wpisać: <strong>&quot;Szkolenie Mostki - 8-9 października 2025 r&quot;</strong>.
                                 </p>
                                 <p>
                                     W treści prosimy o pozostawienie swoich danych tj.:
