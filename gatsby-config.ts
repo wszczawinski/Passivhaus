@@ -38,7 +38,7 @@ module.exports = {
             options: {
                 url: `https://blog.pibp.pl/index.php?graphql`,
                 schema: {
-                    timeout: 180000,
+                    timeout: 300000,
                     perPage: 50
                 },
             },
