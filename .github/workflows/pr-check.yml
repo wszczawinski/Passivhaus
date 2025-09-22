@@ -1,0 +1,68 @@
+name: PR Build & Snyk Check
+
+on:
+    pull_request:
+        branches: ['master']
+
+jobs:
+    build-check:
+        name: Gatsby build check
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
+
+            - name: Install Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+                  cache: 'npm'
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Install Gatsby CLI
+              run: npm install -g gatsby-cli@5.15.0
+
+            - name: 🧹 Cleanup
+              run: npm run clean
+
+            - name: 🔨 Build project
+              run: npm run build
+
+            - name: ✅ Verify build
+              run: ls -la public
+
+    security-check:
+        name: 🔐 Security Check (Snyk)
+        needs: build-check
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
+            - name: Set up Node.js
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '20'
+
+            - name: Install Snyk CLI
+              run: npm install -g snyk@latest
+
+            - name: Install dependencies
+              run: npm ci
+
+            - name: Authenticate with Snyk
+              env:
+                  SNYK_TOKEN: ${{ secrets.SNYK_TOKEN }}
+              run: snyk auth $SNYK_TOKEN
+
+            - name: 📦 Snyk Dependency Scan (SCA)
+              run: snyk test --severity-threshold=high
+
+            - name: 🧠 Snyk Code Scan (SAST)
+              run: snyk code test --severity-threshold=high
+
+            - name: 📡 Monitor for Future Issues
+              run: snyk monitor
