@@ -37,6 +37,10 @@ module.exports = {
             resolve: `gatsby-source-wordpress`,
             options: {
                 url: `https://blog.pibp.pl/index.php?graphql`,
+                schema: {
+                    timeout: 180000,
+                    perPage: 50
+                },
             },
         },
         {
