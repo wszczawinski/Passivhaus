@@ -15,21 +15,19 @@ import bewi from '../images/ambasadorzy/bewi_logo.png';
 import biedrzycki from '../images/ambasadorzy/biedrzycki_logo.png';
 import blower from '../images/ambasadorzy/blower_logo.jpg';
 import budynkipasywnetv from '../images/ambasadorzy/budynkipasywnetv_logo.png';
-import cal from '../images/ambasadorzy/cal_logo.png';
 import csstudio from '../images/ambasadorzy/csstudio_logo.jpg';
 import diagnostykaenergetyczna from '../images/ambasadorzy/diagnostykaenergetyczna_logo.png';
 import domel from '../images/ambasadorzy/domel_logo.png';
-import ecofix from '../images/ambasadorzy/ecofix_logo.png';
 import elwiz from '../images/ambasadorzy/elwiz_logo.jpg';
 import ewfe from '../images/ambasadorzy/ewfe_logo.png';
 import fakro from '../images/ambasadorzy/fakro_logo.jpg';
 import foss from '../images/ambasadorzy/foss_logo.png';
 import ftronic from '../images/ambasadorzy/ftronic_logo.jpg';
-import gc from '../images/ambasadorzy/gc_logo.jpg';
 import glassolutions from '../images/ambasadorzy/glassolutions_logo.jpg';
 import greencherry from '../images/ambasadorzy/greencherry_logo.png';
 import hexaGreen from '../images/ambasadorzy/hexaGreen.png';
 import ibud from '../images/ambasadorzy/ibud_logo.jpg';
+import idpEco from "../images/ambasadorzy/idpeco_logo.png";
 import infatec from '../images/ambasadorzy/infatec_logo.jpg';
 import inhom from '../images/ambasadorzy/inhom_logo.png';
 import internorm from '../images/ambasadorzy/internorm_logo.jpg';
@@ -362,15 +360,6 @@ export const ambassadors: AmbassadorProps[] = [
             {
                 title: 'Drzwi wejściowe - Entry doors',
                 companies: [
-                    {
-                        name: 'CAL prawdziwe drzwi ZSB CAL Z. Cywiński i wspólnicy sp. j. ',
-                        link: 'http://www.drzwi-cal.pl/',
-                        address: 'ul. Piaskowa 5, 16-400 Suwałki',
-                        phone: '+48 (87) 563 11 55',
-                        email: 'biuro@drzwi-cal.pl',
-                        website: 'www.drzwi-cal.pl',
-                        image: cal,
-                    },
                     {
                         name: 'VARIOTEC GmbH & Co. KG',
                         link: 'http://variotec.de/hp358/Startseite.htm',
@@ -816,27 +805,18 @@ export const ambassadors: AmbassadorProps[] = [
                 image: biedrzycki,
             },
             {
-                name: 'Eco-Fix Sp. z o.o.',
-                link: 'http://ecofix.biz/',
-                address: '65-729 Zielona Góra, ul. Energetyków 7',
-                phone: '+48 68 400 0007',
-                email: 'info@ecofix.biz',
-                website: 'www.ecofix.biz',
-                image: ecofix,
-            },
-            {
-                name: 'Green Collective Sp. z o.o.',
-                link: 'http://greencollective.pl/',
-                address: 'ul. Pasterska 35, 62-064 Plewiska',
-                phone: '+48 695 888 835',
-                email: 'piotr@greencollective.pl',
-                website: 'www.greencollective.pl',
-                image: gc,
+                name: 'IDP - INTELIGENTNE DOMY PASYWNE',
+                link: 'https://idp.eco/',
+                address: 'ul. Śląska 8, 34-331 Rychwałdek',
+                phone: '+48 665-824-111',
+                email: '',
+                website: 'www.idp.eco',
+                image: idpEco,
             },
             {
                 name: 'IBUDHAUS Jakub Matusiński',
                 link: 'http://www.ibudhaus.pl',
-                address: 'Pszczyna, ul. Bielska 41',
+                address: 'ul. Bielska 41, Pszczyna',
                 phone: '+48 601 477 086',
                 email: '',
                 website: 'www.ibudhaus.pl',
