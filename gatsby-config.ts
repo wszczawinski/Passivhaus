@@ -39,9 +39,16 @@ module.exports = {
                 url: `https://blog.pibp.pl/index.php?graphql`,
                 schema: {
                     timeout: 600000,
-                    perPage: 5,
+                    perPage: 20,
                     requestConcurrency: 1,
                 },
+                develop: {
+                    hardCacheMediaFiles: true,
+                },
+                production: {
+                    hardCacheMediaFiles: true,
+                },
+                verbose: true,
             },
         },
         {
