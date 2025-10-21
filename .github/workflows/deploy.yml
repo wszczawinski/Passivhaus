@@ -36,7 +36,9 @@ jobs:
                       .cache
                       public
                   key: ${{ runner.os }}-gatsby-build-${{ hashFiles('gatsby-config.ts', 'gatsby-node.ts', 'package-lock.json') }}
-                  restore-keys: ${{ runner.os }}-gatsby-build-
+                  restore-keys: |
+                      ${{ runner.os }}-gatsby-build-pr-
+                      ${{ runner.os }}-gatsby-build-
 
             # Cache WordPress source data and media files
             - uses: actions/cache@v4
@@ -45,7 +47,7 @@ jobs:
                       .cache/caches/gatsby-source-wordpress
                       .cache/data
                       .wordpress-cache
-                  key: ${{ runner.os }}-wordpress-data-stable
+                  key: ${{ runner.os }}-wordpress-data-${{ hashFiles('gatsby-config.ts') }}
                   restore-keys: ${{ runner.os }}-wordpress-data-
 
             - name: 🔨 Build project (with retry)
