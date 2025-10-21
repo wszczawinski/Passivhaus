@@ -42,7 +42,7 @@ jobs:
                       .cache/caches/gatsby-source-wordpress
                       .cache/data
                       .wordpress-cache
-                  key: ${{ runner.os }}-wordpress-data-stable
+                  key: ${{ runner.os }}-wordpress-data-${{ hashFiles('gatsby-config.ts') }}
                   restore-keys: ${{ runner.os }}-wordpress-data-
 
             - name: 🔨 Build project (with retry)
