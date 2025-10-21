@@ -24,14 +24,34 @@ jobs:
             - name: Install Gatsby CLI
               run: npm install -g gatsby-cli@5.15.0
 
-            - name: 🧹 Cleanup
-              run: npm run clean
+            # Cache Gatsby build files for PR
+            - uses: actions/cache@v4
+              with:
+                  path: |
+                      .cache
+                      public
+                  key: ${{ runner.os }}-gatsby-build-pr-${{ github.event.pull_request.head.sha }}
+                  restore-keys: |
+                      ${{ runner.os }}-gatsby-build-pr-
+                      ${{ runner.os }}-gatsby-build-
 
-            - name: 🔨 Build project
-              run: npm run build
+            # Cache WordPress source data and media files (shared with main builds)
+            - uses: actions/cache@v4
+              with:
+                  path: |
+                      .cache/caches/gatsby-source-wordpress
+                      .cache/data
+                      .wordpress-cache
+                  key: ${{ runner.os }}-wordpress-data-${{ hashFiles('gatsby-config.ts') }}
+                  restore-keys: ${{ runner.os }}-wordpress-data-
 
-            - name: ✅ Verify build
-              run: ls -la public
+            - name: 🔨 Build project (with retry)
+              uses: nick-fields/retry@v3
+              with:
+                  timeout_minutes: 10
+                  max_attempts: 5
+                  retry_wait_seconds: 60
+                  command: npm run build
 
     security-check:
         name: 🔐 Security Check (Snyk)

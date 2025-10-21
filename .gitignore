@@ -95,3 +95,6 @@ yarn-error.log*
 yarn.lock
 
 gatsby-types.d.ts
+.vscode
+.wordpress-cache
+WordPress
