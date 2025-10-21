@@ -45,8 +45,13 @@ jobs:
                   key: ${{ runner.os }}-wordpress-data-${{ hashFiles('gatsby-config.ts') }}
                   restore-keys: ${{ runner.os }}-wordpress-data-
 
-            - name: 🔨 Build project
-              run: npm run build
+            - name: 🔨 Build project (with retry)
+              uses: nick-fields/retry@v3
+              with:
+                  timeout_minutes: 10
+                  max_attempts: 5
+                  retry_wait_seconds: 60
+                  command: npm run build
 
     security-check:
         name: 🔐 Security Check (Snyk)
