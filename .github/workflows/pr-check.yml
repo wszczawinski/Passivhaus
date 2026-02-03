@@ -55,7 +55,6 @@ jobs:
 
     security-check:
         name: 🔐 Security Check (Snyk)
-        needs: build-check
         runs-on: ubuntu-latest
 
         steps:
