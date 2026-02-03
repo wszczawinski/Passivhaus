@@ -46,5 +46,8 @@
     "gatsby-plugin-eslint": "^4.0.4",
     "prettier": "3.6.2",
     "typescript": "^5.9.2"
+  },
+  "overrides": {
+    "@pnpm/npm-conf": "3.0.2"
   }
 }
