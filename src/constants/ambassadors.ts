@@ -712,8 +712,8 @@ export const ambassadors: AmbassadorProps[] = [
             {
                 name: 'ARCHITEKTURA PASYWNA PYSZCZEK I STELMACH SP.J.',
                 link: 'http://www.architekturapasywna.pl/start/',
-                address: 'ul. Białoprądnicka 24d/50, Kraków 31-223',
-                phone: '+48 12 6337908',
+                address: 'ul. Szlak 65 pok. 1001, 31-153 Kraków',
+                phone: '604 243 253, 600 148 925 ',
                 email: 'biuro@architekturapasywna.pl',
                 website: 'www.architekturapasywna.pl',
                 image: APpyszczekStelmach,
