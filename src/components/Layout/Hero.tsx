@@ -2,8 +2,6 @@ import React, { ReactNode } from 'react';
 import { GatsbyImage, IGatsbyImageData } from 'gatsby-plugin-image';
 
 import pibpLogo from '@/images/pibpLogo.png';
-import akredytacja from '@/images/akredytacja.svg';
-
 import './Hero.scss';
 
 interface HeroProps {
@@ -29,7 +27,6 @@ export const Hero = ({ heroClass = '', content, backgroundImage }: HeroProps) =>
                             </h1>
                         </span>
                     </a>
-                    <img src={akredytacja} alt="Akredytacja Instytutu Budownictwa Pasywnego" />
                 </div>
                 <h2 className="hero__content-area--subtitle">{content}</h2>
             </article>
