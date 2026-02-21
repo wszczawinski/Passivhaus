@@ -48,6 +48,7 @@
     "typescript": "^5.9.3"
   },
   "overrides": {
-    "@pnpm/npm-conf": "3.0.2"
+    "@pnpm/npm-conf": "3.0.2",
+    "axios": "1.13.5"
   }
 }
