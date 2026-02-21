@@ -22,7 +22,7 @@ jobs:
               run: npm ci
 
             - name: Install Gatsby CLI
-              run: npm install -g gatsby-cli@5.16.0
+              run: npm install -g gatsby-cli@5.16.1
 
             # Cache Gatsby build files for PR
             - uses: actions/cache@v4
