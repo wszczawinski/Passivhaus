@@ -19,7 +19,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
     const heroImage = getImage(data.heroImage);
 
     const metaTags = {
-        title: 'Mostki Termiczne: Kompletne szkolenie 2025 – obliczenia i analiza w programie Therm',
+        title: 'Mostki Termiczne: Kompletne szkolenie 2026 – obliczenia i analiza w programie Therm',
         description:
             'Obliczanie mostków termicznych krok po kroku. Szkolenie zakończone certyfikatem Polskiego Instytutu Budownictwa Pasywnego. Zgodne z normą PN-EN ISO 10211:2017.',
         pathName: location.pathname,
@@ -43,10 +43,18 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                         noBorder
                         smallPadding
                         colorCream
-                        textEnd={<div className="mostki-price"><span>Koszt szkolenia 690PLN netto (+23% VAT)</span><span>
-                            Termin najbliższego szkolenia: 8-9 października 2025 r.
-                        </span></div>}
-                        
+                        textEnd={
+                            <>
+                                <div className="mostki-price">
+                                    <span>Koszt szkolenia 890PLN netto (+23% VAT)</span>
+                                </div>
+                                <div className="mostki-price-schedule">
+                                    <span> Termin najbliższego szkolenia: </span>
+                                    <span> Część 1: 15 kwietnia 2026 </span>
+                                    <span> Część 2: 22 kwietnia 2026 </span>
+                                </div>
+                            </>
+                        }
                     />
                     <ContainerBlue
                         text={
@@ -235,7 +243,7 @@ export default function ThermalBridges({ data, location }: PageProps<Queries.The
                         textEnd={
                             <>
                                 <h3>Forma zgłoszenia uczestnictwa</h3>
-                                <p className='mostki-email'>
+                                <p className="mostki-email">
                                     1. Aby wziąć udział w szkoleniu, należy wysłać email <BiEnvelope /> na adres{' '}
                                     <a href={`mailto:pibp@pibp.pl`}>pibp@pibp.pl</a> lub <a href={`mailto:info@pibp.pl`}>info@pibp.pl</a>
                                 </p>
