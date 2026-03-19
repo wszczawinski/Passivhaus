@@ -228,7 +228,7 @@
 .mostki-price {
     color: $color-orange;
     font-weight: 800;
-    font-size: 35px;
+    font-size: 20px;
     margin-top: 2%;
     text-decoration: underline;
     display: flex;
@@ -236,6 +236,25 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
+
+    @media (min-width: $break-point-desktop) {
+        font-size: 35px;
+    }
+}
+
+.mostki-price-schedule {
+    color: $color-orange;
+    font-weight: 800;
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    @media (min-width: $break-point-desktop) {
+        font-size: 30px;
+    }
 }
 
 .mostki-materials {
