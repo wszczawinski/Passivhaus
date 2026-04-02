@@ -9,7 +9,7 @@ import szkolenia1 from '@/images/szkolenia/1.png';
 import szkolenia2 from '@/images/szkolenia/2.png';
 import szkolenia4 from '@/images/szkolenia/4.png';
 import szkolenia5 from '@/images/szkolenia/5.png';
-import szkolenia6 from '@/images/szkolenia/cephd-szkolenie-projektant.jpg';
+import szkolenia6 from '@/images/szkolenia/cephd-02.04.2026.jpg';
 import exam from '@/images/szkolenia/exam.png';
 import ekspert from '@/images/szkolenia/expert.png';
 import requirements from '@/images/szkolenia/requirements.jpeg';
@@ -618,7 +618,7 @@ export default function DesignerConsulting({ data, location }: PageProps<Queries
 
 export const pageQuery = graphql`
     query DesignerConsulting {
-        heroImage: file(relativePath: { eq: "heroImages/hero_cephd.png" }) {
+        heroImage: file(relativePath: { eq: "heroImages/hero_cephd_02.04.2026.png" }) {
             childImageSharp {
                 gatsbyImageData(placeholder: BLURRED, width: 2600)
             }
