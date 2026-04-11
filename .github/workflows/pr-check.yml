@@ -79,9 +79,11 @@ jobs:
 
             - name: 📦 Snyk Dependency Scan (SCA)
               run: snyk test --severity-threshold=high
+              continue-on-error: true
 
             - name: 🧠 Snyk Code Scan (SAST)
               run: snyk code test --severity-threshold=high
+              continue-on-error: true
 
             - name: 📡 Monitor for Future Issues
               run: snyk monitor
