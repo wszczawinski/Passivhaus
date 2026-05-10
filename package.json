@@ -13,7 +13,7 @@
     "clean": "gatsby clean"
   },
   "dependencies": {
-    "gatsby": "^5.16.1",
+    "gatsby": "5.16.1",
     "gatsby-plugin-google-tagmanager": "^5.16.0",
     "gatsby-plugin-image": "^3.16.0",
     "gatsby-plugin-react-helmet": "^6.16.0",
@@ -45,11 +45,11 @@
     "eslint-webpack-plugin": "^4.2.0",
     "gatsby-plugin-eslint": "^4.0.4",
     "prettier": "3.8.1",
-    "typescript": "^5.9.3"
+    "typescript": "5.9.3"
   },
   "overrides": {
     "@pnpm/npm-conf": "3.0.2",
-    "axios": "1.15.0",
+    "axios": "1.16.0",
     "immutable": "3.8.3",
     "minimatch": "3.1.3",
     "flatted": "3.4.2",
